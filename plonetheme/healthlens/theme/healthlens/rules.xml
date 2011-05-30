@@ -17,8 +17,8 @@
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
 <!-- MENU -->
-    <replace css:theme="#menu ul" css:content="#portal-globalnav"/>
-    <drop attributes="id" css:content="#portal-globalnav"/>
+    <replace css:theme="#menu ul" css:content="#portal-megamenu"/>
+<!--    <drop attributes="id" css:content="#portal-globalnav"/>-->
 
 <!-- SIDE BAR -->
 <!--    <drop css:theme="#sidebar ul"/>
