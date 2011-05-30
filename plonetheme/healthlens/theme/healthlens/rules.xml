@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css">
+
+    <theme href="index.html" />
+    <notheme if-path="presentation_view"/>
+    <notheme if-path="source_editor.htm"/>
+    <notheme if-path="ploneimage.htm"/>
+    <notheme if-path="anchor.htm"/>
+    <notheme if-path="table.htm"/>
+    <notheme if-path="attributes.htm"/>
+
+<!--  resources -->
+    <replace theme="/html/head/title" content="/html/head/title"/>
+    <drop css:theme="meta"/>
+    <before content='/html/head' theme='/html/head' />
+    <copy attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+<!-- MENU -->
+    <replace css:theme="#menu ul" css:content="#portal-globalnav"/>
+    <drop attributes="id" css:content="#portal-globalnav"/>
+
+<!-- SIDE BAR -->
+<!--    <drop css:theme="#sidebar ul"/>
+    <append css:content='#portal-column-one .portletWrapper' css:theme='#sidebar' />
+    <append css:content='#portal-column-one .managePortletsLink' css:theme='#sidebar' />
+    <append css:content='#portletmanager-plone-leftcolumn' css:theme='#sidebar' />
+    <append css:content='#portlet-prefs' css:theme="#sidebar"/>-->
+
+<!--  CONTENT -->
+    <drop css:theme=".post"/>
+    <before css:theme-children="#page-title" css:content-children="#parent-fieldname-title" />
+    <before css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
+    <before css:theme-children="#breadcrumbs" css:content-children="#viewlet-above-content" />
+    <drop css:content="#parent-fieldname-title" />
+    <drop css:content="#parent-fieldname-description" />
+    <drop css:content="#viewlet-above-content" />
+	   
+	<prepend css:theme="#personal-tools" css:content="#portal-personaltools" />   
+    <prepend css:theme="#page-bgbtm" css:content="#edit-bar" />
+    <prepend css:theme="#canvas" css:content=".portalMessage" />
+    <prepend css:theme="#canvas" css:content="#portal-columns"/>
+    <prepend css:theme="#canvas" css:content="#viewlet-below-content" />
+    
+
+<!--    <rules css:if-content="body.template-search,body.template-search_form,body.template-overview-controlpanel">
+        <replace css:theme-children="#page" css:content="#viewlet-above-content" />
+        <append css:theme="#page" css:content="#content"/>
+        <append css:theme="#page" css:content="#viewlet-below-content" />
+    </rules>-->
+    
+<!-- FOOTER -->
+    <replace css:theme-children="#footer" css:content-children="#portal-footer"/>
+    <append css:content="#portal-siteactions" css:theme="#footer"/>
+
+<!--  TOOLS -->
+<!--    <append css:content='#portal-personaltools-wrapper' css:theme='#menu' />
+    <drop css:content="h5.hiddenStructure"/>-->
+
+</rules>
