@@ -51,8 +51,9 @@
     
 <!-- FOOTER -->
     <replace css:theme-children="#footer" css:content-children="#portal-footer"/>
-    <append css:content="#portal-siteactions" css:theme="#footer"/>
-
+    <append css:content="#portal-siteactions" css:theme="#foot-box"/>
+    <!--portal actionbar-->
+    <append css:content-children="#footpanel" css:theme="#footpanel"/>
 <!--  TOOLS -->
 <!--    <append css:content='#portal-personaltools-wrapper' css:theme='#menu' />
     <drop css:content="h5.hiddenStructure"/>-->
