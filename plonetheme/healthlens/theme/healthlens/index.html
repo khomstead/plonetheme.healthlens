@@ -4,6 +4,7 @@
 	<head>
 		<title>HealthLens</title>
 		<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery.pageslide.min.js"></script>
 		<script type="text/javascript" src="http://use.typekit.com/klo5xmp.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
@@ -47,5 +48,13 @@
   </div>
   <div id="footpanel">
   </div>
+
+  <div id="page_slide_overlay">
+    <a id="page_slide_tab" href="pageslide.html">Menu</a>
+  </div>
+  <script type="text/javascript">
+    jQuery("#page_slide_tab").pageSlide({width:'350px', direction:'right'});
+  </script>
+
 	</body>
 </html>

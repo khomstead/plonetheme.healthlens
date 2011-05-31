@@ -760,6 +760,35 @@ background: linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 82%); /* W3C */
     background: #ddd;
 }
 
+/* @group Page Slide */
+#pageslide-slide-wrap {
+  background: url(../images/corkboard.jpg) repeat-y right;
+}
+
+#page_slide_overlay {
+ background-color:black;
+ border-color:black;
+}
+
+#page_slide_tab {
+  border:1px solid white;
+  background: black;
+  -moz-box-shadow: 5px 5px 5px #666;
+  -webkit-box-shadow: 5px 5px 5px #666;
+  box-shadow: 5px 5px 5px #666;
+  cursor:pointer;
+  height:108px;
+  left:0;
+  margin-left:-12px;
+  overflow:hidden;
+  position:fixed;
+  text-indent:-5000px;
+  top:40%;
+  width:45px;
+  z-index:10000;
+}
+/* @end */
+
 /* End Menu styling for Sunburst theme */
 
 
