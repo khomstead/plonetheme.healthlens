@@ -8,5 +8,9 @@ $(document).ready(function() {
       left: parseInt($("#drawer").css('left'),10) == 0 ? 
         -$("#drawer").outerWidth() : 0
     });
+    $("#drawer_tab").animate({
+      left: parseInt($("#drawer_tab").css('left'),10) == 0 ?
+        300 : 0
+    });
   });
 });

@@ -26,7 +26,9 @@ div.cell {
 
 #head-ribbon {
 	z-index: 100;
-	position: relative;
+	position: fixed;
+  width: 100%;
+  margin: 0 auto;
 	border-bottom: 6px solid #0c7fd3;
 	padding-top: 5px;
 }
@@ -53,6 +55,7 @@ div.cell {
 	margin-left: auto;
 	width: 960px;
 	position: relative;
+  top: 122px;
 }
 
 #float-box {
@@ -763,7 +766,7 @@ background: linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 82%); /* W3C */
 /* @group Page Slide */
 #drawer {
   background: url(../images/corkboard.jpg) repeat-y right;
-  position: absolute;
+  position: fixed;
   width: 300px;
   left: -300px;
   top: 122px;
@@ -771,15 +774,22 @@ background: linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 82%); /* W3C */
 }
 
 #drawer_tab {
-  border:1px solid white;
   background: black;
+  -moz-box-shadow: 5px 5px 5px #666;
+  -webkit-box-shadow: 5px 5px 5px #666;
+  box-shadow: 5px 5px 5px #666;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
   -moz-box-shadow: 5px 5px 5px #666;
   -webkit-box-shadow: 5px 5px 5px #666;
   box-shadow: 5px 5px 5px #666;
   cursor:pointer;
   height:108px;
   left:0;
-  margin-left:-12px;
   overflow:hidden;
   position:fixed;
   text-indent:-5000px;
