@@ -761,16 +761,16 @@ background: linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 82%); /* W3C */
 }
 
 /* @group Page Slide */
-#pageslide-slide-wrap {
+#drawer {
   background: url(../images/corkboard.jpg) repeat-y right;
+  position: absolute;
+  width: 300px;
+  left: -300px;
+  top: 122px;
+  bottom: 0px;
 }
 
-#page_slide_overlay {
- background-color:black;
- border-color:black;
-}
-
-#page_slide_tab {
+#drawer_tab {
   border:1px solid white;
   background: black;
   -moz-box-shadow: 5px 5px 5px #666;
