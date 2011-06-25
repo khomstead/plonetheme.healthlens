@@ -13,7 +13,7 @@
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{1302, 1418}</string>
+		<string>{321, 1418}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
@@ -21,7 +21,7 @@
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
-			<string>file://localhost/opt/Plone-4.1rc2/zinstance/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens</string>
+			<string>file://localhost/opt/Plone-4.1rc2/zinstance/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/css</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
