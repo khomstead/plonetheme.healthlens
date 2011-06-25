@@ -38,11 +38,11 @@
 	   
 	<prepend css:theme="#personal-tools" css:content="#portal-personaltools" />   
     <prepend css:theme="#page-bgbtm" css:content="#edit-bar" />
-    <prepend css:theme="#canvas" css:content=".portalMessage" />
+    <!--<prepend css:theme="#canvas" css:content=".portalMessage" />-->
     <prepend css:theme="#canvas" css:content="#portal-columns"/>
+    <!--
     <prepend css:theme="#canvas" css:content="#viewlet-below-content" />
-    
-
+-->
 <!--    <rules css:if-content="body.template-search,body.template-search_form,body.template-overview-controlpanel">
         <replace css:theme-children="#page" css:content="#viewlet-above-content" />
         <append css:theme="#page" css:content="#content"/>
@@ -58,4 +58,6 @@
 <!--    <append css:content='#portal-personaltools-wrapper' css:theme='#menu' />
     <drop css:content="h5.hiddenStructure"/>-->
 
+    <append css:theme="#drawer" css:content=".portletsBelowContentF" />
+    <append css:theme="#drawer" css:content=".portletQuickPostPortlet" />
 </rules>
