@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css">
+<rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css" css:if-content="#visual-portal-wrapper">
 
     <theme href="index.html" />
     <notheme if-path="presentation_view"/>
@@ -8,6 +8,9 @@
     <notheme if-path="anchor.htm"/>
     <notheme if-path="table.htm"/>
     <notheme if-path="attributes.htm"/>
+
+    <!-- Don't theme these collage links -->
+    <notheme if-path="existing-items-form"/>
 
 <!--  resources -->
     <replace theme="/html/head/title" content="/html/head/title"/>
