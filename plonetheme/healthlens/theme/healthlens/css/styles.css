@@ -1,10 +1,10 @@
-/* @override http://localhost:8080/Plone/++theme++plonetheme.healthlens/css/styles.css */
+/ @override http://localhost:8080/Plone/++theme++plonetheme.healthlens/css/styles.css */
 
 body {
+  background: url(../images/matt-pattern.jpg) left top;
 	background-repeat: repeat;
 	margin: 0;
 	padding: 0;
-	background: url(../images/matt-pattern.jpg) left top;
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
@@ -125,6 +125,32 @@ div.cell {
 }
 
 /* @group Portlets */
+#drawer .portlet {
+}
+
+#drawer .portletLogin {
+  background: url('../images/post_it_blue.jpg') left top no-repeat;
+  height: 338px;
+}
+
+#drawer .portletLogin .portletHeader,
+#drawer .portletLogin .portletItem {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 0;
+    background: transparent;
+    text-align: center;
+}
+
+#drawer .portletLogin .portletHeader {
+  padding-top: 60px;
+}
+
+#drawer .portletLogin .portletHeader a {
+  font-size: 2em;
+}
+
 
 /* @group Navigation */
 li.navTreeItem {
@@ -767,8 +793,8 @@ background: linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 82%); /* W3C */
 #drawer {
   background: url(../images/corkboard.jpg) repeat-y right;
   position: fixed;
-  width: 300px;
-  left: -300px;
+  width: 350px;
+  left: -350px;
   top: 122px;
   bottom: 0px;
 }
