@@ -31,23 +31,21 @@
     <drop css:theme=".post"/>
     <before css:theme-children="#page-title" css:content-children="#parent-fieldname-title" />
     <before css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
-    <before css:theme-children="#breadcrumbs" css:content-children="#viewlet-above-content" />
+    <before css:theme-children="#breadcrumbs" css:content-children="#portal-breadcrumbs" />
     <drop css:content="#parent-fieldname-title" />
     <drop css:content="#parent-fieldname-description" />
     <drop css:content="#viewlet-above-content" />
-	   
-	<prepend css:theme="#personal-tools" css:content="#portal-personaltools" />   
+	<append css:theme="#personal-tools" css:content="#portal-personaltools" />   
     <prepend css:theme="#page-bgbtm" css:content="#edit-bar" />
     <!--<prepend css:theme="#canvas" css:content=".portalMessage" />-->
     <prepend css:theme="#canvas" css:content="#portal-columns"/>
     <!--
     <prepend css:theme="#canvas" css:content="#viewlet-below-content" />
--->
-<!--    <rules css:if-content="body.template-search,body.template-search_form,body.template-overview-controlpanel">
-        <replace css:theme-children="#page" css:content="#viewlet-above-content" />
-        <append css:theme="#page" css:content="#content"/>
-        <append css:theme="#page" css:content="#viewlet-below-content" />
-    </rules>-->
+    -->
+
+    <rules css:if-content=".carousel">
+		    <replace css:theme="#title-ribbon" css:content=".carousel" />
+    </rules>
     
 <!-- FOOTER -->
     <replace css:theme-children="#footer" css:content-children="#portal-footer"/>
