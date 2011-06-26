@@ -1,35 +1,34 @@
-$(document).ready(function() {
-  $("#drawer_tab").click(function(){
-    var drawerWidth = $("#drawer").outerWidth();
-
-    $("#wrap960").animate({
-      left: parseInt($("#wrap960").css('left'),10) == drawerWidth ? 
-        0 : drawerWidth
+(function() {
+  $(function() {
+    $('#drawer_tab').click(function() {
+      var drawerWidth;
+      drawerWidth = $("#drawer").outerWidth();
+      if (parseInt($('#drawer').css('left')) === 0) {
+        open;
+      }
+      $('#wrap960').animate({
+        left: open ? 0 : drawerWidth
+      });
+      $('#light').animate({
+        left: open ? 0 : drawerWidth / 2
+      });
+      $('#drawer').animate({
+        left: open ? -drawerWidth : 0
+      });
+      return $('#drawer_tab').animate({
+        left: open ? drawerWidth : 0
+      });
     });
-    $("#light").animate({
-      left: parseInt($("#light").css('left'),10) == drawerWidth/2 ? 
-        0 : drawerWidth/2
+    $('#quick-post input').tooltip(function() {
+      return {
+        position: "center right",
+        offset: [-2, 20],
+        effect: "fade",
+        opacity: 0.7
+      };
     });
-    $("#drawer").animate({
-      left: parseInt($("#drawer").css('left'),10) == 0 ? 
-        -drawerWidth : 0
-    });
-    $("#drawer_tab").animate({
-      left: parseInt($("#drawer_tab").css('left'),10) == 0 ?
-        drawerWidth : 0
+    return $('#post-types').tabs('div.post-type-form', {
+      event: 'mouseover'
     });
   });
-  $("#quick-post input").tooltip({
-    // place tooltip on the right edge
-    position: "center right",
-    // a little tweaking of the position
-    offset: [-2, 10],
-    
-    // use the built-in fadeIn/fadeOut effect
-    effect: "fade",
-   
-    // custom opacity setting
-    opacity: 0.7
-  });
-  $("#post-types").tabs("div.post-type-form", {event:'mouseover'});
-});
+}).call(this);
