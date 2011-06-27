@@ -4,7 +4,7 @@
       var drawerWidth;
       drawerWidth = $("#drawer").outerWidth();
       if (parseInt($('#drawer').css('left')) === 0) {
-        $('#wrap960').animate({
+        $('#page').animate({
           left: 0
         });
         $('#light').animate({
@@ -17,7 +17,7 @@
           left: -drawerWidth
         });
       } else {
-        $('#wrap960').animate({
+        $('#page').animate({
           left: drawerWidth
         });
         $('#light').animate({

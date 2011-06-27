@@ -3,12 +3,12 @@ $ ->
     drawerWidth = $("#drawer").outerWidth()
 
     if parseInt($('#drawer').css('left')) == 0 
-      $('#wrap960').animate left: 0 
+      $('#page').animate left: 0 
       $('#light').animate left: 0
       $('#drawer_tab').animate left: 0
       $('#drawer').animate left: -drawerWidth
     else
-      $('#wrap960').animate left: drawerWidth 
+      $('#page').animate left: drawerWidth 
       $('#light').animate left: drawerWidth/2
       $('#drawer_tab').animate left: drawerWidth
       $('#drawer').animate left: 0
