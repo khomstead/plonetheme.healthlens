@@ -41,7 +41,7 @@
 	<append css:theme="#personal-tools" css:content="#portal-personaltools" />   
     <prepend css:theme="#page-bgbtm" css:content="#edit-bar" />
     <!--<prepend css:theme="#canvas" css:content=".portalMessage" />-->
-    <prepend css:theme="#canvas" css:content="#portal-columns"/>
+    <prepend css:theme="#content-area" css:content="#portal-columns"/>
     <!--
     <prepend css:theme="#canvas" css:content="#viewlet-below-content" />
     -->
