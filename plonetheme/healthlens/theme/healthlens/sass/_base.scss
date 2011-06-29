@@ -99,9 +99,9 @@ $box-shadow-color: rgba(0,0,0,0.6);
 }
 
 @mixin current-nav-shadow {
-	-webkit-box-shadow: 0px 0px 10px -2px $box-shadow-color;
-	-moz-box-shadow: 0px 0px 10px -2px $box-shadow-color;
-	box-shadow: 0px 0px 10px -2px $box-shadow-color;
+	-webkit-box-shadow: -0px 0px 10px -2px $box-shadow-color;
+	-moz-box-shadow: -0px 0px 10px -2px $box-shadow-color;
+	box-shadow: -0px 0px 10px -2px $box-shadow-color;
 }
 
 @mixin inset-shadow {
@@ -111,9 +111,9 @@ $box-shadow-color: rgba(0,0,0,0.6);
 }
 
 @mixin right-edge-shadow {
-	-webkit-box-shadow: inset 10px 0px 15px -15px $box-shadow-color;
-	-moz-box-shadow: inset 10px 0px 15px -15px $box-shadow-color;
-	box-shadow: inset 10px 0px 15px -15px $box-shadow-color;
+	-webkit-box-shadow:  10px 0px 15px -15px $box-shadow-color;
+	-moz-box-shadow:  10px 0px 15px -15px $box-shadow-color;
+	box-shadow:  10px 0px 15px -15px $box-shadow-color;
 }
 
 @mixin left-edge-shadow {
@@ -124,7 +124,7 @@ $box-shadow-color: rgba(0,0,0,0.6);
 //Rollover Styles
 
 @mixin nav-rollover {
-	@include button-green;
+	@include button-blue;
 	@include rounded-box;
 }
 
@@ -140,6 +140,17 @@ $box-shadow-color: rgba(0,0,0,0.6);
 	background: linear-gradient(top, #cdeb8e 0%,#cdeb8e 39%,#a5c956 62%,#a5c956 100%); /* W3C */
 }
 
+@mixin button-blue {
+	background: rgb(235,241,246); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(235,241,246,1) 0%, rgba(171,211,238,1) 50%, rgba(137,195,235,1) 51%, rgba(213,235,251,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,241,246,1)), color-stop(50%,rgba(171,211,238,1)), color-stop(51%,rgba(137,195,235,1)), color-stop(100%,rgba(213,235,251,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* W3C */
+}
+	
 @mixin title-gradient {
 background: #f9c667; /* Old browsers */
 background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%); /* FF3.6+ */
