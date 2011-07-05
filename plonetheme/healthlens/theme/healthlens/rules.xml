@@ -19,6 +19,9 @@
     <copy attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
+    <!-- plone.app.cmsui rule -->
+    <before css:theme-children="body" css:content="#plone-cmsui-trigger" />
+
 <!-- MENU -->
     <replace css:theme="#menu ul" css:content="#portal-megamenu"/>
 <!--    <drop attributes="id" css:content="#portal-globalnav"/>-->
