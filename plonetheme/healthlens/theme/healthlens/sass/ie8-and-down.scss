@@ -1,6 +1,13 @@
 @import "compass/reset";
+@import "compass/css3/images";
+@import "compass";
+@import "base";
+@import "typography";
 
 #portal-column-one {
-	background-color: #efefef;
-	border-right: .1em solid #ddd;
+}
+
+#portal-column-two {
+	@include background-image(linear-gradient(left, #dddddd, white));
+	
 }

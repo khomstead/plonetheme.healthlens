@@ -5,7 +5,8 @@
 
 @import "compass/reset";
 @import "compass/css3/images";
-@import "base";
+@import "compass";
+@import "treehouse";
 @import "typography";
 
 /* @group Base Structure */
@@ -248,19 +249,19 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
 
 dl.portlet ul.navTree .navTreeCurrentItem, a.navTreeCurrentNode {
     background-color: $page-color;
-	padding: .5em 2em .5em 0;
-	text-align: right;
+	padding: .5em 2em .5em 2em;
+	text-align: left;
     border-left: 0;
 	border-right: 0;
-	margin-left: -15px;
-    margin-right: -15px;
+	margin-left: -10px;
+    margin-right: -10px;
 }
 
 
 dl.portlet ul.navTree li.navTreeCurrentNode {
 	background-color: transparent;
-    margin-left: 5px;
-    margin-right: -10px;
+    margin-left: -22px;
+    margin-right: 0px;
 	padding: 0em 0em 0em 0em;
 	border-bottom: none;
 	border-top: none;
@@ -302,15 +303,18 @@ li.navTreeCurrentNode {
 /* @group portlet-columns */
 
 #portal-column-two {
-	@include right-edge-shadow;
-	@include rounded-box
 }
 
 #portal-column-one {
-	@include left-edge-shadow;
-	@include rounded-box;
 	position: realitive;
 	z-index: -0;
+}
+
+#portal-column-content {
+	@include right-edge-shadow;
+	padding-right: 10px;
+	min-height: 400px;
+	
 }
 
 
@@ -318,8 +322,6 @@ li.navTreeCurrentNode {
 
 
 .portletWrapper {
-		
-
 }
 
 dl.portlet .portletHeader {
@@ -887,8 +889,9 @@ background: linear-gradient(top, #cdeb8e 0%,#cdeb8e 39%,#a5c956 62%,#a5c956 100%
 
 /* @group Carousel */
 
-div.carousel-banner {
-	
+.carousel {
+	margin: none;
+	position: relative;
 }
 
 .carousel-text {

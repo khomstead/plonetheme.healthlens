@@ -64,8 +64,56 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 3, ../sass/ie8-and-down.scss */
-#portal-column-one {
-  background-color: #efefef;
-  border-right: .1em solid #ddd;
+/* line 10, ../sass/_typography.scss */
+a:link, a:visited {
+  color: #4584fc;
+}
+
+/* line 14, ../sass/_typography.scss */
+a:hover, span:hover {
+  color: #1040fb;
+}
+
+/* line 19, ../sass/_typography.scss */
+#portal-personaltools.actionMenu {
+  font-size: 80%;
+  color: #1184fc;
+}
+/* line 24, ../sass/_typography.scss */
+#portal-personaltools.actionMenu dd a:hover {
+  color: black;
+}
+
+/* line 27, ../sass/_typography.scss */
+#menu ul li a.menu-dropdown {
+  font-family: "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
+  font-size: 2em;
+  font-weight: 400;
+  color: #fe7a1b;
+  line-height: 1em;
+}
+
+/* line 33, ../sass/_typography.scss */
+.navTreeItem a span {
+  color: #999999;
+}
+
+/* line 38, ../sass/_typography.scss */
+dl.portlet ul.navTree .navTreeCurrentItem span {
+  color: #333333;
+}
+
+/* line 42, ../sass/_typography.scss */
+.navTreeItem:hover > a span, .navTreeCurrentItem:hover span, a .navTreeCurrentItem:hover span {
+  color: black;
+}
+
+/* line 10, ../sass/ie8-and-down.scss */
+#portal-column-two {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #dddddd), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(left, #dddddd, #ffffff);
+  background-image: -moz-linear-gradient(left, #dddddd, #ffffff);
+  background-image: -o-linear-gradient(left, #dddddd, #ffffff);
+  background-image: -ms-linear-gradient(left, #dddddd, #ffffff);
+  background-image: linear-gradient(left, #dddddd, #ffffff);
 }
