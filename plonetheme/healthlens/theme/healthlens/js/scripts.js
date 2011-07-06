@@ -51,7 +51,7 @@
         top: 130,
         mask: {
           color: '#000000',
-          opacity: 0.8
+          opacity: 0.5
         }
       }
     });
