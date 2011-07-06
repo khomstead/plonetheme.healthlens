@@ -62,6 +62,6 @@
 <!--    <append css:content='#portal-personaltools-wrapper' css:theme='#menu' />
     <drop css:content="h5.hiddenStructure"/>-->
 
-    <append css:theme="#drawer" css:content=".portletsBelowContentF" />
-    <append css:theme="#drawer" css:content=".portletQuickPostPortlet" />
+    <append css:theme="#panes" css:content-children=".portletsBelowContentF .portletWrapper" />
+    <append css:theme="#panes" css:content=".portletQuickPostPortlet" />
 </rules>
