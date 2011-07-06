@@ -1280,20 +1280,71 @@ p, li, span, a, a.tile {
   text-indent: -5000px;
   top: 40%;
   width: 45px;
-  z-index: 10000;
+  z-index: 100;
+}
+
+/* line 882, ../sass/screen.scss */
+#drawer_nav {
+  background: #dddddd url(http://static.flowplayer.org/img/global/gradient/h300_reverse.png);
+  border-bottom: 1px solid #CCCCCC;
+  height: 56px;
+  width: 350px;
+}
+
+/* line 889, ../sass/screen.scss */
+#drawer_nav ul {
+  width: 325px;
+  margin: 0 auto;
+}
+
+/* line 894, ../sass/screen.scss */
+#drawer_nav li {
+  border-right: 1px solid #ddd;
+  float: left;
+  padding-left: 1px;
+  width: 75px;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* line 904, ../sass/screen.scss */
+#drawer_nav a {
+  color: #333333;
+  display: block;
+  padding: 17px;
+  position: relative;
+  word-spacing: -2px;
+  font-size: 11px;
+  height: 32px;
+  text-decoration: none;
+}
+
+/* line 915, ../sass/screen.scss */
+#drawer_nav a.current {
+  background: url(http://static.flowplayer.org/tools/img/tabs/down_large.jpg);
+}
+
+/* line 919, ../sass/screen.scss */
+#panes dl {
+  display: none;
+  position: absolute;
+  top: 57px;
+  left: 0px;
+  width: 350px;
 }
 
 /* @end */
 /* End Menu styling for Sunburst theme */
 /* @end */
 /* @group Carousel */
-/* line 892, ../sass/screen.scss */
+/* line 938, ../sass/screen.scss */
 .carousel {
   margin: none;
   position: relative;
 }
 
-/* line 897, ../sass/screen.scss */
+/* line 943, ../sass/screen.scss */
 .carousel-text {
   background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   /* FF3.6+ */
@@ -1311,18 +1362,18 @@ p, li, span, a, a.tile {
   /* W3C */
 }
 
-/* line 907, ../sass/screen.scss */
+/* line 953, ../sass/screen.scss */
 .carousel-title {
   font: 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
   color: #fffeff;
 }
 
-/* line 912, ../sass/screen.scss */
+/* line 958, ../sass/screen.scss */
 .carousel-body p {
   color: #a9a9a9;
 }
 
-/* line 916, ../sass/screen.scss */
+/* line 962, ../sass/screen.scss */
 .carousel-pager {
   position: relative;
   float: right;
@@ -1330,7 +1381,7 @@ p, li, span, a, a.tile {
   bottom: 55px;
 }
 
-/* line 925, ../sass/screen.scss */
+/* line 971, ../sass/screen.scss */
 a.carousel-pager-item,
 .carousel-pager-button-prev,
 .carousel-pager-button-next {
@@ -1344,7 +1395,7 @@ a.carousel-pager-item,
   border: 2px solid #447fd3;
 }
 
-/* line 936, ../sass/screen.scss */
+/* line 982, ../sass/screen.scss */
 a.carousel-pager-item.carousel-pager-item-active {
   color: #04f626;
   border: 2px solid #04f626;
@@ -1354,11 +1405,27 @@ a.carousel-pager-item.carousel-pager-item-active {
   margin-left: 2px;
 }
 
-/* line 948, ../sass/screen.scss */
+/* line 994, ../sass/screen.scss */
 .carousel-pager-item-active:link,
 .carousel-pager-item-active:visited,
 .carousel-pager-item-active .carousel-title {
   color: black;
+}
+
+/* @end */
+/* @group LiveSearch */
+/* line 1000, ../sass/screen.scss */
+.LSResult {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  background: white;
+  margin: 0px;
+  width: 320px;
 }
 
 /* @end */
