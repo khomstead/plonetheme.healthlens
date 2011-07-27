@@ -37,6 +37,15 @@ div.cell {
   	margin: 0 auto;
 }
 
+#head-wrapper {
+	@include head-wrapper-background;
+	height: $header-height;
+	margin-right: auto;
+	margin-left: auto;
+	width: $page-width;
+	position: relative;
+}
+
 #logo-spacer {
 	@include logo;
 	margin-right: auto;
@@ -53,9 +62,9 @@ div.cell {
 	z-index: 100;
 	position: fixed;
 	top: $header-height;
-	background-color: #105afc;
-	border-bottom: 2px solid #074ba7;
-	border-top: 1px solid #447fd3;
+	background-color: $divider-color;
+	border-bottom: 2px solid $divider-bottom-border-color;
+	border-top: 1px solid $divider-top-border-color;
 }
 
 #breadcrumbs {
@@ -63,6 +72,7 @@ div.cell {
 	width: $page-width;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 #page-wrapper {
@@ -74,6 +84,7 @@ div.cell {
 }
 
 #page {
+	@include dropshadow-large;
 	@include rounded-page(bottom);
 	width: 100%;
 	background-color: $page-color;
@@ -146,6 +157,7 @@ dl.actionMenu.activated dd {
 #foot-box {
 	@include foot-gradient;
 	@include rounded-page(bottom);
+	@include dropshadow-large;
 	height: $footbox-height;
 	position: relative;
 	border: 1px solid #447fd3;
@@ -168,7 +180,9 @@ dl.actionMenu.activated dd {
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
+	top: 100px;
+	left: 80px;
+	position: absolute;
 }
 
 #menu ul li a.menu-item {
@@ -407,21 +421,21 @@ p, li, span, a, a.tile {
 }
 
 #breadcrumbs span.breadcrumbSeparator {
-	color: #45aefc;
+	color: #000;
 	padding-right: 1px;
 	padding-left: 1px;
 }
 
 #breadcrumbs-you-are-here {
-	color: #45aefc;
+	color: #000;
 }
 
 #breadcrumbs span a {
-	color: #45aefc;
+	color: #000;
 }
 
 #breadcrumbs span #breadcrumbs-current {
-	color: #42ce1f;
+	color: #000;
 }
 
 #breadcrumbs span a:hover {
@@ -728,7 +742,7 @@ background: linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 82%); /* W3C */
 
 #portal-megamenu li.top-level .sub {
 	z-index: -0;
-	top: 43px; 
+	top: 50px; 
 	padding: 25px 15px 15px;
 	border: none;
 	border-left: 2px solid #0c7fd3;

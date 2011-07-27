@@ -28,6 +28,7 @@ a:hover, span:hover {
 	@include title-script;
 	color: $menu-title-color;
 	line-height: 1em;
+	font-size: $global-nav-size;
 }
 
 .navTreeItem a span {

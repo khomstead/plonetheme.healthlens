@@ -10,6 +10,11 @@ $footbox-height: 200px;
 $page-color: white;
 $translucent: rgba(0,0,0,0.6);
 
+// Divider Colors
+$divider-color: #105afc;
+$divider-top-border-color:#447fd3;
+$divider-bottom-border-color: #074ba7;
+
 // Font Colors
 $bright-text-color: #1184fc;
 $menu-title-color: #fe7a1b;
@@ -37,6 +42,9 @@ $script-font-family: "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
 
 @mixin banner-background {
 	background: #000 url(../images/banner-lake.jpg) no-repeat right top;
+}
+
+@mixin head-wrapper-background {
 }
 
 @mixin logo {
