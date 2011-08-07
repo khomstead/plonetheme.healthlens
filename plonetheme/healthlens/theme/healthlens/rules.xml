@@ -19,6 +19,9 @@
     <copy attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
+    <!-- plone.app.cmsui rule -->
+    <before css:theme-children="body" css:content="#plone-cmsui-trigger" />
+
 <!-- MENU -->
     <replace css:theme="#menu ul" css:content="#portal-megamenu"/>
 <!--    <drop attributes="id" css:content="#portal-globalnav"/>-->
@@ -59,6 +62,6 @@
 <!--    <append css:content='#portal-personaltools-wrapper' css:theme='#menu' />
     <drop css:content="h5.hiddenStructure"/>-->
 
-    <append css:theme="#drawer" css:content=".portletsBelowContentF" />
-    <append css:theme="#drawer" css:content=".portletQuickPostPortlet" />
+    <append css:theme="#panes" css:content-children=".portletsBelowContentF .portletWrapper" />
+    <append css:theme="#panes" css:content=".portletQuickPostPortlet" />
 </rules>

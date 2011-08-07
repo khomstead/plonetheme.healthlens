@@ -864,7 +864,7 @@ background: linear-gradient(top, #cdeb8e 0%,#cdeb8e 39%,#a5c956 62%,#a5c956 100%
   position: fixed;
   width: 350px;
   left: -350px;
-  top: 122px;
+  top: 168px;
   bottom: 0px;
 }
 
@@ -890,8 +890,54 @@ background: linear-gradient(top, #cdeb8e 0%,#cdeb8e 39%,#a5c956 62%,#a5c956 100%
   text-indent:-5000px;
   top:40%;
   width:45px;
-  z-index:10000;
+  z-index:100;
 }
+
+#drawer_nav {
+    background:#ddd url(http://static.flowplayer.org/img/global/gradient/h300_reverse.png);
+    border-bottom:1px solid #CCCCCC;
+    height:56px;
+    width:350px;
+}
+
+#drawer_nav ul {
+    width: 325px;
+    margin:0 auto;
+}
+
+#drawer_nav li {
+    border-right:1px solid #ddd;
+    float:left;
+    padding-left:1px;
+    width:75px;
+    list-style-type:none;
+    text-align:center;
+    margin-top:0px;
+}
+
+#drawer_nav a {
+    color:#333333;
+    display:block;
+    padding:17px;
+    position:relative;
+    word-spacing:-2px;
+    font-size:11px;
+    height:32px;
+    text-decoration:none;
+}
+
+#drawer_nav a.current {
+    background:url(http://static.flowplayer.org/tools/img/tabs/down_large.jpg);
+}
+
+#panes dl {
+  display: none;
+  position: absolute;
+  top: 57px;
+  left: 0px;
+  width: 350px;
+}
+
 /* @end */
 
 /* End Menu styling for Sunburst theme */
@@ -961,5 +1007,16 @@ a.carousel-pager-item.carousel-pager-item-active {
 .carousel-pager-item-active:visited,
 .carousel-pager-item-active .carousel-title {
     color: black;
+}
+/* @end */
+
+/* @group LiveSearch */
+.LSResult {
+  @include rounded_box;
+  @include shadow_box;
+  position: absolute;
+  background: white;
+  margin: 0px;
+  width: 320px;
 }
 /* @end */

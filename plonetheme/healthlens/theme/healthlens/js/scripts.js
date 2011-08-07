@@ -37,8 +37,23 @@
       effect: "fade",
       opacity: 0.7
     });
-    return $('#post-types').tabs('div.post-type-form', {
+    $('#post-types').tabs('div.post-type-form', {
       event: 'mouseover'
+    });
+    $('#drawer_nav ul').tabs("#panes > dl", {
+      effect: 'fade',
+      fadeOutSpeed: 400
+    });
+    return $('a.overlayLink').prepOverlay({
+      subtype: 'ajax',
+      filter: common_content_filter,
+      config: {
+        top: 130,
+        mask: {
+          color: '#000000',
+          opacity: 0.5
+        }
+      }
     });
   });
 }).call(this);
