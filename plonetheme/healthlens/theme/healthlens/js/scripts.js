@@ -1,4 +1,6 @@
 (function() {
+  var $;
+  $ = jQuery;
   $(function() {
     $('#drawer_tab').click(function() {
       var drawerWidth;

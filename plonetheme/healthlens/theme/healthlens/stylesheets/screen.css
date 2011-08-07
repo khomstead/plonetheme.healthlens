@@ -113,6 +113,18 @@ dl.portlet ul.navTree .navTreeCurrentItem span {
   color: black;
 }
 
+/* line 46, /opt/Plone-4.1.rc2/beta.community/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
+.blog-item h1 a {
+  font-size: 2em;
+}
+
+/* line 50, /opt/Plone-4.1.rc2/beta.community/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
+.blogItem .documentDescription {
+  color: #666;
+  margin-left: 0;
+  font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
+}
+
 /* @group Base Structure */
 /* line 13, ../sass/screen.scss */
 body {

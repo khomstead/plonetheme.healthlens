@@ -42,3 +42,13 @@ dl.portlet ul.navTree .navTreeCurrentItem span {
 .navTreeItem:hover > a, .navTreeCurrentItem:hover, a .navTreeCurrentItem:hover{
 	span {color: $hover-invert-color;}
 }
+
+.blog-item h1 a {
+  font-size: 2em;
+}
+
+.blogItem .documentDescription {
+    color: #666;
+    margin-left: 0;
+    font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
+}

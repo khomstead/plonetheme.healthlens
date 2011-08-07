@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 /* line 7, ../sass/ie8-and-down.scss */
-=======
-/* line 17, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,71 +21,71 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 115, ../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 115, /var/lib/gems/1.8/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 10, ../sass/_typography.scss */
+/* line 10, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
 a:link, a:visited {
   color: #4584fc;
 }
 
-/* line 14, ../sass/_typography.scss */
+/* line 14, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
 a:hover, span:hover {
   color: #1040fb;
 }
 
-/* line 19, ../sass/_typography.scss */
+/* line 19, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
 #portal-personaltools.actionMenu {
   font-size: 80%;
   color: #1184fc;
 }
-/* line 24, ../sass/_typography.scss */
+/* line 24, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
 #portal-personaltools.actionMenu dd a:hover {
   color: black;
 }
 
-/* line 27, ../sass/_typography.scss */
+/* line 27, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
 #menu ul li a.menu-dropdown {
   font-family: "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
   font-size: 2em;
@@ -96,23 +94,34 @@ a:hover, span:hover {
   line-height: 1em;
 }
 
-/* line 33, ../sass/_typography.scss */
+/* line 33, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
 .navTreeItem a span {
   color: #999999;
 }
 
-/* line 38, ../sass/_typography.scss */
+/* line 38, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
 dl.portlet ul.navTree .navTreeCurrentItem span {
   color: #333333;
 }
 
-/* line 42, ../sass/_typography.scss */
+/* line 42, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
 .navTreeItem:hover > a span, .navTreeCurrentItem:hover span, a .navTreeCurrentItem:hover span {
   color: black;
 }
 
+/* line 45, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
+.blog-item h1 a {
+  font-size: 2em;
+}
+
+/* line 49, /opt/Plone-4.1.rc2/beta.amherstpediatrics.com/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/_typography.scss */
+.blogItem .documentDescription {
+  color: #666;
+  margin-left: 0;
+  font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
+}
+
 /* line 10, ../sass/ie8-and-down.scss */
->>>>>>> 7a68b361e871e67009649efcfe1a045fb8901a5e
 #portal-column-two {
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #dddddd), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(left, #dddddd, #ffffff);

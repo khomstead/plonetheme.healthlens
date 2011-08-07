@@ -1,3 +1,4 @@
+$ = jQuery
 $ ->
   $('#drawer_tab').click ->
     drawerWidth = $("#drawer").outerWidth()

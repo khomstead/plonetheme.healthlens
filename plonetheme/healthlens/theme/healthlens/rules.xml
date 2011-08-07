@@ -64,4 +64,5 @@
 
     <append css:theme="#panes" css:content-children=".portletsBelowContentF .portletWrapper" />
     <append css:theme="#panes" css:content=".portletQuickPostPortlet" />
+    <append css:theme="#panes" css:content=".portletMyProfilePortlet" />
 </rules>
