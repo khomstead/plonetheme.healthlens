@@ -6,7 +6,7 @@
 compass_app_log.txt
 .sass_cache
 
-.DS_Store
+*.DS_Store
 
 plonetheme/healthlens/theme/healthlens/.DS_Store
 
