@@ -5,13 +5,4 @@
 *.scssc
 compass_app_log.txt
 .sass_cache
-
-*.DS_Store
-
-plonetheme/healthlens/theme/healthlens/.DS_Store
-
-plonetheme/healthlens/theme/.DS_Store
-
-plonetheme/healthlens/.DS_Store
-
-plonetheme/.DS_Store
+.DS_Store
