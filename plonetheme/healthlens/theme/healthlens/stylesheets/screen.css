@@ -1,5 +1,6 @@
 /* @override 
-	http://localhost:8080/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css */
+	http://localhost:8080/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
+	http://64.18.217.181:8902/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css */
 
 
 /* Welcome to Compass.
@@ -208,7 +209,7 @@ div.cell {
 
 /* line 49, ../sass/screen.scss */
 #logo-spacer {
-  background: url(../images/logo.png) no-repeat left center;
+  background: url(../images/seminar/logo.png) no-repeat left center;
   margin-right: auto;
   margin-left: auto;
   width: 36%;
