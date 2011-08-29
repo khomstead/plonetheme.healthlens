@@ -1470,7 +1470,6 @@ a.carousel-pager-item.carousel-pager-item-active {
   top: 80px;
   bottom: 0px;
   border-right: 1px solid #6d6969;
-  z-index: -10;
 }
 
 #panes {
