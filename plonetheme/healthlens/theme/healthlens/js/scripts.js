@@ -42,10 +42,7 @@
     $('#post-types').tabs('div.post-type-form', {
       event: 'mouseover'
     });
-    $('#drawer_nav ul').tabs("#panes > dl", {
-      effect: 'fade',
-      fadeOutSpeed: 400
-    });
+    $('#drawer_nav ul').tabs("#panes > dl");
     return $('a.overlayLink').prepOverlay({
       subtype: 'ajax',
       filter: common_content_filter,
