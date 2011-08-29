@@ -62,7 +62,7 @@
 <!--    <append css:content='#portal-personaltools-wrapper' css:theme='#menu' />
     <drop css:content="h5.hiddenStructure"/>-->
 
-    <append css:theme="#panes" css:content-children=".portletsBelowContentF .portletWrapper" />
-    <append css:theme="#panes" css:content=".portletQuickPostPortlet" />
-    <append css:theme="#panes" css:content=".portletMyProfilePortlet" />
+    <prepend css:theme="#panes" css:content-children=".portletsBelowContentF .portletWrapper" />
+    <prepend css:theme="#panes" css:content=".portletQuickPostPortlet" />
+    <prepend css:theme="#panes" css:content=".portletMyProfilePortlet" />
 </rules>
