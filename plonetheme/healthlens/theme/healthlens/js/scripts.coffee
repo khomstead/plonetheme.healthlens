@@ -8,11 +8,13 @@ $ ->
       $('#light').animate left: 0
       $('#drawer_tab').animate left: 0
       $('#drawer').animate left: -drawerWidth
+      $('#foot-base').animate left: 0
     else
       $('#page').animate left: drawerWidth 
       $('#light').animate left: drawerWidth/2
       $('#drawer_tab').animate left: drawerWidth
       $('#drawer').animate left: 0
+      $('#foot-base').animate left: drawerWidth
 
   $('#quick-post input').tooltip 
     position: "center right"

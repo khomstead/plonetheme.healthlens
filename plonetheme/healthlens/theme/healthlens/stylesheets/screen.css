@@ -24,8 +24,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -1354,6 +1352,7 @@ p, li, span, a, a.tile {
   top: 40%;
   width: 45px;
   z-index: 100;
+  display: none;
 }
 
 /* line 917, ../sass/screen.scss */
@@ -1708,6 +1707,5 @@ height: 30px;
 
 
 /* @end */
-
 /* @end */
 
