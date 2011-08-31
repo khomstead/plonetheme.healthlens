@@ -15,8 +15,11 @@
         $('#drawer_tab').animate({
           left: 0
         });
-        return $('#drawer').animate({
+        $('#drawer').animate({
           left: -drawerWidth
+        });
+        return $('#foot-base').animate({
+          left: 0
         });
       } else {
         $('#page').animate({
@@ -28,8 +31,11 @@
         $('#drawer_tab').animate({
           left: drawerWidth
         });
-        return $('#drawer').animate({
+        $('#drawer').animate({
           left: 0
+        });
+        return $('#foot-base').animate({
+          left: drawerWidth
         });
       }
     });

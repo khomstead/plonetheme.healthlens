@@ -9,17 +9,7 @@
         <link rel="stylesheet" type="text/css" href="stylesheets/ie8-and-down.css" />
 		<![endif]-->
 		<script type="text/javascript" src="http://use.typekit.com/klo5xmp.js"></script>
-    	<script type="text/javascript" src="js/scripts.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		<script type="text/javascript">
-			djConfig = {
-				baseUrl: '++theme++plonetheme.healthlens/',
-				modulePaths: {
-					'ttcon': 'lib/ttcon'
-				}
-			};
-		</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js" type="text/javascript"></script> 
 	</head>
 	<body>
 	<div class="fullscrn-body">
@@ -70,7 +60,7 @@
   
   <div id="drawer">
     <div id="drawer_nav">
-      <ul>
+      <ul class="drawer_tabs">
 		  <li>
 		    <a href="#contribute">
 		    <img src="++theme++plonetheme.healthlens/images/Icons/contribute.png" alt="" />
@@ -98,60 +88,13 @@
       </ul>
     </div>
     <div id="panes">
-      <dl class="portlet portletChat page-curl">
-        <dt class="portletHeader"> 
-          <span class="portletTopLeft"></span> 
-          <a class="tile" href="/Plone">Chat</a> 
-          <span class="portletTopRight"></span> 
-        </dt> 
-        <dd class="portletItem"> 
-          Under construction...
-         <div class="visualClear"><!-- --></div> 
-        </dd>
-        <dd class="portletFooter"> 
-          <span class="portletBottomLeft"></span> 
-          <span class="portletBottomRight"></span> 
-        </dd> 
-      </dl>
-
-     <dl class="portlet portletSearch page-curl">
-        <dt class="portletHeader"> 
-          <span class="portletTopLeft"></span> 
-          <a class="tile" href="/Plone/search_form">Search</a> 
-          <span class="portletTopRight"></span> 
-        </dt> 
-        <dd class="portletItem"> 
-          <form id="searchform" action="/Plone/search"> 
-            <div class="LSBox"> 
-              <input class="inputLabel searchField portlet-search-gadget" name="SearchableText" type="text" size="15" title="Search Site" />
-              <input class="searchButton" type="submit" value="Search" />
-              <div class="LSResult" style=""> 
-                <div class="LSShadow"></div> 
-              </div> 
-            </div> 
-          </form> 
-          <div class="visualClear"><!-- --></div> 
-        </dd>
-        <dd class="portletFooter"> 
-          <a href="/Plone/search_form" class="overlayLink tile"> 
-            Advanced Search…
-          </a> 
-          <span class="portletBottomLeft"></span> 
-          <span class="portletBottomRight"></span> 
-        </dd> 
-      </dl>
+      <div id="pane1"></div>
+      <div id="pane2"></div>
+      <div id="pane3"></div>
+      <div id="pane4"></div>
     </div>
 
   </div>
   </div>
-	<script type="text/javascript">
-		dojo.require("ttcon.fullscrn");
-					
-		dojo.ready(function() {
-			var fullScr = new ttcon.fullscrn({
-				image: "++theme++plonetheme.healthlens/images/seminar/background.jpg"
-			});			
-		});
-	</script>
-	</body>
+</body>
 </html>
