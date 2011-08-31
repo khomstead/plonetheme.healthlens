@@ -31,6 +31,7 @@ time, mark, audio, video {
 body {
   line-height: 1;
   background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
+  z-index: 0;
 }
 
 #light {
@@ -195,7 +196,7 @@ div.cell {
   background: linear-gradient(top, #45484d 0%, #000000 100%);
   /* W3C */
   z-index: 100;
-  position: fixed;
+  position: static;
   width: 100%;
   height: 65px;
   margin: 0 auto;
@@ -208,6 +209,7 @@ div.cell {
   margin-left: auto;
   width: 960px;
   position: relative;
+  z-index: 100;
 }
 
 /* line 49, ../sass/screen.scss */
@@ -252,6 +254,7 @@ div.cell {
   width: 960px;
   position: relative;
   top: 80px;
+  z-index: 1;
 }
 
 /* line 86, ../sass/screen.scss */
@@ -447,6 +450,7 @@ dl.actionMenu.activated dd {
   top: 0px;
   left: 350px;
   position: absolute;
+  z-index: 100;
 }
 
 /* line 185, ../sass/screen.scss */
@@ -461,6 +465,7 @@ dl.actionMenu.activated dd {
   padding: 0px 0px 0px 0px;
   list-style: none;
   border-left: 1px solid #1C1D1F;
+  position: relative;
 }
 
 /* line 198, ../sass/screen.scss */
@@ -487,6 +492,8 @@ background: linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,r
   border-right: 1px solid #1C1D1F;
   background: none;
   padding-bottom: 5px;
+  z-index: 1000;
+  
 }
 
 /* line 222, ../sass/screen.scss */
@@ -1059,7 +1066,7 @@ p, li, span, a, a.tile {
   left: 0;
   float: left;
   display: none;
-  z-index: 1000;
+  z-index: 9999;
   background: none;
 }
 
@@ -1177,7 +1184,6 @@ p, li, span, a, a.tile {
 
 /* line 764, ../sass/screen.scss */
 #portal-megamenu li.top-level .sub {
-  z-index: 0;
   top: 80px;
   padding: 25px 15px 15px;
   border: none;
@@ -1631,6 +1637,11 @@ height: 30px;
 /* @group Speech Bubbles */
 /* THE SPEECH BUBBLE --------------------------------------- */
 .tooltip {
+	display:none;
+	text-align:left;
+	font-size: 12px;
+	z-index: 100001;
+	
 	position:relative;
 	padding:15px;
 	margin: 1em 0 3em 50px;
@@ -1642,7 +1653,6 @@ height: 30px;
 	-moz-border-radius:10px;
 	border-radius:10px;
 	
-	border: none;
 	border-left: 2px solid #0c7fd3;
 	border-right: 2px solid #0c7fd3;
 	border-bottom: 2px solid #0c7fd3;
@@ -1686,7 +1696,7 @@ height: 30px;
 	border-style:solid;
 	border-color:transparent #0c7fd3;
     /* reduce the damage in FF3.0 */
-    display:block; 
+/*    display:block; */
     width:0;
 }
 
@@ -1701,7 +1711,7 @@ height: 30px;
 	border-style:solid;
 	border-color:#fff transparent;
     /* reduce the damage in FF3.0 */
-    display:block; 
+/*    display:block; */
     width:0;
 }
 

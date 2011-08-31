@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css" css:if-content="#visual-portal-wrapper">
+<rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" css:if-content="#visual-portal-wrapper">
 
+<!--	XHTML Strict-->
+<xsl:output
+    doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
+    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
+     
+<!--<xsl:output    
+    doctype-public="-//W3C//DTD HTML 4.01//EN"
+    doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>-->
+    
+    
     <theme href="index.html" />
     <notheme if-path="presentation_view"/>
     <notheme if-path="source_editor.htm"/>
@@ -67,3 +77,4 @@
     <replace css:theme-children="#pane3" css:content-children=".FooterPortletE" />
     <replace css:theme-children="#pane4" css:content-children=".FooterPortletF" />
 </rules>
+
