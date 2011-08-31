@@ -30,10 +30,15 @@ time, mark, audio, video {
 /* line 20, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
-  background-color: #111111;
-  
+  background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
 }
 
+#light {
+	background: transparent url('../images/vert-gradient.png') repeat-x left top;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+}
 /* line 22, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
@@ -641,7 +646,7 @@ dl.portlet ul.navTree li:hover > a {
 
 /* @end */
 /* line 348, ../sass/screen.scss */
-dl.portlet .portletHeader {
+#page dl.portlet .portletHeader {
   border-top: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -669,9 +674,9 @@ dl.portlet .portletHeader {
 }
 
 /* line 369, ../sass/screen.scss */
-dl.portlet dd.portletItem,
-dl.portlet dd.portletFooter,
-dl.portletError dd {
+#page dl.portlet dd.portletItem,
+#page dl.portlet dd.portletFooter,
+#page dl.portletError dd {
   padding: 1em;
   border-bottom: none;
 }
@@ -1469,6 +1474,7 @@ a.carousel-pager-item.carousel-pager-item-active {
   top: 80px;
   bottom: 0px;
   border-right: 1px solid #6d6969;
+  z-index: 0;
 }
 
 #panes {
@@ -1564,87 +1570,62 @@ height: 30px;
   overflow: hidden;
 }
 
-#drawer dl.portlet {
-	margin: 10px;
-	background-color: yellow;
+#drawer dl.portlet dt {
+	background: url('../images/pushpin.png') no-repeat 50% top transparent;
+	position: relative;
+	min-height: 40px;
+	bottom: 25px;
+	padding-top: 25px;
 }
 
-#drawer #portlet-quickPost {
-  height: 375px;
-}
-
-/*#drawer .portletHeader {
-	background: url('../images/postit-top.png') no-repeat center top;
-	height: 25px;
-	margin-bottom: 0;
-	margin-left: 0;
-	margin-right: 0;
-}
-
-#drawer .portletItem {
-	min-height: 100px;
-	background-size: 100% 100%;
-	background-image: url('../images/postit-body.png');
-	padding: 20px;
-	margin-left: 1px;
-}
-
-#drawer .portletFooter {
-	background: url('../images/postit-bottom.png') no-repeat center top;
-	height: 85px;
-	margin: 0;
-	padding: 0 20px 40px;
-	
-}
-
-#drawer .portletHeader a, #drawer .portletHeader div h2 {
-	padding-top: 20px;
-	padding-right: 10px;
-	 font: 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
-	 color: black;
-	 text-align: right;
-	 padding-left: 10px;
- }*/
 /* @end */
 
 /* @group Effects */
-.page-curl {
-position: relative;
-background: #ffffff;
-background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5));
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
--webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
 
-.page-curl:after {
-z-index: -1;
-position: absolute;
-background: transparent;
-width: 70%;
-height: 55%;
-content: '';
-right: 10px;
-bottom: 10px;
--webkit-transform: skew(15deg) rotate(5deg);
--webkit-box-shadow: 8px 12px 10px rgba(0, 0, 0, 0.3);
--moz-transform: skew(15deg) rotate(5deg);
--moz-box-shadow: 8px 12px 10px rgba(0, 0, 0, 0.3); }
+/* @group Page Curl */
+#drawer dl.portlet {
+   position:relative;
+   width:90%;
+   background: rgb(254,252,234); /* Old browsers */
+   background: -moz-linear-gradient(top, rgba(254,252,234,1) 0%, rgba(241,218,54,1) 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,252,234,1)), color-stop(100%,rgba(241,218,54,1))); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Opera11.10+ */
+   background: -ms-linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* IE10+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+   background: linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* W3C */
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+}
 
-.page-curl:before {
-z-index: -2;
-position: absolute;
-background: transparent;
-width: 70%;
-height: 55%;
-content: '';
-left: 10px;
-bottom: 10px;
--webkit-transform: skew(-15deg) rotate(-5deg);
--webkit-box-shadow: -8px 12px 10px rgba(0, 0, 0, 0.3);
--moz-transform: skew(-15deg) rotate(-5deg);
--moz-box-shadow: -8px 12px 10px rgba(0, 0, 0, 0.3); }
+#drawer dl.portlet:before,
+#drawer dl.portlet:after {
+   content:"";
+   position:absolute;
+   z-index:-1;
+   bottom:15px;
+   left:10px;
+   width:50%;
+   height:20%;
+   max-width:300px;
+   -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   -webkit-transform:rotate(-3deg);
+   -moz-transform:rotate(-3deg);
+   -o-transform:rotate(-3deg);
+   transform:rotate(-3deg);
+}
 
+#drawer dl.portlet:after{
+   right:10px;
+   left:auto;
+   -webkit-transform:rotate(3deg);
+   -moz-transform:rotate(3deg);
+   -o-transform:rotate(3deg);
+   transform:rotate(3deg);
+ }
 /* @end */
 
 .member .tooltip {
@@ -1670,3 +1651,5 @@ bottom: 10px;
   margin-top:3px;
   margin-right: 10px;
 }
+/* @end */
+
