@@ -1311,31 +1311,24 @@ p, li, span, a, a.tile {
 
 /* line 892, ../sass/screen.scss */
 #drawer_tab {
-  background: black;
-  -moz-box-shadow: 5px 5px 5px #666;
-  -webkit-box-shadow: 5px 5px 5px #666;
-  box-shadow: 5px 5px 5px #666;
-  -moz-border-radius-bottomright: 10px;
-  -webkit-border-radius-bottomright: 10px;
-  border-bottom-right-radius: 10px;
-  -moz-border-radius-topright: 10px;
-  -webkit-border-radius-topright: 10px;
-  border-top-right-radius: 10px;
-  -moz-box-shadow: 5px 5px 5px #666;
-  -webkit-box-shadow: 5px 5px 5px #666;
-  box-shadow: 5px 5px 5px #666;
   cursor: pointer;
-  height: 108px;
-  left: 0;
+  height: 140px;
   overflow: hidden;
   position: fixed;
   text-indent: -5000px;
   top: 40%;
-  width: 45px;
+  width: 90px;
   z-index: 100;
   display: none;
+background: transparent url('../images/binderClip.png') no-repeat left center;
+left: 0;
+margin-left: -24px;
 }
 
+#drawer_tab:hover {
+	background: transparent url('../images/binderClipRollover.png') no-repeat left center;
+	
+}
 /* line 917, ../sass/screen.scss */
 
 
