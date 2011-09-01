@@ -1,6 +1,7 @@
 /* @override 
 	http://localhost:8080/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
-	http://64.18.217.181:8902/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css */
+	http://64.18.217.181:8902/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
+	http://seminar.changecenter.org/++theme++plonetheme.healthlens/stylesheets/screen.css */
 
 
 /* Welcome to Compass.
@@ -99,7 +100,7 @@ a:hover, span:hover {
 }
 
 /* line 27, ../sass/_typography.scss */
-#menu ul li a.menu-dropdown {
+#menu ul li a.menu-item {
   font-family: "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
   font-size: 2em;
   font-weight: 400;
@@ -458,7 +459,7 @@ background: linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,r
 }
 
 /* line 213, ../sass/screen.scss */
-#menu ul li a.menu-dropdown {
+#menu ul li a.menu-item {
   display: block;
   text-decoration: none;
   text-align: center;
