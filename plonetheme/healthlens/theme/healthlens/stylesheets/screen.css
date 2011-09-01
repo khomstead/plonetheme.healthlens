@@ -438,7 +438,6 @@ dl.actionMenu.activated dd {
   margin: 0;
   padding: 0px 0px 0px 0px;
   list-style: none;
-  border-left: 1px solid #1C1D1F;
   position: relative;
 }
 
@@ -463,7 +462,8 @@ background: linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,r
   display: block;
   text-decoration: none;
   text-align: center;
-  border-right: 1px solid #1C1D1F;
+  border-right: thin; solid #1C1D1F;
+    border-left: thin solid #1C1D1F;
   background: none;
   padding-bottom: 5px;
   z-index: 1000;
@@ -1082,8 +1082,13 @@ p, li, span, a, a.tile {
   height: auto;
   display: block;
   white-space: nowrap;
+  text-indent: 10px;
 }
 
+#portal-megamenu .sub div.plain p {
+  color: #fe7a1b;
+  padding: 5px 0 0px 0px;
+}
 /* End Menu rendering */
 /* Content layout */
 /* line 701, ../sass/screen.scss */
@@ -1160,7 +1165,7 @@ p, li, span, a, a.tile {
 /* line 764, ../sass/screen.scss */
 #portal-megamenu li.top-level .sub {
   top: 80px;
-  padding: 25px 15px 15px;
+  padding: 5px 10px 0px 10px;
   border: none;
   border-left: 2px solid #0c7fd3;
   border-right: 2px solid #0c7fd3;
@@ -1262,11 +1267,11 @@ p, li, span, a, a.tile {
 
 /* MM Page Text w/Link */
 /* line 850, ../sass/screen.scss */
-#portal-megamenu .sub ul li a {
-  padding: 5px 0 5px 10px;
-  text-decoration: none;
+#portal-megamenu .sub div.plain p a {
+  padding: 0;
   color: #fff;
   width: 85%;
+  text-decoration: none;
 }
 
 /* line 857, ../sass/screen.scss */
@@ -1601,7 +1606,7 @@ height: 30px;
 
 /* @group Speech Bubbles */
 /* THE SPEECH BUBBLE --------------------------------------- */
-.tooltip {
+div.member .tooltip {
 	display:none;
 	text-align:left;
 	font-size: 12px;
@@ -1651,7 +1656,7 @@ height: 30px;
 
 /* creates the larger triangle */
 
-.tooltip:before {
+div.member .tooltip:before {
 	content:"";
 	position:absolute;
 	top:20px; /* controls vertical position */
@@ -1666,15 +1671,15 @@ height: 30px;
 }
 
 /* creates the smaller  triangle */
-.triangle-border:after {
+div.member .tooltip:after {
 	content:"";
 	position:absolute;
-	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	top:20px; /* value = (:before top) + (:before border-top) - (:after border-top) */
 	bottom:auto;
-	left:-21px; /* value = - border-left-width - border-right-width */
-	border-width:13px 13px 0;
+	left:-20px; /* value = - border-left-width - border-right-width */
+	border-width:10px 20px 10px 0;
 	border-style:solid;
-	border-color:#fff transparent;
+	border-color: transparent;
     /* reduce the damage in FF3.0 */
 /*    display:block; */
     width:0;
