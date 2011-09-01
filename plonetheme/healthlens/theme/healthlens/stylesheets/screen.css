@@ -1546,10 +1546,7 @@ height: 30px;
 
 #drawer dl.portlet dt {
 	background: url('../images/pushpin.png') no-repeat 50% top transparent;
-	position: relative;
 	min-height: 40px;
-	bottom: 25px;
-	padding-top: 25px;
 }
 
 /* @end */
