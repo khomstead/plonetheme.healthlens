@@ -101,14 +101,9 @@ a:hover, span:hover {
 
 /* line 27, ../sass/_typography.scss */
 #menu ul li a.menu-item {
-  font-family: "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
-  font-size: 2em;
-  font-weight: 400;
-  color: #fe7a1b;
-  line-height: 1em;
-  font-size: 2em;
-  padding: 22px 1em 0em;
-  
+	color: #fe7a1b;
+  padding: 22px 10px 0;
+  font: 400 2em/1em "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
 }
 
 /* line 34, ../sass/_typography.scss */
