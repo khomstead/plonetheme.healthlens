@@ -692,9 +692,7 @@ dl.portlet a:hover {
   padding-left: 10px;
   padding-bottom: 5px;
   color: #784208;
-  font: italic 1em/1em "futura-pt-1", "futura-pt-2", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
+  font: normal 1.25em/1em "futura-pt-1", "futura-pt-2", sans-serif;
 }
 
 /* line 411, ../sass/screen.scss */
@@ -778,6 +776,18 @@ p, li, span, a, a.tile {
 }
 
 /* @end */
+
+/* @group Surveys */
+
+#edit_form h2.questionTitle label {
+	font: normal 1em "futura-pt-1","futura-pt-2",sans-serif;
+	color: #424242;
+
+}
+
+/* @end */
+
+
 /* @group Shadows */
 /* line 482, ../sass/screen.scss */
 .big-shadow {
@@ -1243,9 +1253,10 @@ p, li, span, a, a.tile {
 #portal-megamenu .sub ul li h2 {
   padding: 0;
   margin: 0;
-  font: 2em "futura-pt-1","futura-pt-2",sans-serif;
+  font: 1.75em "futura-pt-1","futura-pt-2",sans-serif;
   width: 100%;
   color: #fea721;
+  white-space: normal;
 }
 
 /* MM Collage Page Description */
@@ -1274,6 +1285,13 @@ p, li, span, a, a.tile {
   text-decoration: none;
 }
 
+#portal-megamenu .sub div.plain h2 a {
+  padding: 0;
+  color: #fff;
+  width: 85%;
+  text-decoration: none;
+}
+
 /* line 857, ../sass/screen.scss */
 #portal-megamenu .sub ul li a.collage-megamenu-highlight {
   font-weight: bold;
@@ -1282,6 +1300,7 @@ p, li, span, a, a.tile {
 /* line 861, ../sass/screen.scss */
 #portal-megamenu .sub ul li a:hover {
   color: #000;
+  width: 100%;
   /*-- rounded corner--*/
   -moz-border-radius: 4px;
   -khtml-border-radius: 4px;
