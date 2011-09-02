@@ -107,6 +107,8 @@ a:hover, span:hover {
   color: #fe7a1b;
   line-height: 1em;
   font-size: 2em;
+  padding: 22px 1em 0em;
+  
 }
 
 /* line 34, ../sass/_typography.scss */
@@ -196,6 +198,7 @@ div.cell {
   position: relative;
   float: left;
   height: 100%;
+  z-index: 200;
 }
 
 /* line 58, ../sass/screen.scss */
@@ -422,14 +425,15 @@ dl.actionMenu.activated dd {
 /* line 179, ../sass/screen.scss */
 #menu {
   top: 0px;
-  left: 350px;
-  position: absolute;
+  position: fixed;
   z-index: 100;
+  float: left;
+  padding-left: 350px;
+  height: 65px;
 }
 
 /* line 185, ../sass/screen.scss */
 #menu ul li a.menu-item {
-  padding: 30px 10px 0 10px;
 }
 
 /* line 189, ../sass/screen.scss */
@@ -439,12 +443,13 @@ dl.actionMenu.activated dd {
   padding: 0px 0px 0px 0px;
   list-style: none;
   position: relative;
+  height: 100%;
 }
 
 /* line 198, ../sass/screen.scss */
 #menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item {
   color: black;
-  -moz-box-shadow: inset 0px 0px 5px 0px black;
+   -moz-box-shadow: inset 0px 0px 5px 0px black;
   -webkit-box-shadow: inset 0px 0px 5px 0px black;
   box-shadow: inset 0px 0px 5px 0px black;
 background: rgb(158,201,239); /* Old browsers */
@@ -463,9 +468,8 @@ background: linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,r
   text-decoration: none;
   text-align: center;
   border-right: thin; solid #1C1D1F;
-    border-left: thin solid #1C1D1F;
+  border-left: thin solid #1C1D1F;
   background: none;
-  padding-bottom: 5px;
   z-index: 1000;
   
 }
@@ -1025,18 +1029,23 @@ p, li, span, a, a.tile {
 #portal-megamenu {
   /* From Sunburst public.css: #portal-globalnav */
   margin: 0 0 0 0;
-  padding: 0;
   float: left;
   width: 100%;
   list-style: none;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /* line 643, ../sass/screen.scss */
 #portal-megamenu li.top-level {
   float: left;
-  margin: 0;
   position: relative;
   z-index: 500;
+  height: 100%;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* line 650, ../sass/screen.scss */
@@ -1146,8 +1155,6 @@ p, li, span, a, a.tile {
   background: none;
   border-right: none;
   min-width: 0em;
-  padding-right: 20px;
-  padding-left: 0px;
 }
 
 /* line 744, ../sass/screen.scss */
