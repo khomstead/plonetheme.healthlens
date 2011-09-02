@@ -462,7 +462,7 @@ background: linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,r
   display: block;
   text-decoration: none;
   text-align: center;
-  border-right: thin; solid #1C1D1F;
+  border-right: thin solid #1C1D1F;
   border-left: thin solid #1C1D1F;
   background: none;
   z-index: 1000;
