@@ -1,8 +1,8 @@
 /* @override 
 	http://localhost:8080/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
 	http://64.18.217.181:8902/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
-	http://seminar.changecenter.org/++theme++plonetheme.healthlens/stylesheets/screen.css
-	http://64.18.217.181:8904/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css */
+	http://64.18.217.181:8904/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
+	http://seminar.changecenter.org/++theme++plonetheme.healthlens/stylesheets/screen.css */
 
 
 /* Welcome to Compass.
@@ -1724,12 +1724,12 @@ div.post-type-form, .portletMyContentPortlet div.contents-block {
 }
 
 ul#my-content-tabs, ul#post-types{
-	padding:0;
-  height:30px;
+	height:30px;
   border-bottom: 1px solid orange;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
+  padding: 0 0 3px;
 }
 
 ul#post-types li, ul#my-content-tabs li {  
@@ -1889,8 +1889,8 @@ dl#portlet-MyContent div.tileItem div.sliding_div {
 
 dl#portlet-MyContent div.tileItem div.sliding_div div {
 	float: right;
-	padding-right: 3px;
-	padding-left: 3px;
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
 
@@ -1906,6 +1906,14 @@ dl#portlet-MyContent div.tileItem div.sliding_div form#review_state_form {
 	float: left;
 	margin-right: 0;
 	margin-left: 10px;
+}
+
+dl#portlet-MyContent div.inner dd.portletItem ul li {
+	margin-bottom: 10px;
+}
+
+dl#portlet-MyContent div.inner dd.portletItem ul {
+	margin-top: 10px;
 }
 /* @end */
 /* @end */
