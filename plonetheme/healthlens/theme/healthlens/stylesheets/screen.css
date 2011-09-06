@@ -1466,9 +1466,6 @@ a.carousel-pager-item.carousel-pager-item-active {
   z-index: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  /* Put the scrollbar on the left? */
-  direction:rtl;  /* Right To left */ 
-  text-align:left; /* Override direction */
 }
 
 #panes {
