@@ -658,6 +658,7 @@ dl.portlet ul.navTree li:hover > a {
 }
 
 /* @end */
+
 /* @group typography */
 /* line 383, ../sass/screen.scss */
 #content a:link,
@@ -2006,3 +2007,20 @@ label.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-
 
 /* @end */
 
+/* @group TinyMCE */
+.ploneSkin table, .ploneSkin tbody, .ploneSkin a, .ploneSkin img, .ploneSkin tr, .ploneSkin div, .ploneSkin td, .ploneSkin iframe, .ploneSkin span, .ploneSkin *, .ploneSkin .mceText {
+	border:0; 
+	margin:0; 
+	padding:0; 
+	background:transparent; 
+	white-space: normal; 
+	text-decoration:none; 
+	font-weight:normal; 
+	cursor:default; 
+	color:Black; 
+	vertical-align:baseline; 
+	width:auto; 
+	border-collapse:separate; 
+	text-align:left
+}
+/* @end */
