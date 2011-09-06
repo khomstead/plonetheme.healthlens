@@ -1863,30 +1863,34 @@ dl#portlet-MyContent div.tileItem div.MyContent_title a {
 dl#portlet-MyContent div.tileItem.expanded .MyContent_title a:hover {
 	color: yellow !important;
 }
-dl#portlet-MyContent div.tileItem a img {
-	float: left;
-}
+
 /* sliding div */
 
-div.sliding_div div.MyContent_edit {
-	padding-right: 7px;
+div.sliding_div div.MyContent_edit, div.sliding_div div.MyContent_delete {
 	padding-top: 3px;
+	width: 16px;
+	margin-left: 5px;
 }
 
 
-div.sliding_div div.MyContent_delete {
-		padding-top: 3px;
+div.sliding_div div.MyContent_delete:hover, div.sliding_div div.MyContent_edit:hover {
+	background: yellow;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	
 }
+
 dl#portlet-MyContent div.tileItem div.sliding_div {
 	position: relative;
-	width: 100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
 
 dl#portlet-MyContent div.tileItem div.sliding_div div {
 	float: right;
+	padding-right: 3px;
+	padding-left: 3px;
 }
 
 
