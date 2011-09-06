@@ -2013,7 +2013,7 @@ label.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-
 	margin:0; 
 	padding:0; 
 	background:transparent; 
-	white-space: normal; 
+	white-space: normal !important; 
 	text-decoration:none; 
 	font-weight:normal; 
 	cursor:default; 
