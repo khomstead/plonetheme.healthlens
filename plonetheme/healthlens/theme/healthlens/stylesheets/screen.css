@@ -1,7 +1,8 @@
 /* @override 
 	http://localhost:8080/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
 	http://64.18.217.181:8902/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
-	http://seminar.changecenter.org/++theme++plonetheme.healthlens/stylesheets/screen.css */
+	http://seminar.changecenter.org/++theme++plonetheme.healthlens/stylesheets/screen.css
+	http://64.18.217.181:8904/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css */
 
 
 /* Welcome to Compass.
@@ -1567,6 +1568,12 @@ height: 30px;
 #drawer dl.portlet dt {
 	background: url('../images/pushpin.png') no-repeat 50% top transparent;
 	min-height: 40px;
+	position: relative;
+	bottom: 25px;
+}
+
+#drawer dl.portlet dt h2 {
+	padding-top: 25px;
 }
 
 /* @end */
@@ -1702,5 +1709,178 @@ div.member .tooltip:after {
 
 
 /* @end */
+
+/* @group post-it bubbles */
+div#drawer div dd.portletItem {
+	position: relative;
+	bottom: 25px;
+	padding-top: 0;
+	
+}
+
+div.post-type-form, .portletMyContentPortlet div.contents-block {
+  display:none;
+  padding: 15px 0 0;
+  background: transparent;
+  margin-bottom: 0;
+  border: none;
+}
+
+ul#my-content-tabs, ul#post-types{
+	padding:0;
+  height:30px;
+  border-bottom: 1px solid orange;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul#post-types li, ul#my-content-tabs li {  
+  float: left; 
+  padding:0; 
+  margin: 0;          
+  list-style-type:none;
+  position: relative;
+  border-bottom: none;
+}
+
+ul#post-types li a:hover, ul#my-content-tabs li a:hover {
+background: #f9c667;
+/* Old browsers */
+background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
+/* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* Opera11.10+ */
+background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
+/* IE6-9 */
+background: linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* W3C */
+  color:#fff !important;
+  
+}
+
+ul#my-content-tabs a, ul#post-types li a { 
+	font: 400 20px "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
+	display:block;
+	text-decoration:none;
+	background-color: transparent;
+	position: relative;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+	color: orange;
+	border: 1px dotted orange;
+	padding: 5px 10px;
+}
+
+ul#my-content-tabs a.current, ul#post-types li a.current {
+position:relative;
+color: black;
+background: #f9c667;
+/* Old browsers */
+background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
+/* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* Opera11.10+ */
+background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
+/* IE6-9 */
+background: linear-gradient(top, #f9c667 0%, #f79621 100%);
+/* W3C */
+opacity: 1;
+border: none;
+	border-bottom: 1px solid orange;
+
+}
+
+dl#portlet-MyContent div.tileItem {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #fefeba;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 2px 0;
+}
+
+dl#portlet-MyContent div.tileItem:hover {
+	background-color: #FDFADE;
+}
+
+dl#portlet-MyContent div.tileItem div.MyContent_title a {
+	font-size: 11px;
+	color: black;
+}
+
+dl#portlet-MyContent div.tileItem a img {
+	float: left;
+}
+
+/* quick-post form */
+#portlet-quickPost input#form-widgets-title {
+  width: 70%;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* @end */
+/* @end */
+
+/* @group jquery buttons */
+/*
+ * jQuery UI Button 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+
+/*button text element */
+.ui-button .ui-button-text { display: block; line-height: 1.4;  }
+.ui-button-text-only .ui-button-text { padding: .4em 1em; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+/* no icon support for input elements, provide padding by default */
+input.ui-button { padding: .4em 1em; }
+
+/*button icon element(s) */
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+
+/*button sets*/
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+
+/* workarounds */
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+
+
 /* @end */
 
