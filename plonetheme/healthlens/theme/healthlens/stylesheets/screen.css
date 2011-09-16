@@ -2,7 +2,9 @@
 	http://localhost:8080/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
 	http://64.18.217.181:8902/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
 	http://64.18.217.181:8904/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
-	http://seminar.changecenter.org/++theme++plonetheme.healthlens/stylesheets/screen.css */
+	http://seminar.changecenter.org/++theme++plonetheme.healthlens/stylesheets/screen.css
+	http://64.18.217.181:8098/Plone/++theme++plonetheme.healthlens/stylesheets/screen.css
+	http://beta.treehousecommunities.org/++theme++plonetheme.healthlens/stylesheets/screen.css */
 
 
 /* Welcome to Compass.
@@ -105,7 +107,7 @@ a:hover, span:hover {
 #menu ul li a.menu-item {
 	color: #fe7a1b;
   padding: 22px 10px 0;
-  font: 400 2em/1em "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
+  font: 400 2em/1em p22-fllw-eaglefeather,sans-serif;
 }
 
 /* line 34, ../sass/_typography.scss */
@@ -743,7 +745,7 @@ p, li, span, a, a.tile {
 /* line 455, ../sass/screen.scss */
 #content .pullquote {
   margin: 0 .5em 0.5em 0.5em;
-  font: italic 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
+  font: italic 2em p22-fllw-eaglefeather,sans-serif;
   float: right;
   width: 35%;
   clear: right;
@@ -1385,7 +1387,7 @@ margin-left: -24px;
 
 /* line 988, ../sass/screen.scss */
 .carousel-title {
-  font: 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
+  font: 2em p22-fllw-eaglefeather,sans-serif;
   color: #fffeff;
 }
 
