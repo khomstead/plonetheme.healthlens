@@ -32,14 +32,15 @@ time, mark, audio, video {
 /* line 20, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
-  background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
+  background: #022A66 url('../images/treehouse/cloud-sky-ext.jpg') repeat-x left top;
 }
 
 #light {
-	background: transparent url('../images/vert-gradient.png') repeat-x left top;
+	background: transparent url('../images/treehouse/branch.png') repeat-x left top;
 	height: 100%;
 	width: 100%;
 	position: fixed;
+	margin-top: 80px;
 }
 /* line 22, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
@@ -185,7 +186,7 @@ div.cell {
 
 /* line 49, ../sass/screen.scss */
 #logo-spacer {
-  background: url(../images/seminar/logo.png) no-repeat left center;
+  background: url(../images/treehouse/logo.png) no-repeat left center;
   margin-right: auto;
   margin-left: auto;
   width: 36%;
