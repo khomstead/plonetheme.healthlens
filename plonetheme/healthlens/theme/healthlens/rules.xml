@@ -10,7 +10,6 @@
     doctype-public="-//W3C//DTD HTML 4.01//EN"
     doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>-->
     
-    
     <theme href="index.html" />
     <notheme if-path="presentation_view"/>
     <notheme if-path="source_editor.htm"/>
@@ -22,28 +21,17 @@
     <!-- Don't theme these collage links -->
     <notheme if-path="existing-items-form"/>
 
-<!--  resources -->
+    <!--  resources -->
     <replace theme="/html/head/title" content="/html/head/title"/>
     <drop css:theme="meta"/>
     <before content='/html/head' theme='/html/head' />
     <copy attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
-    <!-- plone.app.cmsui rule -->
-    <before css:theme-children="body" css:content="#plone-cmsui-trigger" />
-
-<!-- MENU -->
+    <!-- MENU -->
     <replace css:theme="#menu ul" css:content="#portal-megamenu"/>
-<!--    <drop attributes="id" css:content="#portal-globalnav"/>-->
 
-<!-- SIDE BAR -->
-<!--    <drop css:theme="#sidebar ul"/>
-    <append css:content='#portal-column-one .portletWrapper' css:theme='#sidebar' />
-    <append css:content='#portal-column-one .managePortletsLink' css:theme='#sidebar' />
-    <append css:content='#portletmanager-plone-leftcolumn' css:theme='#sidebar' />
-    <append css:content='#portlet-prefs' css:theme="#sidebar"/>-->
-
-<!--  CONTENT -->
+    <!--  CONTENT -->
     <drop css:theme=".post"/>
     <before css:theme-children="#page-title" css:content-children="#parent-fieldname-title" />
     <before css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
@@ -51,30 +39,21 @@
     <drop css:content="#parent-fieldname-title" />
     <drop css:content="#parent-fieldname-description" />
     <drop css:content="#viewlet-above-content" />
-	<append css:theme="#personal-tools" css:content="#portal-personaltools" />   
+	  <append css:theme="#personal-tools" css:content="#portal-personaltools" />   
+    <append css:theme="#personal-tools" css:content="#xmpp-viewlet" />
     <prepend css:theme="#page-bgbtm" css:content="#edit-bar" />
-    <!--<prepend css:theme="#canvas" css:content=".portalMessage" />-->
     <prepend css:theme="#content-area" css:content="#portal-columns"/>
-    <!--
-    <prepend css:theme="#canvas" css:content="#viewlet-below-content" />
-    -->
-
     <rules css:if-content=".carousel">
-		    <replace css:theme="#title-ribbon" css:content=".carousel" />
+        <replace css:theme="#title-ribbon" css:content=".carousel" />
     </rules>
     
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <replace css:theme-children="#footer" css:content-children="#portal-footer"/>
     <append css:content="#portal-siteactions" css:theme="#foot-box"/>
-    <!--portal actionbar-->
-    <append css:content-children="#footpanel" css:theme="#footpanel"/>
-<!--  TOOLS -->
-<!--    <append css:content='#portal-personaltools-wrapper' css:theme='#menu' />
-    <drop css:content="h5.hiddenStructure"/>-->
 
-    <replace css:theme-children="#pane1" css:content-children=".FooterPortletC" />
-    <replace css:theme-children="#pane2" css:content-children=".FooterPortletD" />
-    <replace css:theme-children="#pane3" css:content-children=".FooterPortletE" />
-    <replace css:theme-children="#pane4" css:content-children=".FooterPortletF" />
+    <!--  TOOLS -->
+    <replace css:theme-children="#pane2" css:content-children=".FooterPortletManager4" />
+    <replace css:theme-children="#pane3" css:content-children=".FooterPortletManager5" />
+    <replace css:theme-children="#pane4" css:content-children=".FooterPortletManager6" />
 </rules>
 
