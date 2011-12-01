@@ -52,6 +52,7 @@
     <append css:content="#portal-siteactions" css:theme="#foot-box"/>
 
     <!--  TOOLS -->
+    <replace css:theme-children="#pane1" css:content-children=".FooterPortletManager3" />
     <replace css:theme-children="#pane2" css:content-children=".FooterPortletManager4" />
     <replace css:theme-children="#pane3" css:content-children=".FooterPortletManager5" />
     <replace css:theme-children="#pane4" css:content-children=".FooterPortletManager6" />
