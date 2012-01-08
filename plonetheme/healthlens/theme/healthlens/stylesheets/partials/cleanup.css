@@ -1,0 +1,12 @@
+/* line 2, ../../sass/partials/cleanup.scss */
+body.section-landing-page #title-ribbon {
+  display: none;
+}
+
+/* line 7, ../../sass/partials/cleanup.scss */
+#InnerfadeNavigation .imgnolink, #InnerfadeNavigation a {
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 0;
+  padding-left: 8px;
+}

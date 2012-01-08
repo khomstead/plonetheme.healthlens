@@ -1,0 +1,87 @@
+// Skin Definitions for www.healthlens.org
+//Fonts
+$global-nav-font: "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2",sans-serif;
+$header-font: "futura-pt-1","futura-pt-2";
+           
+// Font Sizes
+$base-font-size: 12px;
+$base-line-height: 18px;
+
+//Font Colors
+$menu-header-color: #FE7A1B;
+$bright-highligh-text: #FF9900;
+
+// Layout Colors
+$muted-accent: #155D89;
+$muted-accent-highlight: #1A75BA;
+$muted-accent-shadow: #0B4774;
+
+$border-highlight-color: #0c7fd3;
+
+// Logo
+$logo-width: 260px;
+
+@mixin logo_image { 
+	background: url(../images/logo-med.png) no-repeat left center;
+    width: $logo-width;
+}
+
+// Global Nav
+$global-nav-font-size: 20px;    
+$ribbon-height: 60px;   
+
+
+
+// Gradients
+
+@mixin megamenu-gradient {
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.7) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.7) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.7) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+}             
+
+@mixin head-ribbon-gradient {
+	background: black;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #45484d 0%, black 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, black));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #45484d 0%, black 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #45484d 0%, black 100%);
+	/* Opera11.10+ */
+	background: -ms-linear-gradient(top, #45484d 0%, black 100%);
+	/* IE6-9 */
+	background: linear-gradient(top, #45484d 0%, #000000 100%);    
+}           
+
+@mixin menu-rollover-gradient {
+	background: rgb(158,201,239); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(158,201,239,1) 0%, rgba(46,147,234,1) 33%, rgba(0,119,239,1) 35%, rgba(46,147,234,1) 78%, rgba(70,131,221,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(158,201,239,1)), color-stop(33%,rgba(46,147,234,1)), color-stop(35%,rgba(0,119,239,1)), color-stop(78%,rgba(46,147,234,1)), color-stop(100%,rgba(70,131,221,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,rgba(0,119,239,1) 35%,rgba(46,147,234,1) 78%,rgba(70,131,221,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,rgba(0,119,239,1) 35%,rgba(46,147,234,1) 78%,rgba(70,131,221,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,rgba(0,119,239,1) 35%,rgba(46,147,234,1) 78%,rgba(70,131,221,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ec9ef', endColorstr='#4683dd',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,rgba(0,119,239,1) 35%,rgba(46,147,234,1) 78%,rgba(70,131,221,1) 100%); /* W3C */     
+}       
+
+@mixin foot-box-gradient {
+	background: rgb(26,117,186); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(26,117,186,1) 0%, rgba(21,93,137,1) 32%, rgba(11,71,116,1) 92%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(26,117,186,1)), color-stop(32%,rgba(21,93,137,1)), color-stop(92%,rgba(11,71,116,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(26,117,186,1) 0%,rgba(21,93,137,1) 32%,rgba(11,71,116,1) 92%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(26,117,186,1) 0%,rgba(21,93,137,1) 32%,rgba(11,71,116,1) 92%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(26,117,186,1) 0%,rgba(21,93,137,1) 32%,rgba(11,71,116,1) 92%); /* IE10+ */
+	background: linear-gradient(top,  rgba(26,117,186,1) 0%,rgba(21,93,137,1) 32%,rgba(11,71,116,1) 92%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a75ba', endColorstr='#0b4774',GradientType=0 ); /* IE6-9 */	
+}    
+
+@mixin footer-gradient {
+@include background-image(radial-gradient(center 60px, $muted-accent 400px, $muted-accent-shadow 650px));
+}
