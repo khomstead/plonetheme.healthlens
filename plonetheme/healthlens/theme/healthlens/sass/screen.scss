@@ -13,11 +13,11 @@
 
 // To configure blueprint, edit the partials/_base.sass file.
 @import "partials/base";
+@import "partials/skin";  
+@import "partials/effects";
 @import "partials/old_css";
-@import "partials/skin";
 @import "partials/typography";
 @import "partials/cleanup";
-@import "partials/effects";
 @import "partials/plone-products"; 
 
 // Import the non-default scaffolding module.

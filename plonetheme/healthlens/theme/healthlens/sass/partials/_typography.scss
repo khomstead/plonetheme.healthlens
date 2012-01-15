@@ -92,4 +92,28 @@ p, li, span, a, a.tile {
 	color: #424242;  
 	font-size: $base-font-size;
 	line-height: $base-line-height;    
-}
+}          
+
+// Creative Font Styles for tinyMCE
+
+.postit {
+	@include minor-curl-effect;   
+	background-color: #FCFDA6; 
+	padding:12px;
+	font-family:"futura-pt-1","futura-pt-2",sans-serif;     
+  	font-size: 16px;
+}                   
+
+.elegant {
+	font-family: "dejarip-1", "dejarip-2", sans-serif;
+  	font-size: 16px;   
+	text-align: left;
+	color: #000;
+	line-height: 22px;
+	background-color: #faebbc;
+	padding: 10px 10px 10px 30px;
+	background-image: url(../images/openquote1.gif);
+	background-position: 3px 3px;
+	background-repeat: no-repeat;  
+	@include border-radius(5px);
+}     
