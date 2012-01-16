@@ -1186,7 +1186,6 @@ ul#my-content-tabs a, ul#post-types li a {
 }
 
 /* line 1080, ../sass/partials/_old_css.scss */
-
 ul#my-content-tabs a.current, ul#post-types li a.current {
   position: relative;
   color: black;
@@ -1520,7 +1519,6 @@ body, #content {
 }
 
 /* line 29, ../sass/partials/_typography.scss */
-/* @group Speech Bubbles */
 #portal-megamenu .sub ul li h2, #portal-megamenu .sub ul li span {
   padding: 0;
   margin: 0;
@@ -1561,7 +1559,7 @@ body, #content {
   letter-spacing: normal;
 }
 
-/* line 69, ../sass/partials/_typography.scss */
+/* line 68, ../sass/partials/_typography.scss */
 #portal-megamenu .sub div.plain h2 a {
   padding: 0;
   color: #fff;
@@ -1569,30 +1567,30 @@ body, #content {
   text-decoration: none;
 }
 
-/* line 76, ../sass/partials/_typography.scss */
+/* line 75, ../sass/partials/_typography.scss */
 #portal-megamenu .sub ul li a.collage-megamenu-highlight {
   font-weight: bold;
 }
 
-/* line 81, ../sass/partials/_typography.scss */
+/* line 80, ../sass/partials/_typography.scss */
 #portal-personaltools.actionMenu {
   font-size: 80%;
   color: #1184fc;
 }
 
-/* line 86, ../sass/partials/_typography.scss */
+/* line 85, ../sass/partials/_typography.scss */
 #portal-personaltools.actionMenu a {
   color: #fff;
   width: 85%;
   text-decoration: none;
 }
 
-/* line 92, ../sass/partials/_typography.scss */
+/* line 91, ../sass/partials/_typography.scss */
 #portal-personaltools.actionMenu dd a:hover {
   color: #ff9900;
 }
 
-/* line 96, ../sass/partials/_typography.scss */
+/* line 95, ../sass/partials/_typography.scss */
 #portal-personaltools dt.actionMenuHeader a {
   font-size: 12px;
   line-height: 18px;
@@ -1600,12 +1598,12 @@ body, #content {
   color: #000;
 }
 
-/* line 103, ../sass/partials/_typography.scss */
+/* line 102, ../sass/partials/_typography.scss */
 #portal-personaltools.activated dt.actionMenuHeader a {
   color: #fff;
 }
 
-/* line 107, ../sass/partials/_typography.scss */
+/* line 106, ../sass/partials/_typography.scss */
 #portal-personaltools #personaltools-login {
   font-size: 12px;
   line-height: 18px;
@@ -1613,12 +1611,12 @@ body, #content {
   color: #000;
 }
 
-/* line 114, ../sass/partials/_typography.scss */
+/* line 113, ../sass/partials/_typography.scss */
 #portal-personaltools #personaltools-login:hover {
   color: #fff;
 }
 
-/* line 121, ../sass/partials/_typography.scss */
+/* line 120, ../sass/partials/_typography.scss */
 h2 {
   font-size: 24px;
   line-height: 30px;
@@ -1629,7 +1627,7 @@ h2 {
   padding-top: 10px;
 }
 
-/* line 131, ../sass/partials/_typography.scss */
+/* line 130, ../sass/partials/_typography.scss */
 p, li, span, a, a.tile {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   letter-spacing: normal;
@@ -1638,7 +1636,7 @@ p, li, span, a, a.tile {
   line-height: 18px;
 }
 
-/* line 141, ../sass/partials/_typography.scss */
+/* line 140, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
   background: white;
@@ -1698,7 +1696,7 @@ p, li, span, a, a.tile {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 149, ../sass/partials/_typography.scss */
+/* line 148, ../sass/partials/_typography.scss */
 .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
