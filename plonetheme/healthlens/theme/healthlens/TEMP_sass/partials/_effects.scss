@@ -79,11 +79,4 @@
   @include apply-origin($corner bottom);
   @include transform(1, $mul * 10deg, 0, 0, $mul * 20deg);
   @include box-shadow(rgba(0, 0, 0, 0.5), 0, 5px, 10px);
-}                                                               
-
-// Selection Arrow
-@mixin select-arrow {
-	background-image: url('../images/orange-arrow-closed.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }

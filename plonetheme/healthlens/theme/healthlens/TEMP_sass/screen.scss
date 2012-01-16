@@ -18,10 +18,9 @@
 @import "partials/old_css";
 @import "partials/typography";
 @import "partials/cleanup";
-@import "partials/plone-products";
-@import "partials/cloudspring_members"; 
+@import "partials/plone-products"; 
 
-// Import the non-default scaffolding module
+// Import the non-default scaffolding module.
 @import "blueprint/scaffolding";
 
 // Generate the blueprint framework according to your configuration:
@@ -68,7 +67,27 @@ body {
 	height: 100%;
 	z-index: 200;  
 }
-                      
+
+// Section: Small Ribbon      
+#divider {
+	@include box-shadow(black 0 2px 10px);
+	width: 100%;
+	height: 15px;
+	z-index: 2;
+	position: fixed;
+	top: $ribbon-height;
+	background-color: $muted-accent;
+	border-bottom: 2px solid $muted-accent-shadow;
+	border-top: 2px solid $muted-accent-highlight;  
+}
+
+#breadcrumbs {
+	padding-left: 15px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative; 
+}                       
 
 // MegaMenu 
 #menu {
@@ -178,7 +197,7 @@ body {
 	padding: 10px 10px 5px 20px;
 	border: 2px solid $border-highlight-color;
 	@include border-radius(5px);
-	@include box-shadow(black 0px 2px 10px);   
+	@include box-shadow(0px 2px 10px);   
 	@include megamenu-gradient;    
 }
 
@@ -197,93 +216,38 @@ body {
 	padding-left: 0;
 }
 
-#portal-megamenu .sub ul li a:hover { 
-	color: $bright-highligh-text;
+
+/* line 861, ../sass/screen.scss */
+#portal-megamenu .sub ul li a:hover {
+	color: #000;
 	width: 100%;
-	@include select-arrow;
-	@include border-radius(2px);  
-	background-color: transparent;
+	/*-- rounded corner--*/
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-bottom: 4px;
+	/*-- gradient--*/
+	background: #cdeb8e;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdeb8e), color-stop(39%, #cdeb8e), color-stop(62%, #a5c956), color-stop(100%, #a5c956));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* Opera11.10+ */
+	background: -ms-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+	/* IE6-9 */
+	background: linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* W3C */
 }
 
+/* line 878, ../sass/screen.scss */
 #portal-megamenu .sub li.selected a {
-	background: transparent;
-	@include select-arrow;
-}       
-
-// Personal Bar 
-$personal-bar-height: 20px;
- 
-#divider {
-	@include box-shadow(black 0 2px 10px);
-	width: 100%;
-	height: $personal-bar-height;
-	z-index: 2;
-	position: fixed;
-	top: $ribbon-height;
-	background-color: $muted-accent;
-	border-bottom: 2px solid $muted-accent-shadow;
-	border-top: 2px solid $muted-accent-highlight;  
-}
-
-#personal-tools {
-	width: 960px;  
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	top: 0px;   
-}
-
-#portal-personaltools {
-	z-index: 1; 
-	top: 0px;   
-	height: $personal-bar-height;  
-} 
-
-#portal-personaltools #personaltools-login {
-	background: transparent  url('../images/Icons/Lock-black-16.png') no-repeat left 0px; 
-	padding: 0 0 0 20px; 
-	&:hover {
-		background: transparent  url('../images/Icons/Lock-white-16.png') no-repeat left 0px; 
-	};
-}   
-#portal-personaltools dt.actionMenuHeader a {
-	background: transparent url('../images/Icons/Unlock-black-16.png')  no-repeat left 0px; 
-	padding: 0 0 0 20px; 
-}  
-
-#portal-personaltools.activated dt.actionMenuHeader a {
-	background: transparent url('../images/Icons/Unlock-white-16.png')  no-repeat left 0px; 
-}
-
-
-#portal-personaltools.actionMenu { 
-	height: 100%;  
-	background: none;
-	position: relative;   
-	@include border-radius(0px);
-	padding: 2px 5px 0 5px;   
-}   
-
-
-#portal-personaltools dd.actionMenuContent {
-	margin-top: 2px;
-	padding: 0px 0px 5px 2px;
-	@include box-shadow(black 0px 2px 10px);   
-	@include megamenu-gradient;    
-}
-
-dl.actionMenu.activated dd {
-	@include border-bottom-radius(4px);
-	position: relative;
-	width: auto;
-	min-width: 99%;
-	border: none;   
-}
-
-#portal-personaltools dd a:hover {  
-	background: transparent;
-}
-                                   
+	background: #ddd;
+}                                          
 // Page 
 #page-wrapper {      
 	@include curl-effect;
@@ -305,18 +269,6 @@ dl.actionMenu.activated dd {
 #content {
 	margin-bottom: 0;
 }                   
-        
-// Content
-#title-ribbon { 
-  @include orange-gradient;
-  -moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  width: 100%;
-  position: relative;
-  border-bottom: 1px solid #fea721;
-  padding-top: 10px;
-}
 
 // Foot Box
 #foot-box {   

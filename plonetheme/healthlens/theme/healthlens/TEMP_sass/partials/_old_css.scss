@@ -13,7 +13,14 @@ a:hover, span:hover {
 }
 
 /* line 19, ../sass/_typography.scss */
-
+#portal-personaltools.actionMenu {
+  font-size: 80%;
+  color: #1184fc;
+}
+/* line 24, ../sass/_typography.scss */
+#portal-personaltools.actionMenu dd a:hover {
+  color: black;
+}
 
 
 /* line 34, ../sass/_typography.scss */
@@ -75,7 +82,13 @@ div.cell {
 
 
 /* line 95, ../sass/screen.scss */
-
+#personal-tools {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 18px;
+}
 
 /* line 103, ../sass/screen.scss */
 dl.actionMenu {
@@ -85,9 +98,88 @@ dl.actionMenu {
   margin-left: 0;
 }
 
+#portal-personaltools {
+	z-index: 1;
+}
+/* line 111, ../sass/screen.scss */
+#portal-personaltools.actionMenu {
+  border-bottom-radius: 4px;
+  -moz-border-radius-bottom: 4px;
+  -webkit-border-bottom-radius: 4px;
+  -moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  float: right;
+  border: 1px solid #7aaefc;
+  padding: 5px 1em 6px;
+}
+/* line 119, ../sass/screen.scss */
+#portal-personaltools.actionMenu dd {
+  background-color: transparent;
+}
+
+/* line 122, ../sass/screen.scss */
+dl.actionMenu.activated dd {
+  border-bottom-radius: 4px;
+  -moz-border-radius-bottom: 4px;
+  -webkit-border-bottom-radius: 4px;
+  position: relative;
+  width: auto;
+  min-width: 99%;
+  border: none;
+}
+
+/* line 130, ../sass/screen.scss */
+#portal-personaltools dd a:hover {
+  background: #ebf1f6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ebf1f6), color-stop(50%, #abd3ee), color-stop(51%, #89c3eb), color-stop(100%, #d5ebfb));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+  /* W3C */
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
 
 /* line 134, ../sass/screen.scss */
-
+#title-ribbon {
+  background: #f9c667;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* W3C */
+  -moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #fea721;
+  padding-top: 10px;
+}
 
 /* line 143, ../sass/screen.scss */
 #content-area {
@@ -96,6 +188,44 @@ dl.actionMenu {
 }
 
 /* line 148, ../sass/screen.scss */
+#foot-ribbon {
+  background: #f9c667;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #f9c667 0%, #f79621 100%);
+  /* W3C */
+  -moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 60px;
+  position: relative;
+  border-top: 1px outset #fea721;
+}
+
+/* line 157, ../sass/screen.scss */
+
+
+/* line 167, ../sass/screen.scss */
+#foot-base {
+  background: url(../images/foot-box.png);
+  width: 100%;
+  height: 180px;
+  position: relative;
+  top: -80px;
+  z-index: 0;
+}
 
 /* @end */
 /* @group Global Nav */
@@ -611,7 +741,24 @@ dl.portlet a:hover {
 }
 
 /* line 614, ../sass/screen.scss */
-
+.orange-gradient {
+  background: #fceabb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 82%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fceabb), color-stop(50%, #fccd4d), color-stop(82%, #f8b500));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 82%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 82%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 82%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fceabb', endColorstr='#f8b500',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 82%);
+  /* W3C */
+}
 
 /* @end */
 /* @group MegaMenu */
