@@ -1185,107 +1185,7 @@ ul#my-content-tabs a, ul#post-types li a {
   padding: 5px 10px;
 }
 
-/* line 1180, ../sass/partials/old_css.scss */
-ul#post-types li, ul#my-content-tabs li {
-  float: left;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  position: relative;
-  border-bottom: none;
-}
-
-/* line 1189, ../sass/partials/old_css.scss */
-ul#post-types li a:hover, ul#my-content-tabs li a:hover {
-  background: #f9c667;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* W3C */
-  color: #fff !important;
-}
-
-/* line 1210, ../sass/partials/old_css.scss */
-ul#my-content-tabs a, ul#post-types li a {
-  font: 400 20px "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
-  display: block;
-  text-decoration: none;
-  background-color: transparent;
-  position: relative;
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  color: orange;
-  border: 1px dotted orange;
-  padding: 5px 10px;
-}
-
-
-/* line 1180, ../sass/partials/old_css.scss */
-ul#post-types li, ul#my-content-tabs li {
-  float: left;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  position: relative;
-  border-bottom: none;
-}
-
-/* line 1189, ../sass/partials/old_css.scss */
-ul#post-types li a:hover, ul#my-content-tabs li a:hover {
-  background: #f9c667;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* W3C */
-  color: #fff !important;
-}
-
-/* line 1210, ../sass/partials/old_css.scss */
-ul#my-content-tabs a, ul#post-types li a {
-  font: 400 20px "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
-  display: block;
-  text-decoration: none;
-  background-color: transparent;
-  position: relative;
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  color: orange;
-  border: 1px dotted orange;
-  padding: 5px 10px;
-}
-
-/* line 1227, ../sass/partials/old_css.scss */
->>>>>>> 1a2fbcbf2085e4a49c804d44b6c937c247fd5423
+/* line 1080, ../sass/partials/_old_css.scss */
 ul#my-content-tabs a.current, ul#post-types li a.current {
   position: relative;
   color: black;
@@ -1617,310 +1517,8 @@ body, #content {
   color: #fe7a1b;
   padding: 2px 0 0px 0px;
 }
-/* @group Speech Bubbles */
-/* THE SPEECH BUBBLE --------------------------------------- */
-div.member_tooltip {
-	display:none;
-	text-align:left;
-	font-size: 12px;
-	z-index: 100001;
-	
-	position:relative;
-	padding:15px;
-	margin: 1em 0 3em 50px;
-	border:2px solid #0c7fd3;
-  
-  margin-left: -100px;
-  margin-top: 135px;
-  
-/*	color:#333;*/
-	background:#fff;
-	/* css3 */
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
-	
-	border-left: 2px solid #0c7fd3;
-	border-right: 2px solid #0c7fd3;
-	border-bottom: 2px solid #0c7fd3;
-	/*for old browsers*/
-	background: black;
-	/*--Shadow--*/
-	-moz-box-shadow: 0 5px 20px 0px #000;
-	-webkit-box-shadow: 0 5px 20px 0px #000;
-	box-shadow: 0 0px 20px 0px #000;
-	/*--Gradient--*/
-	background: -moz-linear-gradient(top, black 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(35, 35, 35, 0.8)));
-	/* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, black 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, black 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* Opera11.10+ */
-	background: -ms-linear-gradient(top, black 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cc232323',GradientType=0 );
-	/* IE6-9 */
-	background: linear-gradient(top, #000000 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* W3C */
-}
 
-/* @group Speech Bubbles */
-/* THE SPEECH BUBBLE --------------------------------------- */
-div.member_tooltip {
-	display:none;
-	text-align:left;
-	font-size: 12px;
-	z-index: 100001;
-	
-	position:relative;
-	padding:15px;
-	margin: 1em 0 3em 50px;
-	border:2px solid #0c7fd3;
-  
-  margin-left: -100px;
-  margin-top: 135px;
-  
-/*	color:#333;*/
-	background:#fff;
-	/* css3 */
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
-	
-	border-left: 2px solid #0c7fd3;
-	border-right: 2px solid #0c7fd3;
-	border-bottom: 2px solid #0c7fd3;
-	/*for old browsers*/
-	background: black;
-	/*--Shadow--*/
-	-moz-box-shadow: 0 5px 20px 0px #000;
-	-webkit-box-shadow: 0 5px 20px 0px #000;
-	box-shadow: 0 0px 20px 0px #000;
-	/*--Gradient--*/
-	background: -moz-linear-gradient(top, black 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(35, 35, 35, 0.8)));
-	/* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, black 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, black 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* Opera11.10+ */
-	background: -ms-linear-gradient(top, black 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cc232323',GradientType=0 );
-	/* IE6-9 */
-	background: linear-gradient(top, #000000 0%, rgba(35, 35, 35, 0.8) 100%);
-	/* W3C */
-}
-
-/* line 29, ../sass/partials/typography.scss */
-#portal-megamenu .sub ul li h2, #portal-megamenu .sub ul li span {
-  padding: 0;
-  margin: 0;
-  font: 300 20px "futura-pt-1", "futura-pt-2";
-  width: 100%;
-  color: #ff9900;
-  letter-spacing: normal;
-}
-
-/* line 39, ../sass/partials/typography.scss */
-#portal-megamenu .sub ul li p.description {
-  padding: 0;
-}
-
-/* line 43, ../sass/partials/typography.scss */
-#portal-megamenu .sub ul li p.description span, #portal-megamenu .sub ul li p {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  color: #d5d5d5;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-style: none;
-  letter-spacing: normal;
-  font-weight: normal;
-}
-
-div.member_tooltip:before {
-	content:"";
-	position:absolute;
-	top:20px; /* controls vertical position */
-	bottom:auto;
-	left:-20px; /* value = - border-left-width - border-right-width */
-	border-width:10px 20px 10px 0;
-	border-style:solid;
-	border-color:transparent #0c7fd3;
-    /* reduce the damage in FF3.0 */
-/*    display:block; */
-    width:0;
-}
-
-/* creates the smaller  triangle */
-div.member_tooltip:after {
-	content:"";
-	position:absolute;
-	top:20px; /* value = (:before top) + (:before border-top) - (:after border-top) */
-	bottom:auto;
-	left:-20px; /* value = - border-left-width - border-right-width */
-	border-width:10px 20px 10px 0;
-	border-style:solid;
-	border-color: transparent;
-    /* reduce the damage in FF3.0 */
-/*    display:block; */
-    width:0;
-}
-
-/* line 56, ../sass/partials/typography.scss */
-#portal-megamenu .sub div.plain p a, #portal-megamenu .sub ul li a {
-  padding: 0 0 0 10px;
-  color: #fff;
-  width: 100%;
-  text-decoration: none;
-  font-family: "futura-pt-1","futura-pt-2";
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: normal;
-}
-
-/* line 67, ../sass/partials/typography.scss */
-#portal-megamenu .sub div.plain h2 a {
-  padding: 0;
-  color: #fff;
-  width: 85%;
-  text-decoration: none;
-}
-
-/* line 74, ../sass/partials/typography.scss */
-#portal-megamenu .sub ul li a.collage-megamenu-highlight {
-  font-weight: bold;
-}
-
-/* line 79, ../sass/partials/typography.scss */
-h2 {
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: normal;
-  font-family: "futura-pt-1","futura-pt-2",sans-serif;
-  color: #424242;
-  font-weight: 500;
-  padding-top: 10px;
-}
-
-/* line 89, ../sass/partials/typography.scss */
-p, li, span, a, a.tile {
-  font-family: "dejarip-1", "dejarip-2", sans-serif;
-  letter-spacing: normal;
-  color: #424242;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-/* line 29, ../sass/partials/typography.scss */
-#portal-megamenu .sub ul li h2, #portal-megamenu .sub ul li span {
-  padding: 0;
-  margin: 0;
-  font: 300 20px "futura-pt-1", "futura-pt-2";
-  width: 100%;
-  color: #ff9900;
-  letter-spacing: normal;
-}
-
-/* line 39, ../sass/partials/typography.scss */
-#portal-megamenu .sub ul li p.description {
-  padding: 0;
-}
-
-/* line 43, ../sass/partials/typography.scss */
-#portal-megamenu .sub ul li p.description span, #portal-megamenu .sub ul li p {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  color: #d5d5d5;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-style: none;
-  letter-spacing: normal;
-  font-weight: normal;
-}
-
-div.member_tooltip:before {
-	content:"";
-	position:absolute;
-	top:20px; /* controls vertical position */
-	bottom:auto;
-	left:-20px; /* value = - border-left-width - border-right-width */
-	border-width:10px 20px 10px 0;
-	border-style:solid;
-	border-color:transparent #0c7fd3;
-    /* reduce the damage in FF3.0 */
-/*    display:block; */
-    width:0;
-}
-
-/* creates the smaller  triangle */
-div.member_tooltip:after {
-	content:"";
-	position:absolute;
-	top:20px; /* value = (:before top) + (:before border-top) - (:after border-top) */
-	bottom:auto;
-	left:-20px; /* value = - border-left-width - border-right-width */
-	border-width:10px 20px 10px 0;
-	border-style:solid;
-	border-color: transparent;
-    /* reduce the damage in FF3.0 */
-/*    display:block; */
-    width:0;
-}
-
-/* line 56, ../sass/partials/typography.scss */
-#portal-megamenu .sub div.plain p a, #portal-megamenu .sub ul li a {
-  padding: 0 0 0 10px;
-  color: #fff;
-  width: 100%;
-  text-decoration: none;
-  font-family: "futura-pt-1","futura-pt-2";
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: normal;
-}
-
-/* line 67, ../sass/partials/typography.scss */
-#portal-megamenu .sub div.plain h2 a {
-  padding: 0;
-  color: #fff;
-  width: 85%;
-  text-decoration: none;
-}
-
-/* line 74, ../sass/partials/typography.scss */
-#portal-megamenu .sub ul li a.collage-megamenu-highlight {
-  font-weight: bold;
-}
-
-/* line 79, ../sass/partials/typography.scss */
-h2 {
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: normal;
-  font-family: "futura-pt-1","futura-pt-2",sans-serif;
-  color: #424242;
-  font-weight: 500;
-  padding-top: 10px;
-}
-
-/* line 89, ../sass/partials/typography.scss */
-p, li, span, a, a.tile {
-  font-family: "dejarip-1", "dejarip-2", sans-serif;
-  letter-spacing: normal;
-  color: #424242;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-/* line 29, ../sass/partials/typography.scss */
->>>>>>> 1a2fbcbf2085e4a49c804d44b6c937c247fd5423
+/* line 29, ../sass/partials/_typography.scss */
 #portal-megamenu .sub ul li h2, #portal-megamenu .sub ul li span {
   padding: 0;
   margin: 0;
@@ -2403,7 +2001,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul {
   border-left: 1px solid #ddd;
@@ -2411,7 +2009,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul.collage-first-object,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul.collage-first-object {
   border-left: 0;
@@ -2419,7 +2017,7 @@ body {
   padding-left: 0;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 #portal-megamenu .sub ul li a:hover {
   color: #ff9900;
   width: 100%;
@@ -2435,7 +2033,7 @@ body {
   background-color: transparent;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #portal-megamenu .sub li.selected a {
   background: transparent;
   background-image: url("../images/orange-arrow-closed.png");
@@ -2443,7 +2041,7 @@ body {
   background-position: left center;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #divider {
   -moz-box-shadow: black 0 2px 10px;
   -webkit-box-shadow: black 0 2px 10px;
@@ -2459,7 +2057,7 @@ body {
   border-top: 2px solid #1a75ba;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 #personal-tools {
   width: 960px;
   margin-left: auto;
@@ -2468,35 +2066,35 @@ body {
   top: 0px;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #portal-personaltools {
   z-index: 1;
   top: 0px;
   height: 20px;
 }
 
-/* line 242, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 #portal-personaltools #personaltools-login {
   background: transparent url("../images/Icons/Lock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
-/* line 245, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #portal-personaltools #personaltools-login:hover {
   background: transparent url("../images/Icons/Lock-white-16.png") no-repeat left 0px;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #portal-personaltools dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #portal-personaltools.activated dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-white-16.png") no-repeat left 0px;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 #portal-personaltools.actionMenu {
   height: 100%;
   background: none;
@@ -2510,7 +2108,7 @@ body {
   padding: 2px 5px 0 5px;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 #portal-personaltools dd.actionMenuContent {
   margin-top: 2px;
   padding: 0px 0px 5px 2px;
@@ -2534,7 +2132,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 dl.actionMenu.activated dd {
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -2554,12 +2152,12 @@ dl.actionMenu.activated dd {
   border: none;
 }
 
-/* line 283, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 #portal-personaltools dd a:hover {
   background: transparent;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 #page-wrapper {
   position: relative;
   background: white;
@@ -2621,7 +2219,7 @@ dl.actionMenu.activated dd {
   box-shadow: 0 15px 20px black;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #page {
   -moz-box-shadow: black 0 5px 10px;
   -webkit-box-shadow: black 0 5px 10px;
@@ -2633,12 +2231,12 @@ dl.actionMenu.activated dd {
   z-index: 1;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 #content {
   margin-bottom: 0;
 }
 
-/* line 310, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 #title-ribbon {
   background: #f9c667;
   /* Old browsers */
@@ -2665,843 +2263,7 @@ dl.actionMenu.activated dd {
   padding-top: 10px;
 }
 
-/* line 322, ../sass/screen.scss */
-#foot-box {
-  background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #155d89), color-stop(100%, #0b4774));
-  background-image: -webkit-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -moz-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -o-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -ms-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  height: 200px;
-  position: relative;
-  border: 2px solid #fff;
-}
-
-/* line 35, ../sass/screen.scss */
-#light {
-  background: transparent url("../images/vert-gradient.png") repeat-x left top;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-}
-
-/* line 43, ../sass/screen.scss */
-#head-ribbon {
-  background: black;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #45484d 0%, black 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, black));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #45484d 0%, black 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #45484d 0%, black 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #45484d 0%, black 100%);
-  /* IE6-9 */
-  background: linear-gradient(top, #45484d 0%, #000000 100%);
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  margin: 0 auto;
-}
-
-/* line 52, ../sass/screen.scss */
-#head-wrapper {
-  height: 65px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 960px;
-  position: relative;
-}
-
-/* line 61, ../sass/screen.scss */
-#logo-spacer {
-  background: url(../images/logo-med.png) no-repeat left center;
-  width: 260px;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  float: left;
-  height: 100%;
-  z-index: 200;
-}
-
-/* line 72, ../sass/screen.scss */
-#divider {
-  -moz-box-shadow: black 0 2px 10px;
-  -webkit-box-shadow: black 0 2px 10px;
-  -o-box-shadow: black 0 2px 10px;
-  box-shadow: black 0 2px 10px;
-  width: 100%;
-  height: 15px;
-  z-index: 2;
-  position: fixed;
-  top: 60px;
-  background-color: #155d89;
-  border-bottom: 2px solid #0b4774;
-  border-top: 2px solid #1a75ba;
-}
-
-/* line 84, ../sass/screen.scss */
-#breadcrumbs {
-  padding-left: 15px;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-
-/* line 93, ../sass/screen.scss */
-#menu {
-  right: 0px;
-  position: absolute;
-  z-index: 100;
-}
-
-/* line 99, ../sass/screen.scss */
-#menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item {
-  color: black;
-  -moz-box-shadow: inset 0px 0px 5px 0px black;
-  -webkit-box-shadow: inset 0px 0px 5px 0px black;
-  box-shadow: inset 0px 0px 5px 0px black;
-  background: #9ec9ef;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9ec9ef), color-stop(33%, #2e93ea), color-stop(35%, #0077ef), color-stop(78%, #2e93ea), color-stop(100%, #4683dd));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ec9ef', endColorstr='#4683dd',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* W3C */
-}
-
-/* line 107, ../sass/screen.scss */
-#menu ul li a.menu-item {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  border-right: thin solid #1C1D1F;
-  border-left: thin solid #1C1D1F;
-  background: none;
-  z-index: 1000;
-}
-
-/* line 117, ../sass/screen.scss */
-#menu ul li span.arrowDownAlternative {
-  display: none;
-}
-
-/* line 121, ../sass/screen.scss */
-#collage ul.megamenu {
-  /* To prevent margin-left in collage compose view */
-  margin-left: 0;
-  padding-left: 0;
-}
-
-/* line 127, ../sass/screen.scss */
-#portal-megamenu {
-  /* Global Level*/
-  margin: 0 0 0 0;
-  float: left;
-  list-style: none;
-  padding-bottom: 0;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-/* line 139, ../sass/screen.scss */
-#portal-megamenu li .collage-row {
-  clear: both;
-  float: left;
-  width: 100%;
-  padding: 0;
-}
-
-/* Reset width to auto for nested rows */
-/* line 147, ../sass/screen.scss */
-#portal-megamenu li .menu_view_nested-menu .collage-row {
-  width: auto;
-}
-
-/* line 151, ../sass/screen.scss */
-#portal-megamenu .sub ul {
-  list-style: none;
-  float: left;
-  width: 100%;
-  padding: 0 0 10px 0;
-  margin: 0 10px 0 0;
-}
-
-/* line 160, ../sass/screen.scss */
-#portal-megamenu .sub ul li {
-  width: 100%;
-}
-
-/* line 164, ../sass/screen.scss */
-#portal-megamenu .sub ul li span {
-  display: block;
-  white-space: nowrap;
-}
-
-/* line 169, ../sass/screen.scss */
-#portal-megamenu .sub ul li a {
-  float: none;
-  height: auto;
-  display: block;
-  white-space: nowrap;
-  text-indent: 0px;
-}
-
-/* Menu styling for Sunburst theme */
-/* line 179, ../sass/screen.scss */
-.actionicon-object_buttons-megamenu-enable,
-.actionicon-object_buttons-megamenu-disable {
-  border-top: 2px solid white;
-}
-
-/* line 184, ../sass/screen.scss */
-#portal-megamenu li a.menu-item {
-  height: 38px;
-  background: none;
-  border-right: none;
-  min-width: 0em;
-}
-
-/* line 191, ../sass/screen.scss */
-#portal-megamenu li.top-level .subShadow {
-  visibility: hidden;
-}
-
-/* line 195, ../sass/screen.scss */
-#portal-megamenu li.top-level .sub {
-  top: 60px;
-  padding: 10px 10px 5px 20px;
-  border: 2px solid #0c7fd3;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: 0px 2px 10px;
-  -webkit-box-shadow: 0px 2px 10px;
-  -o-box-shadow: 0px 2px 10px;
-  box-shadow: 0px 2px 10px;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.7)));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* IE10+ */
-  background: linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#b3000000',GradientType=0 );
-  /* IE6-9 */
-}
-
-/* line 206, ../sass/screen.scss */
-#portal-megamenu .sub .collage-megamenu-vlines > ul,
-#portal-megamenu .sub .collage-megamenu-hvlines > ul {
-  border-left: 1px solid #ddd;
-  margin-left: -10px;
-  padding-left: 10px;
-}
-
-/* line 213, ../sass/screen.scss */
-#portal-megamenu .sub .collage-megamenu-vlines > ul.collage-first-object,
-#portal-megamenu .sub .collage-megamenu-hvlines > ul.collage-first-object {
-  border-left: 0;
-  margin-left: 0;
-  padding-left: 0;
-}
-/* @end */
-
-.member_summary_item {
-    float: left;
-    width:205px;
-    height: 70px;
-    border: 1px solid #999;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px #999;
-    margin: 5px;
-    padding:5px;
-    padding-top: 10px;
-}
-
-.member_tooltip h4.name {
-  color: #fff;
-}
-
-.member_summary_item h2 {
-  padding-top:0px;
-  padding-left: 6px;
-}
-
-.member_summary_item .member_name {
-  float: left;
-  width: 140px;
-}
-
-.member_summary_item .member_name a {
-  font-size: 1em;
-  line-height: 1em;
-
-}
-.member_summary_item .picture {
-  float: left;
-}
-
-.member_summary_item .picture img {
-  box-shadow: 2px 2px 2px #999;
-  border-radius: 3px;
-}
-
-/* line 861, ../sass/screen.scss */
-/* line 221, ../sass/screen.scss */
-#portal-megamenu .sub ul li a:hover {
-  color: #000;
-  width: 100%;
-  /*-- rounded corner--*/
-  -moz-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -webkit-border-bottom: 4px;
-  /*-- gradient--*/
-  background: #cdeb8e;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdeb8e), color-stop(39%, #cdeb8e), color-stop(62%, #a5c956), color-stop(100%, #a5c956));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* W3C */
-}
-
-/* line 878, ../sass/screen.scss */
-/* line 248, ../sass/screen.scss */
-#portal-megamenu .sub li.selected a {
-  background: #ddd;
-}
-
-/* line 252, ../sass/screen.scss */
-#page-wrapper {
-  position: relative;
-  background: white;
-  border: 1px solid white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  margin-right: auto;
-  margin-left: auto;
-  width: 960px;
-  position: relative;
-  top: 80px;
-}
-/* line 37, ../sass/partials/effects.scss */
-#page-wrapper:before {
-  z-index: -1;
-  position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 15px 20px black;
-  -webkit-box-shadow: 0 15px 20px black;
-  -o-box-shadow: 0 15px 20px black;
-  box-shadow: 0 15px 20px black;
-}
-/* line 41, ../sass/partials/effects.scss */
-#page-wrapper:after {
-  z-index: -1;
-  position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 15px 20px black;
-  -webkit-box-shadow: 0 15px 20px black;
-  -o-box-shadow: 0 15px 20px black;
-  box-shadow: 0 15px 20px black;
-}
-
-/* line 261, ../sass/screen.scss */
-#page {
-  -moz-box-shadow: black 0 5px 10px;
-  -webkit-box-shadow: black 0 5px 10px;
-  -o-box-shadow: black 0 5px 10px;
-  box-shadow: black 0 5px 10px;
-  width: 100%;
-  background-color: white;
-  position: relative;
-  z-index: 1;
-}
-
-/* line 269, ../sass/screen.scss */
-#content {
-  margin-bottom: 0;
-}
-
-/* line 274, ../sass/screen.scss */
-#foot-box {
-  background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #155d89), color-stop(100%, #0b4774));
-  background-image: -webkit-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -moz-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -o-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -ms-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  height: 200px;
-  position: relative;
-  border: 2px solid #fff;
-}
-
-/* line 35, ../sass/screen.scss */
-#light {
-  background: transparent url("../images/vert-gradient.png") repeat-x left top;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-}
-
-/* line 43, ../sass/screen.scss */
-#head-ribbon {
-  background: black;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #45484d 0%, black 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, black));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #45484d 0%, black 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #45484d 0%, black 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #45484d 0%, black 100%);
-  /* IE6-9 */
-  background: linear-gradient(top, #45484d 0%, #000000 100%);
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  margin: 0 auto;
-}
-
-/* line 52, ../sass/screen.scss */
-#head-wrapper {
-  height: 65px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 960px;
-  position: relative;
-}
-
-/* line 61, ../sass/screen.scss */
-#logo-spacer {
-  background: url(../images/logo-med.png) no-repeat left center;
-  width: 260px;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  float: left;
-  height: 100%;
-  z-index: 200;
-}
-
-/* line 72, ../sass/screen.scss */
-#divider {
-  -moz-box-shadow: black 0 2px 10px;
-  -webkit-box-shadow: black 0 2px 10px;
-  -o-box-shadow: black 0 2px 10px;
-  box-shadow: black 0 2px 10px;
-  width: 100%;
-  height: 15px;
-  z-index: 2;
-  position: fixed;
-  top: 60px;
-  background-color: #155d89;
-  border-bottom: 2px solid #0b4774;
-  border-top: 2px solid #1a75ba;
-}
-
-/* line 84, ../sass/screen.scss */
-#breadcrumbs {
-  padding-left: 15px;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-
-/* line 93, ../sass/screen.scss */
-#menu {
-  right: 0px;
-  position: absolute;
-  z-index: 100;
-}
-
-/* line 99, ../sass/screen.scss */
-#menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item {
-  color: black;
-  -moz-box-shadow: inset 0px 0px 5px 0px black;
-  -webkit-box-shadow: inset 0px 0px 5px 0px black;
-  box-shadow: inset 0px 0px 5px 0px black;
-  background: #9ec9ef;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9ec9ef), color-stop(33%, #2e93ea), color-stop(35%, #0077ef), color-stop(78%, #2e93ea), color-stop(100%, #4683dd));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ec9ef', endColorstr='#4683dd',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
-  /* W3C */
-}
-
-/* line 107, ../sass/screen.scss */
-#menu ul li a.menu-item {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  border-right: thin solid #1C1D1F;
-  border-left: thin solid #1C1D1F;
-  background: none;
-  z-index: 1000;
-}
-
-/* line 117, ../sass/screen.scss */
-#menu ul li span.arrowDownAlternative {
-  display: none;
-}
-
-/* line 121, ../sass/screen.scss */
-#collage ul.megamenu {
-  /* To prevent margin-left in collage compose view */
-  margin-left: 0;
-  padding-left: 0;
-}
-
-/* line 127, ../sass/screen.scss */
-#portal-megamenu {
-  /* Global Level*/
-  margin: 0 0 0 0;
-  float: left;
-  list-style: none;
-  padding-bottom: 0;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-/* line 139, ../sass/screen.scss */
-#portal-megamenu li .collage-row {
-  clear: both;
-  float: left;
-  width: 100%;
-  padding: 0;
-}
-
-/* Reset width to auto for nested rows */
-/* line 147, ../sass/screen.scss */
-#portal-megamenu li .menu_view_nested-menu .collage-row {
-  width: auto;
-}
-
-/* line 151, ../sass/screen.scss */
-#portal-megamenu .sub ul {
-  list-style: none;
-  float: left;
-  width: 100%;
-  padding: 0 0 10px 0;
-  margin: 0 10px 0 0;
-}
-
-/* line 160, ../sass/screen.scss */
-#portal-megamenu .sub ul li {
-  width: 100%;
-}
-
-/* line 164, ../sass/screen.scss */
-#portal-megamenu .sub ul li span {
-  display: block;
-  white-space: nowrap;
-}
-
-/* line 169, ../sass/screen.scss */
-#portal-megamenu .sub ul li a {
-  float: none;
-  height: auto;
-  display: block;
-  white-space: nowrap;
-  text-indent: 0px;
-}
-
-/* Menu styling for Sunburst theme */
-/* line 179, ../sass/screen.scss */
-.actionicon-object_buttons-megamenu-enable,
-.actionicon-object_buttons-megamenu-disable {
-  border-top: 2px solid white;
-}
-
-/* line 184, ../sass/screen.scss */
-#portal-megamenu li a.menu-item {
-  height: 38px;
-  background: none;
-  border-right: none;
-  min-width: 0em;
-}
-
-/* line 191, ../sass/screen.scss */
-#portal-megamenu li.top-level .subShadow {
-  visibility: hidden;
-}
-
-/* line 195, ../sass/screen.scss */
-#portal-megamenu li.top-level .sub {
-  top: 60px;
-  padding: 10px 10px 5px 20px;
-  border: 2px solid #0c7fd3;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: 0px 2px 10px;
-  -webkit-box-shadow: 0px 2px 10px;
-  -o-box-shadow: 0px 2px 10px;
-  box-shadow: 0px 2px 10px;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.7)));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* IE10+ */
-  background: linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#b3000000',GradientType=0 );
-  /* IE6-9 */
-}
-
-/* line 206, ../sass/screen.scss */
-#portal-megamenu .sub .collage-megamenu-vlines > ul,
-#portal-megamenu .sub .collage-megamenu-hvlines > ul {
-  border-left: 1px solid #ddd;
-  margin-left: -10px;
-  padding-left: 10px;
-}
-
-/* line 213, ../sass/screen.scss */
-#portal-megamenu .sub .collage-megamenu-vlines > ul.collage-first-object,
-#portal-megamenu .sub .collage-megamenu-hvlines > ul.collage-first-object {
-  border-left: 0;
-  margin-left: 0;
-  padding-left: 0;
-}
-/* @end */
-
-.member_summary_item {
-    float: left;
-    width:205px;
-    height: 70px;
-    border: 1px solid #999;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px #999;
-    margin: 5px;
-    padding:5px;
-    padding-top: 10px;
-}
-
-.member_tooltip h4.name {
-  color: #fff;
-}
-
-.member_summary_item h2 {
-  padding-top:0px;
-  padding-left: 6px;
-}
-
-.member_summary_item .member_name {
-  float: left;
-  width: 140px;
-}
-
-.member_summary_item .member_name a {
-  font-size: 1em;
-  line-height: 1em;
-
-}
-.member_summary_item .picture {
-  float: left;
-}
-
-.member_summary_item .picture img {
-  box-shadow: 2px 2px 2px #999;
-  border-radius: 3px;
-}
-
-/* line 861, ../sass/screen.scss */
-/* line 221, ../sass/screen.scss */
-#portal-megamenu .sub ul li a:hover {
-  color: #000;
-  width: 100%;
-  /*-- rounded corner--*/
-  -moz-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -webkit-border-bottom: 4px;
-  /*-- gradient--*/
-  background: #cdeb8e;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdeb8e), color-stop(39%, #cdeb8e), color-stop(62%, #a5c956), color-stop(100%, #a5c956));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
-  /* W3C */
-}
-
-/* line 878, ../sass/screen.scss */
-/* line 248, ../sass/screen.scss */
-#portal-megamenu .sub li.selected a {
-  background: #ddd;
-}
-
-/* line 252, ../sass/screen.scss */
-#page-wrapper {
-  position: relative;
-  background: white;
-  border: 1px solid white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  margin-right: auto;
-  margin-left: auto;
-  width: 960px;
-  position: relative;
-  top: 80px;
-}
-/* line 37, ../sass/partials/effects.scss */
-#page-wrapper:before {
-  z-index: -1;
-  position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 15px 20px black;
-  -webkit-box-shadow: 0 15px 20px black;
-  -o-box-shadow: 0 15px 20px black;
-  box-shadow: 0 15px 20px black;
-}
-/* line 41, ../sass/partials/effects.scss */
-#page-wrapper:after {
-  z-index: -1;
-  position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 15px 20px black;
-  -webkit-box-shadow: 0 15px 20px black;
-  -o-box-shadow: 0 15px 20px black;
-  box-shadow: 0 15px 20px black;
-}
-
-/* line 261, ../sass/screen.scss */
-#page {
-  -moz-box-shadow: black 0 5px 10px;
-  -webkit-box-shadow: black 0 5px 10px;
-  -o-box-shadow: black 0 5px 10px;
-  box-shadow: black 0 5px 10px;
-  width: 100%;
-  background-color: white;
-  position: relative;
-  z-index: 1;
-}
-
-/* line 269, ../sass/screen.scss */
-#content {
-  margin-bottom: 0;
-}
-
-/* line 274, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 #foot-box {
   background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #155d89), color-stop(100%, #0b4774));
   background-image: -webkit-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
