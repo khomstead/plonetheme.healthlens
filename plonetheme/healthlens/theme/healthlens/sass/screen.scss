@@ -319,7 +319,8 @@ dl.actionMenu.activated dd {
 	margin-left: auto;
 	width: 960px;
 	position: relative;
-	top: 80px;  
+	top: 80px;
+	display: block;  
 }
 
 #page {    
@@ -333,7 +334,15 @@ dl.actionMenu.activated dd {
 #content {
 	margin: 0 3px 0 3px;
 }                   
-        
+
+#colophon {
+	position: relative;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	top: 80px;
+}        
 // Content
 #title-ribbon { 
 	@include orange-gradient;

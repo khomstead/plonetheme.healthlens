@@ -35,6 +35,8 @@
     <drop css:theme=".post"/>
     <before css:theme-children="#page-title" css:content-children="#parent-fieldname-title" />
     <before css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
+    <replace css:theme-children="#foot-box" css:content-children="#portlets-above" />
+
     <!-- <before css:theme-children="#breadcrumbs" css:content-children="#portal-breadcrumbs" /> -->
     <drop css:content="#parent-fieldname-title" />
     <drop css:content="#parent-fieldname-description" />
@@ -49,7 +51,8 @@
     
     <!-- FOOTER -->
     <replace css:theme-children="#footer" css:content-children="#portal-footer"/>
-    <append css:content="#portal-siteactions" css:theme="#foot-box"/>
+    <append css:content="#portal-colophon" css:theme="#colophon"/>
+
 
     <!--  TOOLS -->
     <replace css:theme-children="#pane1" css:content-children=".FooterPortletManager3" />

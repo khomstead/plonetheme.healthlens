@@ -135,6 +135,25 @@ p, li, span, a, a.tile {
 	line-height: $base-line-height;    
 }          
 
+// Colophon
+
+#portal-colophon p {
+	font-family: $readable-font;
+	letter-spacing: normal;
+	color: #666;
+} 
+
+#portal-colophon a {
+	color: #999;
+	&:hover {
+		color: $bright-highligh-text;
+	}
+}
+// Collage Styles
+div.collage_type_document.collage_view_standard h2 {
+	font-family: $global-nav-font;
+}
+
 // Creative Font Styles for tinyMCE
 
 .postit {

@@ -1,5 +1,37 @@
+// Collage Styles
 #collage .featured-document {
 	@include minor-curl-effect;   
 	background-color: #FCFDA6;
 	
-}      
+}  
+
+div.collage_type_document.collage_view_standard {
+	padding: 5px 10px;
+	@include minor-curl-effect; 
+	background-color: #FCF9E9;
+}
+                     
+// Content Well Portlets
+.managePortletsAboveLink, 
+.managePortletsBelowLink,
+.manageFooterPortletsLink,
+.manageInHeaderPortletsLink { text-align: center; margin: 0 auto 1em; clear:both;}
+
+.portlet-manager-row .porlet-well_manager { width: 30%; float:left; margin:1%; }
+.portlet-manager-row { width:100%; float:left; }
+
+
+/* Define classes for 1/5ths and 1/6ths widths and positions. */
+div.width-1\3a 5 { width:    17.75%; } /* .width-1:5 */
+div.width-2\3a 5 { width:    37.75%; } /* .width-2:5 */
+div.width-3\3a 5 { width:    57.75%; } /* .width-3:5 */
+div.width-4\3a 5 { width:    77.75%; } /* .width-4:5 */
+div.position-1\3a 5 {margin-left:    -78.875%;} /* .position-1:5 */
+div.position-2\3a 5 {margin-left:    -58.875%;} /* .position-2:5 */
+div.position-3\3a 5 {margin-left:    -38.875%;} /* .position-3:5 */
+div.position-4\3a 5 {margin-left:    -18.875%;} /* .position-4:5 */
+
+div.width-1\3a 6 { width:    14.416%; } /* .width-1:6 */
+div.width-5\3a 6 { width:    81.083%; } /* .width-5:6 */
+div.position-1\3a 6 {margin-left:    -82.208%;} /* .position-1:6 */
+div.position-5\3a 6 {margin-left:    -15.542%;} /* .position-5:6 */

@@ -74,7 +74,7 @@ a:link, a:visited {
 
 /* line 14, ../sass/_typography.scss */
 /* line 11, ../sass/partials/_old_css.scss */
-a:hover, span:hover {
+a:hover {
   color: #1040fb;
 }
 
@@ -1632,11 +1632,32 @@ p, li, span, a, a.tile {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   letter-spacing: normal;
   color: #424242;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
 }
 
 /* line 140, ../sass/partials/_typography.scss */
+#portal-colophon p {
+  font-family: "dejarip-1", "dejarip-2", sans-serif;
+  letter-spacing: normal;
+  color: #666;
+}
+
+/* line 146, ../sass/partials/_typography.scss */
+#portal-colophon a {
+  color: #999;
+}
+/* line 148, ../sass/partials/_typography.scss */
+#portal-colophon a:hover {
+  color: #ff9900;
+}
+
+/* line 153, ../sass/partials/_typography.scss */
+div.collage_type_document.collage_view_standard h2 {
+  font-family: "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2", sans-serif;
+}
+
+/* line 159, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
   background: white;
@@ -1696,7 +1717,7 @@ p, li, span, a, a.tile {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 148, ../sass/partials/_typography.scss */
+/* line 167, ../sass/partials/_typography.scss */
 .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
@@ -1729,7 +1750,7 @@ body.section-landing-page #title-ribbon {
   padding-left: 8px;
 }
 
-/* line 1, ../sass/partials/_plone-products.scss */
+/* line 2, ../sass/partials/_plone-products.scss */
 #collage .featured-document {
   position: relative;
   background: white;
@@ -1786,6 +1807,160 @@ body.section-landing-page #title-ribbon {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* line 8, ../sass/partials/_plone-products.scss */
+div.collage_type_document.collage_view_standard {
+  padding: 5px 10px;
+  position: relative;
+  background: white;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  background-color: #FCF9E9;
+}
+/* line 58, ../sass/partials/_effects.scss */
+div.collage_type_document.collage_view_standard:before {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 40%;
+  height: 40%;
+  content: '';
+  bottom: 0;
+  left: 0;
+  -moz-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -moz-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
+  -webkit-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
+  -o-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
+  transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+/* line 62, ../sass/partials/_effects.scss */
+div.collage_type_document.collage_view_standard:after {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 40%;
+  height: 40%;
+  content: '';
+  bottom: 0;
+  right: 0;
+  -moz-transform-origin: right bottom;
+  -webkit-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -moz-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
+  -webkit-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
+  -o-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
+  transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 18, ../sass/partials/_plone-products.scss */
+.managePortletsAboveLink,
+.managePortletsBelowLink,
+.manageFooterPortletsLink,
+.manageInHeaderPortletsLink {
+  text-align: center;
+  margin: 0 auto 1em;
+  clear: both;
+}
+
+/* line 20, ../sass/partials/_plone-products.scss */
+.portlet-manager-row .porlet-well_manager {
+  width: 30%;
+  float: left;
+  margin: 1%;
+}
+
+/* line 21, ../sass/partials/_plone-products.scss */
+.portlet-manager-row {
+  width: 100%;
+  float: left;
+}
+
+/* Define classes for 1/5ths and 1/6ths widths and positions. */
+/* line 25, ../sass/partials/_plone-products.scss */
+div.width-1\3a 5 {
+  width: 17.75%;
+}
+
+/* .width-1:5 */
+/* line 26, ../sass/partials/_plone-products.scss */
+div.width-2\3a 5 {
+  width: 37.75%;
+}
+
+/* .width-2:5 */
+/* line 27, ../sass/partials/_plone-products.scss */
+div.width-3\3a 5 {
+  width: 57.75%;
+}
+
+/* .width-3:5 */
+/* line 28, ../sass/partials/_plone-products.scss */
+div.width-4\3a 5 {
+  width: 77.75%;
+}
+
+/* .width-4:5 */
+/* line 29, ../sass/partials/_plone-products.scss */
+div.position-1\3a 5 {
+  margin-left: -78.875%;
+}
+
+/* .position-1:5 */
+/* line 30, ../sass/partials/_plone-products.scss */
+div.position-2\3a 5 {
+  margin-left: -58.875%;
+}
+
+/* .position-2:5 */
+/* line 31, ../sass/partials/_plone-products.scss */
+div.position-3\3a 5 {
+  margin-left: -38.875%;
+}
+
+/* .position-3:5 */
+/* line 32, ../sass/partials/_plone-products.scss */
+div.position-4\3a 5 {
+  margin-left: -18.875%;
+}
+
+/* .position-4:5 */
+/* line 34, ../sass/partials/_plone-products.scss */
+div.width-1\3a 6 {
+  width: 14.416%;
+}
+
+/* .width-1:6 */
+/* line 35, ../sass/partials/_plone-products.scss */
+div.width-5\3a 6 {
+  width: 81.083%;
+}
+
+/* .width-5:6 */
+/* line 36, ../sass/partials/_plone-products.scss */
+div.position-1\3a 6 {
+  margin-left: -82.208%;
+}
+
+/* .position-1:6 */
+/* line 37, ../sass/partials/_plone-products.scss */
+div.position-5\3a 6 {
+  margin-left: -15.542%;
+}
+
+/* .position-5:6 */
 /* line 32, ../sass/screen.scss */
 body {
   background: #f5f5f5 url("../images/matt-pattern.jpg") repeat left top;
@@ -2202,6 +2377,7 @@ dl.actionMenu.activated dd {
   width: 960px;
   position: relative;
   top: 80px;
+  display: block;
 }
 /* line 37, ../sass/partials/_effects.scss */
 #page-wrapper:before {
@@ -2250,7 +2426,7 @@ dl.actionMenu.activated dd {
   box-shadow: 0 15px 20px black;
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 #page {
   -moz-box-shadow: black 0 5px 10px;
   -webkit-box-shadow: black 0 5px 10px;
@@ -2262,12 +2438,22 @@ dl.actionMenu.activated dd {
   z-index: 1;
 }
 
-/* line 333, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 #content {
   margin: 0 3px 0 3px;
 }
 
 /* line 338, ../sass/screen.scss */
+#colophon {
+  position: relative;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  top: 80px;
+}
+
+/* line 347, ../sass/screen.scss */
 #title-ribbon {
   background: #f9c667;
   /* Old browsers */
@@ -2295,7 +2481,7 @@ dl.actionMenu.activated dd {
   margin: 0 0px 10px 0px;
 }
 
-/* line 351, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 #foot-box {
   background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #155d89), color-stop(100%, #0b4774));
   background-image: -webkit-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
