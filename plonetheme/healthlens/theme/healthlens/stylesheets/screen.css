@@ -1842,15 +1842,43 @@ body {
   z-index: 200;
 }
 
-/* line 74, ../sass/screen.scss */
-#menu {
-  right: 0px;
-  position: absolute;
-  z-index: 100;
+/* line 75, ../sass/screen.scss */
+#home {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+  border-right: thin solid #1C1D1F;
+  border-left: thin solid #1C1D1F;
+  z-index: 1000;
+  position: relative;
+  float: right;
 }
 
-/* line 80, ../sass/screen.scss */
-#menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item {
+/* line 87, ../sass/screen.scss */
+#home div:hover {
+  background: url("../images/Icons/Home-black-32.png") no-repeat center center;
+}
+
+/* line 91, ../sass/screen.scss */
+#home div {
+  background: url("../images/Icons/Home-blue-32.png") no-repeat center center;
+  height: 100%;
+  width: 100%;
+  padding: 5px 0 0 0;
+}
+
+/* line 98, ../sass/screen.scss */
+#menu {
+  right: 0px;
+  position: relative;
+  z-index: 100;
+  float: right;
+  display: inline-block;
+}
+
+/* line 107, ../sass/screen.scss */
+#menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item, #home:hover {
   color: black;
   -moz-box-shadow: inset 0px 0px 5px 0px black;
   -webkit-box-shadow: inset 0px 0px 5px 0px black;
@@ -1873,8 +1901,8 @@ body {
   /* W3C */
 }
 
-/* line 88, ../sass/screen.scss */
-#menu ul li a.menu-item {
+/* line 115, ../sass/screen.scss */
+#menu ul li a.menu-item, ul.home li a {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -1884,19 +1912,19 @@ body {
   z-index: 1000;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #menu ul li span.arrowDownAlternative {
   display: none;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 #collage ul.megamenu {
   /* To prevent margin-left in collage compose view */
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 #portal-megamenu {
   /* Global Level*/
   margin: 0 0 0 0;
@@ -1907,7 +1935,7 @@ body {
   padding-left: 0;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #portal-megamenu li .collage-row {
   clear: both;
   float: left;
@@ -1916,12 +1944,12 @@ body {
 }
 
 /* Reset width to auto for nested rows */
-/* line 128, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 #portal-megamenu li .menu_view_nested-menu .collage-row {
   width: auto;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #portal-megamenu .sub ul {
   list-style: none;
   float: left;
@@ -1930,18 +1958,18 @@ body {
   margin: 0 10px 0 0;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 #portal-megamenu .sub ul li {
   width: 100%;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 #portal-megamenu .sub ul li span {
   display: block;
   white-space: nowrap;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #portal-megamenu .sub ul li a {
   float: none;
   height: auto;
@@ -1951,13 +1979,13 @@ body {
 }
 
 /* Menu styling for Sunburst theme */
-/* line 160, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .actionicon-object_buttons-megamenu-enable,
 .actionicon-object_buttons-megamenu-disable {
   border-top: 2px solid white;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #portal-megamenu li a.menu-item {
   height: 38px;
   background: none;
@@ -1965,12 +1993,12 @@ body {
   min-width: 0em;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #portal-megamenu li.top-level .subShadow {
   visibility: hidden;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #portal-megamenu li.top-level .sub {
   top: 60px;
   padding: 10px 10px 5px 20px;
@@ -2001,7 +2029,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 186, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul {
   border-left: 1px solid #ddd;
@@ -2009,7 +2037,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul.collage-first-object,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul.collage-first-object {
   border-left: 0;
@@ -2017,7 +2045,7 @@ body {
   padding-left: 0;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 #portal-megamenu .sub ul li a:hover {
   color: #ff9900;
   width: 100%;
@@ -2033,7 +2061,7 @@ body {
   background-color: transparent;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #portal-megamenu .sub li.selected a {
   background: transparent;
   background-image: url("../images/orange-arrow-closed.png");
@@ -2041,7 +2069,7 @@ body {
   background-position: left center;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 #divider {
   -moz-box-shadow: black 0 2px 10px;
   -webkit-box-shadow: black 0 2px 10px;
@@ -2057,7 +2085,7 @@ body {
   border-top: 2px solid #1a75ba;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 #personal-tools {
   width: 960px;
   margin-left: auto;
@@ -2066,35 +2094,35 @@ body {
   top: 0px;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 #portal-personaltools {
   z-index: 1;
   top: 0px;
   height: 20px;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #portal-personaltools #personaltools-login {
   background: transparent url("../images/Icons/Lock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
-/* line 244, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 #portal-personaltools #personaltools-login:hover {
   background: transparent url("../images/Icons/Lock-white-16.png") no-repeat left 0px;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #portal-personaltools dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
 
-/* line 253, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 #portal-personaltools.activated dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-white-16.png") no-repeat left 0px;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #portal-personaltools.actionMenu {
   height: 100%;
   background: none;
@@ -2108,7 +2136,7 @@ body {
   padding: 2px 5px 0 5px;
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 #portal-personaltools dd.actionMenuContent {
   margin-top: 2px;
   padding: 0px 0px 5px 2px;
@@ -2132,7 +2160,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 274, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 dl.actionMenu.activated dd {
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -2152,12 +2180,12 @@ dl.actionMenu.activated dd {
   border: none;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 #portal-personaltools dd a:hover {
   background: transparent;
 }
 
-/* line 287, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 #page-wrapper {
   position: relative;
   background: white;
@@ -2219,7 +2247,7 @@ dl.actionMenu.activated dd {
   box-shadow: 0 15px 20px black;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 #page {
   -moz-box-shadow: black 0 5px 10px;
   -webkit-box-shadow: black 0 5px 10px;
@@ -2231,12 +2259,12 @@ dl.actionMenu.activated dd {
   z-index: 1;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 #content {
   margin-bottom: 0;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #title-ribbon {
   background: #f9c667;
   /* Old browsers */
@@ -2263,7 +2291,7 @@ dl.actionMenu.activated dd {
   padding-top: 10px;
 }
 
-/* line 321, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 #foot-box {
   background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #155d89), color-stop(100%, #0b4774));
   background-image: -webkit-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);

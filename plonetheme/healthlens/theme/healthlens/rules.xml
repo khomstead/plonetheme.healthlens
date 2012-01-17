@@ -29,7 +29,7 @@
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
     <!-- MENU -->
-    <replace css:theme="#menu ul" css:content="#portal-megamenu"/>
+    <replace css:theme="#menu ul.megamenu" css:content="#portal-megamenu"/>
 
     <!--  CONTENT -->
     <drop css:theme=".post"/>

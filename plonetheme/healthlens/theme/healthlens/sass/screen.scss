@@ -71,13 +71,40 @@ body {
                       
 
 // MegaMenu 
+
+#home  {
+	height: $ribbon-height;
+	width: 60px;
+	display: inline-block;
+	text-align: center;
+	border-right: thin solid #1C1D1F;
+	border-left: thin solid #1C1D1F;
+	z-index: 1000;
+	position: relative;
+	float: right;
+}    
+
+#home div:hover { 
+	background: url('../images/Icons/Home-black-32.png') no-repeat center center;
+}
+
+#home div { 
+	background: url('../images/Icons/Home-blue-32.png') no-repeat center center;
+	height:100%;
+	width: 100%;
+	padding: 5px 0 0 0;
+}
+                                                                                
 #menu {
 	right: 0px;
-	position: absolute;
-	z-index: 100;    
+	position: relative;
+	z-index: 100;
+	float: right;  
+	display: inline-block;
+	  
 }        
 
-#menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item {
+#menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item, #home:hover {
 	color: black;
 	-moz-box-shadow: inset 0px 0px 5px 0px black;
 	-webkit-box-shadow: inset 0px 0px 5px 0px black;
@@ -85,7 +112,7 @@ body {
 	@include menu-rollover-gradient;    
 }
 
-#menu ul li a.menu-item {
+#menu ul li a.menu-item, ul.home li a {
 	display: block;
 	text-decoration: none;
 	text-align: center;
@@ -94,6 +121,7 @@ body {
 	background: none;
 	z-index: 1000;   
 }
+    
 
 #menu ul li span.arrowDownAlternative {
 	display: none;
@@ -180,7 +208,7 @@ body {
 	@include border-radius(5px);
 	@include box-shadow(black 0px 2px 10px);   
 	@include megamenu-gradient;    
-}
+}   
 
 #portal-megamenu .sub .collage-megamenu-vlines > ul,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul {
