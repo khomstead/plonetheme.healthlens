@@ -77,7 +77,6 @@ body {
 	width: 60px;
 	display: inline-block;
 	text-align: center;
-	border-right: thin solid #1C1D1F;
 	border-left: thin solid #1C1D1F;
 	z-index: 1000;
 	position: relative;
@@ -89,7 +88,7 @@ body {
 }
 
 #home div { 
-	background: url('../images/Icons/Home-blue-32.png') no-repeat center center;
+	background: url('../images/Icons/HOME-orange-32.png') no-repeat center center;
 	height:100%;
 	width: 100%;
 	padding: 5px 0 0 0;
@@ -116,12 +115,14 @@ body {
 	display: block;
 	text-decoration: none;
 	text-align: center;
-	border-right: thin solid #1C1D1F;
 	border-left: thin solid #1C1D1F;
 	background: none;
 	z-index: 1000;   
 }
-    
+
+#menu ul li.top-level-last a.menu-item {
+	border-right: thin solid #1C1D1F;
+}   
 
 #menu ul li span.arrowDownAlternative {
 	display: none;
