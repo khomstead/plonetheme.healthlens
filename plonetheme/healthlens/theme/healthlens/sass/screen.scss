@@ -323,27 +323,28 @@ dl.actionMenu.activated dd {
 }
 
 #page {    
-  @include box-shadow(black 0 5px 10px);
-  width: 100%;
-  background-color: white;
-  position: relative;
-  z-index: 1;
+	@include box-shadow(black 0 5px 10px);
+	width: 100%;
+	background-color: white;
+	position: relative;
+	z-index: 1;
 }
              
 #content {
-	margin-bottom: 0;
+	margin: 0 3px 0 3px;
 }                   
         
 // Content
 #title-ribbon { 
-  @include orange-gradient;
-  -moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  width: 100%;
-  position: relative;
-  border-bottom: 1px solid #fea721;
-  padding-top: 10px;
+	@include orange-gradient;
+	-moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #fea721;
+	padding: 5px 0 0px 0;
+	margin: 0 0px 10px 0px; 
 }
 
 // Foot Box

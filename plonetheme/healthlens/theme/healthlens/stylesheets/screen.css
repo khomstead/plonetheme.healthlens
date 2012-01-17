@@ -2264,7 +2264,7 @@ dl.actionMenu.activated dd {
 
 /* line 333, ../sass/screen.scss */
 #content {
-  margin-bottom: 0;
+  margin: 0 3px 0 3px;
 }
 
 /* line 338, ../sass/screen.scss */
@@ -2291,10 +2291,11 @@ dl.actionMenu.activated dd {
   width: 100%;
   position: relative;
   border-bottom: 1px solid #fea721;
-  padding-top: 10px;
+  padding: 5px 0 0px 0;
+  margin: 0 0px 10px 0px;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 #foot-box {
   background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #155d89), color-stop(100%, #0b4774));
   background-image: -webkit-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
