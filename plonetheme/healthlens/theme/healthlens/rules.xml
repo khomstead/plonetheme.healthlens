@@ -33,7 +33,7 @@
 
     <!--  CONTENT -->
     <drop css:theme=".post"/>
-    <before css:theme-children="#page-title" css:content-children="#parent-fieldname-title" />
+    <replace css:theme-children="#page-title h1" css:content-children="#parent-fieldname-title" />
     <before css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
     <replace css:theme-children="#foot-box" css:content-children="#portlets-above" />
 

@@ -117,7 +117,28 @@ body, #content {
 
     
 
-// General Fonts
+// General Fonts 
+#page-title h1 {
+	font-size: 50px;
+	letter-spacing: normal;
+  	font-family:"futura-pt-1","futura-pt-2",sans-serif; 
+//	font: bold 330%/100% "Lucida Grande";    
+	color: #fff;
+	font-weight: 500;
+//	padding: 0px 0px 20px 0px;  
+	position: relative;
+}
+
+#page-title span {
+	background: url('../images/temp/gradient-dark.png') repeat-x top;
+	position: absolute;
+		bottom: 5px;
+		display: block;
+		width: 100%;
+		height: 23px;
+}
+
+
 h2 {
 	font-size: 24px;
 	line-height: 30px;
@@ -134,17 +155,33 @@ p, li, span, a, a.tile {
 	color: #424242;  
 	font-size: $base-font-size;
 	line-height: $base-line-height;    
-}          
+}
+          
+// Title Ribbon
+#page-title {
+//	text-decoration: none;
+//	font: 3em "futura-pt-1","futura-pt-2";
+//	padding: 0px 10px 0px;
+//	text-transform: capitalize;
+//	font-weight: 500;
+//	color: #ddd;
+//	text-shadow: 0px 1px 3px #000;
+//		background: #000 url(../images/temp/gradient4-bg.png) repeat-x left bottom;
+		padding: 5px 10px 10px 10px;
+//		margin: 30px 0 50px;	
+}
+
 // Portlets
 dt.portletHeader a, .portletHeader {
 	font-size: 16px;
 	line-height: normal !important;
 	font-family: $header-font !important;
 	font-weight: normal !important;
-	color: #666; 
+	color: #000; 
 	&:hover {
 		font-color: $muted-accent-highlight !important;
-		}; 
+		};
+	text-shadow: 1px 1px 1px #fff;
 }
 // Doormat 
 #foot-box .portletItem, #foot-box .portletStaticText {
@@ -153,7 +190,7 @@ dt.portletHeader a, .portletHeader {
 		line-height: 14px;
 		color: #dddddd;
 		}
-	a {color: $bright-highligh-text;}
+	a {color: $muted-accent-highlight;}
 }
 
 #foot-box dt.portletHeader a, #foot-box .portletHeader {
@@ -195,10 +232,11 @@ div.collage_type_document.collage_view_standard h2 {
 	text-align: left;
 	color: #000;
 	line-height: 22px;
-	background-color: #faebbc;
 	padding: 10px 10px 10px 30px;
-	background-image: url(../images/openquote1.gif);
-	background-position: 3px 3px;
+	@include minor-curl-effect;
+	background-color: #FCF9E9;
+	background-image: url(../images/openquote-gray.png);
+	background-position: 4px 8px;
 	background-repeat: no-repeat;  
-	@include border-radius(5px);
+	
 }     

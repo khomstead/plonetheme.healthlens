@@ -340,18 +340,8 @@ dl.portlet a:hover {
 }
 
 /* line 392, ../sass/screen.scss */
-/* line 284, ../sass/partials/_old_css.scss */
-#page-title {
-  text-decoration: none;
-  color: #000;
-  font: 3em "futura-pt-1","futura-pt-2";
-  padding: 0px 10px 0px;
-  text-transform: capitalize;
-  font-weight: 500;
-}
-
 /* line 401, ../sass/screen.scss */
-/* line 294, ../sass/partials/_old_css.scss */
+/* line 287, ../sass/partials/_old_css.scss */
 #page-description {
   padding-left: 10px;
   padding-bottom: 5px;
@@ -361,7 +351,7 @@ dl.portlet a:hover {
 
 /* line 411, ../sass/screen.scss */
 /* line 424, ../sass/screen.scss */
-/* line 305, ../sass/partials/_old_css.scss */
+/* line 298, ../sass/partials/_old_css.scss */
 #breadcrumbs {
   font-size: 10px;
   text-transform: uppercase;
@@ -369,7 +359,7 @@ dl.portlet a:hover {
 }
 
 /* line 430, ../sass/screen.scss */
-/* line 312, ../sass/partials/_old_css.scss */
+/* line 305, ../sass/partials/_old_css.scss */
 #breadcrumbs span.breadcrumbSeparator {
   color: #000;
   padding-right: 1px;
@@ -377,31 +367,31 @@ dl.portlet a:hover {
 }
 
 /* line 436, ../sass/screen.scss */
-/* line 319, ../sass/partials/_old_css.scss */
+/* line 312, ../sass/partials/_old_css.scss */
 #breadcrumbs-you-are-here {
   color: #000;
 }
 
 /* line 440, ../sass/screen.scss */
-/* line 324, ../sass/partials/_old_css.scss */
+/* line 317, ../sass/partials/_old_css.scss */
 #breadcrumbs span a {
   color: #000;
 }
 
 /* line 444, ../sass/screen.scss */
-/* line 329, ../sass/partials/_old_css.scss */
+/* line 322, ../sass/partials/_old_css.scss */
 #breadcrumbs span #breadcrumbs-current {
   color: #000;
 }
 
 /* line 448, ../sass/screen.scss */
-/* line 334, ../sass/partials/_old_css.scss */
+/* line 327, ../sass/partials/_old_css.scss */
 #breadcrumbs span a:hover {
   color: #42f627;
 }
 
 /* line 455, ../sass/screen.scss */
-/* line 339, ../sass/partials/_old_css.scss */
+/* line 332, ../sass/partials/_old_css.scss */
 #content .pullquote {
   margin: 0 .5em 0.5em 0.5em;
   font: italic 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
@@ -435,7 +425,7 @@ dl.portlet a:hover {
 
 /* @end */
 /* @group Surveys */
-/* line 374, ../sass/partials/_old_css.scss */
+/* line 367, ../sass/partials/_old_css.scss */
 #edit_form h2.questionTitle label {
   font: normal 1em "futura-pt-1","futura-pt-2",sans-serif;
   color: #424242;
@@ -444,7 +434,7 @@ dl.portlet a:hover {
 /* @end */
 /* @group Shadows */
 /* line 482, ../sass/screen.scss */
-/* line 385, ../sass/partials/_old_css.scss */
+/* line 378, ../sass/partials/_old_css.scss */
 .big-shadow {
   -moz-box-shadow: 0 3px 20px 0px #000;
   -webkit-box-shadow: 0 3px 20px 0px #000;
@@ -452,7 +442,7 @@ dl.portlet a:hover {
 }
 
 /* line 488, ../sass/screen.scss */
-/* line 392, ../sass/partials/_old_css.scss */
+/* line 385, ../sass/partials/_old_css.scss */
 .small-shadow {
   -moz-box-shadow: 0 2px 8px 0px #000;
   -webkit-box-shadow: 0 2px 8px 0px #000;
@@ -460,14 +450,14 @@ dl.portlet a:hover {
 }
 
 /* line 494, ../sass/screen.scss */
-/* line 399, ../sass/partials/_old_css.scss */
+/* line 392, ../sass/partials/_old_css.scss */
 .rounded {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
 
 /* line 499, ../sass/screen.scss */
-/* line 405, ../sass/partials/_old_css.scss */
+/* line 398, ../sass/partials/_old_css.scss */
 .bottom-rounded {
   -webkit-border-bottom-right-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
@@ -478,7 +468,7 @@ dl.portlet a:hover {
 }
 
 /* line 509, ../sass/screen.scss */
-/* line 415, ../sass/partials/_old_css.scss */
+/* line 408, ../sass/partials/_old_css.scss */
 .top-rounded {
   -webkit-border-top-right-radius: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -491,7 +481,7 @@ dl.portlet a:hover {
 /* @end */
 /* @group Gradients */
 /* line 524, ../sass/screen.scss */
-/* line 427, ../sass/partials/_old_css.scss */
+/* line 420, ../sass/partials/_old_css.scss */
 .black-button-gradient {
   background: #4c4c4c;
   /* Old browsers */
@@ -512,7 +502,7 @@ dl.portlet a:hover {
 }
 
 /* line 535, ../sass/screen.scss */
-/* line 447, ../sass/partials/_old_css.scss */
+/* line 440, ../sass/partials/_old_css.scss */
 .blue-button-gradient {
   background: #1e5799;
   /* Old browsers */
@@ -533,7 +523,7 @@ dl.portlet a:hover {
 }
 
 /* line 546, ../sass/screen.scss */
-/* line 467, ../sass/partials/_old_css.scss */
+/* line 460, ../sass/partials/_old_css.scss */
 .green-button-gradient {
   background: #bfd255;
   /* Old browsers */
@@ -554,7 +544,7 @@ dl.portlet a:hover {
 }
 
 /* line 557, ../sass/screen.scss */
-/* line 487, ../sass/partials/_old_css.scss */
+/* line 480, ../sass/partials/_old_css.scss */
 .light-blue-gradient {
   background: #f2f5f6;
   /* Old browsers */
@@ -575,7 +565,7 @@ dl.portlet a:hover {
 }
 
 /* line 568, ../sass/screen.scss */
-/* line 507, ../sass/partials/_old_css.scss */
+/* line 500, ../sass/partials/_old_css.scss */
 .light-green-gradient {
   background: #cdeb8e;
   /* Old browsers */
@@ -596,7 +586,7 @@ dl.portlet a:hover {
 }
 
 /* line 579, ../sass/screen.scss */
-/* line 527, ../sass/partials/_old_css.scss */
+/* line 520, ../sass/partials/_old_css.scss */
 .dark-gradient {
   background: #45484d;
   /* Old browsers */
@@ -617,7 +607,7 @@ dl.portlet a:hover {
 }
 
 /* line 590, ../sass/screen.scss */
-/* line 547, ../sass/partials/_old_css.scss */
+/* line 540, ../sass/partials/_old_css.scss */
 .dark-gradient-reverse {
   background: #45484d;
   /* Old browsers */
@@ -638,7 +628,7 @@ dl.portlet a:hover {
 }
 
 /* line 601, ../sass/screen.scss */
-/* line 567, ../sass/partials/_old_css.scss */
+/* line 560, ../sass/partials/_old_css.scss */
 .head-gradient {
   background: #000000;
   /* Old browsers */
@@ -666,7 +656,7 @@ dl.portlet a:hover {
 /* @group Page Slide */
 /* line 883, ../sass/screen.scss */
 /* line 892, ../sass/screen.scss */
-/* line 600, ../sass/partials/_old_css.scss */
+/* line 593, ../sass/partials/_old_css.scss */
 #drawer_tab {
   cursor: pointer;
   height: 140px;
@@ -682,7 +672,7 @@ dl.portlet a:hover {
   margin-left: -24px;
 }
 
-/* line 615, ../sass/partials/_old_css.scss */
+/* line 608, ../sass/partials/_old_css.scss */
 #drawer_tab:hover {
   background: transparent url("../images/binderClipRollover.png") no-repeat left center;
 }
@@ -695,14 +685,14 @@ dl.portlet a:hover {
 /* @end */
 /* @group Carousel */
 /* line 973, ../sass/screen.scss */
-/* line 632, ../sass/partials/_old_css.scss */
+/* line 625, ../sass/partials/_old_css.scss */
 .carousel {
   margin: none;
   position: relative;
 }
 
 /* line 978, ../sass/screen.scss */
-/* line 638, ../sass/partials/_old_css.scss */
+/* line 631, ../sass/partials/_old_css.scss */
 .carousel-text {
   background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   /* FF3.6+ */
@@ -721,20 +711,20 @@ dl.portlet a:hover {
 }
 
 /* line 988, ../sass/screen.scss */
-/* line 656, ../sass/partials/_old_css.scss */
+/* line 649, ../sass/partials/_old_css.scss */
 .carousel-title {
   font: 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
   color: #fffeff;
 }
 
 /* line 993, ../sass/screen.scss */
-/* line 662, ../sass/partials/_old_css.scss */
+/* line 655, ../sass/partials/_old_css.scss */
 .carousel-body p {
   color: #a9a9a9;
 }
 
 /* line 997, ../sass/screen.scss */
-/* line 667, ../sass/partials/_old_css.scss */
+/* line 660, ../sass/partials/_old_css.scss */
 .carousel-pager {
   position: relative;
   float: right;
@@ -743,7 +733,7 @@ dl.portlet a:hover {
 }
 
 /* line 1006, ../sass/screen.scss */
-/* line 677, ../sass/partials/_old_css.scss */
+/* line 670, ../sass/partials/_old_css.scss */
 a.carousel-pager-item,
 .carousel-pager-button-prev,
 .carousel-pager-button-next {
@@ -758,7 +748,7 @@ a.carousel-pager-item,
 }
 
 /* line 1017, ../sass/screen.scss */
-/* line 689, ../sass/partials/_old_css.scss */
+/* line 682, ../sass/partials/_old_css.scss */
 a.carousel-pager-item.carousel-pager-item-active {
   color: #04f626;
   border: 2px solid #04f626;
@@ -769,7 +759,7 @@ a.carousel-pager-item.carousel-pager-item-active {
 }
 
 /* line 1029, ../sass/screen.scss */
-/* line 701, ../sass/partials/_old_css.scss */
+/* line 694, ../sass/partials/_old_css.scss */
 .carousel-pager-item-active:link,
 .carousel-pager-item-active:visited,
 .carousel-pager-item-active .carousel-title {
@@ -779,7 +769,7 @@ a.carousel-pager-item.carousel-pager-item-active {
 /* @end */
 /* @group LiveSearch */
 /* line 1035, ../sass/screen.scss */
-/* line 710, ../sass/partials/_old_css.scss */
+/* line 703, ../sass/partials/_old_css.scss */
 .LSResult {
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -795,7 +785,7 @@ a.carousel-pager-item.carousel-pager-item-active {
 
 /* @end */
 /* @group Drawr */
-/* line 730, ../sass/partials/_old_css.scss */
+/* line 723, ../sass/partials/_old_css.scss */
 #drawer {
   background: url(../images/corkboard.jpg) repeat-y right;
   position: fixed;
@@ -809,13 +799,13 @@ a.carousel-pager-item.carousel-pager-item-active {
   overflow-x: hidden;
 }
 
-/* line 743, ../sass/partials/_old_css.scss */
+/* line 736, ../sass/partials/_old_css.scss */
 #panes {
   position: relative;
   padding-top: 20px;
 }
 
-/* line 748, ../sass/partials/_old_css.scss */
+/* line 741, ../sass/partials/_old_css.scss */
 #drawer_nav {
   height: 40px;
   width: 100%;
@@ -843,7 +833,7 @@ a.carousel-pager-item.carousel-pager-item-active {
   border-bottom: 1px dashed gray;
 }
 
-/* line 769, ../sass/partials/_old_css.scss */
+/* line 762, ../sass/partials/_old_css.scss */
 #drawer_nav ul {
   width: 100%;
   height: 100%;
@@ -851,7 +841,7 @@ a.carousel-pager-item.carousel-pager-item-active {
 }
 
 /* line 929, ../sass/screen.scss */
-/* line 776, ../sass/partials/_old_css.scss */
+/* line 769, ../sass/partials/_old_css.scss */
 #drawer_nav li {
   float: left;
   width: 24%;
@@ -865,7 +855,7 @@ a.carousel-pager-item.carousel-pager-item-active {
 
 /* line 939, ../sass/screen.scss */
 /* line 950, ../sass/screen.scss */
-/* line 791, ../sass/partials/_old_css.scss */
+/* line 784, ../sass/partials/_old_css.scss */
 #drawer_nav a.current {
   height: 50px;
   -moz-box-shadow: 0px 0px 7px 0 black;
@@ -898,12 +888,12 @@ a.carousel-pager-item.carousel-pager-item-active {
   text-transform: uppercase;
 }
 
-/* line 815, ../sass/partials/_old_css.scss */
+/* line 808, ../sass/partials/_old_css.scss */
 #drawer_nav a.current img {
   margin-bottom: -10px;
 }
 
-/* line 821, ../sass/partials/_old_css.scss */
+/* line 814, ../sass/partials/_old_css.scss */
 #drawer_nav a {
   height: 30px;
   color: black;
@@ -919,7 +909,7 @@ a.carousel-pager-item.carousel-pager-item-active {
   overflow: hidden;
 }
 
-/* line 836, ../sass/partials/_old_css.scss */
+/* line 829, ../sass/partials/_old_css.scss */
 #drawer dl.portlet dt {
   background: url("../images/pushpin.png") no-repeat 50% top transparent;
   min-height: 40px;
@@ -927,7 +917,7 @@ a.carousel-pager-item.carousel-pager-item-active {
   bottom: 25px;
 }
 
-/* line 843, ../sass/partials/_old_css.scss */
+/* line 836, ../sass/partials/_old_css.scss */
 #drawer dl.portlet dt h2 {
   padding-top: 25px;
 }
@@ -935,7 +925,7 @@ a.carousel-pager-item.carousel-pager-item-active {
 /* @end */
 /* @group Effects */
 /* @group Page Curl */
-/* line 852, ../sass/partials/_old_css.scss */
+/* line 845, ../sass/partials/_old_css.scss */
 #drawer dl.portlet {
   position: relative;
   width: 90%;
@@ -960,7 +950,7 @@ a.carousel-pager-item.carousel-pager-item-active {
   margin-top: 10px;
 }
 
-/* line 869, ../sass/partials/_old_css.scss */
+/* line 862, ../sass/partials/_old_css.scss */
 #drawer dl.portlet:before,
 #drawer dl.portlet:after {
   content: "";
@@ -980,7 +970,7 @@ a.carousel-pager-item.carousel-pager-item-active {
   transform: rotate(-3deg);
 }
 
-/* line 887, ../sass/partials/_old_css.scss */
+/* line 880, ../sass/partials/_old_css.scss */
 #drawer dl.portlet:after {
   right: 10px;
   left: auto;
@@ -993,7 +983,7 @@ a.carousel-pager-item.carousel-pager-item-active {
 /* @end */
 /* @group Speech Bubbles */
 /* THE SPEECH BUBBLE --------------------------------------- */
-/* line 899, ../sass/partials/_old_css.scss */
+/* line 892, ../sass/partials/_old_css.scss */
 div.member .tooltip {
   display: none;
   text-align: left;
@@ -1040,7 +1030,7 @@ div.member .tooltip {
 /* Variant : left
 ------------------------------------------ */
 /* creates the larger triangle */
-/* line 949, ../sass/partials/_old_css.scss */
+/* line 942, ../sass/partials/_old_css.scss */
 div.member .tooltip:before {
   content: "";
   position: absolute;
@@ -1058,7 +1048,7 @@ div.member .tooltip:before {
 }
 
 /* creates the smaller  triangle */
-/* line 964, ../sass/partials/_old_css.scss */
+/* line 957, ../sass/partials/_old_css.scss */
 div.member .tooltip:after {
   content: "";
   position: absolute;
@@ -1077,14 +1067,14 @@ div.member .tooltip:after {
 
 /* @end */
 /* @group post-it bubbles */
-/* line 982, ../sass/partials/_old_css.scss */
+/* line 975, ../sass/partials/_old_css.scss */
 div#drawer div dd.portletItem {
   position: relative;
   bottom: 25px;
   padding-top: 0;
 }
 
-/* line 989, ../sass/partials/_old_css.scss */
+/* line 982, ../sass/partials/_old_css.scss */
 div.post-type-form, .portletMyContentPortlet div.contents-block {
   display: none;
   padding: 5px 0 0;
@@ -1093,7 +1083,7 @@ div.post-type-form, .portletMyContentPortlet div.contents-block {
   border: none;
 }
 
-/* line 997, ../sass/partials/_old_css.scss */
+/* line 990, ../sass/partials/_old_css.scss */
 ul#my-content-tabs, ul#post-types {
   height: 30px;
   border-bottom: 1px solid orange;
@@ -1103,7 +1093,7 @@ ul#my-content-tabs, ul#post-types {
   padding: 0 0 3px;
 }
 
-/* line 1006, ../sass/partials/_old_css.scss */
+/* line 999, ../sass/partials/_old_css.scss */
 ul#post-types li, ul#my-content-tabs li {
   float: left;
   padding: 0;
@@ -1113,7 +1103,7 @@ ul#post-types li, ul#my-content-tabs li {
   border-bottom: none;
 }
 
-/* line 1015, ../sass/partials/_old_css.scss */
+/* line 1008, ../sass/partials/_old_css.scss */
 ul#post-types li a:hover, ul#my-content-tabs li a:hover {
   background: #f9c667;
   /* Old browsers */
@@ -1134,7 +1124,7 @@ ul#post-types li a:hover, ul#my-content-tabs li a:hover {
   color: #fff !important;
 }
 
-/* line 1036, ../sass/partials/_old_css.scss */
+/* line 1029, ../sass/partials/_old_css.scss */
 ul#my-content-tabs a, ul#post-types li a {
   font: 400 20px "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
   display: block;
@@ -1152,7 +1142,7 @@ ul#my-content-tabs a, ul#post-types li a {
   padding: 5px 10px;
 }
 
-/* line 1053, ../sass/partials/_old_css.scss */
+/* line 1046, ../sass/partials/_old_css.scss */
 ul#my-content-tabs a.current, ul#post-types li a.current {
   position: relative;
   color: black;
@@ -1177,7 +1167,7 @@ ul#my-content-tabs a.current, ul#post-types li a.current {
   border-bottom: 1px solid orange;
 }
 
-/* line 1078, ../sass/partials/_old_css.scss */
+/* line 1071, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem {
   height: 100%;
   width: 100%;
@@ -1188,7 +1178,7 @@ dl#portlet-MyContent div.tileItem {
   padding: 2px 0;
 }
 
-/* line 1088, ../sass/partials/_old_css.scss */
+/* line 1081, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem.expanded {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1212,24 +1202,24 @@ dl#portlet-MyContent div.tileItem.expanded {
   /* W3C */
 }
 
-/* line 1103, ../sass/partials/_old_css.scss */
+/* line 1096, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem.expanded .MyContent_title {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-/* line 1108, ../sass/partials/_old_css.scss */
+/* line 1101, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem.expanded .MyContent_title a {
   color: white;
 }
 
-/* line 1112, ../sass/partials/_old_css.scss */
+/* line 1105, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.show_hide {
   padding-right: 5px;
   padding-left: 5px;
 }
 
-/* line 1117, ../sass/partials/_old_css.scss */
+/* line 1110, ../sass/partials/_old_css.scss */
 div.tileItem div.show_hide img:hover {
   background: yellow;
   -webkit-border-radius: 10px;
@@ -1237,26 +1227,26 @@ div.tileItem div.show_hide img:hover {
   border-radius: 10px;
 }
 
-/* line 1129, ../sass/partials/_old_css.scss */
+/* line 1122, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.MyContent_title a {
   font-size: 12px;
   color: black;
 }
 
-/* line 1134, ../sass/partials/_old_css.scss */
+/* line 1127, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem.expanded .MyContent_title a:hover {
   color: yellow !important;
 }
 
 /* sliding div */
-/* line 1140, ../sass/partials/_old_css.scss */
+/* line 1133, ../sass/partials/_old_css.scss */
 div.sliding_div div.MyContent_edit, div.sliding_div div.MyContent_delete {
   padding-top: 3px;
   width: 16px;
   margin-left: 5px;
 }
 
-/* line 1147, ../sass/partials/_old_css.scss */
+/* line 1140, ../sass/partials/_old_css.scss */
 div.sliding_div div.MyContent_delete:hover, div.sliding_div div.MyContent_edit:hover {
   background: yellow;
   -webkit-border-radius: 10px;
@@ -1264,14 +1254,14 @@ div.sliding_div div.MyContent_delete:hover, div.sliding_div div.MyContent_edit:h
   border-radius: 10px;
 }
 
-/* line 1155, ../sass/partials/_old_css.scss */
+/* line 1148, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.sliding_div {
   position: relative;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-/* line 1161, ../sass/partials/_old_css.scss */
+/* line 1154, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.sliding_div div {
   float: right;
   padding-right: 0px;
@@ -1279,7 +1269,7 @@ dl#portlet-MyContent div.tileItem div.sliding_div div {
 }
 
 /* quick-post form */
-/* line 1169, ../sass/partials/_old_css.scss */
+/* line 1162, ../sass/partials/_old_css.scss */
 #portlet-quickPost input#form-widgets-title {
   width: 70%;
   text-align: left;
@@ -1287,19 +1277,19 @@ dl#portlet-MyContent div.tileItem div.sliding_div div {
   line-height: 1.5em;
 }
 
-/* line 1176, ../sass/partials/_old_css.scss */
+/* line 1169, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.sliding_div form#review_state_form {
   float: left;
   margin-right: 0;
   margin-left: 10px;
 }
 
-/* line 1182, ../sass/partials/_old_css.scss */
+/* line 1175, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.inner dd.portletItem ul li {
   margin-bottom: 10px;
 }
 
-/* line 1186, ../sass/partials/_old_css.scss */
+/* line 1179, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.inner dd.portletItem ul {
   margin-top: 10px;
 }
@@ -1307,18 +1297,18 @@ dl#portlet-MyContent div.inner dd.portletItem ul {
 /* @end */
 /* @end */
 /* @group jquery buttons */
-/* line 1193, ../sass/partials/_old_css.scss */
+/* line 1186, ../sass/partials/_old_css.scss */
 .ui-buttonset {
   margin-right: 7px;
 }
 
-/* line 1197, ../sass/partials/_old_css.scss */
+/* line 1190, ../sass/partials/_old_css.scss */
 .my_content_radio input {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 1201, ../sass/partials/_old_css.scss */
+/* line 1194, ../sass/partials/_old_css.scss */
 form#review_state_form, .ui-button .ui-button-text {
   display: block;
   line-height: 1;
@@ -1327,18 +1317,18 @@ form#review_state_form, .ui-button .ui-button-text {
   color: #333;
 }
 
-/* line 1209, ../sass/partials/_old_css.scss */
+/* line 1202, ../sass/partials/_old_css.scss */
 .ui-button-text-only .ui-button-text {
   padding: 5px 10px;
 }
 
-/* line 1212, ../sass/partials/_old_css.scss */
+/* line 1205, ../sass/partials/_old_css.scss */
 .ui-buttonset .ui-button {
   margin-left: 0;
   margin-right: -0.3em;
 }
 
-/* line 1214, ../sass/partials/_old_css.scss */
+/* line 1207, ../sass/partials/_old_css.scss */
 .ui-button {
   display: inline-block;
   position: relative;
@@ -1352,7 +1342,7 @@ form#review_state_form, .ui-button .ui-button-text {
 }
 
 /*Active Button*/
-/* line 1217, ../sass/partials/_old_css.scss */
+/* line 1210, ../sass/partials/_old_css.scss */
 label.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
   font-weight: normal;
   border: none;
@@ -1379,7 +1369,7 @@ label.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .u
 }
 
 /*Default button*/
-/* line 1235, ../sass/partials/_old_css.scss */
+/* line 1228, ../sass/partials/_old_css.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: none;
   font-weight: normal;
@@ -1403,7 +1393,7 @@ label.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .u
 }
 
 /*hover button*/
-/* line 1250, ../sass/partials/_old_css.scss */
+/* line 1243, ../sass/partials/_old_css.scss */
 label.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
   border: none;
   font-weight: normal;
@@ -1426,13 +1416,13 @@ label.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-
   /* W3C */
 }
 
-/* line 1264, ../sass/partials/_old_css.scss */
+/* line 1257, ../sass/partials/_old_css.scss */
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 1269, ../sass/partials/_old_css.scss */
+/* line 1262, ../sass/partials/_old_css.scss */
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
   border: 1px solid #448dae;
   background: #dddddd url(images/ui-bg_flat_75_dddddd_40x100.png) 50% 50% repeat-x;
@@ -1442,7 +1432,7 @@ label.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-
 
 /* @end */
 /* @group TinyMCE */
-/* line 1281, ../sass/partials/_old_css.scss */
+/* line 1274, ../sass/partials/_old_css.scss */
 .ploneSkin table, .ploneSkin tbody, .ploneSkin a, .ploneSkin img, .ploneSkin tr, .ploneSkin div, .ploneSkin td, .ploneSkin iframe, .ploneSkin span, .ploneSkin *, .ploneSkin .mceText {
   border: 0;
   margin: 0;
@@ -1468,7 +1458,7 @@ body, #content {
 
 /* line 12, ../sass/partials/_typography.scss */
 #menu ul li a.menu-item {
-  color: #fe7a1b;
+  color: #e5000f;
   padding: 22px 10px 0;
   font: 300 20px "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2", sans-serif;
   letter-spacing: normal;
@@ -1482,7 +1472,7 @@ body, #content {
 
 /* line 24, ../sass/partials/_typography.scss */
 #portal-megamenu .sub div.plain p {
-  color: #fe7a1b;
+  color: #e5000f;
   padding: 2px 0 0px 0px;
 }
 
@@ -1492,7 +1482,7 @@ body, #content {
   margin: 0;
   font: 300 20px "futura-pt-1", "futura-pt-2";
   width: 100%;
-  color: #ff9900;
+  color: #90cb43;
   letter-spacing: normal;
 }
 
@@ -1555,7 +1545,7 @@ body, #content {
 
 /* line 92, ../sass/partials/_typography.scss */
 #portal-personaltools.actionMenu dd a:hover {
-  color: #ff9900;
+  color: #90cb43;
 }
 
 /* line 96, ../sass/partials/_typography.scss */
@@ -1585,6 +1575,26 @@ body, #content {
 }
 
 /* line 121, ../sass/partials/_typography.scss */
+#page-title h1 {
+  font-size: 50px;
+  letter-spacing: normal;
+  font-family: "futura-pt-1","futura-pt-2",sans-serif;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+}
+
+/* line 132, ../sass/partials/_typography.scss */
+#page-title span {
+  background: url("../images/temp/gradient-dark.png") repeat-x top;
+  position: absolute;
+  bottom: 5px;
+  display: block;
+  width: 100%;
+  height: 23px;
+}
+
+/* line 142, ../sass/partials/_typography.scss */
 h2 {
   font-size: 24px;
   line-height: 30px;
@@ -1595,7 +1605,7 @@ h2 {
   padding-top: 10px;
 }
 
-/* line 131, ../sass/partials/_typography.scss */
+/* line 152, ../sass/partials/_typography.scss */
 p, li, span, a, a.tile {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   letter-spacing: normal;
@@ -1604,57 +1614,63 @@ p, li, span, a, a.tile {
   line-height: 18px;
 }
 
-/* line 139, ../sass/partials/_typography.scss */
+/* line 161, ../sass/partials/_typography.scss */
+#page-title {
+  padding: 5px 10px 10px 10px;
+}
+
+/* line 175, ../sass/partials/_typography.scss */
 dt.portletHeader a, .portletHeader {
   font-size: 16px;
   line-height: normal !important;
   font-family: "futura-pt-1", "futura-pt-2" !important;
   font-weight: normal !important;
-  color: #666;
+  color: #000;
+  text-shadow: 1px 1px 1px #fff;
 }
-/* line 145, ../sass/partials/_typography.scss */
+/* line 181, ../sass/partials/_typography.scss */
 dt.portletHeader a:hover, .portletHeader:hover {
   font-color: #1a75ba !important;
 }
 
-/* line 151, ../sass/partials/_typography.scss */
+/* line 188, ../sass/partials/_typography.scss */
 #foot-box .portletItem p, #foot-box .portletItem span, #foot-box .portletItem a, #foot-box .portletStaticText p, #foot-box .portletStaticText span, #foot-box .portletStaticText a {
   font-size: 10px;
   line-height: 14px;
   color: #dddddd;
 }
-/* line 156, ../sass/partials/_typography.scss */
+/* line 193, ../sass/partials/_typography.scss */
 #foot-box .portletItem a, #foot-box .portletStaticText a {
-  color: #ff9900;
+  color: #1a75ba;
 }
 
-/* line 159, ../sass/partials/_typography.scss */
+/* line 196, ../sass/partials/_typography.scss */
 #foot-box dt.portletHeader a, #foot-box .portletHeader {
   color: #dddddd;
 }
 
-/* line 165, ../sass/partials/_typography.scss */
+/* line 202, ../sass/partials/_typography.scss */
 #portal-colophon p {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   letter-spacing: normal;
   color: #666;
 }
 
-/* line 171, ../sass/partials/_typography.scss */
+/* line 208, ../sass/partials/_typography.scss */
 #portal-colophon a {
   color: #999;
 }
-/* line 173, ../sass/partials/_typography.scss */
+/* line 210, ../sass/partials/_typography.scss */
 #portal-colophon a:hover {
-  color: #ff9900;
+  color: #90cb43;
 }
 
-/* line 178, ../sass/partials/_typography.scss */
+/* line 215, ../sass/partials/_typography.scss */
 div.collage_type_document.collage_view_standard h2 {
   font-family: "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2", sans-serif;
 }
 
-/* line 184, ../sass/partials/_typography.scss */
+/* line 221, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
   background: white;
@@ -1714,24 +1730,70 @@ div.collage_type_document.collage_view_standard h2 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 192, ../sass/partials/_typography.scss */
+/* line 229, ../sass/partials/_typography.scss */
 .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
   text-align: left;
   color: #000;
   line-height: 22px;
-  background-color: #faebbc;
   padding: 10px 10px 10px 30px;
-  background-image: url(../images/openquote1.gif);
-  background-position: 3px 3px;
+  position: relative;
+  background: white;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  background-color: #FCF9E9;
+  background-image: url(../images/openquote-gray.png);
+  background-position: 4px 8px;
   background-repeat: no-repeat;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
+}
+/* line 58, ../sass/partials/_effects.scss */
+.elegant:before {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 40%;
+  height: 40%;
+  content: '';
+  bottom: 0;
+  left: 0;
+  -moz-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -moz-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
+  -webkit-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
+  -o-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
+  transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+/* line 62, ../sass/partials/_effects.scss */
+.elegant:after {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 40%;
+  height: 40%;
+  content: '';
+  bottom: 0;
+  right: 0;
+  -moz-transform-origin: right bottom;
+  -webkit-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -moz-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
+  -webkit-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
+  -o-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
+  transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* line 2, ../sass/partials/_cleanup.scss */
@@ -2028,15 +2090,15 @@ body {
 
 /* line 86, ../sass/screen.scss */
 #home div:hover {
-  background: url("../images/Icons/HOME-black-32.png") no-repeat center center;
+  background: url("../images/Icons/power-black.png") no-repeat center center;
 }
 
 /* line 90, ../sass/screen.scss */
 #home div {
-  background: url("../images/Icons/HOME-orange-32.png") no-repeat center center;
+  background: url("../images/Icons/power-green.png") no-repeat center center;
   height: 100%;
   width: 100%;
-  padding: 5px 0 0 0;
+  padding: 8px 0 0 0;
 }
 
 /* line 97, ../sass/screen.scss */
@@ -2222,9 +2284,9 @@ body {
 
 /* line 228, ../sass/screen.scss */
 #portal-megamenu .sub ul li a:hover {
-  color: #ff9900;
+  color: #90cb43;
   width: 100%;
-  background-image: url("../images/orange-arrow-closed.png");
+  background-image: url("../images/green-arrow.png");
   background-repeat: no-repeat;
   background-position: left center;
   -moz-border-radius: 2px;
@@ -2239,7 +2301,7 @@ body {
 /* line 236, ../sass/screen.scss */
 #portal-megamenu .sub li.selected a {
   background: transparent;
-  background-image: url("../images/orange-arrow-closed.png");
+  background-image: url("../images/green-arrow.png");
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -2260,7 +2322,7 @@ body {
   border-top: 2px solid #1a75ba;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 #personal-tools {
   width: 960px;
   margin-left: auto;
@@ -2269,35 +2331,35 @@ body {
   top: 0px;
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 #portal-personaltools {
   z-index: 1;
   top: 0px;
   height: 20px;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 #portal-personaltools #personaltools-login {
   background: transparent url("../images/Icons/Lock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
-/* line 273, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 #portal-personaltools #personaltools-login:hover {
   background: transparent url("../images/Icons/Lock-white-16.png") no-repeat left 0px;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 #portal-personaltools dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #portal-personaltools.activated dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-white-16.png") no-repeat left 0px;
 }
 
-/* line 287, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #portal-personaltools.actionMenu {
   height: 100%;
   background: none;
@@ -2311,7 +2373,7 @@ body {
   padding: 2px 5px 0 5px;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 #portal-personaltools dd.actionMenuContent {
   margin-top: 2px;
   padding: 0px 0px 5px 2px;
@@ -2335,7 +2397,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 dl.actionMenu.activated dd {
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -2355,12 +2417,12 @@ dl.actionMenu.activated dd {
   border: none;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 #portal-personaltools dd a:hover {
   background: transparent;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 #page-wrapper {
   position: relative;
   background: white;
@@ -2423,7 +2485,7 @@ dl.actionMenu.activated dd {
   box-shadow: 0 15px 20px black;
 }
 
-/* line 326, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 #page {
   -moz-box-shadow: black 0 5px 10px;
   -webkit-box-shadow: black 0 5px 10px;
@@ -2435,12 +2497,17 @@ dl.actionMenu.activated dd {
   z-index: 1;
 }
 
-/* line 334, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 #content {
   margin: 0 3px 0 3px;
 }
 
-/* line 338, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
+#portal-columns {
+  padding-top: 10px;
+}
+
+/* line 348, ../sass/screen.scss */
 #colophon {
   position: relative;
   width: 960px;
@@ -2450,37 +2517,37 @@ dl.actionMenu.activated dd {
   top: 80px;
 }
 
-/* line 347, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 #title-ribbon {
-  background: #f9c667;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #f9c667 0%, #f79621 100%);
-  /* W3C */
-  -moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-  width: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(65%, #000000), color-stop(100%, #444444));
+  background-image: -webkit-linear-gradient(top, #000000 65%, #444444);
+  background-image: -moz-linear-gradient(top, #000000 65%, #444444);
+  background-image: -o-linear-gradient(top, #000000 65%, #444444);
+  background-image: -ms-linear-gradient(top, #000000 65%, #444444);
+  background-image: linear-gradient(top, #000000 65%, #444444);
+  border-left: solid 3px #fff;
+  border-right: solid 3px #fff;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -o-border-bottom-left-radius: 0px;
+  -ms-border-bottom-left-radius: 0px;
+  -khtml-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -o-border-bottom-right-radius: 0px;
+  -ms-border-bottom-right-radius: 0px;
+  -khtml-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   position: relative;
-  border-bottom: 1px solid #fea721;
-  padding: 5px 0 0px 0;
-  margin: 0 0px 10px 0px;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 #portal-columns dl.portlet dt.portletHeader {
-  border: solid 1px #ddd;
+  border-bottom: solid 1px #666;
+  border-right: solid 1px #666;
+  border-top: solid 1px #ddd;
+  border-left: solid 1px #ddd;
   margin: 0 0 0 2px;
   padding: 4px 10px;
   position: relative;
@@ -2495,12 +2562,7 @@ dl.actionMenu.activated dd {
   -ms-border-radius: 0px;
   -khtml-border-radius: 0px;
   border-radius: 0px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #eaeaea), color-stop(30%, #ffffff), color-stop(70%, #ffffff), color-stop(100%, #dddddd));
-  background-image: -webkit-linear-gradient(left, #eaeaea, #ffffff 30%, #ffffff 70%, #dddddd);
-  background-image: -moz-linear-gradient(left, #eaeaea, #ffffff 30%, #ffffff 70%, #dddddd);
-  background-image: -o-linear-gradient(left, #eaeaea, #ffffff 30%, #ffffff 70%, #dddddd);
-  background-image: -ms-linear-gradient(left, #eaeaea, #ffffff 30%, #ffffff 70%, #dddddd);
-  background-image: linear-gradient(left, #eaeaea, #ffffff 30%, #ffffff 70%, #dddddd);
+  background: url("../images/brushed metal.jpg") left center;
 }
 /* line 58, ../sass/partials/_effects.scss */
 #portal-columns dl.portlet dt.portletHeader:before {
@@ -2549,20 +2611,32 @@ dl.actionMenu.activated dd {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 #foot-box {
-  background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #155d89), color-stop(100%, #0b4774));
-  background-image: -webkit-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -moz-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -o-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: -ms-radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
-  background-image: radial-gradient(center 60px, #155d89 400px, #0b4774 650px);
+  background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(46.154%, #000000), color-stop(100%, #333333));
+  background-image: -webkit-radial-gradient(center 60px, #000000 300px, #333333 650px);
+  background-image: -moz-radial-gradient(center 60px, #000000 300px, #333333 650px);
+  background-image: -o-radial-gradient(center 60px, #000000 300px, #333333 650px);
+  background-image: -ms-radial-gradient(center 60px, #000000 300px, #333333 650px);
+  background-image: radial-gradient(center 60px, #000000 300px, #333333 650px);
   height: 200px;
   position: relative;
   border: 2px solid #fff;
+  -moz-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -o-border-top-left-radius: 0px;
+  -ms-border-top-left-radius: 0px;
+  -khtml-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -o-border-top-right-radius: 0px;
+  -ms-border-top-right-radius: 0px;
+  -khtml-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
-/* line 379, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 #foot-box dl.portlet dt.portletHeader {
   border: none;
   margin: 0 0 0 0;

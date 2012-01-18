@@ -10,11 +10,13 @@ $base-font-size: 12px;
 $base-line-height: 18px;
                               
 //Font Colors
-$menu-header-color: #FE7A1B;
-$bright-highligh-text: #FF9900;
+//$menu-header-color: #FE7A1B;
+$menu-header-color: #E5000F;
+
+$bright-highligh-text: #90CB43;
 
 // Layout Colors
-$muted-accent: #155D89;
+$muted-accent: #155D89; 
 $muted-accent-highlight: #1A75BA;
 $muted-accent-shadow: #0B4774;
 
@@ -114,5 +116,6 @@ $ribbon-height: 60px;
 }    
 
 @mixin footer-gradient {
-@include background-image(radial-gradient(center 60px, $muted-accent 400px, $muted-accent-shadow 650px));
+@include background-image(radial-gradient(center 60px, #000 300px, #333 650px));
+
 }

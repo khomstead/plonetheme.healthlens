@@ -9,6 +9,16 @@
 		<![endif]-->
 		<script type="text/javascript" src="http://use.typekit.com/klo5xmp.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+
+		  //prepend span tag to H1
+		  $("h1").prepend("<span></span>");
+
+		});
+		</script>
+		
 	</head>
 	<body>
 	<div id="head-ribbon">
@@ -37,7 +47,7 @@
 		<div id="page">
 			<div id="carousel-sliders"></div>
 			<div id="title-ribbon">
-				<div id="page-title"></div>
+				<div id="page-title"><h1>Title</h1></div>
 				<div id="page-description"></div>
 			</div>
 			<div id="content-area">
@@ -87,6 +97,7 @@
     </div>
 
   </div>
-  </div>
+  </div> 
+
 </body>
 </html>

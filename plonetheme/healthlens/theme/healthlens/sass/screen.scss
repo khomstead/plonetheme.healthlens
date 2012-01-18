@@ -84,14 +84,14 @@ body {
 }    
 
 #home div:hover { 
-	background: url('../images/Icons/HOME-black-32.png') no-repeat center center;
+	background: url('../images/Icons/power-black.png') no-repeat center center;
 }
 
 #home div { 
-	background: url('../images/Icons/HOME-orange-32.png') no-repeat center center;
+	background: url('../images/Icons/power-green.png') no-repeat center center;
 	height:100%;
 	width: 100%;
-	padding: 5px 0 0 0;
+	padding: 8px 0 0 0;
 }
                                                                                 
 #menu {
@@ -251,6 +251,13 @@ $personal-bar-height: 20px;
 	background-color: $muted-accent;
 	border-bottom: 2px solid $muted-accent-shadow;
 	border-top: 2px solid $muted-accent-highlight;  
+	
+//	background-color: #AE0000;
+//	border-top: 1px solid #ddd;
+//	border-top: 2px solid #ddd;
+//	background:url('../images/temp/brushed-metal-bar.jpg') ;
+//	@include background-image(linear-gradient(top, #666, #ddd 35%, #333));
+	
 }
 
 #personal-tools {
@@ -335,6 +342,9 @@ dl.actionMenu.activated dd {
 	margin: 0 3px 0 3px;
 }                   
 
+#portal-columns {
+	padding-top: 10px;
+}
 #colophon {
 	position: relative;
 	width: 960px;
@@ -345,34 +355,60 @@ dl.actionMenu.activated dd {
 }        
 // Content
 #title-ribbon { 
-	@include orange-gradient;
-	-moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-	-webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-	box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-	width: 100%;
+	@include background-image(linear-gradient(top, #000 65%, #444));
+//   	@include box-shadow(#333 0 0px 5px);
+	border-left: solid 3px #fff;
+	border-right: solid 3px #fff;
+	
+	@include border-bottom-radius(0px);
+	
+
+//	@include background-image(linear-gradient(top, #816955, #603E22 90%, #4B3626));
+	
+//@include footer-gradient;
+//@include minor-curl-effect;
+
+//	-moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+//	-webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+//	box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
 	position: relative;
-	border-bottom: 1px solid #fea721;
-	padding: 5px 0 0px 0;
-	margin: 0 0px 10px 0px; 
+//	background-color: #000;
+//	border-bottom: 1px solid #4B3626;
+//	padding: 5px 0 0px 0;
+//	margin: 0 0px 10px 0px; 
+	
+//			background: #000 url(../images/temp/gradient4-bg.png) repeat-x left bottom;
+//			padding: 10px 0 10px 10px;
+	//		margin: 30px 0 50px;	
+	
 }
 // Page Portlets
 
 #portal-columns dl.portlet dt.portletHeader {
-	border: solid 1px #ddd;
+	border-bottom: solid 1px #666;
+	border-right: solid 1px #666;
+	border-top: solid 1px #ddd;
+	border-left: solid 1px #ddd;
 	margin: 0 0 0 2px;
 	padding: 4px 10px;
 	@include minor-curl-effect;
 	@include border-radius(0px);
-	@include background-image(linear-gradient(left, #eaeaea, white 30%, white 70%, #dddddd));
+//	@include background-image(linear-gradient(left, #eaeaea, white 30%, white 70%, #dddddd)); 
+	background:  url('../images/brushed metal.jpg') left center;
+	
 }
 
 
 // Foot Box
 #foot-box {   
 	@include footer-gradient;
+//	@include head-ribbon-gradient;
+	
 	height: 200px;
 	position: relative;  
 	border: 2px solid #fff;
+	@include border-top-radius(0px);
+	
 }
    
 
