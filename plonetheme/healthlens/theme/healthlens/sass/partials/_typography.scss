@@ -3,7 +3,8 @@
           
 // Reset 
 body, #content {
-	  font-size:100% !important;
+	font-size:100% !important;
+	letter-spacing: normal;
 }
 
 
@@ -134,6 +135,30 @@ p, li, span, a, a.tile {
 	font-size: $base-font-size;
 	line-height: $base-line-height;    
 }          
+// Portlets
+dt.portletHeader a, .portletHeader {
+	font-size: 16px;
+	line-height: normal !important;
+	font-family: $header-font !important;
+	font-weight: normal !important;
+	color: #666; 
+	&:hover {
+		font-color: $muted-accent-highlight !important;
+		}; 
+}
+// Doormat 
+#foot-box .portletItem, #foot-box .portletStaticText {
+	p, span, a {
+		font-size: 10px;
+		line-height: 14px;
+		color: #dddddd;
+		}
+	a {color: $bright-highligh-text;}
+}
+
+#foot-box dt.portletHeader a, #foot-box .portletHeader {
+	color: #dddddd;
+}
 
 // Colophon
 

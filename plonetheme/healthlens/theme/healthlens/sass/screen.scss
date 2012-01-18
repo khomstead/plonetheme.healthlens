@@ -355,6 +355,17 @@ dl.actionMenu.activated dd {
 	padding: 5px 0 0px 0;
 	margin: 0 0px 10px 0px; 
 }
+// Page Portlets
+
+#portal-columns dl.portlet dt.portletHeader {
+	border: solid 1px #ddd;
+	margin: 0 0 0 2px;
+	padding: 4px 10px;
+	@include minor-curl-effect;
+	@include border-radius(0px);
+	@include background-image(linear-gradient(left, #eaeaea, white 30%, white 70%, #dddddd));
+}
+
 
 // Foot Box
 #foot-box {   
@@ -362,4 +373,12 @@ dl.actionMenu.activated dd {
 	height: 200px;
 	position: relative;  
 	border: 2px solid #fff;
+}
+   
+
+#foot-box dl.portlet dt.portletHeader {
+	border: none;
+	margin: 0 0 0 0;
+	padding: 10px 5px 5px 5px;
+	background: none;
 }
