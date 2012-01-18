@@ -360,7 +360,7 @@ dl.actionMenu.activated dd {
 	border-left: solid 3px #fff;
 	border-right: solid 3px #fff;
 	
-	@include border-bottom-radius(0px);
+	@include border-bottom-radius(4px);
 	
 
 //	@include background-image(linear-gradient(top, #816955, #603E22 90%, #4B3626));
@@ -397,6 +397,10 @@ dl.actionMenu.activated dd {
 	background:  url('../images/brushed metal.jpg') left center;
 	
 }
+// Images
+img.image-left, img.image-right, .captioned img {
+	border: none;
+}
 
 
 // Foot Box
@@ -407,14 +411,16 @@ dl.actionMenu.activated dd {
 	height: 200px;
 	position: relative;  
 	border: 2px solid #fff;
-	@include border-top-radius(0px);
+	@include border-top-radius(4px);
 	
 }
    
-
-#foot-box dl.portlet dt.portletHeader {
+#foot-box dl.portlet dt.portletHeader, #foot-box .portletStaticText {
 	border: none;
 	margin: 0 0 0 0;
 	padding: 10px 5px 5px 5px;
 	background: none;
+}
+
+#foot-box .portletItem, #foot-box .portletStaticText {
 }

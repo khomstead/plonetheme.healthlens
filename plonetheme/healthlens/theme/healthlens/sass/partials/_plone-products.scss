@@ -10,6 +10,11 @@ div.collage_type_document.collage_view_standard {
 	@include minor-curl-effect; 
 	background-color: #FCF9E9;
 }
+// collective.collage.innerfade
+#InnerfadeContainer {
+	margin-top: -10px;
+}
+
                      
 // Content Well Portlets
 .managePortletsAboveLink, 

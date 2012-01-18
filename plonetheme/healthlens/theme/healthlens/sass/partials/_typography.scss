@@ -183,14 +183,23 @@ dt.portletHeader a, .portletHeader {
 		};
 	text-shadow: 1px 1px 1px #fff;
 }
-// Doormat 
+// Foot-Box 
 #foot-box .portletItem, #foot-box .portletStaticText {
 	p, span, a {
-		font-size: 10px;
-		line-height: 14px;
-		color: #dddddd;
+		font-size: 12px;
+		line-height: 16px;
+		color: #ddd;
 		}
 	a {color: $muted-accent-highlight;}
+}
+
+#foot-box  { 
+	& dt.portletHeader a.tile, h2 {
+		font-size: 18px;
+		color: #999;
+		text-shadow: none;
+		padding-top: 0;
+		}  
 }
 
 #foot-box dt.portletHeader a, #foot-box .portletHeader {
