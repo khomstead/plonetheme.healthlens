@@ -248,9 +248,10 @@ $personal-bar-height: 20px;
 	z-index: 2;
 	position: fixed;
 	top: $ribbon-height;
-	background-color: $muted-accent;
+//	background-color: $muted-accent;
 	border-bottom: 2px solid $muted-accent-shadow;
-	border-top: 2px solid $muted-accent-highlight;  
+	border-top: 2px solid $muted-accent-highlight; 
+	@include background-image(linear-gradient(top, $muted-accent-shadow, $muted-accent-highlight)); 
 	
 //	background-color: #AE0000;
 //	border-top: 1px solid #ddd;
@@ -355,7 +356,8 @@ dl.actionMenu.activated dd {
 }        
 // Content
 #title-ribbon { 
-	@include background-image(linear-gradient(top, #000 65%, #444));
+	@include background-image(linear-gradient(top, #000 80%, #444));
+//	background: #000;
 //   	@include box-shadow(#333 0 0px 5px);
 	border-left: solid 3px #fff;
 	border-right: solid 3px #fff;

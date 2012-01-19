@@ -116,6 +116,6 @@ $ribbon-height: 60px;
 }    
 
 @mixin footer-gradient {
-@include background-image(radial-gradient(center 60px, #000 300px, #333 650px));
+@include background-image(radial-gradient(center 60px, #000 400px, #555 650px));
 
 }

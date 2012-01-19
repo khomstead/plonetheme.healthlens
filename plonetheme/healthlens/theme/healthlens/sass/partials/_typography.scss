@@ -132,7 +132,7 @@ body, #content {
 #page-title span {
 	background: url('../images/temp/gradient-dark.png') repeat-x top;
 	position: absolute;
-		bottom: 5px;
+		bottom: -5px;
 		display: block;
 		width: 100%;
 		height: 23px;
@@ -225,6 +225,11 @@ div.collage_type_document.collage_view_standard h2 {
 	font-family: $global-nav-font;
 }
 
+.section-landing-page #collage .row_2 {
+	.block_1 .collage_view_standard h2 {color: $menu-header-color;}
+	.block_2 .collage_view_standard h2 {color: $muted-accent;}
+	.block_3 .collage_view_standard h2 {color: #8FC943;}
+}
 // Creative Font Styles for tinyMCE
 
 .postit {
