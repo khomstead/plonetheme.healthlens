@@ -7,7 +7,7 @@
       var drawerWidth;
       drawerWidth = $("#drawer").outerWidth();
       if (parseInt($('#drawer').css('left')) === 0) {
-        $('#page').animate({
+        $('#page-wrapper').animate({
           left: 0
         });
         $('#light').animate({
@@ -16,14 +16,11 @@
         $('#drawer_tab').animate({
           left: 0
         });
-        $('#drawer').animate({
+        return $('#drawer').animate({
           left: -drawerWidth
         });
-        return $('#foot-base').animate({
-          left: 0
-        });
       } else {
-        $('#page').animate({
+        $('#page-wrapper').animate({
           left: drawerWidth
         });
         $('#light').animate({
@@ -32,11 +29,8 @@
         $('#drawer_tab').animate({
           left: drawerWidth
         });
-        $('#drawer').animate({
+        return $('#drawer').animate({
           left: 0
-        });
-        return $('#foot-base').animate({
-          left: drawerWidth
         });
       }
     });
