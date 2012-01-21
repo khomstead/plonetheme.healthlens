@@ -2046,12 +2046,12 @@ div.position-5\3a 6 {
 }
 
 /* .position-5:6 */
-/* line 32, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 body {
   background: #f5f5f5 url("../images/matt-pattern.jpg") repeat left top;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 #light {
   background: transparent url("../images/vert-gradient.png") repeat-x left top;
   height: 100%;
@@ -2059,7 +2059,7 @@ body {
   position: fixed;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 #head-ribbon {
   background: black;
   /* Old browsers */
@@ -2081,7 +2081,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 #head-wrapper {
   height: 65px;
   margin-right: auto;
@@ -2090,7 +2090,7 @@ body {
   position: relative;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #logo-spacer {
   background: url(../images/logo-med.png) no-repeat left center;
   width: 260px;
@@ -2102,7 +2102,7 @@ body {
   z-index: 200;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #home {
   height: 60px;
   width: 60px;
@@ -2114,12 +2114,12 @@ body {
   float: right;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #home div:hover {
   background: url("../images/Icons/power-black.png") no-repeat center center;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #home div {
   background: url("../images/Icons/power-green.png") no-repeat center center;
   height: 100%;
@@ -2127,7 +2127,7 @@ body {
   padding: 8px 0 0 0;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 #menu {
   right: 0px;
   position: relative;
@@ -2136,7 +2136,7 @@ body {
   display: inline-block;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item, #home:hover {
   color: black;
   -moz-box-shadow: inset 0px 0px 5px 0px black;
@@ -2160,7 +2160,7 @@ body {
   /* W3C */
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 #menu ul li a.menu-item, ul.home li a {
   display: block;
   text-decoration: none;
@@ -2170,24 +2170,24 @@ body {
   z-index: 1000;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 #menu ul li.top-level-last a.menu-item {
   border-right: thin solid #1C1D1F;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 #menu ul li span.arrowDownAlternative {
   display: none;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 #collage ul.megamenu {
   /* To prevent margin-left in collage compose view */
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #portal-megamenu {
   /* Global Level*/
   margin: 0 0 0 0;
@@ -2198,7 +2198,7 @@ body {
   padding-left: 0;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #portal-megamenu li .collage-row {
   clear: both;
   float: left;
@@ -2207,12 +2207,12 @@ body {
 }
 
 /* Reset width to auto for nested rows */
-/* line 157, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #portal-megamenu li .menu_view_nested-menu .collage-row {
   width: auto;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #portal-megamenu .sub ul {
   list-style: none;
   float: left;
@@ -2221,18 +2221,18 @@ body {
   margin: 0 10px 0 0;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 #portal-megamenu .sub ul li {
   width: 100%;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #portal-megamenu .sub ul li span {
   display: block;
   white-space: nowrap;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 #portal-megamenu .sub ul li a {
   float: none;
   height: auto;
@@ -2242,13 +2242,13 @@ body {
 }
 
 /* Menu styling for Sunburst theme */
-/* line 189, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .actionicon-object_buttons-megamenu-enable,
 .actionicon-object_buttons-megamenu-disable {
   border-top: 2px solid white;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #portal-megamenu li a.menu-item {
   height: 38px;
   background: none;
@@ -2256,12 +2256,12 @@ body {
   min-width: 0em;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #portal-megamenu li.top-level .subShadow {
   visibility: hidden;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 #portal-megamenu li.top-level .sub {
   top: 60px;
   padding: 10px 10px 5px 20px;
@@ -2292,7 +2292,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul {
   border-left: 1px solid #ddd;
@@ -2300,7 +2300,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul.collage-first-object,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul.collage-first-object {
   border-left: 0;
@@ -2308,7 +2308,7 @@ body {
   padding-left: 0;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 #portal-megamenu .sub ul li a:hover {
   color: #90cb43;
   width: 100%;
@@ -2324,7 +2324,7 @@ body {
   background-color: transparent;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #portal-megamenu .sub li.selected a {
   background: transparent;
   background-image: url("../images/green-arrow.png");
@@ -2332,7 +2332,7 @@ body {
   background-position: left center;
 }
 
-/* line 244, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #divider {
   -moz-box-shadow: black 0 2px 10px;
   -webkit-box-shadow: black 0 2px 10px;
@@ -2353,7 +2353,7 @@ body {
   background-image: linear-gradient(top, #0b4774, #1a75ba);
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #personal-tools {
   width: 960px;
   margin-left: auto;
@@ -2362,35 +2362,35 @@ body {
   top: 0px;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 #portal-personaltools {
   z-index: 1;
   top: 0px;
   height: 20px;
 }
 
-/* line 278, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 #portal-personaltools #personaltools-login {
   background: transparent url("../images/Icons/Lock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
-/* line 281, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 #portal-personaltools #personaltools-login:hover {
   background: transparent url("../images/Icons/Lock-white-16.png") no-repeat left 0px;
 }
 
-/* line 285, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 #portal-personaltools dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #portal-personaltools.activated dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-white-16.png") no-repeat left 0px;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 #portal-personaltools.actionMenu {
   height: 100%;
   background: none;
@@ -2404,7 +2404,7 @@ body {
   padding: 2px 5px 0 5px;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 #portal-personaltools dd.actionMenuContent {
   margin-top: 2px;
   padding: 0px 0px 5px 2px;
@@ -2428,7 +2428,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 dl.actionMenu.activated dd {
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -2448,12 +2448,12 @@ dl.actionMenu.activated dd {
   border: none;
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 #portal-personaltools dd a:hover {
   background: transparent;
 }
 
-/* line 324, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 #page-wrapper {
   position: relative;
   background: white;
@@ -2516,7 +2516,7 @@ dl.actionMenu.activated dd {
   box-shadow: 0 15px 20px black;
 }
 
-/* line 334, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 #page {
   -moz-box-shadow: black 0 5px 10px;
   -webkit-box-shadow: black 0 5px 10px;
@@ -2528,17 +2528,17 @@ dl.actionMenu.activated dd {
   z-index: 1;
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 #content {
   margin: 0 3px 0 3px;
 }
 
-/* line 346, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 #portal-columns {
   padding-top: 10px;
 }
 
-/* line 349, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 #colophon {
   position: relative;
   width: 960px;
@@ -2548,7 +2548,7 @@ dl.actionMenu.activated dd {
   top: 80px;
 }
 
-/* line 358, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 #title-ribbon {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(80%, #000000), color-stop(100%, #444444));
   background-image: -webkit-linear-gradient(top, #000000 80%, #444444);
@@ -2573,7 +2573,7 @@ dl.actionMenu.activated dd {
   position: relative;
 }
 
-/* line 389, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 #portal-columns dl.portlet dt.portletHeader {
   border-bottom: solid 1px #666;
   border-right: solid 1px #666;
@@ -2642,12 +2642,12 @@ dl.actionMenu.activated dd {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 403, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 img.image-left, img.image-right, .captioned img {
   border: none;
 }
 
-/* line 409, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 #foot-box {
   background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #000000), color-stop(100%, #555555));
   background-image: -webkit-radial-gradient(center 60px, #000000 400px, #555555 650px);
@@ -2672,7 +2672,7 @@ img.image-left, img.image-right, .captioned img {
   border-top-right-radius: 4px;
 }
 
-/* line 420, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 #foot-box dl.portlet dt.portletHeader, #foot-box .portletStaticText {
   border: none;
   margin: 0 0 0 0;

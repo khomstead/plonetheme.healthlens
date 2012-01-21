@@ -8,7 +8,8 @@
 @import "compass/css3/shared"; 
 @import "compass/utilities";
 @import "compass/css3/transform-legacy";   
-@import "compass/support";
+@import "compass/support"; 
+@import "compass/utilities/general/hacks";
 
 
 // To configure blueprint, edit the partials/_base.sass file.
@@ -19,7 +20,12 @@
 @import "partials/typography";
 @import "partials/cleanup";
 @import "partials/plone-products";
-@import "partials/cloudspring_members"; 
+@import "partials/cloudspring_members";
+ 
+
+// Browser Hacks
+$legacy-support-for-ie: true;
+
 
 // Import the non-default scaffolding module
 @import "blueprint/scaffolding";
