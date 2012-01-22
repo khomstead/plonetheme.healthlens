@@ -33,7 +33,6 @@
 	height:200px;
 	margin:5px;
 	background:#111 url(../img/progress.gif) no-repeat center center;
-//	@include minor-curl-effect;
 	@include box-shadow(#666 0px 0px 4px);
 }
 
