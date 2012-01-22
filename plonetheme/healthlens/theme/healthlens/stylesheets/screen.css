@@ -2055,7 +2055,7 @@ div.position-5\3a 6 {
 */
 /* line 11, ../sass/partials/_mosaic.scss */
 .mosaic-block h2 {
-  padding: 10px 10px 0px 10px;
+  padding: 3px 10px 0px 10px;
   color: #90cb43;
   text-shadow: black 1px 1px 2px;
 }
@@ -2139,7 +2139,7 @@ div.position-5\3a 6 {
 
 /* line 79, ../sass/partials/_mosaic.scss */
 .bar2 .mosaic-overlay {
-  bottom: -50px;
+  bottom: -65px;
   height: 100px;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
