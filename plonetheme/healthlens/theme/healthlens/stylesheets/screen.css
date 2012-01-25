@@ -2184,12 +2184,7 @@ div.position-5\3a 6 {
 }
 
 /*General Mosaic Styles*/
-/* line 26, ../sass/partials/_mosaic.scss */
-#page {
-  background: #eaeaea !important;
-}
-
-/* line 29, ../sass/partials/_mosaic.scss */
+/* line 27, ../sass/partials/_mosaic.scss */
 .mosaic-block {
   float: left;
   position: relative;
@@ -2204,7 +2199,7 @@ div.position-5\3a 6 {
   box-shadow: #666666 0px 0px 4px;
 }
 
-/* line 40, ../sass/partials/_mosaic.scss */
+/* line 38, ../sass/partials/_mosaic.scss */
 .mosaic-backdrop {
   display: none;
   position: absolute;
@@ -2214,7 +2209,7 @@ div.position-5\3a 6 {
   background: #111;
 }
 
-/* line 49, ../sass/partials/_mosaic.scss */
+/* line 47, ../sass/partials/_mosaic.scss */
 .mosaic-overlay {
   display: none;
   z-index: 5;
@@ -2225,7 +2220,7 @@ div.position-5\3a 6 {
 }
 
 /*** Custom Animation Styles (You can remove/add any styles below) ***/
-/* line 59, ../sass/partials/_mosaic.scss */
+/* line 57, ../sass/partials/_mosaic.scss */
 .circle .mosaic-overlay {
   background: url(../img/hover-magnify.png) no-repeat center center;
   opacity: 0;
@@ -2234,7 +2229,7 @@ div.position-5\3a 6 {
   display: none;
 }
 
-/* line 67, ../sass/partials/_mosaic.scss */
+/* line 65, ../sass/partials/_mosaic.scss */
 .fade .mosaic-overlay {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
@@ -2242,14 +2237,14 @@ div.position-5\3a 6 {
   background: url(../img/bg-black.png);
 }
 
-/* line 74, ../sass/partials/_mosaic.scss */
+/* line 72, ../sass/partials/_mosaic.scss */
 .bar .mosaic-overlay {
   bottom: -100px;
   height: 100px;
   background: url(../img/bg-black.png);
 }
 
-/* line 80, ../sass/partials/_mosaic.scss */
+/* line 78, ../sass/partials/_mosaic.scss */
 .bar2 .mosaic-overlay {
   bottom: -68px;
   height: 100px;
@@ -2258,14 +2253,14 @@ div.position-5\3a 6 {
   filter: alpha(opacity=80);
 }
 
-/* line 88, ../sass/partials/_mosaic.scss */
+/* line 86, ../sass/partials/_mosaic.scss */
 .bar2 .mosaic-overlay:hover {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
 }
 
-/* line 94, ../sass/partials/_mosaic.scss */
+/* line 92, ../sass/partials/_mosaic.scss */
 .bar3 .mosaic-overlay {
   top: -100px;
   height: 100px;
@@ -2750,7 +2745,7 @@ dl.actionMenu.activated dd {
   -o-box-shadow: black 0 5px 10px;
   box-shadow: black 0 5px 10px;
   width: 100%;
-  background-color: white;
+  background-color: #eaeaea;
   position: relative;
   z-index: 1;
 }
@@ -2783,8 +2778,8 @@ dl.actionMenu.activated dd {
   background-image: -o-linear-gradient(top, #000000 80%, #444444);
   background-image: -ms-linear-gradient(top, #000000 80%, #444444);
   background-image: linear-gradient(top, #000000 80%, #444444);
-  border-left: solid 3px #fff;
-  border-right: solid 3px #fff;
+  border-left: solid 3px #eaeaea;
+  border-right: solid 3px #eaeaea;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
   -o-border-bottom-left-radius: 4px;
@@ -2884,7 +2879,7 @@ img.image-left, img.image-right, .captioned img {
   background-image: radial-gradient(center 60px, #000000 400px, #555555 650px);
   height: 200px;
   position: relative;
-  border: 2px solid #fff;
+  border: 2px solid #eaeaea;
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
   -o-border-top-left-radius: 4px;

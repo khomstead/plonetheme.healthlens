@@ -340,7 +340,7 @@ dl.actionMenu.activated dd {
 #page {    
 	@include box-shadow(black 0 5px 10px);
 	width: 100%;
-	background-color: white;
+	background-color: $page-color;
 	position: relative;
 	z-index: 1;
 }
@@ -365,8 +365,8 @@ dl.actionMenu.activated dd {
 	@include background-image(linear-gradient(top, #000 80%, #444));
 //	background: #000;
 //   	@include box-shadow(#333 0 0px 5px);
-	border-left: solid 3px #fff;
-	border-right: solid 3px #fff;
+	border-left: solid 3px $page-color;
+	border-right: solid 3px $page-color;
 	
 	@include border-bottom-radius(4px);
 	
@@ -418,7 +418,7 @@ img.image-left, img.image-right, .captioned img {
 	
 	height: 200px;
 	position: relative;  
-	border: 2px solid #fff;
+	border: 2px solid $page-color;
 	@include border-top-radius(4px);
 	
 }
