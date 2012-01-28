@@ -54,6 +54,12 @@ body {
 	width: 100%;
 	height: $ribbon-height;
 	margin: 0 auto;
+	.cssgradients & {
+		@include head-ribbon-gradient;
+	}
+	.no-cssgradients & {
+		background: black url('../images/header-background.png') repeat-x top;
+	}
 }
 
 #head-wrapper {
@@ -72,7 +78,7 @@ body {
 	position: relative;
 	float: left;
 	height: 100%;
-	z-index: 200;  
+	z-index: 200;	  	
 }
                       
 
@@ -111,10 +117,15 @@ body {
 
 #menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item, #home:hover {
 	color: black;
-	-moz-box-shadow: inset 0px 0px 5px 0px black;
-	-webkit-box-shadow: inset 0px 0px 5px 0px black;
-	box-shadow: inset 0px 0px 5px 0px black;  
-	@include menu-rollover-gradient;    
+	.cssgradients & {
+		-moz-box-shadow: inset 0px 0px 5px 0px black;
+		-webkit-box-shadow: inset 0px 0px 5px 0px black;
+		box-shadow: inset 0px 0px 5px 0px black;  
+		@include menu-rollover-gradient; 
+	}    
+	.no-cssgradients & {
+		background: blue url('../images/globalNav-hover.png') repeat-x top;
+	}
 }
 
 #menu ul li a.menu-item, ul.home li a {
@@ -205,6 +216,7 @@ body {
 }
 
 #portal-megamenu li.top-level .subShadow {
+	top: $ribbon-height;
 	visibility: hidden;
 }
 
@@ -213,8 +225,13 @@ body {
 	padding: 10px 10px 5px 20px;
 	border: 2px solid $border-highlight-color;
 	@include border-radius(5px);
-	@include box-shadow(black 0px 2px 10px);   
-	@include megamenu-gradient;    
+	@include box-shadow(black 0px 2px 10px);  
+    .cssgradients & {
+	@include megamenu-gradient; 
+	}
+	.no-cssgradients & {
+		background: transparent url(../images/bg-black.png) !important; 
+	}    
 }   
 
 #portal-megamenu .sub .collage-megamenu-vlines > ul,
@@ -248,23 +265,21 @@ body {
 $personal-bar-height: 20px;
  
 #divider {
-	@include box-shadow(black 0 2px 10px);
 	width: 100%;
-	height: $personal-bar-height;
-	z-index: 2;
+	z-index: 10;
 	position: fixed;
 	top: $ribbon-height;
-//	background-color: $muted-accent;
-	border-bottom: 2px solid $muted-accent-shadow;
-	border-top: 2px solid $muted-accent-highlight; 
-	@include background-image(linear-gradient(top, $muted-accent-shadow, $muted-accent-highlight)); 
-	
-//	background-color: #AE0000;
-//	border-top: 1px solid #ddd;
-//	border-top: 2px solid #ddd;
-//	background:url('../images/temp/brushed-metal-bar.jpg') ;
-//	@include background-image(linear-gradient(top, #666, #ddd 35%, #333));
-	
+	.cssgradients & {
+		height: $personal-bar-height;
+		@include box-shadow(black 0 2px 10px);
+		border-bottom: 2px solid $muted-accent-shadow;
+		border-top: 2px solid $muted-accent-highlight; 
+		@include background-image(linear-gradient(top, $muted-accent-shadow, $muted-accent-highlight));
+	} 
+	.no-cssgradients & {
+		background: transparent url('../images/personal-bar-background.png') repeat-x top;
+		height: $personal-bar-height + 12px;
+	}
 }
 
 #personal-tools {
@@ -327,22 +342,32 @@ dl.actionMenu.activated dd {
 }
                                    
 // Page 
-#page-wrapper {      
-	@include curl-effect;
+#page-wrapper {
+	z-index: 1;      
 	margin-right: auto;
 	margin-left: auto;
-	width: 960px;
 	position: relative;
 	top: 80px;
-	display: block;  
+	display: block;
+	.boxshadow & { 
+		width: 960px;
+		background: black;
+		@include curl-effect; 
+  	} 
 }
 
 #page {    
 	@include box-shadow(black 0 5px 10px);
-	width: 100%;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: $page-color;
 	position: relative;
-	z-index: 1;
+	z-index: 1;  
+   .no-boxshadow & {
+		box-shadow: 0px 10px 10px 0px #000;	
+		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   
+	}		
 }
              
 #content {
@@ -362,34 +387,38 @@ dl.actionMenu.activated dd {
 }        
 // Content
 #title-ribbon { 
-	@include background-image(linear-gradient(top, #000 80%, #444));
-//	background: #000;
-//   	@include box-shadow(#333 0 0px 5px);
 	border-left: solid 3px $page-color;
 	border-right: solid 3px $page-color;
-	
-	@include border-bottom-radius(4px);
-	
-
-//	@include background-image(linear-gradient(top, #816955, #603E22 90%, #4B3626));
-	
-//@include footer-gradient;
-//@include minor-curl-effect;
-
-//	-moz-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-//	-webkit-box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
-//	box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.6);
+	@include border-bottom-radius(6px);
 	position: relative;
-//	background-color: #000;
-//	border-bottom: 1px solid #4B3626;
-//	padding: 5px 0 0px 0;
-//	margin: 0 0px 10px 0px; 
-	
-//			background: #000 url(../images/temp/gradient4-bg.png) repeat-x left bottom;
-//			padding: 10px 0 10px 10px;
-	//		margin: 30px 0 50px;	
-	
+	.cssgradients & {
+		@include background-image(linear-gradient(top, #000 80%, #444));
+	}    
+	.no-cssgradients & {
+		background: #000;
+	}	
+} 
+
+#portal-column-one {
+  position: realitive;
+  z-index: 0;
 }
+
+/* line 334, ../sass/screen.scss */
+#portal-column-content {
+  -webkit-box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 0px 15px -10px rgba(0, 0, 0, 0.6);
+  padding-right: 10px;
+  min-height: 400px; 
+  .no-boxshadow & {  
+		background-color: $page-color;
+		border-radius: 5px;
+		box-shadow: 6px 0px 8px -8px #999;	
+		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   
+	}		
+}
+
 // Page Portlets
 
 #portal-columns dl.portlet dt.portletHeader {
@@ -412,15 +441,15 @@ img.image-left, img.image-right, .captioned img {
 
 
 // Foot Box
-#foot-box {   
+#foot-box {	   
 	@include footer-gradient;
-//	@include head-ribbon-gradient;
-	
 	height: 200px;
 	position: relative;  
 	border: 2px solid $page-color;
-	@include border-top-radius(4px);
-	
+	@include border-top-radius(4px); 
+	.no-cssgradients & {
+		background: #000 url('../images/foot-gradient.png') repeat-x;
+	}
 }
    
 #foot-box dl.portlet dt.portletHeader, #foot-box .portletStaticText {

@@ -24,15 +24,19 @@
 }
 /*General Mosaic Styles*/
 
-.mosaic-block {
+.mosaic-block {  
+	z-index: 100;
 	float:left;
 	position:relative;
 	overflow:hidden;
 	width:300px;
 	height:200px;
+	background:#111 url(../images/progress.gif) no-repeat center center;
+	box-shadow: 0px 0px 6px 0px #999;
 	margin:5px;
-	background:#111 url(../img/progress.gif) no-repeat center center;
-	@include box-shadow(#666 0px 0px 4px);
+	.no-boxshadow & {
+	behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   
+	}	
 }
 
 	.mosaic-backdrop {
@@ -55,7 +59,7 @@
 	
 		/*** Custom Animation Styles (You can remove/add any styles below) ***/
 		.circle .mosaic-overlay {
-			background:url(../img/hover-magnify.png) no-repeat center center;
+			background:url(../images/hover-magnify.png) no-repeat center center;
 			opacity:0;
 			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
 			filter:alpha(opacity=00);
@@ -66,13 +70,13 @@
 			opacity:0;
 			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
 			filter:alpha(opacity=00);
-			background:url(../img/bg-black.png);
+			background:url(../imgages/bg-black.png);
 		}
 		
 		.bar .mosaic-overlay {
 			bottom:-100px;
 			height:100px;
-			background:url(../img/bg-black.png);
+			background:url(../imgages/bg-black.png);
 		}
 		
 		.bar2 .mosaic-overlay {
@@ -92,6 +96,6 @@
 		.bar3 .mosaic-overlay {
 			top:-100px;
 			height:100px;
-			background:url(../img/bg-black.png);
+			background:url(../images/bg-black.png);
 		}
 		/*** End Animation Styles ***/
