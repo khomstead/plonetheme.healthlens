@@ -231,6 +231,21 @@ div.collage_type_document.collage_view_standard h2 {
 	.block_3 .collage_view_standard h2 {color: #8FC943;}
 }
 // Creative Font Styles for tinyMCE
+          
+#content .checklist {
+background: transparent url('../images/green-check.png') no-repeat 2% center;  
+margin: 0px 0px 0px 5px;
+  font:  18px $header-font;
+line-height: 24px;
+font-weight: normal;
+  float: right; 
+  width: 30%;
+  clear: right;
+  color: #000;
+  letter-spacing: normal !important;
+  padding: 0 0 0 30px; 
+border-left: solid 2px #ddd;
+}
 
 .postit {
 	@include minor-curl-effect;   

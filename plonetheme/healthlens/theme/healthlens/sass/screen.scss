@@ -400,18 +400,20 @@ dl.actionMenu.activated dd {
 } 
 
 #portal-column-one {
-  position: realitive;
-  z-index: 0;
+	position: realitive;
+	z-index: 0;
 }
 
-/* line 334, ../sass/screen.scss */
 #portal-column-content {
-  -webkit-box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.6);
-  box-shadow: 10px 0px 15px -10px rgba(0, 0, 0, 0.6);
-  padding-right: 10px;
-  min-height: 400px; 
-  .no-boxshadow & {  
+	-webkit-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
+	box-shadow: 15px 0px 10px -15px rgba(0, 0, 0, 0.6); 
+//	border-right: solid 2px #ddd;
+	padding: 10px 10px 10px 0px;
+	margin-bottom: -20px;
+	top: -10px;
+	min-height: 400px; 	
+	.no-boxshadow & {  
 		background-color: $page-color;
 		border-radius: 5px;
 		box-shadow: 6px 0px 8px -8px #999;	

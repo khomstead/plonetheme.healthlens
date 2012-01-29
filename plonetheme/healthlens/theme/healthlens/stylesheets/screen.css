@@ -375,41 +375,9 @@ dl.portlet a:hover {
 }
 
 /* line 455, ../sass/screen.scss */
-/* line 320, ../sass/partials/_old_css.scss */
-#content .pullquote {
-  margin: 0 .5em 0.5em 0.5em;
-  font: italic 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
-  float: right;
-  width: 35%;
-  clear: right;
-  color: #000;
-  letter-spacing: 0em !important;
-  padding: 20px;
-  border: 1px solid #AFD7FF;
-  -moz-box-shadow: 0 2px 8px 0px #999999;
-  -webkit-box-shadow: 0 2px 8px 0px #999999;
-  box-shadow: 0 2px 8px 0px #999999;
-  background: #afd7ff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #afd7ff), color-stop(100%, #7aaefc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#afd7ff', endColorstr='#7aaefc',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* W3C */
-}
-
 /* @end */
 /* @group Surveys */
-/* line 355, ../sass/partials/_old_css.scss */
+/* line 326, ../sass/partials/_old_css.scss */
 #edit_form h2.questionTitle label {
   font: normal 1em "futura-pt-1","futura-pt-2",sans-serif;
   color: #424242;
@@ -418,7 +386,7 @@ dl.portlet a:hover {
 /* @end */
 /* @group Shadows */
 /* line 482, ../sass/screen.scss */
-/* line 366, ../sass/partials/_old_css.scss */
+/* line 337, ../sass/partials/_old_css.scss */
 .big-shadow {
   -moz-box-shadow: 0 3px 20px 0px #000;
   -webkit-box-shadow: 0 3px 20px 0px #000;
@@ -426,7 +394,7 @@ dl.portlet a:hover {
 }
 
 /* line 488, ../sass/screen.scss */
-/* line 373, ../sass/partials/_old_css.scss */
+/* line 344, ../sass/partials/_old_css.scss */
 .small-shadow {
   -moz-box-shadow: 0 2px 8px 0px #000;
   -webkit-box-shadow: 0 2px 8px 0px #000;
@@ -434,14 +402,14 @@ dl.portlet a:hover {
 }
 
 /* line 494, ../sass/screen.scss */
-/* line 380, ../sass/partials/_old_css.scss */
+/* line 351, ../sass/partials/_old_css.scss */
 .rounded {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
 
 /* line 499, ../sass/screen.scss */
-/* line 386, ../sass/partials/_old_css.scss */
+/* line 357, ../sass/partials/_old_css.scss */
 .bottom-rounded {
   -webkit-border-bottom-right-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
@@ -452,7 +420,7 @@ dl.portlet a:hover {
 }
 
 /* line 509, ../sass/screen.scss */
-/* line 396, ../sass/partials/_old_css.scss */
+/* line 367, ../sass/partials/_old_css.scss */
 .top-rounded {
   -webkit-border-top-right-radius: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -465,7 +433,7 @@ dl.portlet a:hover {
 /* @end */
 /* @group Gradients */
 /* line 524, ../sass/screen.scss */
-/* line 408, ../sass/partials/_old_css.scss */
+/* line 379, ../sass/partials/_old_css.scss */
 .black-button-gradient {
   background: #4c4c4c;
   /* Old browsers */
@@ -486,7 +454,7 @@ dl.portlet a:hover {
 }
 
 /* line 535, ../sass/screen.scss */
-/* line 428, ../sass/partials/_old_css.scss */
+/* line 399, ../sass/partials/_old_css.scss */
 .blue-button-gradient {
   background: #1e5799;
   /* Old browsers */
@@ -507,7 +475,7 @@ dl.portlet a:hover {
 }
 
 /* line 546, ../sass/screen.scss */
-/* line 448, ../sass/partials/_old_css.scss */
+/* line 419, ../sass/partials/_old_css.scss */
 .green-button-gradient {
   background: #bfd255;
   /* Old browsers */
@@ -528,7 +496,7 @@ dl.portlet a:hover {
 }
 
 /* line 557, ../sass/screen.scss */
-/* line 468, ../sass/partials/_old_css.scss */
+/* line 439, ../sass/partials/_old_css.scss */
 .light-blue-gradient {
   background: #f2f5f6;
   /* Old browsers */
@@ -549,7 +517,7 @@ dl.portlet a:hover {
 }
 
 /* line 568, ../sass/screen.scss */
-/* line 488, ../sass/partials/_old_css.scss */
+/* line 459, ../sass/partials/_old_css.scss */
 .light-green-gradient {
   background: #cdeb8e;
   /* Old browsers */
@@ -570,7 +538,7 @@ dl.portlet a:hover {
 }
 
 /* line 579, ../sass/screen.scss */
-/* line 508, ../sass/partials/_old_css.scss */
+/* line 479, ../sass/partials/_old_css.scss */
 .dark-gradient {
   background: #45484d;
   /* Old browsers */
@@ -591,7 +559,7 @@ dl.portlet a:hover {
 }
 
 /* line 590, ../sass/screen.scss */
-/* line 528, ../sass/partials/_old_css.scss */
+/* line 499, ../sass/partials/_old_css.scss */
 .dark-gradient-reverse {
   background: #45484d;
   /* Old browsers */
@@ -612,7 +580,7 @@ dl.portlet a:hover {
 }
 
 /* line 601, ../sass/screen.scss */
-/* line 548, ../sass/partials/_old_css.scss */
+/* line 519, ../sass/partials/_old_css.scss */
 .head-gradient {
   background: #000000;
   /* Old browsers */
@@ -640,7 +608,7 @@ dl.portlet a:hover {
 /* @group Page Slide */
 /* line 883, ../sass/screen.scss */
 /* line 892, ../sass/screen.scss */
-/* line 581, ../sass/partials/_old_css.scss */
+/* line 552, ../sass/partials/_old_css.scss */
 #drawer_tab {
   cursor: pointer;
   height: 140px;
@@ -656,7 +624,7 @@ dl.portlet a:hover {
   margin-left: -24px;
 }
 
-/* line 596, ../sass/partials/_old_css.scss */
+/* line 567, ../sass/partials/_old_css.scss */
 #drawer_tab:hover {
   background: transparent url("../images/binderClipRollover.png") no-repeat left center;
 }
@@ -669,14 +637,14 @@ dl.portlet a:hover {
 /* @end */
 /* @group Carousel */
 /* line 973, ../sass/screen.scss */
-/* line 613, ../sass/partials/_old_css.scss */
+/* line 584, ../sass/partials/_old_css.scss */
 .carousel {
   margin: none;
   position: relative;
 }
 
 /* line 978, ../sass/screen.scss */
-/* line 619, ../sass/partials/_old_css.scss */
+/* line 590, ../sass/partials/_old_css.scss */
 .carousel-text {
   background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   /* FF3.6+ */
@@ -700,7 +668,7 @@ dl.portlet a:hover {
 /* @end */
 /* @group LiveSearch */
 /* line 1035, ../sass/screen.scss */
-/* line 650, ../sass/partials/_old_css.scss */
+/* line 621, ../sass/partials/_old_css.scss */
 .LSResult {
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -716,7 +684,7 @@ dl.portlet a:hover {
 
 /* @end */
 /* @group Drawr */
-/* line 670, ../sass/partials/_old_css.scss */
+/* line 641, ../sass/partials/_old_css.scss */
 #drawer {
   background: url(../images/corkboard.jpg) repeat-y right;
   position: fixed;
@@ -730,13 +698,13 @@ dl.portlet a:hover {
   overflow-x: hidden;
 }
 
-/* line 683, ../sass/partials/_old_css.scss */
+/* line 654, ../sass/partials/_old_css.scss */
 #panes {
   position: relative;
   padding-top: 20px;
 }
 
-/* line 688, ../sass/partials/_old_css.scss */
+/* line 659, ../sass/partials/_old_css.scss */
 #drawer_nav {
   height: 40px;
   width: 100%;
@@ -764,7 +732,7 @@ dl.portlet a:hover {
   border-bottom: 1px dashed gray;
 }
 
-/* line 709, ../sass/partials/_old_css.scss */
+/* line 680, ../sass/partials/_old_css.scss */
 #drawer_nav ul {
   width: 100%;
   height: 100%;
@@ -772,7 +740,7 @@ dl.portlet a:hover {
 }
 
 /* line 929, ../sass/screen.scss */
-/* line 716, ../sass/partials/_old_css.scss */
+/* line 687, ../sass/partials/_old_css.scss */
 #drawer_nav li {
   float: left;
   width: 24%;
@@ -786,7 +754,7 @@ dl.portlet a:hover {
 
 /* line 939, ../sass/screen.scss */
 /* line 950, ../sass/screen.scss */
-/* line 731, ../sass/partials/_old_css.scss */
+/* line 702, ../sass/partials/_old_css.scss */
 #drawer_nav a.current {
   height: 50px;
   -moz-box-shadow: 0px 0px 7px 0 black;
@@ -819,12 +787,12 @@ dl.portlet a:hover {
   text-transform: uppercase;
 }
 
-/* line 755, ../sass/partials/_old_css.scss */
+/* line 726, ../sass/partials/_old_css.scss */
 #drawer_nav a.current img {
   margin-bottom: -10px;
 }
 
-/* line 761, ../sass/partials/_old_css.scss */
+/* line 732, ../sass/partials/_old_css.scss */
 #drawer_nav a {
   height: 30px;
   color: black;
@@ -840,7 +808,7 @@ dl.portlet a:hover {
   overflow: hidden;
 }
 
-/* line 776, ../sass/partials/_old_css.scss */
+/* line 747, ../sass/partials/_old_css.scss */
 #drawer dl.portlet dt {
   background: url("../images/pushpin.png") no-repeat 50% top transparent;
   min-height: 40px;
@@ -848,7 +816,7 @@ dl.portlet a:hover {
   bottom: 25px;
 }
 
-/* line 783, ../sass/partials/_old_css.scss */
+/* line 754, ../sass/partials/_old_css.scss */
 #drawer dl.portlet dt h2 {
   padding-top: 25px;
 }
@@ -856,7 +824,7 @@ dl.portlet a:hover {
 /* @end */
 /* @group Effects */
 /* @group Page Curl */
-/* line 792, ../sass/partials/_old_css.scss */
+/* line 763, ../sass/partials/_old_css.scss */
 #drawer dl.portlet {
   position: relative;
   width: 90%;
@@ -881,7 +849,7 @@ dl.portlet a:hover {
   margin-top: 10px;
 }
 
-/* line 809, ../sass/partials/_old_css.scss */
+/* line 780, ../sass/partials/_old_css.scss */
 #drawer dl.portlet:before,
 #drawer dl.portlet:after {
   content: "";
@@ -901,7 +869,7 @@ dl.portlet a:hover {
   transform: rotate(-3deg);
 }
 
-/* line 827, ../sass/partials/_old_css.scss */
+/* line 798, ../sass/partials/_old_css.scss */
 #drawer dl.portlet:after {
   right: 10px;
   left: auto;
@@ -914,7 +882,7 @@ dl.portlet a:hover {
 /* @end */
 /* @group Speech Bubbles */
 /* THE SPEECH BUBBLE --------------------------------------- */
-/* line 839, ../sass/partials/_old_css.scss */
+/* line 810, ../sass/partials/_old_css.scss */
 div.member .tooltip {
   display: none;
   text-align: left;
@@ -961,7 +929,7 @@ div.member .tooltip {
 /* Variant : left
 ------------------------------------------ */
 /* creates the larger triangle */
-/* line 889, ../sass/partials/_old_css.scss */
+/* line 860, ../sass/partials/_old_css.scss */
 div.member .tooltip:before {
   content: "";
   position: absolute;
@@ -979,7 +947,7 @@ div.member .tooltip:before {
 }
 
 /* creates the smaller  triangle */
-/* line 904, ../sass/partials/_old_css.scss */
+/* line 875, ../sass/partials/_old_css.scss */
 div.member .tooltip:after {
   content: "";
   position: absolute;
@@ -998,14 +966,14 @@ div.member .tooltip:after {
 
 /* @end */
 /* @group post-it bubbles */
-/* line 922, ../sass/partials/_old_css.scss */
+/* line 893, ../sass/partials/_old_css.scss */
 div#drawer div dd.portletItem {
   position: relative;
   bottom: 25px;
   padding-top: 0;
 }
 
-/* line 929, ../sass/partials/_old_css.scss */
+/* line 900, ../sass/partials/_old_css.scss */
 div.post-type-form, .portletMyContentPortlet div.contents-block {
   display: none;
   padding: 5px 0 0;
@@ -1014,7 +982,7 @@ div.post-type-form, .portletMyContentPortlet div.contents-block {
   border: none;
 }
 
-/* line 937, ../sass/partials/_old_css.scss */
+/* line 908, ../sass/partials/_old_css.scss */
 ul#my-content-tabs, ul#post-types {
   height: 30px;
   border-bottom: 1px solid orange;
@@ -1024,7 +992,7 @@ ul#my-content-tabs, ul#post-types {
   padding: 0 0 3px;
 }
 
-/* line 946, ../sass/partials/_old_css.scss */
+/* line 917, ../sass/partials/_old_css.scss */
 ul#post-types li, ul#my-content-tabs li {
   float: left;
   padding: 0;
@@ -1034,7 +1002,7 @@ ul#post-types li, ul#my-content-tabs li {
   border-bottom: none;
 }
 
-/* line 955, ../sass/partials/_old_css.scss */
+/* line 926, ../sass/partials/_old_css.scss */
 ul#post-types li a:hover, ul#my-content-tabs li a:hover {
   background: #f9c667;
   /* Old browsers */
@@ -1055,7 +1023,7 @@ ul#post-types li a:hover, ul#my-content-tabs li a:hover {
   color: #fff !important;
 }
 
-/* line 976, ../sass/partials/_old_css.scss */
+/* line 947, ../sass/partials/_old_css.scss */
 ul#my-content-tabs a, ul#post-types li a {
   font: 400 20px "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2";
   display: block;
@@ -1073,7 +1041,7 @@ ul#my-content-tabs a, ul#post-types li a {
   padding: 5px 10px;
 }
 
-/* line 993, ../sass/partials/_old_css.scss */
+/* line 964, ../sass/partials/_old_css.scss */
 ul#my-content-tabs a.current, ul#post-types li a.current {
   position: relative;
   color: black;
@@ -1098,7 +1066,7 @@ ul#my-content-tabs a.current, ul#post-types li a.current {
   border-bottom: 1px solid orange;
 }
 
-/* line 1018, ../sass/partials/_old_css.scss */
+/* line 989, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem {
   height: 100%;
   width: 100%;
@@ -1109,7 +1077,7 @@ dl#portlet-MyContent div.tileItem {
   padding: 2px 0;
 }
 
-/* line 1028, ../sass/partials/_old_css.scss */
+/* line 999, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem.expanded {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1133,24 +1101,24 @@ dl#portlet-MyContent div.tileItem.expanded {
   /* W3C */
 }
 
-/* line 1043, ../sass/partials/_old_css.scss */
+/* line 1014, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem.expanded .MyContent_title {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-/* line 1048, ../sass/partials/_old_css.scss */
+/* line 1019, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem.expanded .MyContent_title a {
   color: white;
 }
 
-/* line 1052, ../sass/partials/_old_css.scss */
+/* line 1023, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.show_hide {
   padding-right: 5px;
   padding-left: 5px;
 }
 
-/* line 1057, ../sass/partials/_old_css.scss */
+/* line 1028, ../sass/partials/_old_css.scss */
 div.tileItem div.show_hide img:hover {
   background: yellow;
   -webkit-border-radius: 10px;
@@ -1158,26 +1126,26 @@ div.tileItem div.show_hide img:hover {
   border-radius: 10px;
 }
 
-/* line 1069, ../sass/partials/_old_css.scss */
+/* line 1040, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.MyContent_title a {
   font-size: 12px;
   color: black;
 }
 
-/* line 1074, ../sass/partials/_old_css.scss */
+/* line 1045, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem.expanded .MyContent_title a:hover {
   color: yellow !important;
 }
 
 /* sliding div */
-/* line 1080, ../sass/partials/_old_css.scss */
+/* line 1051, ../sass/partials/_old_css.scss */
 div.sliding_div div.MyContent_edit, div.sliding_div div.MyContent_delete {
   padding-top: 3px;
   width: 16px;
   margin-left: 5px;
 }
 
-/* line 1087, ../sass/partials/_old_css.scss */
+/* line 1058, ../sass/partials/_old_css.scss */
 div.sliding_div div.MyContent_delete:hover, div.sliding_div div.MyContent_edit:hover {
   background: yellow;
   -webkit-border-radius: 10px;
@@ -1185,14 +1153,14 @@ div.sliding_div div.MyContent_delete:hover, div.sliding_div div.MyContent_edit:h
   border-radius: 10px;
 }
 
-/* line 1095, ../sass/partials/_old_css.scss */
+/* line 1066, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.sliding_div {
   position: relative;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-/* line 1101, ../sass/partials/_old_css.scss */
+/* line 1072, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.sliding_div div {
   float: right;
   padding-right: 0px;
@@ -1200,7 +1168,7 @@ dl#portlet-MyContent div.tileItem div.sliding_div div {
 }
 
 /* quick-post form */
-/* line 1109, ../sass/partials/_old_css.scss */
+/* line 1080, ../sass/partials/_old_css.scss */
 #portlet-quickPost input#form-widgets-title {
   width: 70%;
   text-align: left;
@@ -1208,19 +1176,19 @@ dl#portlet-MyContent div.tileItem div.sliding_div div {
   line-height: 1.5em;
 }
 
-/* line 1116, ../sass/partials/_old_css.scss */
+/* line 1087, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.tileItem div.sliding_div form#review_state_form {
   float: left;
   margin-right: 0;
   margin-left: 10px;
 }
 
-/* line 1122, ../sass/partials/_old_css.scss */
+/* line 1093, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.inner dd.portletItem ul li {
   margin-bottom: 10px;
 }
 
-/* line 1126, ../sass/partials/_old_css.scss */
+/* line 1097, ../sass/partials/_old_css.scss */
 dl#portlet-MyContent div.inner dd.portletItem ul {
   margin-top: 10px;
 }
@@ -1228,18 +1196,18 @@ dl#portlet-MyContent div.inner dd.portletItem ul {
 /* @end */
 /* @end */
 /* @group jquery buttons */
-/* line 1133, ../sass/partials/_old_css.scss */
+/* line 1104, ../sass/partials/_old_css.scss */
 .ui-buttonset {
   margin-right: 7px;
 }
 
-/* line 1137, ../sass/partials/_old_css.scss */
+/* line 1108, ../sass/partials/_old_css.scss */
 .my_content_radio input {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 1141, ../sass/partials/_old_css.scss */
+/* line 1112, ../sass/partials/_old_css.scss */
 form#review_state_form, .ui-button .ui-button-text {
   display: block;
   line-height: 1;
@@ -1248,18 +1216,18 @@ form#review_state_form, .ui-button .ui-button-text {
   color: #333;
 }
 
-/* line 1149, ../sass/partials/_old_css.scss */
+/* line 1120, ../sass/partials/_old_css.scss */
 .ui-button-text-only .ui-button-text {
   padding: 5px 10px;
 }
 
-/* line 1152, ../sass/partials/_old_css.scss */
+/* line 1123, ../sass/partials/_old_css.scss */
 .ui-buttonset .ui-button {
   margin-left: 0;
   margin-right: -0.3em;
 }
 
-/* line 1154, ../sass/partials/_old_css.scss */
+/* line 1125, ../sass/partials/_old_css.scss */
 .ui-button {
   display: inline-block;
   position: relative;
@@ -1273,7 +1241,7 @@ form#review_state_form, .ui-button .ui-button-text {
 }
 
 /*Active Button*/
-/* line 1157, ../sass/partials/_old_css.scss */
+/* line 1128, ../sass/partials/_old_css.scss */
 label.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
   font-weight: normal;
   border: none;
@@ -1300,7 +1268,7 @@ label.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .u
 }
 
 /*Default button*/
-/* line 1175, ../sass/partials/_old_css.scss */
+/* line 1146, ../sass/partials/_old_css.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: none;
   font-weight: normal;
@@ -1324,7 +1292,7 @@ label.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .u
 }
 
 /*hover button*/
-/* line 1190, ../sass/partials/_old_css.scss */
+/* line 1161, ../sass/partials/_old_css.scss */
 label.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
   border: none;
   font-weight: normal;
@@ -1347,13 +1315,13 @@ label.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-
   /* W3C */
 }
 
-/* line 1204, ../sass/partials/_old_css.scss */
+/* line 1175, ../sass/partials/_old_css.scss */
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 1209, ../sass/partials/_old_css.scss */
+/* line 1180, ../sass/partials/_old_css.scss */
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
   border: 1px solid #448dae;
   background: #dddddd url(images/ui-bg_flat_75_dddddd_40x100.png) 50% 50% repeat-x;
@@ -1363,7 +1331,7 @@ label.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-
 
 /* @end */
 /* @group TinyMCE */
-/* line 1221, ../sass/partials/_old_css.scss */
+/* line 1192, ../sass/partials/_old_css.scss */
 .ploneSkin table, .ploneSkin tbody, .ploneSkin a, .ploneSkin img, .ploneSkin tr, .ploneSkin div, .ploneSkin td, .ploneSkin iframe, .ploneSkin span, .ploneSkin *, .ploneSkin .mceText {
   border: 0;
   margin: 0;
@@ -1623,6 +1591,22 @@ div.collage_type_document.collage_view_standard h2 {
 }
 
 /* line 235, ../sass/partials/_typography.scss */
+#content .checklist {
+  background: transparent url("../images/green-check.png") no-repeat 2% center;
+  margin: 0px 0px 0px 5px;
+  font: 18px "futura-pt-1", "futura-pt-2";
+  line-height: 24px;
+  font-weight: normal;
+  float: right;
+  width: 30%;
+  clear: right;
+  color: #000;
+  letter-spacing: normal !important;
+  padding: 0 0 0 30px;
+  border-left: solid 2px #ddd;
+}
+
+/* line 250, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
   background: white;
@@ -1686,7 +1670,7 @@ div.collage_type_document.collage_view_standard h2 {
   -ms-transform-origin: right bottom;
 }
 
-/* line 243, ../sass/partials/_typography.scss */
+/* line 258, ../sass/partials/_typography.scss */
 .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
@@ -1755,19 +1739,19 @@ div.collage_type_document.collage_view_standard h2 {
   -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
   -ms-transform-origin: right bottom;
 }
-/* line 253, ../sass/partials/_typography.scss */
+/* line 268, ../sass/partials/_typography.scss */
 .no-csstransforms .elegant {
   box-shadow: 0px 2px 6px 0px #999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 264, ../sass/partials/_typography.scss */
+/* line 279, ../sass/partials/_typography.scss */
 .carousel-title {
   font: 24px "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
   color: #000;
 }
 
-/* line 269, ../sass/partials/_typography.scss */
+/* line 284, ../sass/partials/_typography.scss */
 .carousel-body p {
   color: #a9a9a9;
 }
@@ -2888,16 +2872,17 @@ dl.actionMenu.activated dd {
   z-index: 0;
 }
 
-/* line 334, ../sass/screen.scss */
-/* line 408, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 #portal-column-content {
-  -webkit-box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.6);
-  box-shadow: 10px 0px 15px -10px rgba(0, 0, 0, 0.6);
-  padding-right: 10px;
+  -webkit-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
+  box-shadow: 15px 0px 10px -15px rgba(0, 0, 0, 0.6);
+  padding: 10px 10px 10px 0px;
+  margin-bottom: -20px;
+  top: -10px;
   min-height: 400px;
 }
-/* line 414, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .no-boxshadow #portal-column-content {
   background-color: #eaeaea;
   border-radius: 5px;
@@ -2905,7 +2890,7 @@ dl.actionMenu.activated dd {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 424, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 #portal-columns dl.portlet dt.portletHeader {
   border-bottom: solid 1px #666;
   border-right: solid 1px #666;
@@ -2978,12 +2963,12 @@ dl.actionMenu.activated dd {
   -ms-transform-origin: right bottom;
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 img.image-left, img.image-right, .captioned img {
   border: none;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 #foot-box {
   background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #000000), color-stop(100%, #555555));
   background-image: -webkit-radial-gradient(center 60px, #000000 400px, #555555 650px);
@@ -3007,12 +2992,12 @@ img.image-left, img.image-right, .captioned img {
   -khtml-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 450, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .no-cssgradients #foot-box {
   background: black url("../images/foot-gradient.png") repeat-x;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 #foot-box dl.portlet dt.portletHeader, #foot-box .portletStaticText {
   border: none;
   margin: 0 0 0 0;
