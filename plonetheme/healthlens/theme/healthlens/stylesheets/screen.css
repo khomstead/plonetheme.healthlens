@@ -1592,8 +1592,7 @@ div.collage_type_document.collage_view_standard h2 {
 
 /* line 235, ../sass/partials/_typography.scss */
 #content .checklist {
-  background: transparent url("../images/green-check.png") no-repeat 2% center;
-  margin: 0px 0px 0px 5px;
+  margin: 0px 0px 0px 10px;
   font: 18px "futura-pt-1", "futura-pt-2";
   line-height: 24px;
   font-weight: normal;
@@ -1604,9 +1603,13 @@ div.collage_type_document.collage_view_standard h2 {
   letter-spacing: normal !important;
   padding: 0 0 0 30px;
   border-left: solid 2px #ddd;
+  background-image: url("../images/green-check.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 3% center !important;
+  background-color: #eee;
 }
 
-/* line 250, ../sass/partials/_typography.scss */
+/* line 253, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
   background: white;
@@ -1670,7 +1673,7 @@ div.collage_type_document.collage_view_standard h2 {
   -ms-transform-origin: right bottom;
 }
 
-/* line 258, ../sass/partials/_typography.scss */
+/* line 261, ../sass/partials/_typography.scss */
 .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
@@ -1739,19 +1742,19 @@ div.collage_type_document.collage_view_standard h2 {
   -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
   -ms-transform-origin: right bottom;
 }
-/* line 268, ../sass/partials/_typography.scss */
+/* line 271, ../sass/partials/_typography.scss */
 .no-csstransforms .elegant {
   box-shadow: 0px 2px 6px 0px #999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 279, ../sass/partials/_typography.scss */
+/* line 282, ../sass/partials/_typography.scss */
 .carousel-title {
   font: 24px "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
   color: #000;
 }
 
-/* line 284, ../sass/partials/_typography.scss */
+/* line 287, ../sass/partials/_typography.scss */
 .carousel-body p {
   color: #a9a9a9;
 }
