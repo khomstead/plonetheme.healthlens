@@ -9,44 +9,44 @@
 		<![endif]-->
 		<script type="text/javascript" src="http://use.typekit.com/klo5xmp.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        <!-- tab styling -->
-        <link rel="stylesheet" type=stylesheet"text/css" href="http://static.flowplayer.org/css/tabs.css"/>
-        <style>
-      
-            #blog-overlay {
-              display: none;
-            }
-      
-            /* tab pane styling */
-            .panes div.pane {
-            display:none;
-                      padding:15px 10px;
-                      border:1px solid #999;
-                      border-top:0;
-                      height:100px;
-                      font-size:14px;
-                      background-color:#fff;
-                      }
-     
-      
-                      div.panes div.pane {
-                        background:#fff url(http://static.flowplayer.org/img/global/gradient/h300.png) repeat-x 0 5px;
-                        -background:#fff;
-                        height: 250px;
-                      }
-      
-                      div.panes               label {
-                       margin-bottom:15px;
-                       display:block;
-                     }
-      
-                      label.error {
-                        color:red;
-                      }
-                      div.token-input-dropdown-facebook {
-                        z-index: 9999999;
-                      }
-                    </style>
+    <!-- tab styling -->
+    <link rel="stylesheet" type=stylesheet"text/css" href="http://static.flowplayer.org/css/tabs.css"/>
+    <style>
+
+      #blog-overlay {
+        display: none;
+      }
+
+      /* tab pane styling */
+      .panes div.pane {
+      display:none;
+                padding:15px 10px;
+                border:1px solid #999;
+                border-top:0;
+                height:100px;
+                font-size:14px;
+                background-color:#fff;
+                }
+
+
+                div.panes div.pane {
+                  background:#fff url(http://static.flowplayer.org/img/global/gradient/h300.png) repeat-x 0 5px;
+                  -background:#fff;
+                  height: 250px;
+                }
+
+                div.panes               label {
+                  margin-bottom:15px;
+                  display:block;
+                }
+
+                label.error {
+                  color:red;
+                }
+                div.token-input-dropdown-facebook {
+                  z-index: 9999999;
+                }
+              </style>
 	</head>
 	<body>
 	<div id="head-ribbon">
@@ -127,59 +127,55 @@
       <div id="pane3"></div>
       <div id="pane4"></div>
     </div>
-  </div>
-  
-  <div id="blog-overlay">
-    <h1>Write a new blog post</h1>
-    <div id="wizard">
-      <ul class="tabs">
-        <li><a href="#" class="w2">Title</a></li>
-        <li><a href="#" class="w2">Content</a></li>
-        <li><a href="#" class="w2">Tag it</a></li>
-      </ul>
-        
-      <div class="panes">
-        <div id="wizard-title" class="pane">
-          <div>
-            <label id="wizard-content-type">
-              What type of post is this:
-            </label>
-            <label>Title
-              <input type="text" class="wizard-input-title"/>
-            </label>
+
+    <div id="blog-overlay">
+      <h1>Write a new blog post</h1>
+      <div id="wizard">
+        <ul class="tabs">
+          <li><a href="#" class="w2">Title</a></li>
+          <li><a href="#" class="w2">Content</a></li>
+          <li><a href="#" class="w2">Tag it</a></li>
+        </ul>
+
+          <div class="panes">
+            <div id="wizard-title" class="pane">
+              <div>
+                <label id="wizard-content-type">
+                  What type of post is this:
+                </label>
+                <label>Title
+                  <input type="text" id ="wizard-input-title" class="wizard-input-title" value="blah"/>
+                </label>
+              </div>
+              <div>
+                <button class="next">Continue &raquo;</button>
+              </div>
+            </div>
+            <div id="wizard-content" class="pane">
+              <div class="ploneSkin">
+                <label>Content
+                  <textarea name="blog_content"/>
+                </label>
+              </div>
+              <div>
+                <button class="prev">&laquo; Go back</button>
+                <button class="next">Continue &raquo;</button>
+              </div>
+            </div>
+            <div id="wizard-tags" class="pane">
+              <div>
+                <button class="prev">&laquo; Go back</button>
+                <input type="submit" id="overlay_save" name="overlay_save" value="Publish" />
+                <input type="submit" id="overlay_draft" name="overlay_draft"
+                value="Save as a draft" />
+                <input type="submit" id="overlay-cancel" name="overlay_cancel" value="Discard" />
+              </div>
+            </div>
+            
           </div>
-          <div>
-            <button class="next">Next &raquo;</button>
-          </div>
-        </div>
-        <div id="wizard-content" class="pane">
-          <div class="ploneSkin">
-            <label>Content
-              <textarea name="blog_content"/>
-            </label>
-          </div>
-          <div>
-            <button class="prev">&laquo; Prev</button>
-            <button class="next">Next &raquo;</button>
-          </div>
-        </div>
-        <div id="wizard-tags" class="pane">
-          <div>
-            <button class="prev">&laquo; Prev</button>
-            <input type="submit" name="overlay_save" value="Save" 
-                   onClick="return processOverlayForm();"/>
-            <input type="submit" id="overlay-cancel" name="overlay_cancel" value="Cancel" />
-            <script>
-              function processOverlayForm() {
-                  var blog_title = jQuery('input.wizard-input-title').val();
-                  alert(blog_title);
-                  jQuery('#blog_entry-base-edit #title').val(blog_title);
-              }
-            </script>
-          </div>
-        </div>
       </div>
     </div>
+
   </div>
 </body>
 </html>
