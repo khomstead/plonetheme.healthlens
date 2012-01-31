@@ -238,19 +238,7 @@ dl.portlet ul.navTree li:hover > a {
 /* @end */
 /* @group portlet-columns */
 /* line 329, ../sass/screen.scss */
-#portal-column-one {
-  position: realitive;
-  z-index: 0;
-}
 
-/* line 334, ../sass/screen.scss */
-#portal-column-content {
-  -webkit-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
-  box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
-  padding-right: 10px;
-  min-height: 400px;
-}
 
 /* @end */
 /* line 348, ../sass/screen.scss */
@@ -329,36 +317,7 @@ dl.portlet a:hover {
 }
 
 /* line 455, ../sass/screen.scss */
-#content .pullquote {
-  margin: 0 .5em 0.5em 0.5em;
-  font: italic 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
-  float: right;
-  width: 35%;
-  clear: right;
-  color: #000;
-  letter-spacing: 0em !important;
-  padding: 20px;
-  border: 1px solid #AFD7FF;
-  -moz-box-shadow: 0 2px 8px 0px #999999;
-  -webkit-box-shadow: 0 2px 8px 0px #999999;
-  box-shadow: 0 2px 8px 0px #999999;
-  background: #afd7ff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #afd7ff), color-stop(100%, #7aaefc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#afd7ff', endColorstr='#7aaefc',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, #afd7ff 0%, #7aaefc 100%);
-  /* W3C */
-}
+
 
 /* @end */
 
@@ -646,54 +605,13 @@ margin-left: -24px;
 }
 
 /* line 988, ../sass/screen.scss */
-.carousel-title {
-  font: 2em "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
-  color: #fffeff;
-}
 
-/* line 993, ../sass/screen.scss */
-.carousel-body p {
-  color: #a9a9a9;
-}
 
 /* line 997, ../sass/screen.scss */
-.carousel-pager {
-  position: relative;
-  float: right;
-  margin-right: 2em;
-  bottom: 55px;
-}
+
 
 /* line 1006, ../sass/screen.scss */
-a.carousel-pager-item,
-.carousel-pager-button-prev,
-.carousel-pager-button-next {
-  color: #447fd3;
-  padding: 0.25em 0.5em;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin-left: 2px;
-  background: transparent;
-  border: 2px solid #447fd3;
-}
 
-/* line 1017, ../sass/screen.scss */
-a.carousel-pager-item.carousel-pager-item-active {
-  color: #04f626;
-  border: 2px solid #04f626;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin-left: 2px;
-}
-
-/* line 1029, ../sass/screen.scss */
-.carousel-pager-item-active:link,
-.carousel-pager-item-active:visited,
-.carousel-pager-item-active .carousel-title {
-  color: black;
-}
 
 /* @end */
 
