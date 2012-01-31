@@ -1,0 +1,119 @@
+// Blueprint Settings
+
+          
+// Reset 
+body, #content {
+	  font-size:100% !important;
+}
+
+
+// Mega Menu
+#menu ul li a.menu-item {
+	color: $menu-header-color;
+	padding: 22px 10px 0;
+	font: 300 $global-nav-font-size $global-nav-font;    
+	letter-spacing: normal;
+}                
+
+#portal-megamenu {
+	font-size: 100%;
+	background: none;  
+}
+
+#portal-megamenu .sub div.plain p {
+	color: $menu-header-color;
+	padding: 2px 0 0px 0px;    
+}                 
+
+// MM Collage Page Title
+#portal-megamenu .sub ul li h2, #portal-megamenu .sub ul li span {
+	padding: 0;
+	margin: 0;
+	font: 300 $global-nav-font-size $header-font;
+	width: 100%;
+	color: $bright-highligh-text;  
+	letter-spacing: normal;    
+}
+
+// MM Collage Page Description
+#portal-megamenu .sub ul li p.description {
+	padding: 0;
+}
+
+#portal-megamenu .sub ul li p.description span, #portal-megamenu .sub ul li p {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	color: #d5d5d5;
+	font-family:  sans-serif;
+	font-size: 14px;
+	font-style:none;
+	letter-spacing: normal;    
+	font-weight: normal;  
+}
+
+// MM Page Text w/Link */
+#portal-megamenu .sub div.plain p a, , #portal-megamenu .sub ul li a {
+	padding: 0 0 0 10px;
+	color: #fff;
+	width: 100%;
+	text-decoration: none;
+	font-family: "futura-pt-1","futura-pt-2";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: normal;    
+}
+
+#portal-megamenu .sub div.plain h2 a {
+	padding: 0;
+	color: #fff;
+	width: 85%;
+	text-decoration: none; 
+}
+
+#portal-megamenu .sub ul li a.collage-megamenu-highlight {
+	font-weight: bold;
+}                          
+
+// General Fonts
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: normal;
+  	font-family:"futura-pt-1","futura-pt-2",sans-serif;     
+	color: #424242;
+	font-weight: 500;
+	padding-top: 10px;  
+}
+
+p, li, span, a, a.tile {
+	font-family: "dejarip-1", "dejarip-2", sans-serif;
+	letter-spacing: normal;
+	color: #424242;  
+	font-size: $base-font-size;
+	line-height: $base-line-height;    
+}          
+
+// Creative Font Styles for tinyMCE
+
+.postit {
+	@include minor-curl-effect;   
+	background-color: #FCFDA6; 
+	padding:12px;
+	font-family:"futura-pt-1","futura-pt-2",sans-serif;     
+  	font-size: 16px;
+}                   
+
+.elegant {
+	font-family: "dejarip-1", "dejarip-2", sans-serif;
+  	font-size: 16px;   
+	text-align: left;
+	color: #000;
+	line-height: 22px;
+	background-color: #faebbc;
+	padding: 10px 10px 10px 30px;
+	background-image: url(../images/openquote1.gif);
+	background-position: 3px 3px;
+	background-repeat: no-repeat;  
+	@include border-radius(5px);
+}     

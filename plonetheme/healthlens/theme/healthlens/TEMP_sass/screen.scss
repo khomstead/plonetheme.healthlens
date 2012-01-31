@@ -1,0 +1,279 @@
+// This import applies a global reset to any page that imports this stylesheet.
+//@import "blueprint/reset";    
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "compass/reset";
+//@import "blueprint";
+@import "compass/css3";
+@import "compass/css3/shared"; 
+@import "compass/utilities";
+@import "compass/css3/transform-legacy";   
+@import "compass/support";
+
+
+// To configure blueprint, edit the partials/_base.sass file.
+@import "partials/base";
+@import "partials/skin";  
+@import "partials/effects";
+@import "partials/old_css";
+@import "partials/typography";
+@import "partials/cleanup";
+@import "partials/plone-products"; 
+
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+// Generate the blueprint framework according to your configuration:
+//@include blueprint;
+//@include blueprint-scaffolding;  
+
+// Body
+body {
+	background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
+}          
+
+#light {
+	background: transparent url('../images/vert-gradient.png') repeat-x left top;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+}
+
+// Header Ribbon
+#head-ribbon {   
+	@include head-ribbon-gradient;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	height: $ribbon-height;
+	margin: 0 auto;
+}
+
+#head-wrapper {
+	height: 65px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+	position: relative;  
+}
+
+// Logo
+#logo-spacer {
+	@include logo_image;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	float: left;
+	height: 100%;
+	z-index: 200;  
+}
+
+// Section: Small Ribbon      
+#divider {
+	@include box-shadow(black 0 2px 10px);
+	width: 100%;
+	height: 15px;
+	z-index: 2;
+	position: fixed;
+	top: $ribbon-height;
+	background-color: $muted-accent;
+	border-bottom: 2px solid $muted-accent-shadow;
+	border-top: 2px solid $muted-accent-highlight;  
+}
+
+#breadcrumbs {
+	padding-left: 15px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative; 
+}                       
+
+// MegaMenu 
+#menu {
+	right: 0px;
+	position: absolute;
+	z-index: 100;    
+}        
+
+#menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item {
+	color: black;
+	-moz-box-shadow: inset 0px 0px 5px 0px black;
+	-webkit-box-shadow: inset 0px 0px 5px 0px black;
+	box-shadow: inset 0px 0px 5px 0px black;  
+	@include menu-rollover-gradient;    
+}
+
+#menu ul li a.menu-item {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	border-right: thin solid #1C1D1F;
+	border-left: thin solid #1C1D1F;
+	background: none;
+	z-index: 1000;   
+}
+
+#menu ul li span.arrowDownAlternative {
+	display: none;
+}
+        
+#collage ul.megamenu {
+	/* To prevent margin-left in collage compose view */
+	margin-left: 0;
+	padding-left: 0; 
+}
+
+#portal-megamenu {
+	/* Global Level*/
+	margin: 0 0 0 0;
+	float: left;
+	list-style: none;
+	padding-bottom: 0;
+	padding-right: 0;
+	padding-left: 0; 
+}
+
+
+
+#portal-megamenu li .collage-row {
+	clear: both;
+	float: left;
+	width: 100%; 
+	padding: 0;  
+}
+
+/* Reset width to auto for nested rows */
+#portal-megamenu li .menu_view_nested-menu .collage-row {
+	width: auto;
+}
+
+#portal-megamenu .sub ul {
+	list-style: none;
+	float: left;
+	width: 100%;
+	padding: 0 0 10px 0;
+	margin: 0 10px 0 0;   
+}
+
+
+#portal-megamenu .sub ul li {
+	width: 100%;
+}
+
+#portal-megamenu .sub ul li span {
+	display: block;
+	white-space: nowrap;
+}
+
+#portal-megamenu .sub ul li a {
+	float: none;
+	height: auto;
+	display: block;
+	white-space: nowrap;
+	text-indent: 0px;
+}
+
+/* Menu styling for Sunburst theme */
+.actionicon-object_buttons-megamenu-enable,
+.actionicon-object_buttons-megamenu-disable {
+	border-top: 2px solid white;
+  
+}
+
+#portal-megamenu li a.menu-item {
+	height: $ribbon-height - 22px;
+	background: none;
+	border-right: none;
+	min-width: 0em;
+}
+
+#portal-megamenu li.top-level .subShadow {
+	visibility: hidden;
+}
+
+#portal-megamenu li.top-level .sub {
+	top: $ribbon-height;
+	padding: 10px 10px 5px 20px;
+	border: 2px solid $border-highlight-color;
+	@include border-radius(5px);
+	@include box-shadow(0px 2px 10px);   
+	@include megamenu-gradient;    
+}
+
+
+#portal-megamenu .sub .collage-megamenu-vlines > ul,
+#portal-megamenu .sub .collage-megamenu-hvlines > ul {
+	border-left: 1px solid #ddd;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+
+#portal-megamenu .sub .collage-megamenu-vlines > ul.collage-first-object,
+#portal-megamenu .sub .collage-megamenu-hvlines > ul.collage-first-object {
+	border-left: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+/* line 861, ../sass/screen.scss */
+#portal-megamenu .sub ul li a:hover {
+	color: #000;
+	width: 100%;
+	/*-- rounded corner--*/
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-bottom: 4px;
+	/*-- gradient--*/
+	background: #cdeb8e;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdeb8e), color-stop(39%, #cdeb8e), color-stop(62%, #a5c956), color-stop(100%, #a5c956));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* Opera11.10+ */
+	background: -ms-linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+	/* IE6-9 */
+	background: linear-gradient(top, #cdeb8e 0%, #cdeb8e 39%, #a5c956 62%, #a5c956 100%);
+	/* W3C */
+}
+
+/* line 878, ../sass/screen.scss */
+#portal-megamenu .sub li.selected a {
+	background: #ddd;
+}                                          
+// Page 
+#page-wrapper {      
+	@include curl-effect;
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+	position: relative;
+	top: 80px;  
+}
+
+#page {    
+  @include box-shadow(black 0 5px 10px);
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+             
+#content {
+	margin-bottom: 0;
+}                   
+
+// Foot Box
+#foot-box {   
+	@include footer-gradient;
+	height: 200px;
+	position: relative;  
+	border: 2px solid #fff;
+}

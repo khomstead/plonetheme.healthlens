@@ -1,14 +1,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
-		<title>HealthLens</title>
-		<link rel="stylesheet" href="lib/ttcon/resources/fullscrn.css" type="text/css" />
-		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-		<!--[if lt IE 9]>
-        <link rel="stylesheet" type="text/css" href="stylesheets/ie8-and-down.css" />
-		<![endif]-->
+		<title>HealthLens</title> 
+		<link href="stylesheets/screen.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="http://use.typekit.com/klo5xmp.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+		<script src="js/modernizr.js" type="text/javascript"></script>
+		<!-- // <script type="text/javascript" src="js/EventHelpers.js"></script>
+		// <script type="text/javascript" src="js/cssQuery-p.js"></script>
+		// <script type="text/javascript" src="js/jcoglan.com/sylvester.js"></script>
+		// <script type="text/javascript" src="js/cssSandpaper.js"></script>		 -->
+		<script type="text/javascript">
+		$(document).ready(function(){
+		  //prepend span tag to H1
+		  $("#page-title h1").prepend("<span></span>");
+		});
+		</script>						
     <!-- tab styling -->
     <link rel="stylesheet" type=stylesheet"text/css" href="http://static.flowplayer.org/css/tabs.css"/>
     <style>
@@ -51,43 +60,39 @@
 	<body>
 	<div id="head-ribbon">
 		<div id="head-wrapper">
-			<div id="logo-spacer" style="cursor: pointer;" onclick="window.open('/','_self')"></div>
+			<div id="logo-spacer" style="cursor: pointer;" onclick="window.open('/','_self')"></div> 
 			<div id="menu" >
-				<ul>
+				<ul class="megamenu">
 					<li class="current_page_item"><a href="#">Homepage</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Photos</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Links</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#">Contacts</a></li>
 				</ul>
 			</div>
+			<div id="home" class="current_page_item" style="cursor: pointer;" onclick="window.open('/','_self')">
+				<div></div>
+			</div>
 		</div>	
-		<div id="personal-tools"></div>
 	</div>
 	<div id="divider">
-		<div id="breadcrumbs"></div>		
+		<div id="personal-tools"></div>
 	</div>
 	<div id="light"></div>
-	<div id="page-wrapper">
+	<div id="page-wrapper" >
 		<div id="page">
 			<div id="carousel-sliders"></div>
 			<div id="title-ribbon">
-				<div id="page-title"></div>
+				<div id="page-title"><h1>Title</h1></div>
 				<div id="page-description"></div>
 			</div>
 			<div id="content-area">
 			</div>
-			<div id="foot-ribbon">
-			</div>
-			<div id="foot-box">
-			</div>
-		</div>
-		<div id="foot-base">
-		</div>
-  </div>
-  <div id="footpanel">
-  </div>
+			<div id="foot-box"></div>
+	  	</div>
+	</div>
+		<div id="colophon"></div> 
   <div id="drawer_tab">
     <a href="#">Menu</a>
   </div>
@@ -177,5 +182,7 @@
     </div>
 
   </div>
+  </div> 
+
 </body>
 </html>

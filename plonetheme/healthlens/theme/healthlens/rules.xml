@@ -29,27 +29,38 @@
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
     <!-- MENU -->
-    <replace css:theme="#menu ul" css:content="#portal-megamenu"/>
+    <replace css:theme="#menu ul.megamenu" css:content="#portal-megamenu"/>
 
     <!--  CONTENT -->
     <drop css:theme=".post"/>
-    <before css:theme-children="#page-title" css:content-children="#parent-fieldname-title" />
-    <before css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
-    <before css:theme-children="#breadcrumbs" css:content-children="#portal-breadcrumbs" />
+    <rules css:if-content="#collage">
+	    <replace css:theme-children="#page-title h1" css:content-children="#collage h1.documentFirstHeading span" />
+    </rules>  
+    <replace css:theme-children="#page-title h1" css:content-children="#parent-fieldname-title" />
+
+    <!-- <before css:theme-children="#page-description" css:content-children="#parent-fieldname-description" /> -->
+    <replace css:theme-children="#foot-box" css:content-children="#portlets-above" />
+
+    <!-- <before css:theme-children="#breadcrumbs" css:content-children="#portal-breadcrumbs" /> -->
     <drop css:content="#parent-fieldname-title" />
-    <drop css:content="#parent-fieldname-description" />
-    <drop css:content="#viewlet-above-content" />
+    <drop css:content="#parent-fieldname-description" />  
+    <!-- <drop css:content="#viewlet-above-content" /> -->
+
+    <drop css:content="#portlets-above" />
+    <drop css:content="#portal-breadcrumbs" />
+
 	  <append css:theme="#personal-tools" css:content="#portal-personaltools" />   
     <append css:theme="#personal-tools" css:content="#xmpp-viewlet" />
     <prepend css:theme="#page-bgbtm" css:content="#edit-bar" />
     <prepend css:theme="#content-area" css:content="#portal-columns"/>
-    <rules css:if-content=".carousel">
+    <!-- <rules css:if-content=".carousel">
         <replace css:theme="#title-ribbon" css:content=".carousel" />
-    </rules>
+    </rules> -->
     
     <!-- FOOTER -->
     <replace css:theme-children="#footer" css:content-children="#portal-footer"/>
-    <append css:content="#portal-siteactions" css:theme="#foot-box"/>
+    <append css:content="#portal-colophon" css:theme="#colophon"/>
+
 
     <!--  TOOLS -->
     <replace css:theme-children="#pane1" css:content-children=".FooterPortletManager3" />

@@ -1,0 +1,12 @@
+// Remove Title-Ribbon on landing-page
+body.section-landing-page #title-ribbon {
+	display: none;
+}                   
+
+// collective.collage.innerfade
+#InnerfadeNavigation .imgnolink, #InnerfadeNavigation a {
+    display: block;
+    margin-bottom: 0px;
+	margin-top: 0;
+    padding-left: 8px;
+}

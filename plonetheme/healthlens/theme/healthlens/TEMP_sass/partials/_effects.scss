@@ -1,0 +1,82 @@
+// Larger Curl Effect
+
+/* Stupid compass box-shadow mixin doesn't support multiple shadows... */
+@mixin box-shadow-2($first, $second) {
+  $full: $first, $second;
+  @include experimental(box-shadow, $full, -moz, -webkit, -o, not -ms, not -khtml, official);
+}
+
+@mixin curl-effect-shadow($corner) {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 40%;
+  height: 40%;
+  content: '';
+  bottom: 0;
+  #{$corner}: 0;
+
+  $mul: +1;
+  @if $corner == left { $mul: -1; }
+  @include apply-origin($corner bottom);
+  @include transform(1, $mul * 10deg, 0, 0, $mul * 20deg);
+  @include box-shadow(black, 0, 15px, 20px);
+}
+
+@mixin curl-effect($background: #ffffff) {
+  position: relative;
+
+  background: $background;
+  border: 1px solid lighten($background, 10%);
+
+  @include box-shadow-2(
+    0 1px 4px rgba(0, 0, 0, 0.27),
+    0 0 20px rgba(0, 0, 0, 0.20) inset
+  );
+
+  &:before {
+    @include curl-effect-shadow(left);
+  }
+
+  &:after {
+    @include curl-effect-shadow(right);
+  }
+} 
+
+// Minor Curl Effect 
+
+@mixin minor-curl-effect($background: #ffffff) {
+  position: relative;
+
+  background: $background;
+
+  @include box-shadow-2(
+    0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 0, 0, 0.10) inset
+  );
+
+  &:before {
+    @include minor-curl-effect-shadow(left);
+  }
+
+  &:after {
+    @include minor-curl-effect-shadow(right);
+  }
+}      
+
+@mixin minor-curl-effect-shadow($corner) {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 40%;
+  height: 40%;
+  content: '';
+  bottom: 0;
+  #{$corner}: 0;
+
+  $mul: +1;
+  @if $corner == left { $mul: -1; }
+  @include apply-origin($corner bottom);
+  @include transform(1, $mul * 10deg, 0, 0, $mul * 20deg);
+  @include box-shadow(rgba(0, 0, 0, 0.5), 0, 5px, 10px);
+}
