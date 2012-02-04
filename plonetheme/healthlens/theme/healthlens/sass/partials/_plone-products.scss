@@ -12,16 +12,59 @@ div.collage_type_document.collage_view_standard {
 }
 // collective.collage.innerfade
 #InnerfadeContainer {
-	margin-top: -10px;
+	margin-top: -10px;  
+	height: 433px;
 }      
 
 #InnerfadeNavigation  {
-	line-height: 8px;
+	border-right: none;
+	img {
+		border-bottom: solid 1px #fff;
+		border-right: none;
+		}
+	div.ifnav {
+		height: 109px;
+		width: 189px;	 
+	}
+} 
+           
+#Innerfade {
+	a.innerfade-button {
+		visibility:hidden;
+	}
+	&:hover a.innerfade-button {
+		visibility: visible;
+	}
+}
+#Innerfade .caption, #Innerfade .overlay {
+	bottom: 7px;
+	padding: 0 10px 0 20px;
+	p {	
+		font: normal 12px $readable-font;
+	}
+	
+}   
+
+#Innerfade .title {
+	margin: 5px; 
+	padding: 0; 
+	width: 100%;
+	h2 {  
+		padding: 5px;
+		font: normal 24px/18px $global-nav-font;
+	}  
+   	 a.innerfade-button {
+			float: right; 
+			margin: 5px 10px 0 0;
+			padding: 0 20px 0 0;
+			background: transparent url('../images/green-arrow.png') no-repeat top right; 
+			img {display: none;}
+			&:hover span {
+				color: $bright-highligh-text;
+				}
+		}  
 }      
 
-#Innerfade .caption, #Innerfade .overlay {
-	bottom: 8px;
-}
 // Easy Slider
 #slider-container {
 	border: none;
