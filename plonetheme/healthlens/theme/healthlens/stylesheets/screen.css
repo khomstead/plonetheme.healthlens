@@ -1898,24 +1898,76 @@ div.collage_type_document.collage_view_standard:after {
 /* line 14, ../sass/partials/_plone-products.scss */
 #InnerfadeContainer {
   margin-top: -10px;
+  height: 433px;
 }
 
-/* line 18, ../sass/partials/_plone-products.scss */
+/* line 19, ../sass/partials/_plone-products.scss */
 #InnerfadeNavigation {
-  line-height: 11px;
+  border-right: none;
+}
+/* line 21, ../sass/partials/_plone-products.scss */
+#InnerfadeNavigation img {
+  border-bottom: solid 1px #fff;
+  border-right: none;
+}
+/* line 25, ../sass/partials/_plone-products.scss */
+#InnerfadeNavigation div.ifnav {
+  height: 109px;
+  width: 189px;
 }
 
-/* line 22, ../sass/partials/_plone-products.scss */
+/* line 32, ../sass/partials/_plone-products.scss */
+#Innerfade a.innerfade-button {
+  visibility: hidden;
+}
+/* line 35, ../sass/partials/_plone-products.scss */
+#Innerfade:hover a.innerfade-button {
+  visibility: visible;
+}
+
+/* line 39, ../sass/partials/_plone-products.scss */
 #Innerfade .caption, #Innerfade .overlay {
-  bottom: 8px;
+  bottom: 7px;
+  padding: 0 10px 0 20px;
+}
+/* line 42, ../sass/partials/_plone-products.scss */
+#Innerfade .caption p, #Innerfade .overlay p {
+  font: normal 12px "dejarip-1", "dejarip-2", sans-serif;
 }
 
-/* line 26, ../sass/partials/_plone-products.scss */
+/* line 48, ../sass/partials/_plone-products.scss */
+#Innerfade .title {
+  margin: 5px;
+  padding: 0;
+  width: 100%;
+}
+/* line 52, ../sass/partials/_plone-products.scss */
+#Innerfade .title h2 {
+  padding: 5px;
+  font: normal 24px/18px "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2", sans-serif;
+}
+/* line 56, ../sass/partials/_plone-products.scss */
+#Innerfade .title a.innerfade-button {
+  float: right;
+  margin: 5px 10px 0 0;
+  padding: 0 20px 0 0;
+  background: transparent url("../images/green-arrow.png") no-repeat top right;
+}
+/* line 61, ../sass/partials/_plone-products.scss */
+#Innerfade .title a.innerfade-button img {
+  display: none;
+}
+/* line 62, ../sass/partials/_plone-products.scss */
+#Innerfade .title a.innerfade-button:hover span {
+  color: #90cb43;
+}
+
+/* line 69, ../sass/partials/_plone-products.scss */
 #slider-container {
   border: none;
 }
 
-/* line 31, ../sass/partials/_plone-products.scss */
+/* line 74, ../sass/partials/_plone-products.scss */
 .carousel-pager {
   float: right;
   position: absolute;
@@ -1925,7 +1977,7 @@ div.collage_type_document.collage_view_standard:after {
   background: none;
 }
 
-/* line 42, ../sass/partials/_plone-products.scss */
+/* line 85, ../sass/partials/_plone-products.scss */
 .carousel-pager-item,
 .carousel-pager-button-prev,
 .carousel-pager-button-next {
@@ -1935,7 +1987,7 @@ div.collage_type_document.collage_view_standard:after {
   border-bottom: 1px solid #ddd;
 }
 
-/* line 50, ../sass/partials/_plone-products.scss */
+/* line 93, ../sass/partials/_plone-products.scss */
 .carousel-pager-item.carousel-pager-item-active {
   color: #04f626;
   background-image: url("../images/green-arrow.png");
@@ -1944,14 +1996,14 @@ div.collage_type_document.collage_view_standard:after {
 }
 
 /* line 1029, ../sass/screen.scss */
-/* line 58, ../sass/partials/_plone-products.scss */
+/* line 101, ../sass/partials/_plone-products.scss */
 .carousel-pager-item-active:link,
 .carousel-pager-item-active:visited,
 .carousel-pager-item-active .carousel-title {
   color: black;
 }
 
-/* line 62, ../sass/partials/_plone-products.scss */
+/* line 105, ../sass/partials/_plone-products.scss */
 #slider-container {
   border: none;
   padding: 10px 10px 0px 10px;
@@ -2014,18 +2066,18 @@ div.collage_type_document.collage_view_standard:after {
   -ms-transform-origin: right bottom;
 }
 
-/* line 70, ../sass/partials/_plone-products.scss */
+/* line 113, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons {
   height: 20px;
   line-height: 0px;
   top: -20x;
   padding: 0 0 0px 0;
 }
-/* line 80, ../sass/partials/_plone-products.scss */
+/* line 123, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons span a {
   color: #999;
 }
-/* line 81, ../sass/partials/_plone-products.scss */
+/* line 124, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -2046,27 +2098,27 @@ div.collage_type_document.collage_view_standard:after {
   border-bottom-color: #fff;
   line-height: 0px;
 }
-/* line 97, ../sass/partials/_plone-products.scss */
+/* line 140, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a.active {
   border: solid 1px #85B447;
   background: #90cb43;
 }
-/* line 102, ../sass/partials/_plone-products.scss */
+/* line 145, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a:hover {
   background: red;
   color: transparent !important;
 }
-/* line 106, ../sass/partials/_plone-products.scss */
+/* line 149, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a:link {
   line-height: 0px;
   color: transparent;
 }
-/* line 111, ../sass/partials/_plone-products.scss */
+/* line 154, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons #pauseplay {
   top: 6px;
 }
 
-/* line 123, ../sass/partials/_plone-products.scss */
+/* line 166, ../sass/partials/_plone-products.scss */
 .managePortletsAboveLink,
 .managePortletsBelowLink,
 .manageFooterPortletsLink,
@@ -2076,87 +2128,87 @@ div.collage_type_document.collage_view_standard:after {
   clear: both;
 }
 
-/* line 125, ../sass/partials/_plone-products.scss */
+/* line 168, ../sass/partials/_plone-products.scss */
 .portlet-manager-row .porlet-well_manager {
   width: 30%;
   float: left;
   margin: 1%;
 }
 
-/* line 126, ../sass/partials/_plone-products.scss */
+/* line 169, ../sass/partials/_plone-products.scss */
 .portlet-manager-row {
   width: 100%;
   float: left;
 }
 
 /* Define classes for 1/5ths and 1/6ths widths and positions. */
-/* line 130, ../sass/partials/_plone-products.scss */
+/* line 173, ../sass/partials/_plone-products.scss */
 div.width-1\3a 5 {
   width: 17.75%;
 }
 
 /* .width-1:5 */
-/* line 131, ../sass/partials/_plone-products.scss */
+/* line 174, ../sass/partials/_plone-products.scss */
 div.width-2\3a 5 {
   width: 37.75%;
 }
 
 /* .width-2:5 */
-/* line 132, ../sass/partials/_plone-products.scss */
+/* line 175, ../sass/partials/_plone-products.scss */
 div.width-3\3a 5 {
   width: 57.75%;
 }
 
 /* .width-3:5 */
-/* line 133, ../sass/partials/_plone-products.scss */
+/* line 176, ../sass/partials/_plone-products.scss */
 div.width-4\3a 5 {
   width: 77.75%;
 }
 
 /* .width-4:5 */
-/* line 134, ../sass/partials/_plone-products.scss */
+/* line 177, ../sass/partials/_plone-products.scss */
 div.position-1\3a 5 {
   margin-left: -78.875%;
 }
 
 /* .position-1:5 */
-/* line 135, ../sass/partials/_plone-products.scss */
+/* line 178, ../sass/partials/_plone-products.scss */
 div.position-2\3a 5 {
   margin-left: -58.875%;
 }
 
 /* .position-2:5 */
-/* line 136, ../sass/partials/_plone-products.scss */
+/* line 179, ../sass/partials/_plone-products.scss */
 div.position-3\3a 5 {
   margin-left: -38.875%;
 }
 
 /* .position-3:5 */
-/* line 137, ../sass/partials/_plone-products.scss */
+/* line 180, ../sass/partials/_plone-products.scss */
 div.position-4\3a 5 {
   margin-left: -18.875%;
 }
 
 /* .position-4:5 */
-/* line 139, ../sass/partials/_plone-products.scss */
+/* line 182, ../sass/partials/_plone-products.scss */
 div.width-1\3a 6 {
   width: 14.416%;
 }
 
 /* .width-1:6 */
-/* line 140, ../sass/partials/_plone-products.scss */
+/* line 183, ../sass/partials/_plone-products.scss */
 div.width-5\3a 6 {
   width: 81.083%;
 }
 
 /* .width-5:6 */
-/* line 141, ../sass/partials/_plone-products.scss */
+/* line 184, ../sass/partials/_plone-products.scss */
 div.position-1\3a 6 {
   margin-left: -82.208%;
 }
 
 /* .position-1:6 */
-/* line 142, ../sass/partials/_plone-products.scss */
+/* line 185, ../sass/partials/_plone-products.scss */
 div.position-5\3a 6 {
   margin-left: -15.542%;
 }
