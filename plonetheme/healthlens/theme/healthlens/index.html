@@ -137,33 +137,39 @@
       <h1>Write a new blog post</h1>
       <div id="wizard">
         <ul class="tabs">
-          <li><a href="#" class="w2">Title</a></li>
-          <li><a href="#" class="w2">Content</a></li>
+          <li><a href="#" class="w2">Post type</a></li>
+          <li><a href="#" class="w2">Write about it</a></li>
           <li><a href="#" class="w2">Tag it</a></li>
         </ul>
 
           <div class="panes">
-            <div id="wizard-title" class="pane">
-              <div>
-                <label id="wizard-content-type">
-                  What type of post is this:
-                </label>
-                <label>Title
-                  <input type="text" id ="wizard-input-title" class="wizard-input-title" value="blah"/>
-                </label>
-              </div>
-              <div>
-                <button class="next">Continue &raquo;</button>
-              </div>
+            <div id="wizard-post-type" class="pane">
+              <ul>
+                <li class="post-type" data-post-type="idea">
+                  <div id="post-type-idea-image"></div>
+                  <div id="post-type-idea-description">
+                    <p>I have a great idea!</p>
+                  </div>
+                </li>
+                <li class="post-type" data-post-type="rant">
+                  <div id="post-type-rant-image"></div>
+                  <div id=post-type-rant-description">
+                    <p>Rant and rave about something!</p>
+                  </div>
+                </li>
+              </ul>
             </div>
             <div id="wizard-content" class="pane">
+              <label>Title
+                <input type="text" id ="wizard-input-title" class="wizard-input-title" value="blah"/>
+              </label>
               <div class="ploneSkin">
                 <label>Content
                   <textarea />
                 </label>
               </div>
               <div>
-                <button class="prev">&laquo; Go back</button>
+                <button class="prev">&laquo; Change the post type</button>
                 <button class="next">Continue &raquo;</button>
               </div>
             </div>
