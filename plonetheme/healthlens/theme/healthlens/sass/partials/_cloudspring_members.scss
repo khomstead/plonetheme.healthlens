@@ -1,3 +1,13 @@
 div.overlay-ajax {
   z-index: 101;
 }
+
+div.idea {
+  background: #333;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#content .idea a.summary:link, #content .idea a.summary:visited {
+  color: red
+}
