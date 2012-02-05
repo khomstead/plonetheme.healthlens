@@ -170,20 +170,31 @@ body, #content {
 
 h2 {
 	font-size: 24px;
-	line-height: 30px;
+	line-height: 24px;
 	letter-spacing: normal;
   	font-family:"futura-pt-1","futura-pt-2",sans-serif;     
 	color: #424242;
 	font-weight: 500;
-	padding-top: 10px;  
+	padding-top: 10px;
+	margin-top: 0; 
 }
 
-p, li, span, a, a.tile {
+#content p, li, span, a, a.tile, .highlightedGlossaryTerm {
 	font-family: "dejarip-1", "dejarip-2", sans-serif;
 	letter-spacing: normal;
 	color: #424242;  
 	font-size: $base-font-size;
-	line-height: $base-line-height;    
+	line-height: $base-line-height; 
+	margin-bottom: 0px;   
+}
+
+.highlightedGlossaryTerm {
+	font-size: 100%;
+	color: $text-link;
+	font-weight: normal;
+	background: transparent;
+	border-bottom: dotted 1px #999;
+	
 }
           
 // Title Ribbon
@@ -271,12 +282,11 @@ div.collage_type_document.collage_view_standard h2 {
 	clear: right;
 	color: #000;
 	letter-spacing: normal !important;
-	padding: 0 0 0 30px; 
+	padding: 0 0 0 35px; 
 	border-left: solid 2px #ddd; 
 	background-image: url('../images/green-check.png') !important;
 	background-repeat: no-repeat !important;
 	background-position: 3% center !important;  
-	background-color: #eee;
 }
 
 .postit {
@@ -294,9 +304,8 @@ div.collage_type_document.collage_view_standard h2 {
 	color: #000;
 	line-height: 22px;
 	padding: 10px 10px 10px 30px;
-//	.csstransforms & {
-		@include minor-curl-effect; 
-//	}
+	margin: 5px 0 10px 0 !important;
+	@include minor-curl-effect; 
 	.no-csstransforms & {
 		box-shadow: 0px 2px 6px 0px #999;		
 		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc); 	

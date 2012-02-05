@@ -424,7 +424,12 @@ dl.actionMenu.activated dd {
 	@include minor-curl-effect;
 	@include border-radius(0px);
 //	@include background-image(linear-gradient(left, #eaeaea, white 30%, white 70%, #dddddd)); 
-	background:  url('../images/brushed metal.jpg') left center;
+	background:  url('../images/brushed metal.jpg') left center; 
+	.no-boxshadow & {   
+		@include box-shadow(rgba(0, 0, 0, 0.5) 0px 2px 8px);
+		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   
+	}	
+	
 	
 }
 // Images

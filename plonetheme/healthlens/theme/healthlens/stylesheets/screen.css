@@ -1505,29 +1505,40 @@ body, #content {
 /* line 171, ../sass/partials/_typography.scss */
 h2 {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 24px;
   letter-spacing: normal;
   font-family: "futura-pt-1","futura-pt-2",sans-serif;
   color: #424242;
   font-weight: 500;
   padding-top: 10px;
+  margin-top: 0;
 }
 
-/* line 181, ../sass/partials/_typography.scss */
-p, li, span, a, a.tile {
+/* line 182, ../sass/partials/_typography.scss */
+#content p, li, span, a, a.tile, .highlightedGlossaryTerm {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   letter-spacing: normal;
   color: #424242;
   font-size: 13px;
   line-height: 18px;
+  margin-bottom: 0px;
 }
 
-/* line 190, ../sass/partials/_typography.scss */
+/* line 191, ../sass/partials/_typography.scss */
+.highlightedGlossaryTerm {
+  font-size: 100%;
+  color: #155d89;
+  font-weight: normal;
+  background: transparent;
+  border-bottom: dotted 1px #999;
+}
+
+/* line 201, ../sass/partials/_typography.scss */
 #page-title {
   padding: 5px 10px 10px 10px;
 }
 
-/* line 204, ../sass/partials/_typography.scss */
+/* line 215, ../sass/partials/_typography.scss */
 dt.portletHeader a, .portletHeader {
   font-size: 16px;
   line-height: normal !important;
@@ -1536,23 +1547,23 @@ dt.portletHeader a, .portletHeader {
   color: #000;
   text-shadow: 1px 1px 1px #fff;
 }
-/* line 210, ../sass/partials/_typography.scss */
+/* line 221, ../sass/partials/_typography.scss */
 dt.portletHeader a:hover, .portletHeader:hover {
   font-color: #1a75ba !important;
 }
 
-/* line 217, ../sass/partials/_typography.scss */
+/* line 228, ../sass/partials/_typography.scss */
 #foot-box .portletItem p, #foot-box .portletItem span, #foot-box .portletItem a, #foot-box .portletStaticText p, #foot-box .portletStaticText span, #foot-box .portletStaticText a {
   font-size: 12px;
   line-height: 16px;
   color: #ddd;
 }
-/* line 222, ../sass/partials/_typography.scss */
+/* line 233, ../sass/partials/_typography.scss */
 #foot-box .portletItem a, #foot-box .portletStaticText a {
   color: #1a75ba;
 }
 
-/* line 226, ../sass/partials/_typography.scss */
+/* line 237, ../sass/partials/_typography.scss */
 #foot-box dt.portletHeader a.tile, #foot-box h2 {
   font-size: 18px;
   color: #999;
@@ -1560,46 +1571,46 @@ dt.portletHeader a:hover, .portletHeader:hover {
   padding-top: 0;
 }
 
-/* line 234, ../sass/partials/_typography.scss */
+/* line 245, ../sass/partials/_typography.scss */
 #foot-box dt.portletHeader a, #foot-box .portletHeader {
   color: #dddddd;
 }
 
-/* line 240, ../sass/partials/_typography.scss */
+/* line 251, ../sass/partials/_typography.scss */
 #portal-colophon p {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   letter-spacing: normal;
   color: #666;
 }
 
-/* line 246, ../sass/partials/_typography.scss */
+/* line 257, ../sass/partials/_typography.scss */
 #portal-colophon a {
   color: #999;
 }
-/* line 248, ../sass/partials/_typography.scss */
+/* line 259, ../sass/partials/_typography.scss */
 #portal-colophon a:hover {
   color: #90cb43;
 }
 
-/* line 253, ../sass/partials/_typography.scss */
+/* line 264, ../sass/partials/_typography.scss */
 div.collage_type_document.collage_view_standard h2 {
   font-family: "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2", sans-serif;
 }
 
-/* line 258, ../sass/partials/_typography.scss */
+/* line 269, ../sass/partials/_typography.scss */
 .section-landing-page #collage .row_2 .block_1 .collage_view_standard h2 {
   color: #e5000f;
 }
-/* line 259, ../sass/partials/_typography.scss */
+/* line 270, ../sass/partials/_typography.scss */
 .section-landing-page #collage .row_2 .block_2 .collage_view_standard h2 {
   color: #155d89;
 }
-/* line 260, ../sass/partials/_typography.scss */
+/* line 271, ../sass/partials/_typography.scss */
 .section-landing-page #collage .row_2 .block_3 .collage_view_standard h2 {
   color: #8FC943;
 }
 
-/* line 264, ../sass/partials/_typography.scss */
+/* line 275, ../sass/partials/_typography.scss */
 #content .checklist {
   margin: 0px 0px 0px 10px;
   font: 18px "futura-pt-1", "futura-pt-2";
@@ -1610,15 +1621,14 @@ div.collage_type_document.collage_view_standard h2 {
   clear: right;
   color: #000;
   letter-spacing: normal !important;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 35px;
   border-left: solid 2px #ddd;
   background-image: url("../images/green-check.png") !important;
   background-repeat: no-repeat !important;
   background-position: 3% center !important;
-  background-color: #eee;
 }
 
-/* line 282, ../sass/partials/_typography.scss */
+/* line 292, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
   background: white;
@@ -1682,7 +1692,7 @@ div.collage_type_document.collage_view_standard h2 {
   -ms-transform-origin: right bottom;
 }
 
-/* line 290, ../sass/partials/_typography.scss */
+/* line 300, ../sass/partials/_typography.scss */
 .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
@@ -1690,6 +1700,7 @@ div.collage_type_document.collage_view_standard h2 {
   color: #000;
   line-height: 22px;
   padding: 10px 10px 10px 30px;
+  margin: 5px 0 10px 0 !important;
   position: relative;
   background: white;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
@@ -1751,19 +1762,19 @@ div.collage_type_document.collage_view_standard h2 {
   -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
   -ms-transform-origin: right bottom;
 }
-/* line 300, ../sass/partials/_typography.scss */
+/* line 309, ../sass/partials/_typography.scss */
 .no-csstransforms .elegant {
   box-shadow: 0px 2px 6px 0px #999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 311, ../sass/partials/_typography.scss */
+/* line 320, ../sass/partials/_typography.scss */
 .carousel-title {
   font: 24px "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
   color: #000;
 }
 
-/* line 316, ../sass/partials/_typography.scss */
+/* line 325, ../sass/partials/_typography.scss */
 .carousel-body p {
   color: #a9a9a9;
 }
@@ -2226,6 +2237,69 @@ div.position-5\3a 6 {
 }
 
 /* .position-5:6 */
+/* line 189, ../sass/partials/_plone-products.scss */
+span.highlightedGlossaryTerm {
+  z-index: 1000;
+}
+
+/* line 192, ../sass/partials/_plone-products.scss */
+div#glossary-definition-popup {
+  position: absolute;
+  padding: 10px;
+  border: solid 1px #f1e767;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.75);
+  background: #f1e767;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f1e767 0%, #feb645 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1e767), color-stop(100%, #feb645));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f1e767 0%, #feb645 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f1e767 0%, #feb645 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f1e767 0%, #feb645 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #f1e767 0%, #feb645 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 215, ../sass/partials/_plone-products.scss */
+div#glossary-definition-popup:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  /* reduce the damage in FF3.0 */
+  display: block;
+  width: 0;
+  top: -15px;
+  /* value = - border-top-width - border-bottom-width */
+  left: 40px;
+  /* controls horizontal position */
+  bottom: auto;
+  border-width: 0 15px 15px;
+  /* vary these values to change the angle of the vertex */
+  border-color: #f1e767 transparent;
+}
+/* line 229, ../sass/partials/_plone-products.scss */
+div#glossary-definition-popup p {
+  color: black;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 235, ../sass/partials/_plone-products.scss */
+div#glossary-definition-popup h6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /*
 	Mosaic - Sliding Boxes and Captions jQuery Plugin
 	Version 1.0.1
@@ -3010,13 +3084,21 @@ dl.actionMenu.activated dd {
   -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
   -ms-transform-origin: right bottom;
 }
+/* line 428, ../sass/screen.scss */
+.no-boxshadow #portal-columns dl.portlet dt.portletHeader {
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
+}
 
-/* line 431, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 img.image-left, img.image-right, .captioned img {
   border: none;
 }
 
-/* line 437, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 #foot-box {
   background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #000000), color-stop(100%, #555555));
   background-image: -webkit-radial-gradient(center 60px, #000000 400px, #555555 650px);
@@ -3040,12 +3122,12 @@ img.image-left, img.image-right, .captioned img {
   -khtml-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 443, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 .no-cssgradients #foot-box {
   background: black url("../images/foot-gradient.png") repeat-x;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 #foot-box dl.portlet dt.portletHeader, #foot-box .portletStaticText {
   border: none;
   margin: 0 0 0 0;
