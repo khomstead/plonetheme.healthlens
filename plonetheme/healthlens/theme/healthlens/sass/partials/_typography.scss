@@ -63,8 +63,37 @@ body, #content {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 300;
-	letter-spacing: normal;    
+	letter-spacing: normal; 
+	display: inline-block !important;
+	background-color: transparent;   
+	white-space:nowrap;
+//	background-color: black;
+//	&:hover {
+//		color: $bright-highligh-text !important;
+//		@include select-arrow; 
+//		background-image: url(../images/green-arrow.png); 
+//		-pie-background: transparent url(../images/green-arrow.png) no-repeat center left;
+//		background-repeat: no-repeat; 
+//		background-position: center left; 
+//		-pie-png-fix: true;
+//		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   		
+//	};    
 }
+  
+
+#portal-megamenu .sub ul li > a:hover {
+	color: $menu-header-color !important;
+	background-color: transparent;
+////	background: #000 url('../images/green-arrow.gif') no-repeat center left !important;
+////	position: relative; 
+////	background: none;
+//	background-image: url('../images/green-arrow.png');
+//	background-repeat: no-repeat; 
+//	background-position: left center; 
+//	display: inline-block !important; 
+//	white-space:nowrap;
+	
+}     
 
 #portal-megamenu .sub div.plain h2 a {
 	padding: 0;
