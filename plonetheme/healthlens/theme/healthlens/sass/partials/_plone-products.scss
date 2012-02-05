@@ -17,9 +17,6 @@ div.collage_type_document.collage_view_standard {
 }      
 
 #InnerfadeNavigation  {
-<<<<<<< HEAD
-	line-height: 8px;
-=======
 	border-right: none;
 	img {
 		border-bottom: solid 1px #fff;
@@ -39,6 +36,7 @@ div.collage_type_document.collage_view_standard {
 		visibility: visible;
 	}
 }
+
 #Innerfade .caption, #Innerfade .overlay {
 	bottom: 7px;
 	padding: 0 10px 0 20px;
@@ -66,7 +64,6 @@ div.collage_type_document.collage_view_standard {
 				color: $bright-highligh-text;
 				}
 		}  
->>>>>>> kh_iMac_SASS_refactoring
 }      
 
 // Easy Slider
