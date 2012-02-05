@@ -2,9 +2,15 @@
 <rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" css:if-content="#visual-portal-wrapper">
 
 <!--	XHTML Strict-->
-<xsl:output
+<!-- <xsl:output
     doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
-    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
+    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/> -->
+
+<!--	XHTML Transitional-->
+<xsl:output
+    doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
+
      
 <!--<xsl:output    
     doctype-public="-//W3C//DTD HTML 4.01//EN"

@@ -180,12 +180,14 @@ body {
 	float: left;
 	width: 100%;
 	padding: 0 0 10px 0;
-	margin: 0 10px 0 0;   
+	margin: 0 10px 0 0;
 }
 
 
 #portal-megamenu .sub ul li {
-	width: 100%;
+	display: inline-block !important;
+	background-color: transparent;   
+	white-space:nowrap;
 }
 
 #portal-megamenu .sub ul li span {
@@ -193,13 +195,9 @@ body {
 	white-space: nowrap;
 }
 
-#portal-megamenu .sub ul li a {
-	float: none;
-	height: auto;
-	display: block;
-	white-space: nowrap;
-	text-indent: 0px;
-}
+//#portal-megamenu .sub ul li a {
+//	background: #000;
+//}
 
 /* Menu styling for Sunburst theme */
 .actionicon-object_buttons-megamenu-enable,
@@ -248,17 +246,10 @@ body {
 	padding-left: 0;
 }
 
-#portal-megamenu .sub ul li a:hover { 
-	color: $bright-highligh-text;
-	width: 100%;
-	@include select-arrow;
-	@include border-radius(2px);  
-	background-color: transparent;
-}
-
-#portal-megamenu .sub li.selected a {
+#portal-megamenu .sub li.selected {
 	background: transparent;
 	@include select-arrow;
+	a {background: transparent;}
 }       
 
 // Personal Bar 
