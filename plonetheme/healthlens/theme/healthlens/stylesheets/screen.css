@@ -1520,7 +1520,7 @@ h2 {
   letter-spacing: normal;
   color: #424242;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 19px;
   margin-bottom: 0px;
 }
 
@@ -1693,7 +1693,7 @@ div.collage_type_document.collage_view_standard h2 {
 }
 
 /* line 300, ../sass/partials/_typography.scss */
-.elegant {
+#content .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
   text-align: left;
@@ -1713,7 +1713,7 @@ div.collage_type_document.collage_view_standard h2 {
   background-repeat: no-repeat;
 }
 /* line 59, ../sass/partials/_effects.scss */
-.elegant:before {
+#content .elegant:before {
   z-index: -1;
   position: absolute;
   background: transparent;
@@ -1738,7 +1738,7 @@ div.collage_type_document.collage_view_standard h2 {
   -ms-transform-origin: left bottom;
 }
 /* line 63, ../sass/partials/_effects.scss */
-.elegant:after {
+#content .elegant:after {
   z-index: -1;
   position: absolute;
   background: transparent;
@@ -1763,7 +1763,7 @@ div.collage_type_document.collage_view_standard h2 {
   -ms-transform-origin: right bottom;
 }
 /* line 309, ../sass/partials/_typography.scss */
-.no-csstransforms .elegant {
+.no-csstransforms #content .elegant {
   box-shadow: 0px 2px 6px 0px #999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
@@ -2999,7 +2999,7 @@ dl.actionMenu.activated dd {
   -webkit-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
   box-shadow: 15px 0px 10px -15px rgba(0, 0, 0, 0.6);
-  padding: 10px 10px 10px 0px;
+  padding: 10px 10px 20px 0px;
   margin-bottom: -20px;
   top: -10px;
   min-height: 400px;
