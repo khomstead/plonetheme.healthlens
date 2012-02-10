@@ -1,70 +1,3 @@
-/* line 17, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* line 20, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-}
-
-/* line 22, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 24, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 26, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 28, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 101, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 30, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 115, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-/* Stupid compass box-shadow mixin doesn't support multiple shadows... */
 /* line 20, ../../../../../../../../../../Applications/compass.app/Contents/Resources/ruby/compass_0.11/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 /* line 10, ../sass/_typography.scss */
 /* line 6, ../sass/partials/_old_css.scss */
@@ -1631,65 +1564,56 @@ div.collage_type_document.collage_view_standard h2 {
 /* line 292, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
-  background: white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  bottom: 0;
+  background: transparent;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
   background-color: #FCFDA6;
   padding: 12px;
   font-family: "futura-pt-1","futura-pt-2",sans-serif;
   font-size: 16px;
 }
-/* line 59, ../sass/partials/_effects.scss */
+/* line 91, ../sass/partials/_effects.scss */
 .postit:before {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(-5deg) skew(-20deg);
-  -ms-transform-origin: left bottom;
+  left: 14px;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-10deg) rotate(-5deg);
+  -moz-transform: skew(-10deg) rotate(-5deg);
+  -ms-transform: skew(-10deg) rotate(-5deg);
+  -o-transform: skew(-10deg) rotate(-5deg);
+  transform: skew(-10deg) rotate(-5deg);
 }
-/* line 63, ../sass/partials/_effects.scss */
+/* line 92, ../sass/partials/_effects.scss */
 .postit:after {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
-  -ms-transform-origin: right bottom;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  left: auto;
+  right: 14px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(10deg) rotate(5deg);
+  -moz-transform: skew(10deg) rotate(5deg);
+  -ms-transform: skew(10deg) rotate(5deg);
+  -o-transform: skew(10deg) rotate(5deg);
+  transform: skew(10deg) rotate(5deg);
 }
 
 /* line 300, ../sass/partials/_typography.scss */
@@ -1702,65 +1626,56 @@ div.collage_type_document.collage_view_standard h2 {
   padding: 10px 10px 10px 30px;
   margin: 5px 0 10px 0 !important;
   position: relative;
-  background: white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  bottom: 0;
+  background: transparent;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
   background-color: #FCF9E9;
   background-image: url(../images/openquote-gray.png);
   background-position: 4px 8px;
   background-repeat: no-repeat;
 }
-/* line 59, ../sass/partials/_effects.scss */
+/* line 91, ../sass/partials/_effects.scss */
 #content .elegant:before {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(-5deg) skew(-20deg);
-  -ms-transform-origin: left bottom;
+  left: 14px;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-10deg) rotate(-5deg);
+  -moz-transform: skew(-10deg) rotate(-5deg);
+  -ms-transform: skew(-10deg) rotate(-5deg);
+  -o-transform: skew(-10deg) rotate(-5deg);
+  transform: skew(-10deg) rotate(-5deg);
 }
-/* line 63, ../sass/partials/_effects.scss */
+/* line 92, ../sass/partials/_effects.scss */
 #content .elegant:after {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
-  -ms-transform-origin: right bottom;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  left: auto;
+  right: 14px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(10deg) rotate(5deg);
+  -moz-transform: skew(10deg) rotate(5deg);
+  -ms-transform: skew(10deg) rotate(5deg);
+  -o-transform: skew(10deg) rotate(5deg);
+  transform: skew(10deg) rotate(5deg);
 }
 /* line 309, ../sass/partials/_typography.scss */
 .no-csstransforms #content .elegant {
@@ -1795,124 +1710,106 @@ body.section-landing-page #title-ribbon {
 /* line 2, ../sass/partials/_plone-products.scss */
 #collage .featured-document {
   position: relative;
-  background: white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  bottom: 0;
+  background: transparent;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
   background-color: #FCFDA6;
 }
-/* line 59, ../sass/partials/_effects.scss */
+/* line 91, ../sass/partials/_effects.scss */
 #collage .featured-document:before {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(-5deg) skew(-20deg);
-  -ms-transform-origin: left bottom;
+  left: 14px;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-10deg) rotate(-5deg);
+  -moz-transform: skew(-10deg) rotate(-5deg);
+  -ms-transform: skew(-10deg) rotate(-5deg);
+  -o-transform: skew(-10deg) rotate(-5deg);
+  transform: skew(-10deg) rotate(-5deg);
 }
-/* line 63, ../sass/partials/_effects.scss */
+/* line 92, ../sass/partials/_effects.scss */
 #collage .featured-document:after {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
-  -ms-transform-origin: right bottom;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  left: auto;
+  right: 14px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(10deg) rotate(5deg);
+  -moz-transform: skew(10deg) rotate(5deg);
+  -ms-transform: skew(10deg) rotate(5deg);
+  -o-transform: skew(10deg) rotate(5deg);
+  transform: skew(10deg) rotate(5deg);
 }
 
 /* line 8, ../sass/partials/_plone-products.scss */
 div.collage_type_document.collage_view_standard {
   padding: 5px 10px;
   position: relative;
-  background: white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  bottom: 0;
+  background: transparent;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
   background-color: #FCF9E9;
 }
-/* line 59, ../sass/partials/_effects.scss */
+/* line 91, ../sass/partials/_effects.scss */
 div.collage_type_document.collage_view_standard:before {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(-5deg) skew(-20deg);
-  -ms-transform-origin: left bottom;
+  left: 14px;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-10deg) rotate(-5deg);
+  -moz-transform: skew(-10deg) rotate(-5deg);
+  -ms-transform: skew(-10deg) rotate(-5deg);
+  -o-transform: skew(-10deg) rotate(-5deg);
+  transform: skew(-10deg) rotate(-5deg);
 }
-/* line 63, ../sass/partials/_effects.scss */
+/* line 92, ../sass/partials/_effects.scss */
 div.collage_type_document.collage_view_standard:after {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
-  -ms-transform-origin: right bottom;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  left: auto;
+  right: 14px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(10deg) rotate(5deg);
+  -moz-transform: skew(10deg) rotate(5deg);
+  -ms-transform: skew(10deg) rotate(5deg);
+  -o-transform: skew(10deg) rotate(5deg);
+  transform: skew(10deg) rotate(5deg);
 }
 
 /* line 14, ../sass/partials/_plone-products.scss */
@@ -2023,69 +1920,59 @@ div.collage_type_document.collage_view_standard:after {
   border: none;
   padding: 10px 10px 0px 10px;
   position: relative;
-  background: white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  bottom: 0;
+  background: transparent;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
   margin: 0 0 10px 0 !important;
 }
-/* line 59, ../sass/partials/_effects.scss */
+/* line 91, ../sass/partials/_effects.scss */
 #slider-container:before {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(-5deg) skew(-20deg);
-  -ms-transform-origin: left bottom;
+  left: 14px;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-10deg) rotate(-5deg);
+  -moz-transform: skew(-10deg) rotate(-5deg);
+  -ms-transform: skew(-10deg) rotate(-5deg);
+  -o-transform: skew(-10deg) rotate(-5deg);
+  transform: skew(-10deg) rotate(-5deg);
 }
-/* line 63, ../sass/partials/_effects.scss */
+/* line 92, ../sass/partials/_effects.scss */
 #slider-container:after {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
-  -ms-transform-origin: right bottom;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  left: auto;
+  right: 14px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(10deg) rotate(5deg);
+  -moz-transform: skew(10deg) rotate(5deg);
+  -ms-transform: skew(10deg) rotate(5deg);
+  -o-transform: skew(10deg) rotate(5deg);
+  transform: skew(10deg) rotate(5deg);
 }
 /* line 106, ../sass/partials/_plone-products.scss */
 .no-boxshadow #slider-container {
-  -moz-box-shadow: #999999 0px 4px 10px;
-  -webkit-box-shadow: #999999 0px 4px 10px;
-  -o-box-shadow: #999999 0px 4px 10px;
-  box-shadow: #999999 0px 4px 10px;
+  -webkit-box-shadow: 0px 0px 10px #999999;
+  -moz-box-shadow: 0px 0px 10px #999999;
+  box-shadow: 0px 0px 10px #999999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
@@ -2102,8 +1989,8 @@ div.collage_type_document.collage_view_standard:after {
 }
 /* line 123, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a {
-  -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   -o-border-radius: 8px;
   -ms-border-radius: 8px;
   -khtml-border-radius: 8px;
@@ -2655,16 +2542,15 @@ body {
   top: 60px;
   padding: 10px 10px 5px 20px;
   border: 2px solid #0c7fd3;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: black 0px 2px 10px;
-  -webkit-box-shadow: black 0px 2px 10px;
-  -o-box-shadow: black 0px 2px 10px;
-  box-shadow: black 0px 2px 10px;
+  -webkit-box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
 }
 /* line 227, ../sass/screen.scss */
 .cssgradients #portal-megamenu li.top-level .sub {
@@ -2726,18 +2612,27 @@ body {
 /* line 263, ../sass/screen.scss */
 .cssgradients #divider {
   height: 20px;
-  -moz-box-shadow: black 0 2px 10px;
-  -webkit-box-shadow: black 0 2px 10px;
-  -o-box-shadow: black 0 2px 10px;
-  box-shadow: black 0 2px 10px;
+  -webkit-box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
   border-bottom: 2px solid #0b4774;
   border-top: 2px solid #1a75ba;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0b4774), color-stop(100%, #1a75ba));
-  background-image: -webkit-linear-gradient(top, #0b4774, #1a75ba);
-  background-image: -moz-linear-gradient(top, #0b4774, #1a75ba);
-  background-image: -o-linear-gradient(top, #0b4774, #1a75ba);
-  background-image: -ms-linear-gradient(top, #0b4774, #1a75ba);
-  background-image: linear-gradient(top, #0b4774, #1a75ba);
+  background: #0b4774;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #0b4774 0%, #1a75ba 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0b4774), color-stop(100%, #1a75ba));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #0b4774 0%, #1a75ba 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #0b4774 0%, #1a75ba 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #0b4774 0%, #1a75ba 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #0b4774 0%, #1a75ba 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 );
+  /* IE6-9 */
 }
 /* line 270, ../sass/screen.scss */
 .no-cssgradients #divider {
@@ -2787,8 +2682,8 @@ body {
   height: 100%;
   background: none;
   position: relative;
-  -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   -o-border-radius: 0px;
   -ms-border-radius: 0px;
   -khtml-border-radius: 0px;
@@ -2800,10 +2695,9 @@ body {
 #portal-personaltools dd.actionMenuContent {
   margin-top: 2px;
   padding: 0px 0px 5px 2px;
-  -moz-box-shadow: black 0px 2px 10px;
-  -webkit-box-shadow: black 0px 2px 10px;
-  -o-box-shadow: black 0px 2px 10px;
-  box-shadow: black 0px 2px 10px;
+  -webkit-box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.7)));
@@ -2822,18 +2716,12 @@ body {
 
 /* line 323, ../sass/screen.scss */
 dl.actionMenu.activated dd {
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -o-border-bottom-left-radius: 4px;
-  -ms-border-bottom-left-radius: 4px;
-  -khtml-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
-  -o-border-bottom-right-radius: 4px;
-  -ms-border-bottom-right-radius: 4px;
-  -khtml-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
   position: relative;
   width: auto;
   min-width: 99%;
@@ -2859,70 +2747,55 @@ dl.actionMenu.activated dd {
   width: 960px;
   background: black;
   position: relative;
-  background: white;
-  border: 1px solid white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 20px rgba(0, 0, 0, 0.2) inset;
+  bottom: 0;
+  background: #fff;
 }
-/* line 39, ../sass/partials/_effects.scss */
+/* line 42, ../sass/partials/_effects.scss */
 .boxshadow #page-wrapper:before {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
+  left: 22px;
+  bottom: 16px;
   width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-10deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 15px 20px black;
-  -webkit-box-shadow: 0 15px 20px black;
-  -o-box-shadow: 0 15px 20px black;
-  box-shadow: 0 15px 20px black;
-  -ms-transform: translate(0, 0) scale(1) rotate(-5deg) skew(-20deg);
-  -ms-transform-origin: left bottom;
+  max-width: 1000px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 50%;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+  -webkit-transform: skew(-10deg) rotate(-5deg);
+  -moz-transform: skew(-10deg) rotate(-5deg);
+  -ms-transform: skew(-10deg) rotate(-5deg);
+  -o-transform: skew(-10deg) rotate(-5deg);
+  transform: skew(-10deg) rotate(-5deg);
 }
 /* line 43, ../sass/partials/_effects.scss */
 .boxshadow #page-wrapper:after {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
+  right: 22px;
+  bottom: 16px;
   width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(10deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 15px 20px black;
-  -webkit-box-shadow: 0 15px 20px black;
-  -o-box-shadow: 0 15px 20px black;
-  box-shadow: 0 15px 20px black;
-  -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
-  -ms-transform-origin: right bottom;
+  max-width: 1000px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 50%;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+  -webkit-transform: skew(10deg) rotate(5deg);
+  -moz-transform: skew(10deg) rotate(5deg);
+  -ms-transform: skew(10deg) rotate(5deg);
+  -o-transform: skew(10deg) rotate(5deg);
+  transform: skew(10deg) rotate(5deg);
 }
 
 /* line 350, ../sass/screen.scss */
 #page {
-  -moz-box-shadow: black 0 5px 10px;
-  -webkit-box-shadow: black 0 5px 10px;
-  -o-box-shadow: black 0 5px 10px;
-  box-shadow: black 0 5px 10px;
+  -webkit-box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
   width: 960px;
   margin-right: auto;
   margin-left: auto;
@@ -2960,41 +2833,23 @@ dl.actionMenu.activated dd {
 #title-ribbon {
   border-left: solid 3px #eaeaea;
   border-right: solid 3px #eaeaea;
-  -moz-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -o-border-bottom-left-radius: 6px;
-  -ms-border-bottom-left-radius: 6px;
-  -khtml-border-bottom-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
   -webkit-border-bottom-right-radius: 6px;
-  -o-border-bottom-right-radius: 6px;
-  -ms-border-bottom-right-radius: 6px;
-  -khtml-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
   border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
   position: relative;
-}
-/* line 385, ../sass/screen.scss */
-.cssgradients #title-ribbon {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(80%, #000000), color-stop(100%, #444444));
-  background-image: -webkit-linear-gradient(top, #000000 80%, #444444);
-  background-image: -moz-linear-gradient(top, #000000 80%, #444444);
-  background-image: -o-linear-gradient(top, #000000 80%, #444444);
-  background-image: -ms-linear-gradient(top, #000000 80%, #444444);
-  background-image: linear-gradient(top, #000000 80%, #444444);
-}
-/* line 388, ../sass/screen.scss */
-.no-cssgradients #title-ribbon {
   background: #000;
 }
 
-/* line 393, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 #portal-column-one {
   position: realitive;
   z-index: 0;
 }
 
-/* line 398, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 #portal-column-content {
   -webkit-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
@@ -3004,7 +2859,7 @@ dl.actionMenu.activated dd {
   top: -10px;
   min-height: 400px;
 }
-/* line 407, ../sass/screen.scss */
+/* line 402, ../sass/screen.scss */
 .no-boxshadow #portal-column-content {
   background-color: #eaeaea;
   border-radius: 5px;
@@ -3012,7 +2867,7 @@ dl.actionMenu.activated dd {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 417, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 #portal-columns dl.portlet dt.portletHeader {
   border-bottom: solid 1px #666;
   border-right: solid 1px #666;
@@ -3021,113 +2876,99 @@ dl.actionMenu.activated dd {
   margin: 0 0 0 2px;
   padding: 4px 10px;
   position: relative;
-  background: white;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -moz-border-radius: 0px;
+  bottom: 0;
+  background: transparent;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   -o-border-radius: 0px;
   -ms-border-radius: 0px;
   -khtml-border-radius: 0px;
   border-radius: 0px;
   background: url("../images/brushed metal.jpg") left center;
 }
-/* line 59, ../sass/partials/_effects.scss */
+/* line 91, ../sass/partials/_effects.scss */
 #portal-columns dl.portlet dt.portletHeader:before {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  left: 0;
-  -moz-transform-origin: left bottom;
-  -webkit-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -moz-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -webkit-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -o-transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  transform: scale(1) rotate(-5deg) translate(0, 0) skew(-20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(-5deg) skew(-20deg);
-  -ms-transform-origin: left bottom;
+  left: 14px;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-10deg) rotate(-5deg);
+  -moz-transform: skew(-10deg) rotate(-5deg);
+  -ms-transform: skew(-10deg) rotate(-5deg);
+  -o-transform: skew(-10deg) rotate(-5deg);
+  transform: skew(-10deg) rotate(-5deg);
 }
-/* line 63, ../sass/partials/_effects.scss */
+/* line 92, ../sass/partials/_effects.scss */
 #portal-columns dl.portlet dt.portletHeader:after {
+  content: '';
   z-index: -1;
   position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -moz-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -webkit-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -o-transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  transform: scale(1) rotate(5deg) translate(0, 0) skew(20deg, 0deg);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -ms-transform: translate(0, 0) scale(1) rotate(5deg) skew(20deg);
-  -ms-transform-origin: right bottom;
+  bottom: 13px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  height: 55%;
+  left: auto;
+  right: 14px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(10deg) rotate(5deg);
+  -moz-transform: skew(10deg) rotate(5deg);
+  -ms-transform: skew(10deg) rotate(5deg);
+  -o-transform: skew(10deg) rotate(5deg);
+  transform: skew(10deg) rotate(5deg);
 }
-/* line 428, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .no-boxshadow #portal-columns dl.portlet dt.portletHeader {
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 436, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
 img.image-left, img.image-right, .captioned img {
   border: none;
 }
 
-/* line 442, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 #foot-box {
-  background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #000000), color-stop(100%, #555555));
-  background-image: -webkit-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -moz-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -o-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -ms-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: radial-gradient(center 60px, #000000 400px, #555555 650px);
+  background: #0e0e0e;
+  /* Old browsers */
+  background: -moz-radial-gradient(center 60px, black 450px, #555555 650px);
+  /* FF3.6+ */
+  background: -webkit-radial-gradient(center 60px, black 450px, #555555 650px);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center 60px, black 450px, #555555 650px);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center 60px, black 450px, #555555 650px);
+  /* IE10+ */
+  background: radial-gradient(center 60px, #000000 450px, #555555 650px);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e0e0e', endColorstr='#555555',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
   height: 200px;
   position: relative;
   border: 2px solid #eaeaea;
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
-  -o-border-top-left-radius: 4px;
-  -ms-border-top-left-radius: 4px;
-  -khtml-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
-  -o-border-top-right-radius: 4px;
-  -ms-border-top-right-radius: 4px;
-  -khtml-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
 }
-/* line 448, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .no-cssgradients #foot-box {
   background: black url("../images/foot-gradient.png") repeat-x;
 }
 
-/* line 453, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 #foot-box dl.portlet dt.portletHeader, #foot-box .portletStaticText {
   border: none;
   margin: 0 0 0 0;

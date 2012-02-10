@@ -1,88 +1,135 @@
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow:$top $left $blur $color;
+    -moz-box-shadow:$top $left $blur $color;
+    box-shadow:$top $left $blur $color;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -khtml-border-radius: $radius;
+    border-radius: $radius;  
+}   
+
+@mixin border-bottom-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+}  
+
+@mixin linear-gradient($top-color, $bottom-color) { 
+	background: $top-color; /* Old browsers */
+	background: -moz-linear-gradient(top,  $top-color 0%, $bottom-color 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top-color), color-stop(100%,$bottom-color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $top-color 0%,$bottom-color 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $top-color 0%,$bottom-color 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $top-color 0%,$bottom-color 100%); /* IE10+ */
+	background: linear-gradient(top,  $top-color 0%,$bottom-color 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 ); /* IE6-9 */
+}
+
 // Larger Curl Effect
 
-/* Stupid compass box-shadow mixin doesn't support multiple shadows... */
-@mixin box-shadow-2($first, $second) {
-  $full: $first, $second;
-  @include experimental(box-shadow, $full, -moz, -webkit, -o, not -ms, not -khtml, official);
+@mixin curl-effect {
+	position: relative; 
+	bottom: 0;
+	background: #fff;
+	&:before {@include curl-effect-before;};    
+	&:after {@include curl-effect-after;};  
 }
 
-@mixin curl-effect-shadow($corner) {
-  z-index: -1;
-  position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  #{$corner}: 0;
-
-  $mul: +1;
-  @if $corner == left { $mul: -1; }
-  @include apply-origin($corner bottom);
-  @include transform(1, $mul * 10deg, 0, 0, $mul * 20deg);
-  @include box-shadow(black, 0, 15px, 20px);
-  -ms-transform: translate(0,0) scale(1) rotate($mul * 5deg) skew($mul * 20deg);
-  -ms-transform-origin: $corner bottom;
+@mixin curl-effect-before {
+	content: '';
+	z-index: -1; 
+	position: absolute;
+	left: 22px;
+	bottom: 16px;
+	width: 40%;
+	max-width: 1000px; /* avoid rotation causing ugly appearance at large container widths */
+	height: 50%;
+	-webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+	-webkit-transform: skew(-10deg) rotate(-5deg);
+	-moz-transform: skew(-10deg) rotate(-5deg);
+	-ms-transform: skew(-10deg) rotate(-5deg);
+	-o-transform: skew(-10deg) rotate(-5deg);
+	transform: skew(-10deg) rotate(-5deg);
 }
 
-@mixin curl-effect($background: #ffffff) {
-  position: relative;
+@mixin curl-effect-after {
+	content: '';
+	z-index: -1; 
+	position: absolute;   
+	right: 22px;
+	bottom: 16px;
+	width: 40%;
+	max-width: 1000px; /* avoid rotation causing ugly appearance at large container widths */
+	height: 50%;
+	-webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+	-webkit-transform: skew(10deg) rotate(5deg);
+	-moz-transform: skew(10deg) rotate(5deg);
+	-ms-transform: skew(10deg) rotate(5deg);
+	-o-transform: skew(10deg) rotate(5deg);
+	transform: skew(10deg) rotate(5deg);
+}                                          
 
-  background: $background;
-  border: 1px solid lighten($background, 10%);
+@mixin minor-curl-effect {
+	position: relative; 
+	bottom: 0;
+	background: transparent; 
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);  
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2); 
+	&:before {@include minor-curl-effect-before;};    
+	&:after {@include minor-curl-effect-after;};  
+}
 
-  @include box-shadow-2(
-    0 1px 4px rgba(0, 0, 0, 0.27),
-    0 0 20px rgba(0, 0, 0, 0.20) inset
-  );
+@mixin minor-curl-effect-before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 14px;
+	bottom: 13px;
+	width: 70%;
+	max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+	height: 55%;
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skew(-10deg) rotate(-5deg);
+	-moz-transform: skew(-10deg) rotate(-5deg);
+	-ms-transform:skew(-10deg) rotate(-5deg);
+	-o-transform: skew(-10deg) rotate(-5deg);
+	transform: skew(-10deg) rotate(-5deg);}
 
-  &:before {
-    @include curl-effect-shadow(left);
-  }
+@mixin minor-curl-effect-after { 
+	content: '';
+	z-index: -1;
+	position: absolute;
+	bottom: 13px;
+	width: 70%;
+	max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+	height: 55%;
+	left: auto;
+	right: 14px;  
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skew(10deg) rotate(5deg);
+	-moz-transform: skew(10deg) rotate(5deg);
+	-ms-transform: skew(10deg) rotate(5deg);
+	-o-transform: skew(10deg) rotate(5deg);
+	transform: skew(10deg) rotate(5deg);
+}                 
 
-  &:after {
-    @include curl-effect-shadow(right);
-  }
-} 
-
-// Minor Curl Effect 
-
-@mixin minor-curl-effect($background: #ffffff) {
-  position: relative;
-  background: $background;
-
-  @include box-shadow-2(
-    0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 20px rgba(0, 0, 0, 0.10) inset
-  );
-
-  &:before {
-    @include minor-curl-effect-shadow(left);
-  }
-
-  &:after {
-    @include minor-curl-effect-shadow(right);
-  }
-}      
-
-@mixin minor-curl-effect-shadow($corner) {
-  z-index: -1;
-  position: absolute;
-  background: transparent;
-  width: 40%;
-  height: 40%;
-  content: '';
-  bottom: 0;
-  #{$corner}: 0;
-
-  $mul: +1;
-  @if $corner == left { $mul: -1; }
-  @include apply-origin($corner bottom);
-  @include transform(1, $mul * 5deg, 0, 0, $mul * 20deg);
-  @include box-shadow(rgba(0, 0, 0, 0.5), 0, 5px, 10px);
-  -ms-transform: translate(0,0) scale(1) rotate($mul * 5deg) skew($mul * 20deg);
-  -ms-transform-origin: $corner bottom;
-}                                                               
 
 // Selection Arrow
 @mixin select-arrow {

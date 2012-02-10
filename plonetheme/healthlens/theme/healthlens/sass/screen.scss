@@ -2,14 +2,14 @@
 //@import "blueprint/reset";    
 
 // Import all the default blueprint modules so that we can access their mixins.
-@import "compass/reset";
+//@import "compass/reset";
 //@import "blueprint";
-@import "compass/css3";
-@import "compass/css3/shared"; 
-@import "compass/utilities";
-@import "compass/css3/transform-legacy";   
-@import "compass/support"; 
-@import "compass/utilities/general/hacks";
+//@import "compass/css3";
+//@import "compass/css3/shared"; 
+//@import "compass/utilities";
+//@import "compass/css3/transform-legacy";   
+//@import "compass/support"; 
+//@import "compass/utilities/general/hacks";
 
 
 // To configure blueprint, edit the partials/_base.sass file.
@@ -24,11 +24,11 @@
 @import "partials/mosaic"; 
 
 // Browser Hacks
-$legacy-support-for-ie: true;
+//$legacy-support-for-ie: true;
 
 
 // Import the non-default scaffolding module
-@import "blueprint/scaffolding";
+//@import "blueprint/scaffolding";
 
 // Generate the blueprint framework according to your configuration:
 //@include blueprint;
@@ -223,7 +223,7 @@ body {
 	padding: 10px 10px 5px 20px;
 	border: 2px solid $border-highlight-color;
 	@include border-radius(5px);
-	@include box-shadow(black 0px 2px 10px);  
+	@include box-shadow(0, 0, 10px, black);  
     .cssgradients & {
 	@include megamenu-gradient; 
 	}
@@ -262,10 +262,10 @@ $personal-bar-height: 20px;
 	top: $ribbon-height;
 	.cssgradients & {
 		height: $personal-bar-height;
-		@include box-shadow(black 0 2px 10px);
+		@include box-shadow(0, 0, 10px, black);
 		border-bottom: 2px solid $muted-accent-shadow;
 		border-top: 2px solid $muted-accent-highlight; 
-		@include background-image(linear-gradient(top, $muted-accent-shadow, $muted-accent-highlight));
+		@include linear-gradient($muted-accent-shadow, $muted-accent-highlight);
 	} 
 	.no-cssgradients & {
 		background: transparent url('../images/personal-bar-background.png') repeat-x top;
@@ -316,7 +316,7 @@ $personal-bar-height: 20px;
 #portal-personaltools dd.actionMenuContent {
 	margin-top: 2px;
 	padding: 0px 0px 5px 2px;
-	@include box-shadow(black 0px 2px 10px);   
+	@include box-shadow(0, 0, 10px, black);   
 	@include megamenu-gradient;    
 }
 
@@ -348,7 +348,7 @@ dl.actionMenu.activated dd {
 }
 
 #page {    
-	@include box-shadow(black 0 5px 10px);
+	@include box-shadow(0, 0, 10px, black);
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
@@ -382,12 +382,7 @@ dl.actionMenu.activated dd {
 	border-right: solid 3px $page-color;
 	@include border-bottom-radius(6px);
 	position: relative;
-	.cssgradients & {
-		@include background-image(linear-gradient(top, #000 80%, #444));
-	}    
-	.no-cssgradients & {
 		background: #000;
-	}	
 } 
 
 #portal-column-one {
@@ -426,7 +421,7 @@ dl.actionMenu.activated dd {
 //	@include background-image(linear-gradient(left, #eaeaea, white 30%, white 70%, #dddddd)); 
 	background:  url('../images/brushed metal.jpg') left center; 
 	.no-boxshadow & {   
-		@include box-shadow(rgba(0, 0, 0, 0.5) 0px 2px 8px);
+		@include box-shadow(0, 0, 8px, rgba(0, 0, 0, 0.5));
 		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   
 	}	
 	
@@ -444,7 +439,7 @@ img.image-left, img.image-right, .captioned img {
 	height: 200px;
 	position: relative;  
 	border: 2px solid $page-color;
-	@include border-top-radius(4px); 
+//	@include border-top-radius(4px); 
 	.no-cssgradients & {
 		background: #000 url('../images/foot-gradient.png') repeat-x;
 	}
