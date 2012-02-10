@@ -1,18 +1,3 @@
-// This import applies a global reset to any page that imports this stylesheet.
-//@import "blueprint/reset";    
-
-// Import all the default blueprint modules so that we can access their mixins.
-//@import "compass/reset";
-//@import "blueprint";
-//@import "compass/css3";
-//@import "compass/css3/shared"; 
-//@import "compass/utilities";
-//@import "compass/css3/transform-legacy";   
-//@import "compass/support"; 
-//@import "compass/utilities/general/hacks";
-
-
-// To configure blueprint, edit the partials/_base.sass file.
 @import "partials/base";
 @import "partials/skin";  
 @import "partials/effects";
@@ -22,17 +7,6 @@
 @import "partials/plone-products";
 @import "partials/cloudspring_members";
 @import "partials/mosaic"; 
-
-// Browser Hacks
-//$legacy-support-for-ie: true;
-
-
-// Import the non-default scaffolding module
-//@import "blueprint/scaffolding";
-
-// Generate the blueprint framework according to your configuration:
-//@include blueprint;
-//@include blueprint-scaffolding;  
 
 // Body
 body {

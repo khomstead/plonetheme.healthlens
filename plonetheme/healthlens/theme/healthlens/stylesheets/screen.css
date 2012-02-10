@@ -2301,12 +2301,12 @@ div#glossary-definition-popup h6 {
 }
 
 /*** End Animation Styles ***/
-/* line 38, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 body {
   background: #f5f5f5 url("../images/matt-pattern.jpg") repeat left top;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 #light {
   background: transparent url("../images/vert-gradient.png") repeat-x left top;
   height: 100%;
@@ -2314,7 +2314,7 @@ body {
   position: fixed;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 #head-ribbon {
   background: black;
   /* Old browsers */
@@ -2335,7 +2335,7 @@ body {
   height: 60px;
   margin: 0 auto;
 }
-/* line 57, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .cssgradients #head-ribbon {
   background: black;
   /* Old browsers */
@@ -2351,12 +2351,12 @@ body {
   /* IE6-9 */
   background: linear-gradient(top, #45484d 0%, #000000 100%);
 }
-/* line 60, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .no-cssgradients #head-ribbon {
   background: black url("../images/header-background.png") repeat-x top;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 #head-wrapper {
   height: 65px;
   margin-right: auto;
@@ -2365,7 +2365,7 @@ body {
   position: relative;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 #logo-spacer {
   background: url(../images/logo-med.png) no-repeat left center;
   width: 260px;
@@ -2377,7 +2377,7 @@ body {
   z-index: 200;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 #home {
   height: 60px;
   width: 60px;
@@ -2389,12 +2389,12 @@ body {
   float: right;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 #home div:hover {
   background: url("../images/Icons/power-black.png") no-repeat center center;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 #home div {
   background: url("../images/Icons/power-green.png") no-repeat center center;
   height: 100%;
@@ -2402,7 +2402,7 @@ body {
   padding: 8px 0 0 0;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 #menu {
   right: 0px;
   position: relative;
@@ -2411,11 +2411,11 @@ body {
   display: inline-block;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item, #home:hover {
   color: black;
 }
-/* line 120, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .cssgradients #menu ul li a.menu-dropdown:hover, .cssgradients #menu li.top-level:hover, .cssgradients #portal-megamenu li.active a.menu-item, .cssgradients #home:hover {
   -moz-box-shadow: inset 0px 0px 5px 0px black;
   -webkit-box-shadow: inset 0px 0px 5px 0px black;
@@ -2437,12 +2437,12 @@ body {
   background: linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
   /* W3C */
 }
-/* line 126, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .no-cssgradients #menu ul li a.menu-dropdown:hover, .no-cssgradients #menu li.top-level:hover, .no-cssgradients #portal-megamenu li.active a.menu-item, .no-cssgradients #home:hover {
   background: blue url("../images/globalNav-hover.png") repeat-x top;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #menu ul li a.menu-item, ul.home li a {
   display: block;
   text-decoration: none;
@@ -2452,24 +2452,24 @@ body {
   z-index: 1000;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #menu ul li.top-level-last a.menu-item {
   border-right: thin solid #1C1D1F;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #menu ul li span.arrowDownAlternative {
   display: none;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 #collage ul.megamenu {
   /* To prevent margin-left in collage compose view */
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #portal-megamenu {
   /* Global Level*/
   margin: 0 0 0 0;
@@ -2480,7 +2480,7 @@ body {
   padding-left: 0;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #portal-megamenu li .collage-row {
   clear: both;
   float: left;
@@ -2489,12 +2489,12 @@ body {
 }
 
 /* Reset width to auto for nested rows */
-/* line 174, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #portal-megamenu li .menu_view_nested-menu .collage-row {
   width: auto;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #portal-megamenu .sub ul {
   list-style: none;
   float: left;
@@ -2503,27 +2503,27 @@ body {
   margin: 0 10px 0 0;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #portal-megamenu .sub ul li {
   display: inline-block !important;
   background-color: transparent;
   white-space: nowrap;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #portal-megamenu .sub ul li span {
   display: block;
   white-space: nowrap;
 }
 
 /* Menu styling for Sunburst theme */
-/* line 204, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .actionicon-object_buttons-megamenu-enable,
 .actionicon-object_buttons-megamenu-disable {
   border-top: 2px solid white;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #portal-megamenu li a.menu-item {
   height: 38px;
   background: none;
@@ -2531,13 +2531,13 @@ body {
   min-width: 0em;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 #portal-megamenu li.top-level .subShadow {
   top: 60px;
   visibility: hidden;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 #portal-megamenu li.top-level .sub {
   top: 60px;
   padding: 10px 10px 5px 20px;
@@ -2552,7 +2552,7 @@ body {
   -moz-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
 }
-/* line 227, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .cssgradients #portal-megamenu li.top-level .sub {
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
   /* FF3.6+ */
@@ -2569,12 +2569,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#b3000000',GradientType=0 );
   /* IE6-9 */
 }
-/* line 230, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .no-cssgradients #portal-megamenu li.top-level .sub {
   background: transparent url(../images/bg-black.png) !important;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul {
   border-left: 1px solid #ddd;
@@ -2582,7 +2582,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 243, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul.collage-first-object,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul.collage-first-object {
   border-left: 0;
@@ -2590,26 +2590,26 @@ body {
   padding-left: 0;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 #portal-megamenu .sub li.selected {
   background: transparent;
   background-image: url("../images/green-arrow.png");
   background-repeat: no-repeat;
   background-position: left center;
 }
-/* line 252, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #portal-megamenu .sub li.selected a {
   background: transparent;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #divider {
   width: 100%;
   z-index: 10;
   position: fixed;
   top: 60px;
 }
-/* line 263, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .cssgradients #divider {
   height: 20px;
   -webkit-box-shadow: 0 0 10px black;
@@ -2634,13 +2634,13 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 );
   /* IE6-9 */
 }
-/* line 270, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .no-cssgradients #divider {
   background: transparent url("../images/personal-bar-background.png") repeat-x top;
   height: 32px;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #personal-tools {
   width: 960px;
   margin-left: auto;
@@ -2649,35 +2649,35 @@ body {
   top: 0px;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 #portal-personaltools {
   z-index: 1;
   top: 0px;
   height: 20px;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #portal-personaltools #personaltools-login {
   background: transparent url("../images/Icons/Lock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
-/* line 293, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 #portal-personaltools #personaltools-login:hover {
   background: transparent url("../images/Icons/Lock-white-16.png") no-repeat left 0px;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 #portal-personaltools dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #portal-personaltools.activated dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-white-16.png") no-repeat left 0px;
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 #portal-personaltools.actionMenu {
   height: 100%;
   background: none;
@@ -2691,7 +2691,7 @@ body {
   padding: 2px 5px 0 5px;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 #portal-personaltools dd.actionMenuContent {
   margin-top: 2px;
   padding: 0px 0px 5px 2px;
@@ -2714,7 +2714,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 dl.actionMenu.activated dd {
   -webkit-border-bottom-right-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -2728,12 +2728,12 @@ dl.actionMenu.activated dd {
   border: none;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 #portal-personaltools dd a:hover {
   background: transparent;
 }
 
-/* line 336, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 #page-wrapper {
   z-index: 1;
   margin-right: auto;
@@ -2742,7 +2742,7 @@ dl.actionMenu.activated dd {
   top: 80px;
   display: block;
 }
-/* line 343, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .boxshadow #page-wrapper {
   width: 960px;
   background: black;
@@ -2791,7 +2791,7 @@ dl.actionMenu.activated dd {
   transform: skew(10deg) rotate(5deg);
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 #page {
   -webkit-box-shadow: 0 0 10px black;
   -moz-box-shadow: 0 0 10px black;
@@ -2803,23 +2803,23 @@ dl.actionMenu.activated dd {
   position: relative;
   z-index: 1;
 }
-/* line 358, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .no-boxshadow #page {
   box-shadow: 0px 10px 10px 0px #000;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #content {
   margin: 0 3px 0 3px;
 }
 
-/* line 368, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 #portal-columns {
   padding-top: 10px;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 #colophon {
   position: relative;
   width: 960px;
@@ -2829,7 +2829,7 @@ dl.actionMenu.activated dd {
   top: 80px;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 #title-ribbon {
   border-left: solid 3px #eaeaea;
   border-right: solid 3px #eaeaea;
@@ -2843,13 +2843,13 @@ dl.actionMenu.activated dd {
   background: #000;
 }
 
-/* line 388, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 #portal-column-one {
   position: realitive;
   z-index: 0;
 }
 
-/* line 393, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 #portal-column-content {
   -webkit-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 10px 0px 15px -15px rgba(0, 0, 0, 0.6);
@@ -2859,7 +2859,7 @@ dl.actionMenu.activated dd {
   top: -10px;
   min-height: 400px;
 }
-/* line 402, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .no-boxshadow #portal-column-content {
   background-color: #eaeaea;
   border-radius: 5px;
@@ -2867,7 +2867,7 @@ dl.actionMenu.activated dd {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 412, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 #portal-columns dl.portlet dt.portletHeader {
   border-bottom: solid 1px #666;
   border-right: solid 1px #666;
@@ -2930,7 +2930,7 @@ dl.actionMenu.activated dd {
   -o-transform: skew(10deg) rotate(5deg);
   transform: skew(10deg) rotate(5deg);
 }
-/* line 423, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .no-boxshadow #portal-columns dl.portlet dt.portletHeader {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
@@ -2938,12 +2938,12 @@ dl.actionMenu.activated dd {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 431, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 img.image-left, img.image-right, .captioned img {
   border: none;
 }
 
-/* line 437, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 #foot-box {
   background: #0e0e0e;
   /* Old browsers */
@@ -2963,12 +2963,12 @@ img.image-left, img.image-right, .captioned img {
   position: relative;
   border: 2px solid #eaeaea;
 }
-/* line 443, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .no-cssgradients #foot-box {
   background: black url("../images/foot-gradient.png") repeat-x;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 #foot-box dl.portlet dt.portletHeader, #foot-box .portletStaticText {
   border: none;
   margin: 0 0 0 0;
