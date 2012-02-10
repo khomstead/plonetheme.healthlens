@@ -2317,13 +2317,13 @@ div#glossary-definition-popup h6 {
 }
 
 /* line 17, ../sass/partials/_mosaic.scss */
-.mosaic-block p {
+#content .mosaic-block p {
   color: white;
   font-weight: normal;
   padding: 0px 10px 10px 10px;
 }
 /* line 21, ../sass/partials/_mosaic.scss */
-.mosaic-block p span {
+#content .mosaic-block p span {
   color: #1a75ba;
 }
 
