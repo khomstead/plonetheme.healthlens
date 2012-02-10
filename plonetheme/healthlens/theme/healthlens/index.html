@@ -3,8 +3,7 @@
 	<head>
 		<title>HealthLens</title> 
 		<link href="stylesheets/screen.css" rel="stylesheet" type="text/css"/>
-    		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-		<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 		<script type="text/javascript" src="http://use.typekit.com/klo5xmp.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
@@ -15,36 +14,12 @@
 		  $("#page-title h1").prepend("<span></span>");
 		});
 		</script>						
-    <!-- tab styling -->
-    <link rel="stylesheet" type=stylesheet"text/css" href="http://static.flowplayer.org/css/tabs.css"/>
     <style>
 
       #blog-overlay {
         display: none;
       }
 
-      /* tab pane styling */
-      .panes div.pane {
-      display:none;
-                padding:15px 10px;
-                border:1px solid #999;
-                border-top:0;
-                height:100px;
-                font-size:14px;
-                background-color:#fff;
-                }
-
-
-                div.panes div.pane {
-                  background:#fff url(http://static.flowplayer.org/img/global/gradient/h300.png) repeat-x 0 5px;
-                  -background:#fff;
-                  height: 250px;
-                }
-
-                div.panes               label {
-                  margin-bottom:15px;
-                  display:block;
-                }
 
                 label.error {
                   color:red;
@@ -131,56 +106,86 @@
     </div>
 
     <div id="blog-overlay">
-      <h1>Write a new blog post</h1>
       <div id="wizard">
-        <ul class="tabs">
-          <li><a href="#" class="w2">Post type</a></li>
-          <li><a href="#" class="w2">Write about it</a></li>
-          <li><a href="#" class="w2">Tag it</a></li>
-        </ul>
-
-          <div class="panes">
-            <div id="wizard-post-type" class="pane">
-              <ul>
-                <li class="post-type" data-post-type="idea">
-                  <div id="post-type-idea-image"></div>
-                  <div id="post-type-idea-description">
-                    <p>I have a great idea!</p>
-                  </div>
-                </li>
-                <li class="post-type" data-post-type="rant">
-                  <div id="post-type-rant-image"></div>
-                  <div id=post-type-rant-description">
-                    <p>Rant and rave about something!</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div id="wizard-content" class="pane">
-              <label>Title
-                <input type="text" id ="wizard-input-title" class="wizard-input-title" value="blah"/>
-              </label>
-              <div class="ploneSkin">
-                <label>Content
-                  <textarea />
-                </label>
-              </div>
-              <div>
-                <button class="prev">&laquo; Change the post type</button>
-                <button class="next">Continue &raquo;</button>
-              </div>
-            </div>
-            <div id="wizard-tags" class="pane">
-              <div>
-                <button class="prev">&laquo; Go back</button>
-                <input type="submit" id="overlay_save" name="overlay_save" value="Publish" />
-                <input type="submit" id="overlay_draft" name="overlay_draft"
-                value="Save as a draft" />
-                <input type="submit" id="overlay-cancel" name="overlay_cancel" value="Discard" />
-              </div>
-            </div>
-            
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" 
+              data-target=".pb-ajax #wizard-post-type" data-parent=".pb-ajax #wizard">
+              <h3>What type of post is this?</h3>
+             </a>
+           </div>
+           <div id="wizard-post-type" class="accordion-body in collapse">
+             <div class="accordion-inner">
+             <ul>
+               <li class="post-type" data-post-type="idea">
+                 <div id="post-type-idea-image"></div>
+                 <div id="post-type-idea-description">
+                   <p>I have a great idea!</p>
+                 </div>
+               </li>
+               <li class="post-type" data-post-type="rant">
+                 <div id="post-type-rant-image"></div>
+                 <div id=post-type-rant-description">
+                   <p>Rant and rave about something!</p>
+                 </div>
+               </li>
+             </ul>
+             </div>
+           </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" 
+               data-parent=".pb-ajax #wizard" data-target=".pb-ajax #wizard-content">
+               <h3> Now write something interesting...</h3>
+            </a>
           </div>
+          <div id="wizard-content" class="accordion-body collapse">
+            <div class="accordion-inner">
+            <div class="alert alert-error">
+              A title is required
+            </div>
+            <label>Title
+              <input type="text" id ="wizard-input-title" class="wizard-input-title" value=""/>
+            </label>
+            <div class="ploneSkin">
+              <label>Content
+              </label>
+              <textarea></textarea>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" 
+               data-parent=".pb-ajax #wizard" data-target=".pb-ajax #wizard-tags">
+               <h3>Tag it!</h3>
+            </a>
+          </div>
+          <div id="wizard-tags" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <div class="wizard-tags-left">
+                <div class="btn-group" data-toggle="buttons-checkbox">
+                  <label>Select at least one category:</label>
+                  <button class="btn">Clinical</button>
+                  <button class="btn">Administration</button>
+                  <button class="btn">Category 1</button>
+                  <button class="btn">Category 2</button>
+                </div>
+              </div>
+              <div class="wizard-tags-right">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="modal-footer">
+            <a id="overlay-cancel" class="btn btn-danger">Discard</a>
+            <a id="overlay_draft" class="btn btn-info">Save as a draft</a>
+            <a id="overlay_save" class="btn btn-primary">Publish</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -188,6 +193,10 @@
   </div> 
 
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var jQuery_1_7_1 = $.noConflict(true);
+</script>
 <script src="bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

@@ -74,5 +74,6 @@
     <replace css:theme-children="#pane3" css:content-children=".FooterPortletManager5" />
     <replace css:theme-children="#pane4" css:content-children=".FooterPortletManager6" />
     <after css:theme-children="#blog-overlay" css:content="#blog_entry-base-edit" />
+    <before css:theme-children=".wizard-tags-right" css:content-children=".FooterPortletManager1" />
 </rules>
 

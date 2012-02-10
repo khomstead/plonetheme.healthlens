@@ -1,5 +1,21 @@
+.pb-ajax > div {
+  width: 96%;
+}
+
 div.overlay-ajax {
   z-index: 101;
+}
+
+#blog-overlay {
+  display: none;
+} 
+
+label.error {
+  color:red;
+} 
+
+div.token-input-dropdown-facebook {
+  z-index: 9999999;
 }
 
 div.idea {
@@ -10,4 +26,31 @@ div.idea {
 
 #content .idea a.summary:link, #content .idea a.summary:visited {
   color: red
+}
+
+#wizard .modal-footer {
+  border-top: 0;
+}
+
+#wizard-tags .formHelp {
+  display: none;
+}
+
+.wizard-tags-left {
+  float: left;
+  width: 400px;
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+}
+
+.wizard-tags-right {
+  float: right;
+  width: 300px;
+}
+
+#wizard .alert {
+  display: none;
 }
