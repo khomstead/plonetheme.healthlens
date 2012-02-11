@@ -5408,56 +5408,10 @@ dl.actionMenu.activated dd {
   border-left: solid 1px #ddd;
   margin: 0 0 0 2px;
   padding: 4px 10px;
-  position: relative;
-  bottom: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -o-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -khtml-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
   background: url("../images/brushed metal.jpg") left center; }
-  #portal-columns dl.portlet dt.portletHeader:before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    left: 14px;
-    bottom: 13px;
-    width: 70%;
-    max-width: 300px;
-    /* avoid rotation causing ugly appearance at large container widths */
-    height: 55%;
-    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    -webkit-transform: skew(-10deg) rotate(-5deg);
-    -moz-transform: skew(-10deg) rotate(-5deg);
-    -ms-transform: skew(-10deg) rotate(-5deg);
-    -o-transform: skew(-10deg) rotate(-5deg);
-    transform: skew(-10deg) rotate(-5deg); }
-  #portal-columns dl.portlet dt.portletHeader:after {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    bottom: 13px;
-    width: 70%;
-    max-width: 300px;
-    /* avoid rotation causing ugly appearance at large container widths */
-    height: 55%;
-    left: auto;
-    right: 14px;
-    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    -webkit-transform: skew(10deg) rotate(5deg);
-    -moz-transform: skew(10deg) rotate(5deg);
-    -ms-transform: skew(10deg) rotate(5deg);
-    -o-transform: skew(10deg) rotate(5deg);
-    transform: skew(10deg) rotate(5deg); }
   .no-boxshadow #portal-columns dl.portlet dt.portletHeader {
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
