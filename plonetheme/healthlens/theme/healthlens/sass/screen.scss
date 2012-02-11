@@ -13,6 +13,7 @@
 
 
 // To configure blueprint, edit the partials/_base.sass file.
+@import "../lib/bootstrap";
 @import "partials/base";
 @import "partials/skin";  
 @import "partials/effects";
@@ -368,11 +369,12 @@ dl.actionMenu.activated dd {
 #portal-columns {
 	padding-top: 10px;
 }
-#colophon {
+#portal-colophon li {
 	position: relative;
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 10px 0;
 	display: block;
 	top: 80px;
 }        

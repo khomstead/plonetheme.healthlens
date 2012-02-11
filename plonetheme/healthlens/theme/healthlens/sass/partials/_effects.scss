@@ -84,10 +84,10 @@
 @mixin minor-curl-effect {
 	position: relative; 
 	bottom: 0;
-	background: transparent; 
-	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);  
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);  
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2); 
+	background: #fff; 
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);  
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1); 
 	&:before {@include minor-curl-effect-before;};    
 	&:after {@include minor-curl-effect-after;};  
 }
