@@ -1,12 +1,38 @@
-@import "base.less";
-@import "skin.less";  
-@import "effects.less";
-@import "old_css.less";
-@import "typography.less";
-@import "cleanup.less";
-@import "plone-products.less";
-@import "cloudspring_members.less";
-@import "mosaic.less"; 
+// This import applies a global reset to any page that imports this stylesheet.
+//@import "blueprint/reset";    
+
+// Import all the default blueprint modules so that we can access their mixins.
+//@import "compass/reset";
+//@import "blueprint";
+//@import "compass/css3";
+//@import "compass/css3/shared"; 
+//@import "compass/utilities";
+//@import "compass/css3/transform-legacy";   
+//@import "compass/support"; 
+//@import "compass/utilities/general/hacks";
+
+
+// To configure blueprint, edit the partials/_base.sass file.
+@import "partials/base";
+@import "partials/skin";  
+@import "partials/effects";
+@import "partials/old_css";
+@import "partials/typography";
+@import "partials/cleanup";
+@import "partials/plone-products";
+@import "partials/cloudspring_members";
+@import "partials/mosaic"; 
+
+// Browser Hacks
+//$legacy-support-for-ie: true;
+
+
+// Import the non-default scaffolding module
+//@import "blueprint/scaffolding";
+
+// Generate the blueprint framework according to your configuration:
+//@include blueprint;
+//@include blueprint-scaffolding;  
 
 // Body
 body {
@@ -19,16 +45,17 @@ body {
 	width: 100%;
 	position: fixed;
 }
- 
+
 // Header Ribbon
 #head-ribbon {   
+	@include head-ribbon-gradient;
 	z-index: 100;
 	position: fixed;
 	width: 100%;
-	height: @ribbon-height;
+	height: $ribbon-height;
 	margin: 0 auto;
 	.cssgradients & {
-		.head-ribbon-gradient;
+		@include head-ribbon-gradient;
 	}
 	.no-cssgradients & {
 		background: black url('../images/header-background.png') repeat-x top;
@@ -45,7 +72,7 @@ body {
 
 // Logo
 #logo-spacer {
-	.logo_image;
+	@include logo_image;
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
@@ -58,7 +85,7 @@ body {
 // MegaMenu 
 
 #home  {
-	height: @ribbon-height;
+	height: $ribbon-height;
 	width: 60px;
 	display: inline-block;
 	text-align: center;
@@ -94,7 +121,7 @@ body {
 		-moz-box-shadow: inset 0px 0px 5px 0px black;
 		-webkit-box-shadow: inset 0px 0px 5px 0px black;
 		box-shadow: inset 0px 0px 5px 0px black;  
-		.menu-rollover-gradient; 
+		@include menu-rollover-gradient; 
 	}    
 	.no-cssgradients & {
 		background: blue url('../images/globalNav-hover.png') repeat-x top;
@@ -180,25 +207,25 @@ body {
 }
 
 #portal-megamenu li a.menu-item {
-	height: @ribbon-height - 22px;
+	height: $ribbon-height - 22px;
 	background: none;
 	border-right: none;
 	min-width: 0em;
 }
 
 #portal-megamenu li.top-level .subShadow {
-	top: @ribbon-height;
+	top: $ribbon-height;
 	visibility: hidden;
 }
 
 #portal-megamenu li.top-level .sub {
-	top: @ribbon-height;
+	top: $ribbon-height;
 	padding: 10px 10px 5px 20px;
-	border: 2px solid @border-highlight-color;
-	.border-radius(5px);
-	.box-shadow(0, 0, 10px, black);  
+	border: 2px solid $border-highlight-color;
+	@include border-radius(5px);
+	@include box-shadow(0, 0, 10px, black);  
     .cssgradients & {
-	.megamenu-gradient; 
+	@include megamenu-gradient; 
 	}
 	.no-cssgradients & {
 		background: transparent url(../images/bg-black.png) !important; 
@@ -221,28 +248,28 @@ body {
 
 #portal-megamenu .sub li.selected {
 	background: transparent;
-	.select-arrow;
+	@include select-arrow;
 	a {background: transparent;}
 }       
 
 // Personal Bar 
-@personal-bar-height: 20px;
+$personal-bar-height: 20px;
  
 #divider {
 	width: 100%;
 	z-index: 10;
 	position: fixed;
-	top: @ribbon-height;
+	top: $ribbon-height;
 	.cssgradients & {
-		height: @personal-bar-height;
-		.box-shadow(0, 0, 10px, black);
-		border-bottom: 2px solid @muted-accent-shadow;
-		border-top: 2px solid @muted-accent-highlight; 
-		.linear-gradient(@muted-accent-shadow, @muted-accent-highlight);
+		height: $personal-bar-height;
+		@include box-shadow(0, 0, 10px, black);
+		border-bottom: 2px solid $muted-accent-shadow;
+		border-top: 2px solid $muted-accent-highlight; 
+		@include linear-gradient($muted-accent-shadow, $muted-accent-highlight);
 	} 
 	.no-cssgradients & {
 		background: transparent url('../images/personal-bar-background.png') repeat-x top;
-		height: @personal-bar-height + 12px;
+		height: $personal-bar-height + 12px;
 	}
 }
 
@@ -257,7 +284,7 @@ body {
 #portal-personaltools {
 	z-index: 1; 
 	top: 0px;   
-	height: @personal-bar-height;  
+	height: $personal-bar-height;  
 } 
 
 #portal-personaltools #personaltools-login {
@@ -265,7 +292,7 @@ body {
 	padding: 0 0 0 20px; 
 	&:hover {
 		background: transparent  url('../images/Icons/Lock-white-16.png') no-repeat left 0px; 
-	}
+	};
 }   
 #portal-personaltools dt.actionMenuHeader a {
 	background: transparent url('../images/Icons/Unlock-black-16.png')  no-repeat left 0px; 
@@ -281,7 +308,7 @@ body {
 	height: 100%;  
 	background: none;
 	position: relative;   
-	.border-radius(0px);
+	@include border-radius(0px);
 	padding: 2px 5px 0 5px;   
 }   
 
@@ -289,12 +316,12 @@ body {
 #portal-personaltools dd.actionMenuContent {
 	margin-top: 2px;
 	padding: 0px 0px 5px 2px;
-	.box-shadow(0, 0, 10px, black);   
-	.megamenu-gradient;    
+	@include box-shadow(0, 0, 10px, black);   
+	@include megamenu-gradient;    
 }
 
 dl.actionMenu.activated dd {
-	.border-bottom-radius(4px);
+	@include border-bottom-radius(4px);
 	position: relative;
 	width: auto;
 	min-width: 99%;
@@ -316,16 +343,16 @@ dl.actionMenu.activated dd {
 	.boxshadow & { 
 		width: 960px;
 		background: black;
-		.curl-effect; 
+		@include curl-effect; 
   	} 
 }
 
 #page {    
-	.box-shadow(0, 0, 10px, black);
+	@include box-shadow(0, 0, 10px, black);
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: @page-color;
+	background-color: $page-color;
 	position: relative;
 	z-index: 1;  
    .no-boxshadow & {
@@ -351,9 +378,9 @@ dl.actionMenu.activated dd {
 }        
 // Content
 #title-ribbon { 
-	border-left: solid 3px @page-color;
-	border-right: solid 3px @page-color;
-	.border-bottom-radius(6px);
+	border-left: solid 3px $page-color;
+	border-right: solid 3px $page-color;
+	@include border-bottom-radius(6px);
 	position: relative;
 		background: #000;
 } 
@@ -373,7 +400,7 @@ dl.actionMenu.activated dd {
 	top: -10px;
 	min-height: 400px; 	
 	.no-boxshadow & {  
-		background-color: @page-color;
+		background-color: $page-color;
 		border-radius: 5px;
 		box-shadow: 6px 0px 8px -8px #999;	
 		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   
@@ -389,15 +416,17 @@ dl.actionMenu.activated dd {
 	border-left: solid 1px #ddd;
 	margin: 0 0 0 2px;
 	padding: 4px 10px;
-	.minor-curl-effect;
-	.border-radius(0px);
+	@include minor-curl-effect;
+	@include border-radius(0px);
+//	@include background-image(linear-gradient(left, #eaeaea, white 30%, white 70%, #dddddd)); 
 	background:  url('../images/brushed metal.jpg') left center; 
 	.no-boxshadow & {   
-		.box-shadow(0, 0, 8px, rgba(0, 0, 0, 0.5));
+		@include box-shadow(0, 0, 8px, rgba(0, 0, 0, 0.5));
 		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   
-	}	  
+	}	
+	
+	
 }
-
 // Images
 img.image-left, img.image-right, .captioned img {
 	border: none;
@@ -406,11 +435,11 @@ img.image-left, img.image-right, .captioned img {
 
 // Foot Box
 #foot-box {	   
-	.footer-gradient;
+	@include footer-gradient;
 	height: 200px;
 	position: relative;  
-	border: 2px solid @page-color;
-//	.border-top-radius(4px); 
+	border: 2px solid $page-color;
+//	@include border-top-radius(4px); 
 	.no-cssgradients & {
 		background: #000 url('../images/foot-gradient.png') repeat-x;
 	}

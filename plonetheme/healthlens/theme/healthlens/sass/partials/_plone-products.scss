@@ -1,14 +1,15 @@
-div.collage_type_document.collage_view_standard {
-    padding: 5px 10px;
-    .minor-curl-effect;
-	background-color: #fcf9e9;
-}
-
-#collage .featured-document {
-	.minor-curl-effect;
+// Collage Styles
+#collage .featured-document  {
+	@include minor-curl-effect;   
 	background-color: #FCFDA6;
-}
+	
+}  
 
+div.collage_type_document.collage_view_standard {
+	padding: 5px 10px;
+	@include minor-curl-effect; 
+	background-color: #FCF9E9;
+}
 // collective.collage.innerfade
 #InnerfadeContainer {
 	margin-top: -10px;  
@@ -39,7 +40,7 @@ div.collage_type_document.collage_view_standard {
 	bottom: 7px;
 	padding: 0 10px 0 20px;
 	p {	
-		font: normal 12px @readable-font;
+		font: normal 12px $readable-font;
 	}
 	
 }   
@@ -50,7 +51,7 @@ div.collage_type_document.collage_view_standard {
 	width: 100%;
 	h2 {  
 		padding: 5px;
-		font: normal 24px/18px @global-nav-font;
+		font: normal 24px/18px $global-nav-font;
 	}  
    	 a.innerfade-button {
 			float: right; 
@@ -59,7 +60,7 @@ div.collage_type_document.collage_view_standard {
 			background: transparent url('../images/green-arrow.png') no-repeat top right; 
 			img {display: none;}
 			&:hover span {
-				color: @bright-highligh-text;
+				color: $bright-highligh-text;
 				}
 		}  
 }      
@@ -86,7 +87,7 @@ border-bottom: 1px solid #ddd;
 
 .carousel-pager-item.carousel-pager-item-active {
   color: #04f626; 
-.select-arrow;
+@include select-arrow;
 }
 
 /* line 1029, ../sass/screen.scss */
@@ -97,19 +98,19 @@ border-bottom: 1px solid #ddd;
 }
 // EasySlider  
 #slider-container {
-//	.border-radius(4px); 
+//	@include border-radius(4px); 
 	border: none;
 	padding: 10px 10px 0px 10px; 
-	.minor-curl-effect;
+	@include minor-curl-effect;
 	margin: 0 0 10px 0 !important;
 	.no-boxshadow & {   
-		.box-shadow(0px, 0px, 10px, #999);
+		@include box-shadow(0px, 0px, 10px, #999);
 		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   
 	}	
 	
 }
 #easySlider-goToButtons {
-//	.subtle-button;
+//	@include subtle-button;
 //	width: 50%;
 //	margin-left: auto;
 //	margin-right: auto;
@@ -120,23 +121,25 @@ border-bottom: 1px solid #ddd;
 	padding: 0 0 0px 0;  	
 	span a {color: #999;}
 	a {
-		.border-radius(8px);
+		@include border-radius(8px);
 		font-size: 0px;
         background: #ddd;
 		border: none;
 		padding: 5px 5px; 
 		margin: 0 3px 0 3px;
-		border-style: solid;
-		border-width: 1px;
-		border-top {color:#999;} 
-		border-left {color:#999;}
-		border-right {color: #ddd;} 
-		border-bottom {color: #fff;} 
+		border: {
+			style: solid;
+			width: 1px;
+			top: {color:#999;} 
+			left: {color:#999;}
+			right: {color: #ddd;} 
+			bottom: {color: #fff;} 
+			}
 		line-height: 0px;
 				&.active {
 					border: solid 1px #85B447;
-//					.box-shadow(0px 0px 10px yellow);
-					background: @bright-highligh-text;
+//					@include box-shadow(0px 0px 10px yellow);
+					background: $bright-highligh-text;
 		} 
 		&:hover {
 			background: red;
@@ -145,7 +148,7 @@ border-bottom: 1px solid #ddd;
 		&:link {
 			line-height: 0px;
 			color: transparent;
-		} 		
+		}; 		
 	}	
 	#pauseplay {
 		top: 6px;

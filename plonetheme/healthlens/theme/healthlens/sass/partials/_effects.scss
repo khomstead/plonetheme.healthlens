@@ -1,49 +1,49 @@
-.box-shadow(@top, @left, @blur, @color) {
-    -webkit-box-shadow:@top @left @blur @color;
-    -moz-box-shadow:@top @left @blur @color;
-    box-shadow:@top @left @blur @color;
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow:$top $left $blur $color;
+    -moz-box-shadow:$top $left $blur $color;
+    box-shadow:$top $left $blur $color;
 }
 
-.border-radius(@radius) {
-    -webkit-border-radius: @radius;
-    -moz-border-radius: @radius;
-    -o-border-radius: @radius;
-    -ms-border-radius: @radius;
-    -khtml-border-radius: @radius;
-    border-radius: @radius;  
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -khtml-border-radius: $radius;
+    border-radius: $radius;  
 }   
 
-.border-bottom-radius(@radius) {
-	-webkit-border-bottom-right-radius: @radius;
-	-webkit-border-bottom-left-radius: @radius;
-	-moz-border-radius-bottomright: @radius;
-	-moz-border-radius-bottomleft: @radius;
-	border-bottom-right-radius: @radius;
-	border-bottom-left-radius: @radius;
+@mixin border-bottom-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
 }  
 
-.linear-gradient(@top-color, @bottom-color) { 
-	background: @top-color; /* Old browsers */
-	background: -moz-linear-gradient(top,  @top-color 0%, @bottom-color 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@top-color), color-stop(100%,@bottom-color)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  @top-color 0%,@bottom-color 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  @top-color 0%,@bottom-color 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  @top-color 0%,@bottom-color 100%); /* IE10+ */
-	background: linear-gradient(top,  @top-color 0%,@bottom-color 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@top-color', endColorstr='@bottom-color',GradientType=0 ); /* IE6-9 */
+@mixin linear-gradient($top-color, $bottom-color) { 
+	background: $top-color; /* Old browsers */
+	background: -moz-linear-gradient(top,  $top-color 0%, $bottom-color 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top-color), color-stop(100%,$bottom-color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $top-color 0%,$bottom-color 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $top-color 0%,$bottom-color 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $top-color 0%,$bottom-color 100%); /* IE10+ */
+	background: linear-gradient(top,  $top-color 0%,$bottom-color 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 ); /* IE6-9 */
 }
 
 // Larger Curl Effect
 
-.curl-effect {
+@mixin curl-effect {
 	position: relative; 
 	bottom: 0;
 	background: #fff;
-	&:before {.curl-effect-before;}    
-	&:after {.curl-effect-after;}  
+	&:before {@include curl-effect-before;};    
+	&:after {@include curl-effect-after;};  
 }
 
-.curl-effect-before {
+@mixin curl-effect-before {
 	content: '';
 	z-index: -1; 
 	position: absolute;
@@ -62,7 +62,7 @@
 	transform: skew(-10deg) rotate(-5deg);
 }
 
-.curl-effect-after {
+@mixin curl-effect-after {
 	content: '';
 	z-index: -1; 
 	position: absolute;   
@@ -81,18 +81,18 @@
 	transform: skew(10deg) rotate(5deg);
 }                                          
 
-.minor-curl-effect {
+@mixin minor-curl-effect {
 	position: relative; 
 	bottom: 0;
 	background: transparent; 
 	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);  
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);  
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2); 
-	&:before {.minor-curl-effect-before;}    
-	&:after {.minor-curl-effect-after;}  
+	&:before {@include minor-curl-effect-before;};    
+	&:after {@include minor-curl-effect-after;};  
 }
 
-.minor-curl-effect-before {
+@mixin minor-curl-effect-before {
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -110,7 +110,7 @@
 	-o-transform: skew(-10deg) rotate(-5deg);
 	transform: skew(-10deg) rotate(-5deg);}
 
-.minor-curl-effect-after { 
+@mixin minor-curl-effect-after { 
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -132,7 +132,7 @@
 
 
 // Selection Arrow
-.select-arrow {
+@mixin select-arrow {
 	background-image: url('../images/green-arrow.png');
 	background-repeat: no-repeat;
 	background-position: left center;

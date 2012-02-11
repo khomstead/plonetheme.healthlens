@@ -10,9 +10,9 @@ body, #content {
 
 // Mega Menu
 #menu ul li a.menu-item {
-	color: @menu-header-color;
+	color: $menu-header-color;
 	padding: 22px 10px 0;
-	font: 300 @global-nav-font-size @global-nav-font;    
+	font: 300 $global-nav-font-size $global-nav-font;    
 	letter-spacing: normal;
 }                
 
@@ -22,7 +22,7 @@ body, #content {
 }
 
 #portal-megamenu .sub div.plain p {
-	color: @menu-header-color;
+	color: $menu-header-color;
 	padding: 2px 0 0px 0px;    
 }                 
 
@@ -30,9 +30,9 @@ body, #content {
 #portal-megamenu .sub ul li h2, #portal-megamenu .sub ul li span {
 	padding: 0;
 	margin: 0;
-	font: 300 @global-nav-font-size @header-font;
+	font: 300 $global-nav-font-size $header-font;
 	width: 100%;
-	color: @bright-highligh-text;  
+	color: $bright-highligh-text;  
 	letter-spacing: normal;    
 }
 
@@ -54,7 +54,7 @@ body, #content {
 }
 
 // MM Page Text w/Link */
-#portal-megamenu .sub div.plain p a, #portal-megamenu .sub ul li a {
+#portal-megamenu .sub div.plain p a, , #portal-megamenu .sub ul li a {
 	padding: 0 0 0 15px;
 	color: #fff;
 	width: 100%;
@@ -67,11 +67,22 @@ body, #content {
 	display: inline-block !important;
 	background-color: transparent;   
 	white-space:nowrap;
+//	background-color: black;
+//	&:hover {
+//		color: $bright-highligh-text !important;
+//		@include select-arrow; 
+//		background-image: url(../images/green-arrow.png); 
+//		-pie-background: transparent url(../images/green-arrow.png) no-repeat center left;
+//		background-repeat: no-repeat; 
+//		background-position: center left; 
+//		-pie-png-fix: true;
+//		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);   		
+//	};    
 }
   
 
 #portal-megamenu .sub ul li > a:hover {
-	color: @menu-header-color !important;
+	color: $menu-header-color !important;
 	background-color: transparent;
 ////	background: #000 url('../images/green-arrow.gif') no-repeat center left !important;
 ////	position: relative; 
@@ -108,7 +119,7 @@ body, #content {
 }
 
 #portal-personaltools.actionMenu dd a:hover {
-  color: @bright-highligh-text;
+  color: $bright-highligh-text;
 }
                 
 #portal-personaltools dt.actionMenuHeader a {
@@ -172,14 +183,14 @@ h2 {
 	font-family: "dejarip-1", "dejarip-2", sans-serif;
 	letter-spacing: normal;
 	color: #424242;  
-	font-size: @base-font-size;
-	line-height: @base-line-height; 
+	font-size: $base-font-size;
+	line-height: $base-line-height; 
 	margin-bottom: 0px;   
 }
 
 .highlightedGlossaryTerm {
 	font-size: 100%;
-	color: @text-link;
+	color: $text-link;
 	font-weight: normal;
 	background: transparent;
 	border-bottom: dotted 1px #999;
@@ -204,12 +215,12 @@ h2 {
 dt.portletHeader a, .portletHeader {
 	font-size: 16px;
 	line-height: normal !important;
-	font-family: @header-font !important;
+	font-family: $header-font !important;
 	font-weight: normal !important;
 	color: #000; 
 	&:hover {
-		font-color: @muted-accent-highlight !important;
-		}
+		font-color: $muted-accent-highlight !important;
+		};
 	text-shadow: 1px 1px 1px #fff;
 }
 // Foot-Box 
@@ -219,7 +230,7 @@ dt.portletHeader a, .portletHeader {
 		line-height: 16px;
 		color: #ddd;
 		}
-	a {color: @muted-accent-highlight;}
+	a {color: $muted-accent-highlight;}
 }
 
 #foot-box  { 
@@ -238,7 +249,7 @@ dt.portletHeader a, .portletHeader {
 // Colophon
 
 #portal-colophon p {
-	font-family: @readable-font;
+	font-family: $readable-font;
 	letter-spacing: normal;
 	color: #666;
 } 
@@ -246,24 +257,24 @@ dt.portletHeader a, .portletHeader {
 #portal-colophon a {
 	color: #999;
 	&:hover {
-		color: @bright-highligh-text;
+		color: $bright-highligh-text;
 	}
 }
 // Collage Styles
 div.collage_type_document.collage_view_standard h2 {
-	font-family: @global-nav-font;
+	font-family: $global-nav-font;
 }
 
 .section-landing-page #collage .row_2 {
-	.block_1 .collage_view_standard h2 {color: @menu-header-color;}
-	.block_2 .collage_view_standard h2 {color: @muted-accent;}
+	.block_1 .collage_view_standard h2 {color: $menu-header-color;}
+	.block_2 .collage_view_standard h2 {color: $muted-accent;}
 	.block_3 .collage_view_standard h2 {color: #8FC943;}
 }
 // Creative Font Styles for tinyMCE
           
 #content .checklist {
 	margin: 0px 0px 0px 10px;
-	font:  18px @header-font;
+	font:  18px $header-font;
 	line-height: 24px;
 	font-weight: normal;
 	float: right; 
@@ -279,7 +290,7 @@ div.collage_type_document.collage_view_standard h2 {
 }
 
 .postit {
-	.minor-curl-effect;   
+	@include minor-curl-effect;   
 	background-color: #FCFDA6; 
 	padding:12px;
 	font-family:"futura-pt-1","futura-pt-2",sans-serif;     
@@ -294,7 +305,7 @@ div.collage_type_document.collage_view_standard h2 {
 	line-height: 22px;
 	padding: 10px 10px 10px 30px;
 	margin: 5px 0 10px 0 !important;
-	.minor-curl-effect; 
+	@include minor-curl-effect; 
 	.no-csstransforms & {
 		box-shadow: 0px 2px 6px 0px #999;		
 		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc); 	
