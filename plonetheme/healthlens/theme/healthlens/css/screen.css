@@ -4358,20 +4358,7 @@ div.collage_type_document.collage_view_standard h2 {
   color: #8FC943; }
 
 #content .checklist {
-  margin: 0px 0px 0px 10px;
-  font: 18px "futura-pt-1", "futura-pt-2";
-  line-height: 24px;
-  font-weight: normal;
-  float: right;
-  width: 30%;
-  clear: right;
-  color: #000;
-  letter-spacing: normal !important;
-  padding: 0 0 0 35px;
-  border-left: solid 2px #ddd;
-  background-image: url("../images/green-check.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: 3% center !important; }
+  font: 18px "futura-pt-1", "futura-pt-2"; }
 
 .postit {
   position: relative;
