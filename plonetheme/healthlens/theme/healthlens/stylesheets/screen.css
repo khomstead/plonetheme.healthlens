@@ -2296,6 +2296,24 @@ div.idea {
   display: none;
 }
 
+/* line 58, /Users/drew/Documents/projects/plone/dev.seminar.changecenter.org/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/partials/_cloudspring_members.scss */
+.post-type {
+  float: left;
+  width: 150px;
+  border: 1px solid #eee;
+  text-align: center;
+  border-radius: 4px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 19px;
+}
+
+/* line 69, /Users/drew/Documents/projects/plone/dev.seminar.changecenter.org/src/plonetheme.healthlens/plonetheme/healthlens/theme/healthlens/sass/partials/_cloudspring_members.scss */
+#post-type-img {
+  display: none;
+  float: right;
+}
+
 /*
 	Mosaic - Sliding Boxes and Captions jQuery Plugin
 	Version 1.0.1

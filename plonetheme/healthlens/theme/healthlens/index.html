@@ -14,20 +14,6 @@
 		  $("#page-title h1").prepend("<span></span>");
 		});
 		</script>						
-    <style>
-
-      #blog-overlay {
-        display: none;
-      }
-
-
-                label.error {
-                  color:red;
-                }
-                div.token-input-dropdown-facebook {
-                  z-index: 9999999;
-                }
-              </style>
 	</head>
 	<body>
 	<div id="head-ribbon">
@@ -74,7 +60,7 @@
       <ul class="drawer_tabs">
 		  <li>
 		    <a href="#contribute">
-		    <img src="++theme++plonetheme.healthlens/images/Icons/contribute.png" alt="" />
+          <img src="++theme++plonetheme.healthlens/images/Icons/contribute.png" alt="" />
 		    share
 		    </a>
 		  </li>
@@ -92,8 +78,8 @@
 			</li>
 			<li>
 			  <a href="#search">
-			      <img src="++theme++plonetheme.healthlens/images/Icons/search.png" alt="" />
-			      	search
+          <img src="++theme++plonetheme.healthlens/images/Icons/search.png" alt="" />
+          search
 			  </a>
 			</li>
       </ul>
@@ -111,22 +97,28 @@
           <div class="accordion-heading">
             <a class="accordion-toggle" data-toggle="collapse" 
               data-target=".pb-ajax #wizard-post-type" data-parent=".pb-ajax #wizard">
-              <h3>What type of post is this?</h3>
+              <h3>What type of post is this?
+                <img id="post-type-img" src="" width="20" height="20" alt="" />
+              </h3>
              </a>
            </div>
            <div id="wizard-post-type" class="accordion-body in collapse">
              <div class="accordion-inner">
              <ul>
                <li class="post-type" data-post-type="idea">
-                 <div id="post-type-idea-image"></div>
-                 <div id="post-type-idea-description">
-                   <p>I have a great idea!</p>
+                 <div class="post-type-image">
+                   <img src="images/idea.jpg" alt="" height="100" width="100" />
+                 </div>
+                 <div class="post-type-description">
+                   I have a great idea!
                  </div>
                </li>
                <li class="post-type" data-post-type="rant">
-                 <div id="post-type-rant-image"></div>
-                 <div id=post-type-rant-description">
-                   <p>Rant and rave about something!</p>
+                 <div class="post-type-image">
+                   <img src="images/idea.jpg" alt="" height="100" width="100" />
+                 </div>
+                 <div class="post-type-description">
+                   Rant and rave about something!
                  </div>
                </li>
              </ul>

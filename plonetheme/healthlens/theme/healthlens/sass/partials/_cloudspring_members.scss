@@ -54,3 +54,19 @@ div.idea {
 #wizard .alert {
   display: none;
 }
+
+.post-type {
+  float: left;
+  width: 150px;
+  border: 1px solid #eee;
+  text-align: center;
+  border-radius: 4px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 19px;
+}
+
+#post-type-img {
+  display: none;
+  float: right;
+}
