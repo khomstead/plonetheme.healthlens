@@ -45,15 +45,6 @@ dl.portlet ul.navTree .navTreeCurrentItem span {
 }
 
 /* @group Base Structure */
-/* line 48, ../sass/partials/_old_css.scss */
-div.row {
-  float: left;
-  width: 960px;
-  display: block;
-  position: relative;
-  margin-top: 0px;
-}
-
 /* line 25, ../sass/screen.scss */
 /* line 57, ../sass/partials/_old_css.scss */
 div.cell {
@@ -1422,6 +1413,7 @@ body, #content {
   font-family: "futura-pt-1","futura-pt-2",sans-serif;
   color: #fff;
   font-weight: 500;
+  padding: 10px 0px 5px 0px;
   position: relative;
 }
 
@@ -1429,7 +1421,7 @@ body, #content {
 #page-title span {
   background: url("../images/temp/gradient-dark.png") repeat-x top;
   position: absolute;
-  bottom: -5px;
+  bottom: -7px;
   display: block;
   width: 100%;
   height: 23px;
@@ -1545,30 +1537,17 @@ div.collage_type_document.collage_view_standard h2 {
 
 /* line 275, ../sass/partials/_typography.scss */
 #content .checklist {
-  margin: 0px 0px 0px 10px;
   font: 18px "futura-pt-1", "futura-pt-2";
-  line-height: 24px;
-  font-weight: normal;
-  float: right;
-  width: 30%;
-  clear: right;
-  color: #000;
-  letter-spacing: normal !important;
-  padding: 0 0 0 35px;
-  border-left: solid 2px #ddd;
-  background-image: url("../images/green-check.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: 3% center !important;
 }
 
-/* line 292, ../sass/partials/_typography.scss */
+/* line 279, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
   bottom: 0;
-  background: transparent;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
   background-color: #FCFDA6;
   padding: 12px;
   font-family: "futura-pt-1","futura-pt-2",sans-serif;
@@ -1616,7 +1595,7 @@ div.collage_type_document.collage_view_standard h2 {
   transform: skew(10deg) rotate(5deg);
 }
 
-/* line 300, ../sass/partials/_typography.scss */
+/* line 287, ../sass/partials/_typography.scss */
 #content .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
@@ -1627,10 +1606,10 @@ div.collage_type_document.collage_view_standard h2 {
   margin: 5px 0 10px 0 !important;
   position: relative;
   bottom: 0;
-  background: transparent;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
   background-color: #FCF9E9;
   background-image: url(../images/openquote-gray.png);
   background-position: 4px 8px;
@@ -1677,19 +1656,19 @@ div.collage_type_document.collage_view_standard h2 {
   -o-transform: skew(10deg) rotate(5deg);
   transform: skew(10deg) rotate(5deg);
 }
-/* line 309, ../sass/partials/_typography.scss */
+/* line 296, ../sass/partials/_typography.scss */
 .no-csstransforms #content .elegant {
   box-shadow: 0px 2px 6px 0px #999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 320, ../sass/partials/_typography.scss */
+/* line 307, ../sass/partials/_typography.scss */
 .carousel-title {
   font: 24px "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
   color: #000;
 }
 
-/* line 325, ../sass/partials/_typography.scss */
+/* line 312, ../sass/partials/_typography.scss */
 .carousel-body p {
   color: #a9a9a9;
 }
@@ -1711,10 +1690,10 @@ body.section-landing-page #title-ribbon {
 #collage .featured-document {
   position: relative;
   bottom: 0;
-  background: transparent;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
   background-color: #FCFDA6;
 }
 /* line 91, ../sass/partials/_effects.scss */
@@ -1764,10 +1743,10 @@ div.collage_type_document.collage_view_standard {
   padding: 5px 10px;
   position: relative;
   bottom: 0;
-  background: transparent;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
   background-color: #FCF9E9;
 }
 /* line 91, ../sass/partials/_effects.scss */
@@ -1918,13 +1897,13 @@ div.collage_type_document.collage_view_standard:after {
 /* line 100, ../sass/partials/_plone-products.scss */
 #slider-container {
   border: none;
-  padding: 10px 10px 0px 10px;
+  padding: 10px;
   position: relative;
   bottom: 0;
-  background: transparent;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);
   margin: 0 0 10px 0 !important;
 }
 /* line 91, ../sass/partials/_effects.scss */
@@ -1968,7 +1947,7 @@ div.collage_type_document.collage_view_standard:after {
   -o-transform: skew(10deg) rotate(5deg);
   transform: skew(10deg) rotate(5deg);
 }
-/* line 106, ../sass/partials/_plone-products.scss */
+/* line 105, ../sass/partials/_plone-products.scss */
 .no-boxshadow #slider-container {
   -webkit-box-shadow: 0px 0px 10px #999999;
   -moz-box-shadow: 0px 0px 10px #999999;
@@ -1976,18 +1955,16 @@ div.collage_type_document.collage_view_standard:after {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 112, ../sass/partials/_plone-products.scss */
+/* line 111, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons {
   height: 20px;
-  line-height: 0px;
-  top: -20x;
-  padding: 0 0 0px 0;
+  line-height: 20px;
 }
-/* line 122, ../sass/partials/_plone-products.scss */
+/* line 114, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons span a {
   color: #999;
 }
-/* line 123, ../sass/partials/_plone-products.scss */
+/* line 115, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -2006,29 +1983,28 @@ div.collage_type_document.collage_view_standard:after {
   border-left-color: #999;
   border-right-color: #ddd;
   border-bottom-color: #fff;
-  line-height: 0px;
 }
-/* line 139, ../sass/partials/_plone-products.scss */
+/* line 130, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a.active {
   border: solid 1px #85B447;
   background: #90cb43;
 }
-/* line 144, ../sass/partials/_plone-products.scss */
+/* line 135, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a:hover {
   background: red;
   color: transparent !important;
 }
-/* line 148, ../sass/partials/_plone-products.scss */
+/* line 139, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons a:link {
   line-height: 0px;
   color: transparent;
 }
-/* line 153, ../sass/partials/_plone-products.scss */
+/* line 144, ../sass/partials/_plone-products.scss */
 #easySlider-goToButtons #pauseplay {
-  top: 6px;
+  top: 4px;
 }
 
-/* line 166, ../sass/partials/_plone-products.scss */
+/* line 158, ../sass/partials/_plone-products.scss */
 .managePortletsAboveLink,
 .managePortletsBelowLink,
 .manageFooterPortletsLink,
@@ -2038,98 +2014,98 @@ div.collage_type_document.collage_view_standard:after {
   clear: both;
 }
 
-/* line 168, ../sass/partials/_plone-products.scss */
+/* line 160, ../sass/partials/_plone-products.scss */
 .portlet-manager-row .porlet-well_manager {
   width: 30%;
   float: left;
   margin: 1%;
 }
 
-/* line 169, ../sass/partials/_plone-products.scss */
+/* line 161, ../sass/partials/_plone-products.scss */
 .portlet-manager-row {
   width: 100%;
   float: left;
 }
 
 /* Define classes for 1/5ths and 1/6ths widths and positions. */
-/* line 173, ../sass/partials/_plone-products.scss */
+/* line 165, ../sass/partials/_plone-products.scss */
 div.width-1\3a 5 {
   width: 17.75%;
 }
 
 /* .width-1:5 */
-/* line 174, ../sass/partials/_plone-products.scss */
+/* line 166, ../sass/partials/_plone-products.scss */
 div.width-2\3a 5 {
   width: 37.75%;
 }
 
 /* .width-2:5 */
-/* line 175, ../sass/partials/_plone-products.scss */
+/* line 167, ../sass/partials/_plone-products.scss */
 div.width-3\3a 5 {
   width: 57.75%;
 }
 
 /* .width-3:5 */
-/* line 176, ../sass/partials/_plone-products.scss */
+/* line 168, ../sass/partials/_plone-products.scss */
 div.width-4\3a 5 {
   width: 77.75%;
 }
 
 /* .width-4:5 */
-/* line 177, ../sass/partials/_plone-products.scss */
+/* line 169, ../sass/partials/_plone-products.scss */
 div.position-1\3a 5 {
   margin-left: -78.875%;
 }
 
 /* .position-1:5 */
-/* line 178, ../sass/partials/_plone-products.scss */
+/* line 170, ../sass/partials/_plone-products.scss */
 div.position-2\3a 5 {
   margin-left: -58.875%;
 }
 
 /* .position-2:5 */
-/* line 179, ../sass/partials/_plone-products.scss */
+/* line 171, ../sass/partials/_plone-products.scss */
 div.position-3\3a 5 {
   margin-left: -38.875%;
 }
 
 /* .position-3:5 */
-/* line 180, ../sass/partials/_plone-products.scss */
+/* line 172, ../sass/partials/_plone-products.scss */
 div.position-4\3a 5 {
   margin-left: -18.875%;
 }
 
 /* .position-4:5 */
-/* line 182, ../sass/partials/_plone-products.scss */
+/* line 174, ../sass/partials/_plone-products.scss */
 div.width-1\3a 6 {
   width: 14.416%;
 }
 
 /* .width-1:6 */
-/* line 183, ../sass/partials/_plone-products.scss */
+/* line 175, ../sass/partials/_plone-products.scss */
 div.width-5\3a 6 {
   width: 81.083%;
 }
 
 /* .width-5:6 */
-/* line 184, ../sass/partials/_plone-products.scss */
+/* line 176, ../sass/partials/_plone-products.scss */
 div.position-1\3a 6 {
   margin-left: -82.208%;
 }
 
 /* .position-1:6 */
-/* line 185, ../sass/partials/_plone-products.scss */
+/* line 177, ../sass/partials/_plone-products.scss */
 div.position-5\3a 6 {
   margin-left: -15.542%;
 }
 
 /* .position-5:6 */
-/* line 189, ../sass/partials/_plone-products.scss */
+/* line 181, ../sass/partials/_plone-products.scss */
 span.highlightedGlossaryTerm {
   z-index: 1000;
 }
 
-/* line 192, ../sass/partials/_plone-products.scss */
+/* line 184, ../sass/partials/_plone-products.scss */
 div#glossary-definition-popup {
   position: absolute;
   padding: 10px;
@@ -2158,7 +2134,7 @@ div#glossary-definition-popup {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 );
   /* IE6-9 */
 }
-/* line 215, ../sass/partials/_plone-products.scss */
+/* line 207, ../sass/partials/_plone-products.scss */
 div#glossary-definition-popup:after {
   content: "";
   position: absolute;
@@ -2175,13 +2151,13 @@ div#glossary-definition-popup:after {
   /* vary these values to change the angle of the vertex */
   border-color: #f1e767 transparent;
 }
-/* line 229, ../sass/partials/_plone-products.scss */
+/* line 221, ../sass/partials/_plone-products.scss */
 div#glossary-definition-popup p {
   color: black;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 235, ../sass/partials/_plone-products.scss */
+/* line 227, ../sass/partials/_plone-products.scss */
 div#glossary-definition-popup h6 {
   font-size: 14px;
   font-weight: bold;
@@ -2301,12 +2277,12 @@ div#glossary-definition-popup h6 {
 }
 
 /*** End Animation Styles ***/
-/* line 38, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 body {
   background: #f5f5f5 url("../images/matt-pattern.jpg") repeat left top;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 #light {
   background: transparent url("../images/vert-gradient.png") repeat-x left top;
   height: 100%;
@@ -2314,7 +2290,7 @@ body {
   position: fixed;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 #head-ribbon {
   background: black;
   /* Old browsers */
@@ -2335,7 +2311,7 @@ body {
   height: 60px;
   margin: 0 auto;
 }
-/* line 57, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .cssgradients #head-ribbon {
   background: black;
   /* Old browsers */
@@ -2351,12 +2327,12 @@ body {
   /* IE6-9 */
   background: linear-gradient(top, #45484d 0%, #000000 100%);
 }
-/* line 60, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .no-cssgradients #head-ribbon {
   background: black url("../images/header-background.png") repeat-x top;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 #head-wrapper {
   height: 65px;
   margin-right: auto;
@@ -2365,7 +2341,7 @@ body {
   position: relative;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 #logo-spacer {
   background: url(../images/logo-med.png) no-repeat left center;
   width: 260px;
@@ -2377,7 +2353,7 @@ body {
   z-index: 200;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 #home {
   height: 60px;
   width: 60px;
@@ -2389,12 +2365,12 @@ body {
   float: right;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 #home div:hover {
   background: url("../images/Icons/power-black.png") no-repeat center center;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #home div {
   background: url("../images/Icons/power-green.png") no-repeat center center;
   height: 100%;
@@ -2402,7 +2378,7 @@ body {
   padding: 8px 0 0 0;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 #menu {
   right: 0px;
   position: relative;
@@ -2411,11 +2387,11 @@ body {
   display: inline-block;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #menu ul li a.menu-dropdown:hover, #menu li.top-level:hover, #portal-megamenu li.active a.menu-item, #home:hover {
   color: black;
 }
-/* line 120, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .cssgradients #menu ul li a.menu-dropdown:hover, .cssgradients #menu li.top-level:hover, .cssgradients #portal-megamenu li.active a.menu-item, .cssgradients #home:hover {
   -moz-box-shadow: inset 0px 0px 5px 0px black;
   -webkit-box-shadow: inset 0px 0px 5px 0px black;
@@ -2437,12 +2413,12 @@ body {
   background: linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
   /* W3C */
 }
-/* line 126, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .no-cssgradients #menu ul li a.menu-dropdown:hover, .no-cssgradients #menu li.top-level:hover, .no-cssgradients #portal-megamenu li.active a.menu-item, .no-cssgradients #home:hover {
   background: blue url("../images/globalNav-hover.png") repeat-x top;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 #menu ul li a.menu-item, ul.home li a {
   display: block;
   text-decoration: none;
@@ -2452,24 +2428,24 @@ body {
   z-index: 1000;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 #menu ul li.top-level-last a.menu-item {
   border-right: thin solid #1C1D1F;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #menu ul li span.arrowDownAlternative {
   display: none;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #collage ul.megamenu {
   /* To prevent margin-left in collage compose view */
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 #portal-megamenu {
   /* Global Level*/
   margin: 0 0 0 0;
@@ -2480,7 +2456,7 @@ body {
   padding-left: 0;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 #portal-megamenu li .collage-row {
   clear: both;
   float: left;
@@ -2489,12 +2465,12 @@ body {
 }
 
 /* Reset width to auto for nested rows */
-/* line 174, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 #portal-megamenu li .menu_view_nested-menu .collage-row {
   width: auto;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #portal-megamenu .sub ul {
   list-style: none;
   float: left;
@@ -2503,27 +2479,27 @@ body {
   margin: 0 10px 0 0;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #portal-megamenu .sub ul li {
   display: inline-block !important;
   background-color: transparent;
   white-space: nowrap;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 #portal-megamenu .sub ul li span {
   display: block;
   white-space: nowrap;
 }
 
 /* Menu styling for Sunburst theme */
-/* line 204, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .actionicon-object_buttons-megamenu-enable,
 .actionicon-object_buttons-megamenu-disable {
   border-top: 2px solid white;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #portal-megamenu li a.menu-item {
   height: 38px;
   background: none;
@@ -2531,13 +2507,13 @@ body {
   min-width: 0em;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #portal-megamenu li.top-level .subShadow {
   top: 60px;
   visibility: hidden;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 #portal-megamenu li.top-level .sub {
   top: 60px;
   padding: 10px 10px 5px 20px;
@@ -2552,7 +2528,7 @@ body {
   -moz-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
 }
-/* line 227, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .cssgradients #portal-megamenu li.top-level .sub {
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
   /* FF3.6+ */
@@ -2569,12 +2545,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#b3000000',GradientType=0 );
   /* IE6-9 */
 }
-/* line 230, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .no-cssgradients #portal-megamenu li.top-level .sub {
   background: transparent url(../images/bg-black.png) !important;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul {
   border-left: 1px solid #ddd;
@@ -2582,7 +2558,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 243, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #portal-megamenu .sub .collage-megamenu-vlines > ul.collage-first-object,
 #portal-megamenu .sub .collage-megamenu-hvlines > ul.collage-first-object {
   border-left: 0;
@@ -2590,26 +2566,26 @@ body {
   padding-left: 0;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #portal-megamenu .sub li.selected {
   background: transparent;
   background-image: url("../images/green-arrow.png");
   background-repeat: no-repeat;
   background-position: left center;
 }
-/* line 252, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 #portal-megamenu .sub li.selected a {
   background: transparent;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #divider {
   width: 100%;
   z-index: 10;
   position: fixed;
   top: 60px;
 }
-/* line 263, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .cssgradients #divider {
   height: 20px;
   -webkit-box-shadow: 0 0 10px black;
@@ -2634,13 +2610,13 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 );
   /* IE6-9 */
 }
-/* line 270, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .no-cssgradients #divider {
   background: transparent url("../images/personal-bar-background.png") repeat-x top;
   height: 32px;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #personal-tools {
   width: 960px;
   margin-left: auto;
@@ -2649,35 +2625,35 @@ body {
   top: 0px;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #portal-personaltools {
   z-index: 1;
   top: 0px;
   height: 20px;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #portal-personaltools #personaltools-login {
   background: transparent url("../images/Icons/Lock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
-/* line 293, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 #portal-personaltools #personaltools-login:hover {
   background: transparent url("../images/Icons/Lock-white-16.png") no-repeat left 0px;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #portal-personaltools dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-black-16.png") no-repeat left 0px;
   padding: 0 0 0 20px;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 #portal-personaltools.activated dt.actionMenuHeader a {
   background: transparent url("../images/Icons/Unlock-white-16.png") no-repeat left 0px;
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 #portal-personaltools.actionMenu {
   height: 100%;
   background: none;
@@ -2691,7 +2667,7 @@ body {
   padding: 2px 5px 0 5px;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 #portal-personaltools dd.actionMenuContent {
   margin-top: 2px;
   padding: 0px 0px 5px 2px;
@@ -2714,7 +2690,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 dl.actionMenu.activated dd {
   -webkit-border-bottom-right-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -2728,12 +2704,12 @@ dl.actionMenu.activated dd {
   border: none;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 #portal-personaltools dd a:hover {
   background: transparent;
 }
 
-/* line 336, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #page-wrapper {
   z-index: 1;
   margin-right: auto;
@@ -2742,7 +2718,7 @@ dl.actionMenu.activated dd {
   top: 80px;
   display: block;
 }
-/* line 343, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .boxshadow #page-wrapper {
   width: 960px;
   background: black;
@@ -2791,7 +2767,7 @@ dl.actionMenu.activated dd {
   transform: skew(10deg) rotate(5deg);
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 #page {
   -webkit-box-shadow: 0 0 10px black;
   -moz-box-shadow: 0 0 10px black;
@@ -2803,28 +2779,29 @@ dl.actionMenu.activated dd {
   position: relative;
   z-index: 1;
 }
-/* line 358, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .no-boxshadow #page {
   box-shadow: 0px 10px 10px 0px #000;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 #content {
   margin: 0 3px 0 3px;
 }
 
-/* line 368, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 #portal-columns {
   padding-top: 10px;
 }
 
-/* line 371, ../sass/screen.scss */
-#colophon {
+/* line 370, ../sass/screen.scss */
+#portal-colophon li {
   position: relative;
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 0;
   display: block;
   top: 80px;
 }
@@ -2875,62 +2852,12 @@ dl.actionMenu.activated dd {
   border-left: solid 1px #ddd;
   margin: 0 0 0 2px;
   padding: 4px 10px;
-  position: relative;
-  bottom: 0;
-  background: transparent;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -o-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -khtml-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
   background: url("../images/brushed metal.jpg") left center;
 }
-/* line 91, ../sass/partials/_effects.scss */
-#portal-columns dl.portlet dt.portletHeader:before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  left: 14px;
-  bottom: 13px;
-  width: 70%;
-  max-width: 300px;
-  /* avoid rotation causing ugly appearance at large container widths */
-  height: 55%;
-  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  -webkit-transform: skew(-10deg) rotate(-5deg);
-  -moz-transform: skew(-10deg) rotate(-5deg);
-  -ms-transform: skew(-10deg) rotate(-5deg);
-  -o-transform: skew(-10deg) rotate(-5deg);
-  transform: skew(-10deg) rotate(-5deg);
-}
-/* line 92, ../sass/partials/_effects.scss */
-#portal-columns dl.portlet dt.portletHeader:after {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  bottom: 13px;
-  width: 70%;
-  max-width: 300px;
-  /* avoid rotation causing ugly appearance at large container widths */
-  height: 55%;
-  left: auto;
-  right: 14px;
-  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  -webkit-transform: skew(10deg) rotate(5deg);
-  -moz-transform: skew(10deg) rotate(5deg);
-  -ms-transform: skew(10deg) rotate(5deg);
-  -o-transform: skew(10deg) rotate(5deg);
-  transform: skew(10deg) rotate(5deg);
-}
-/* line 423, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 .no-boxshadow #portal-columns dl.portlet dt.portletHeader {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
@@ -2938,12 +2865,12 @@ dl.actionMenu.activated dd {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 431, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 img.image-left, img.image-right, .captioned img {
   border: none;
 }
 
-/* line 437, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 #foot-box {
   background: #0e0e0e;
   /* Old browsers */
@@ -2963,12 +2890,12 @@ img.image-left, img.image-right, .captioned img {
   position: relative;
   border: 2px solid #eaeaea;
 }
-/* line 443, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 .no-cssgradients #foot-box {
   background: black url("../images/foot-gradient.png") repeat-x;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 #foot-box dl.portlet dt.portletHeader, #foot-box .portletStaticText {
   border: none;
   margin: 0 0 0 0;
