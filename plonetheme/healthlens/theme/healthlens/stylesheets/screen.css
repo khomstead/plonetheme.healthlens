@@ -46,13 +46,6 @@ dl.portlet ul.navTree .navTreeCurrentItem span {
 
 /* @group Base Structure */
 /* line 25, ../sass/screen.scss */
-/* line 57, ../sass/partials/_old_css.scss */
-div.cell {
-  position: relative;
-  float: left;
-  left: 100%;
-}
-
 /* line 78, ../sass/screen.scss */
 /* line 95, ../sass/screen.scss */
 /* line 103, ../sass/screen.scss */
@@ -1409,6 +1402,7 @@ body, #content {
 /* line 150, ../sass/partials/_typography.scss */
 #page-title h1 {
   font-size: 50px;
+  line-height: 34px;
   letter-spacing: normal;
   font-family: "futura-pt-1","futura-pt-2",sans-serif;
   color: #fff;
@@ -1417,7 +1411,7 @@ body, #content {
   position: relative;
 }
 
-/* line 161, ../sass/partials/_typography.scss */
+/* line 162, ../sass/partials/_typography.scss */
 #page-title span {
   background: url("../images/temp/gradient-dark.png") repeat-x top;
   position: absolute;
@@ -1427,7 +1421,7 @@ body, #content {
   height: 23px;
 }
 
-/* line 171, ../sass/partials/_typography.scss */
+/* line 172, ../sass/partials/_typography.scss */
 h2 {
   font-size: 24px;
   line-height: 24px;
@@ -1439,7 +1433,7 @@ h2 {
   margin-top: 0;
 }
 
-/* line 182, ../sass/partials/_typography.scss */
+/* line 183, ../sass/partials/_typography.scss */
 #content p, li, span, a, a.tile, .highlightedGlossaryTerm {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   letter-spacing: normal;
@@ -1449,7 +1443,7 @@ h2 {
   margin-bottom: 0px;
 }
 
-/* line 191, ../sass/partials/_typography.scss */
+/* line 192, ../sass/partials/_typography.scss */
 .highlightedGlossaryTerm {
   font-size: 100%;
   color: #155d89;
@@ -1458,12 +1452,12 @@ h2 {
   border-bottom: dotted 1px #999;
 }
 
-/* line 201, ../sass/partials/_typography.scss */
+/* line 202, ../sass/partials/_typography.scss */
 #page-title {
   padding: 5px 10px 10px 10px;
 }
 
-/* line 215, ../sass/partials/_typography.scss */
+/* line 216, ../sass/partials/_typography.scss */
 dt.portletHeader a, .portletHeader {
   font-size: 16px;
   line-height: normal !important;
@@ -1472,23 +1466,23 @@ dt.portletHeader a, .portletHeader {
   color: #000;
   text-shadow: 1px 1px 1px #fff;
 }
-/* line 221, ../sass/partials/_typography.scss */
+/* line 222, ../sass/partials/_typography.scss */
 dt.portletHeader a:hover, .portletHeader:hover {
   font-color: #1a75ba !important;
 }
 
-/* line 228, ../sass/partials/_typography.scss */
+/* line 229, ../sass/partials/_typography.scss */
 #foot-box .portletItem p, #foot-box .portletItem span, #foot-box .portletItem a, #foot-box .portletStaticText p, #foot-box .portletStaticText span, #foot-box .portletStaticText a {
   font-size: 12px;
   line-height: 16px;
   color: #ddd;
 }
-/* line 233, ../sass/partials/_typography.scss */
+/* line 234, ../sass/partials/_typography.scss */
 #foot-box .portletItem a, #foot-box .portletStaticText a {
   color: #1a75ba;
 }
 
-/* line 237, ../sass/partials/_typography.scss */
+/* line 238, ../sass/partials/_typography.scss */
 #foot-box dt.portletHeader a.tile, #foot-box h2 {
   font-size: 18px;
   color: #999;
@@ -1496,51 +1490,64 @@ dt.portletHeader a:hover, .portletHeader:hover {
   padding-top: 0;
 }
 
-/* line 245, ../sass/partials/_typography.scss */
+/* line 246, ../sass/partials/_typography.scss */
 #foot-box dt.portletHeader a, #foot-box .portletHeader {
   color: #dddddd;
 }
 
-/* line 251, ../sass/partials/_typography.scss */
+/* line 252, ../sass/partials/_typography.scss */
 #portal-colophon p {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   letter-spacing: normal;
   color: #666;
 }
 
-/* line 257, ../sass/partials/_typography.scss */
+/* line 258, ../sass/partials/_typography.scss */
 #portal-colophon a {
   color: #999;
 }
-/* line 259, ../sass/partials/_typography.scss */
+/* line 260, ../sass/partials/_typography.scss */
 #portal-colophon a:hover {
   color: #90cb43;
 }
 
-/* line 264, ../sass/partials/_typography.scss */
+/* line 265, ../sass/partials/_typography.scss */
 div.collage_type_document.collage_view_standard h2 {
   font-family: "p22-fllw-eaglefeather-1", "p22-fllw-eaglefeather-2", sans-serif;
 }
 
-/* line 269, ../sass/partials/_typography.scss */
+/* line 270, ../sass/partials/_typography.scss */
 .section-landing-page #collage .row_2 .block_1 .collage_view_standard h2 {
   color: #e5000f;
 }
-/* line 270, ../sass/partials/_typography.scss */
+/* line 271, ../sass/partials/_typography.scss */
 .section-landing-page #collage .row_2 .block_2 .collage_view_standard h2 {
   color: #155d89;
 }
-/* line 271, ../sass/partials/_typography.scss */
+/* line 272, ../sass/partials/_typography.scss */
 .section-landing-page #collage .row_2 .block_3 .collage_view_standard h2 {
   color: #8FC943;
 }
 
-/* line 275, ../sass/partials/_typography.scss */
+/* line 276, ../sass/partials/_typography.scss */
 #content .checklist {
+  margin: 0px 0px 0px 10px;
   font: 18px "futura-pt-1", "futura-pt-2";
+  line-height: 24px;
+  font-weight: normal;
+  float: right;
+  width: 30%;
+  clear: right;
+  color: #000;
+  letter-spacing: normal !important;
+  padding: 0 0 0 35px;
+  border-left: solid 2px #ddd;
+  background-image: url("../images/green-check.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 3% center !important;
 }
 
-/* line 279, ../sass/partials/_typography.scss */
+/* line 293, ../sass/partials/_typography.scss */
 .postit {
   position: relative;
   bottom: 0;
@@ -1595,7 +1602,7 @@ div.collage_type_document.collage_view_standard h2 {
   transform: skew(10deg) rotate(5deg);
 }
 
-/* line 287, ../sass/partials/_typography.scss */
+/* line 301, ../sass/partials/_typography.scss */
 #content .elegant {
   font-family: "dejarip-1", "dejarip-2", sans-serif;
   font-size: 16px;
@@ -1656,19 +1663,19 @@ div.collage_type_document.collage_view_standard h2 {
   -o-transform: skew(10deg) rotate(5deg);
   transform: skew(10deg) rotate(5deg);
 }
-/* line 296, ../sass/partials/_typography.scss */
+/* line 310, ../sass/partials/_typography.scss */
 .no-csstransforms #content .elegant {
   box-shadow: 0px 2px 6px 0px #999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 
-/* line 307, ../sass/partials/_typography.scss */
+/* line 321, ../sass/partials/_typography.scss */
 .carousel-title {
   font: 24px "p22-fllw-eaglefeather-1","p22-fllw-eaglefeather-2";
   color: #000;
 }
 
-/* line 312, ../sass/partials/_typography.scss */
+/* line 326, ../sass/partials/_typography.scss */
 .carousel-body p {
   color: #a9a9a9;
 }
