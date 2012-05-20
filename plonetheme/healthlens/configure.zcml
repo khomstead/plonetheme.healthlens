@@ -1,7 +1,13 @@
 <configure
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup" 
     xmlns="http://namespaces.zope.org/zope">
+
+    <genericsetup:registerProfile
+	name="default" title="Healthlens Theme" directory="profiles/default" 
+        description="Installs the plonetheme.healthlens package" 
+        provides="Products.GenericSetup.interfaces.EXTENSION" />
 
     <plone:static
         directory="theme/healthlens" type="theme" />
