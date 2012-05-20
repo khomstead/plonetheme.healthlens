@@ -1,0 +1,265 @@
+//This file is the top level rollup for all LESS based CSS, including Twitter Bootstrap, which is used to generate the screen.css file 
+
+/* @group Imports */
+
+// Twitter Bootstrap Framework
+@import "bootstrap";
+//Custom attributes that can be changed on a site-to-site basis
+@import "_custom_treehouse";
+//Re-usable effects such as page curls, etc.
+@import "_effects"; 
+
+/* @end */
+
+
+/* @group Layout Styles */
+
+// body includes repeating wallpaper
+body {
+	.background;
+	padding-top: @navbar-height + @personal-bar-height;
+}
+
+div.navbar.navbar-fixed-top {
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	margin-bottom: 0; 
+	& .navbar-inner {
+		.topbar-gradient;
+		padding: 0;
+	}
+}
+
+.logo {
+	background: transparent @logo-image no-repeat bottom left;
+	height: @navbar-height;
+	margin: 0;
+	float: left; 
+	width: @logo-width;
+	min-width: @logo-minWidth;
+}
+
+#personal-bar {
+	width: 100%;
+	height: @personal-bar-height;
+	background-color: blue;
+	position: fixed;
+	z-index: 99;
+	top: @navbar-height;
+	.box-shadow-custom(0, 2px, 5px, rgb(0, 0, 0.5));
+}
+
+.cssgradients #personal-bar {
+	height: @personal-bar-height;
+	.box-shadow-custom(0, 0, 10px, black);
+	border-bottom: 2px solid @muted-accent-shadow;
+	border-top: 2px solid @muted-accent-highlight; 
+	.linear-gradient(@muted-accent-shadow, @muted-accent-highlight);
+} 
+
+.no-cssgradients #personal-bar {
+	background: transparent url('../images/personal-bar-background.png') repeat-x top;
+	height: @personal-bar-height;
+}
+
+// transparent gradient overlay on body wallpaper
+
+
+#page-wrapper {
+	z-index:1;
+	.curl-effect(200px);
+}
+
+#page {
+	background-color: white;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);  
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);   
+	padding: 0px 10px 0 10px;
+	position: relative;
+	z-index: 1;		
+}
+
+/* @end */   
+
+
+/* @group MegaMenu Global Navigation*/
+ul#portal-megamenu > li, ul, a, ol {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+}
+
+ul#portal-megamenu .sub ul li a, ul#portal-megamenu .sub ul li a:link, ul#portal-megamenu .sub ul li a:visited {
+	color: #fff; 
+}
+
+ul#portal-megamenu .sub ul li a:hover {
+	color: @rollover;
+}
+
+@media (min-width: 980px) {
+	ul#portal-megamenu {  
+		width: 100% - @logo-width;
+		margin: 0 !important;
+		padding: 0;
+	}  
+	
+	ul#portal-megamenu li.top-level {
+		float: left;
+		position: relative;
+		border-left: thin solid #1C1D1F;
+		display: block;
+		padding: 0;
+		margin: 0;
+		&#mm-tl-home a {  
+			background: url('../images/Icons/power-green.png') no-repeat center 21px;
+			color: transparent; 
+			text-shadow:none;  
+			&:hover {background: url('../images/Icons/power-black.png') no-repeat center 20px;}
+		}
+		&:last-child {border-right: thin solid #1C1D1F;}
+	}
+	
+	ul#portal-megamenu > li > a { 	 
+		float: left;
+		height: @navbar-height;
+		line-height: @navbar-height + 20;
+		padding: 0 10px 0 10px;
+		color: @global-nav-font-color;
+		font-size: @global-nav-font-size;
+		font-weight: @global-nav-font-weight;
+		font-family: @global-nav-font-family;
+		//hide MegaMenu caret
+		& span {display: none}
+	}
+	      
+	#portal-megamenu li.active {
+		color: black;
+		.nav-rollover-gradient;
+		.inner-shadow; 
+		& a {color: black}
+	}
+	
+	li#mm-tl-home:hover  {
+		.nav-rollover-gradient;
+		.inner-shadow;	
+	}
+	
+	#portal-megamenu li.top-level .sub {
+		display: none;
+		position: absolute;
+		top: @navbar-height;
+		padding: 5px;
+		border: 2px solid @border-highlight-color;
+		.border-radius(5px);
+		.box-shadow(0 2px 10px rgba(0,0,0,.75));
+		background: transparent url(../images/bg-black.png) !important; 
+	}   
+	      
+	
+	/*#portal-megamenu li .collage-row {
+		clear: both;
+		float: left;
+		width: 100%; 
+		padding: 0;  
+	}
+	
+/*Reset width to auto for nested rows */
+	#portal-megamenu li .menu_view_nested-menu .collage-row {
+		width: auto;
+	}
+	
+	#portal-megamenu .sub ul {
+		list-style: none;
+		float: left;
+		width: 100%;
+		padding: 0 0 10px 0;
+		margin: 0 10px 0 0;
+	}
+	
+	
+	#portal-megamenu .sub ul li {
+		display: inline-block !important;
+		background-color: transparent;   
+		white-space:nowrap;
+	}
+	
+	#portal-megamenu .sub ul li span {
+		display: block;
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 979px) {
+	ul#portal-megamenu {
+		width: 100%;
+			& li.top-level {
+				display: block;
+				width: 90%;
+				height: auto;
+				margin-bottom: 5px;
+				padding: 20px 5px;
+				margin-left: auto;
+				margin-right: auto;
+				.border-radius(5px);
+				border: thin solid #333;
+				& a {
+					width: 100%;
+					float: none;
+					font-size: 2em;
+					font-weight: @global-nav-font-weight;
+					font-family: @global-nav-font-family;
+					padding: 10px !important;  
+					color: @global-nav-font-color;
+					 
+					}
+				&.active {
+					.inner-shadow;
+					background: #333;
+					border: thin solid #666;
+					& a {color: black;}
+				} 
+				& .sub {
+					position: relative;
+					padding: 10px 20px;
+					border: none;
+					width: 100%;
+					& a {
+						.border-radius(10px);
+						display: inline;
+						background: #555;
+						color: #999;
+						font-family: @baseFontFamily;
+						font-size: 2em; 
+						line-height: 2.5em;
+						white-space: nowrap;
+						padding: 8px;
+						margin: 4px;
+						&:hover {
+							background: white;
+							color: black;
+							}
+						}
+				}  
+			
+			}
+	} 
+} 
+
+.subShadow {
+	position: absolute;
+	display: none; 
+	visibility: hidden;
+}  
+
+/* @end */
+
+.alert-message {
+	.alert
+}
+
+   
+@import "responsive";

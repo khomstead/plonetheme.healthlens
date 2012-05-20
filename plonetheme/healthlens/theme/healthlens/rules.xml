@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" css:if-content="#visual-portal-wrapper">
+<rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" css:if-content=".container">
 
 <!--	XHTML Strict-->
 <xsl:output
@@ -27,34 +27,8 @@
     <before content='/html/head' theme='/html/head' />
     <copy attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
-
-    <!-- MENU -->
-    <replace css:theme="#menu ul" css:content="#portal-megamenu"/>
-
-    <!--  CONTENT -->
-    <drop css:theme=".post"/>
-    <before css:theme-children="#page-title" css:content-children="#parent-fieldname-title" />
-    <before css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
-    <before css:theme-children="#breadcrumbs" css:content-children="#portal-breadcrumbs" />
-    <drop css:content="#parent-fieldname-title" />
-    <drop css:content="#parent-fieldname-description" />
-    <drop css:content="#viewlet-above-content" />
-	  <append css:theme="#personal-tools" css:content="#portal-personaltools" />   
-    <append css:theme="#personal-tools" css:content="#xmpp-viewlet" />
-    <prepend css:theme="#page-bgbtm" css:content="#edit-bar" />
-    <prepend css:theme="#content-area" css:content="#portal-columns"/>
-    <rules css:if-content=".carousel">
-        <replace css:theme="#title-ribbon" css:content=".carousel" />
-    </rules>
-    
-    <!-- FOOTER -->
-    <replace css:theme-children="#footer" css:content-children="#portal-footer"/>
-    <append css:content="#portal-siteactions" css:theme="#foot-box"/>
-
-    <!--  TOOLS -->
-    <replace css:theme-children="#pane1" css:content-children=".FooterPortletManager3" />
-    <replace css:theme-children="#pane2" css:content-children=".FooterPortletManager4" />
-    <replace css:theme-children="#pane3" css:content-children=".FooterPortletManager5" />
-    <replace css:theme-children="#pane4" css:content-children=".FooterPortletManager6" />
+    <append css:theme=".nav-collapse" css:content="ul#portal-megamenu"/>
+    <append css:theme="#page" css:content=".content"/>  
+    <drop css:content=".breadcrumb"/> 
+    <drop css:content="#portal-header form"/> 
 </rules>
-

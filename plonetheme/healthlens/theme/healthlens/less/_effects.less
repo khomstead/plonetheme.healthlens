@@ -1,0 +1,142 @@
+.box-shadow-custom(@top, @left, @blur, @color) {
+    -webkit-box-shadow:@top @left @blur @color;
+    -moz-box-shadow:@top @left @blur @color;
+    box-shadow:@top @left @blur @color;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -khtml-border-radius: @radius;
+    border-radius: @radius;  
+}   
+
+.border-bottom-radius(@radius) {
+	-webkit-border-bottom-right-radius: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+	-moz-border-radius-bottomright: @radius;
+	-moz-border-radius-bottomleft: @radius;
+	border-bottom-right-radius: @radius;
+	border-bottom-left-radius: @radius;
+}  
+
+.linear-gradient(@top-color, @bottom-color) { 
+	background: @top-color; /* Old browsers */
+	background: -moz-linear-gradient(top,  @top-color 0%, @bottom-color 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@top-color), color-stop(100%,@bottom-color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  @top-color 0%,@bottom-color 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  @top-color 0%,@bottom-color 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  @top-color 0%,@bottom-color 100%); /* IE10+ */
+	background: linear-gradient(top,  @top-color 0%,@bottom-color 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@top-color', endColorstr='@bottom-color',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+// Larger Curl Effect
+
+.curl-effect (@shadow-height) {
+	position: relative; 
+	bottom: 0;
+	&:before {.curl-effect-before (@shadow-height);}    
+	&:after {.curl-effect-after (@shadow-height);}
+}
+
+.curl-effect-before (@shadow-height) {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 32px;
+	bottom: 16px;
+	width: 40%;
+	max-width: 1000px; /* avoid rotation causing ugly appearance at large container widths */
+	height: @shadow-height;
+	-webkit-box-shadow: -5 15px 15px black;
+	-moz-box-shadow: -5 15px 15px black;
+	box-shadow: -5px 15px 15px black;
+	-webkit-transform: skew(-10deg) rotate(-5deg);
+	-moz-transform: skew(-10deg) rotate(-5deg);
+	-ms-transform: skew(-10deg) rotate(-5deg);
+	-o-transform: skew(-10deg) rotate(-5deg);
+	transform: skew(-10deg) rotate(-5deg);
+}
+
+.curl-effect-after (@shadow-height){
+	content: '';
+	z-index: -1; 
+	position: absolute;   
+	right: 22px;
+	bottom: 16px;
+	width: 40%;
+	max-width: 1000px; /* avoid rotation causing ugly appearance at large container widths */
+	height: @shadow-height;
+	-webkit-box-shadow: 5px 15px 15px black;
+	-moz-box-shadow: 5px 15px 15px black;
+	box-shadow: 5px 15px 15px black;
+	-webkit-transform: skew(10deg) rotate(5deg);
+	-moz-transform: skew(10deg) rotate(5deg);
+	-ms-transform: skew(10deg) rotate(5deg);
+	-o-transform: skew(10deg) rotate(5deg);
+	transform: skew(10deg) rotate(5deg);
+}                                          
+
+.minor-curl-effect {
+	position: relative; 
+	bottom: 0;
+	background: #fff; 
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);  
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.1); 
+	&:before {.minor-curl-effect-before;}    
+	&:after {.minor-curl-effect-after;}  
+}
+
+.minor-curl-effect-before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 14px;
+	bottom: 13px;
+	width: 70%;
+	max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+	height: 55%;
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skew(-10deg) rotate(-5deg);
+	-moz-transform: skew(-10deg) rotate(-5deg);
+	-ms-transform:skew(-10deg) rotate(-5deg);
+	-o-transform: skew(-10deg) rotate(-5deg);
+	transform: skew(-10deg) rotate(-5deg);}
+
+.minor-curl-effect-after { 
+	content: '';
+	z-index: -1;
+	position: absolute;
+	bottom: 13px;
+	width: 70%;
+	max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+	height: 55%;
+	left: auto;
+	right: 14px;  
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skew(10deg) rotate(5deg);
+	-moz-transform: skew(10deg) rotate(5deg);
+	-ms-transform: skew(10deg) rotate(5deg);
+	-o-transform: skew(10deg) rotate(5deg);
+	transform: skew(10deg) rotate(5deg);
+}                 
+
+
+// Selection Arrow
+.select-arrow {
+	background-image: url('../images/green-arrow.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+       
+
