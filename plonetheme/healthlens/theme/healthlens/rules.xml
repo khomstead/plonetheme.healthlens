@@ -43,8 +43,8 @@
     <rules css:if-content="#collage">
         <replace css:theme-children="#page-title h1" css:content-children="#collage h1.documentFirstHeading span" />
     </rules>  
-    <replace css:theme="#page-title h1" css:content="h1#parent-fieldname-title" />
-<!--    <drop css:content="#parent-fieldname-title" />-->
+    <before css:theme="#page-title h1" css:content="h1#parent-fieldname-title" />
+    <drop css:content="h1#parent-fieldname-title" />
     <drop css:content="#parent-fieldname-description" />
     
 	</rules>
