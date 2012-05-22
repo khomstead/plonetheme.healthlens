@@ -5989,12 +5989,12 @@ ul#portal-megamenu .sub ul li a:hover {
     margin: 0;
   }
   ul#portal-megamenu li.top-level#mm-tl-home a {
-    background: url('../images/Icons/power-green.png') no-repeat center 21px;
+    background: url('../images/icons/home-green-32.png') no-repeat center 21px;
     color: transparent;
     text-shadow: none;
   }
   ul#portal-megamenu li.top-level#mm-tl-home a:hover {
-    background: url('../images/Icons/power-black.png') no-repeat center 20px;
+    background: url('../images/icons/home-black-32.png') no-repeat center 20px;
   }
   ul#portal-megamenu li.top-level:last-child {
     border-right: thin solid #1C1D1F;
