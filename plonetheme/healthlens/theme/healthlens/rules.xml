@@ -13,7 +13,7 @@
     doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
     doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
      
-    <theme href="index.html"  />
+    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
     
     <notheme if-path="presentation_view"/>
     <notheme if-path="source_editor.htm"/>
@@ -33,7 +33,7 @@
     <copy attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
     <append css:theme=".nav-collapse" css:content="ul#portal-megamenu"/>
-    <append css:theme="#page" css:content=".content"/>  
+    <append css:theme="#page" css:content="#portal-columns"/>  
     <drop css:content=".breadcrumb"/> 
     <drop css:content="#portal-header form"/> 
     <!--Content-->
