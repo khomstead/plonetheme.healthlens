@@ -5979,6 +5979,7 @@ ul#portal-megamenu .sub ul li a:hover {
     width: 70%;
     margin: 0 !important;
     padding: 0;
+    float: right;
   }
   ul#portal-megamenu li.top-level {
     float: left;
@@ -6258,7 +6259,7 @@ body.section-home-page #title-ribbon {
   font-family: 'Lustria', serif;
   color: #fff;
   font-weight: 500;
-  padding: 5px 0 5px 0;
+  padding: 0 0 5px 0;
   margin: 0px ;
   position: relative;
 }
