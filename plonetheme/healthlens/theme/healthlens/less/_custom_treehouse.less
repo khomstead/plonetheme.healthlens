@@ -15,12 +15,16 @@
 @muted-accent-highlight: #1A75BA;
 @muted-accent-shadow: #0B4774;
 @rollover: #8FCB43;
+@page-description-color: #FA8729;
+@blockquote-color: #FCD9A9;
+@blockquote-border-color: #FBB75D;
+
 /* @end */
 
 /* @group Images */
-@body-background-image: url('../images/treehouse/retro-nature-scenes.jpg');
+@body-background-image: url('../images/treehouse/three-tree-background.jpg');
 @logo-image: url(../images/treehouse/logo2.png); 
-@body-overlay-image: url('../images/treehouse/children-celebrating-spring.jpg');
+@body-overlay-image: url('../images/treehouse/no-tree-background.jpg');
 /* @end */
 
 
@@ -28,18 +32,21 @@
 // Global Nav
 @global-nav-font-size: 1.2em;
 @global-nav-font-weight: 300;
-@global-nav-font-family: 'Ubuntu', sans-serif;
+@global-nav-font-family: 'Handlee', sans-serif;
+@title-font-family: 'Lustria', serif;
+@description-font-family: 'Handlee', cursive;
+@blockqute-font-family:  'Handlee', cursive;
+
 /* @end */
 
 /* @group Theme */
 .background {
-	background: #F1E9B6 @body-background-image repeat left top;
+	background: #F1E9B6 @body-background-image repeat left center;
 }
 
-//.light { 
+.light { 
 //	background: transparent @body-overlay-image repeat-x left top;
-//	position: relative; 
-//}
+}
 /* @end */
 
 
@@ -58,6 +65,17 @@
 	background: -ms-linear-gradient(top, #45484d 0%, black 100%);
 	/* IE6-9 */
 	background: linear-gradient(top, #45484d 0%, #000000 100%);    
+}
+
+.title-gradient {
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(50%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 50%); /* IE10+ */
+	background: linear-gradient(top,  #45484d 0%,#000000 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
 .nav-rollover-gradient {
