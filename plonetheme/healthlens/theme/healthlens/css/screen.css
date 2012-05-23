@@ -6479,7 +6479,6 @@ body.section-home-page #title-ribbon {
   color: #fa8729;
 }
 .standard-document {
-  border: solid 1px #999;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -6494,13 +6493,17 @@ body.section-home-page #title-ribbon {
   border-radius: 8px;
 }
 .standard-document h2 {
-  font-family: 'Lustria', serif;
+  font-family: 'Handlee', cursive;
   color: #666;
   text-align: center;
 }
 .standard-document p {
-  font-size: 80%;
+  font-size: 95%;
   color: #333;
+  text-align: justify;
+}
+.standard-document img {
+  border: solid 3px #eaeaea;
 }
 /*!
  * Bootstrap Responsive v2.0.1
