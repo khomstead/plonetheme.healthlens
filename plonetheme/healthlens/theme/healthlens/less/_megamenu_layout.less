@@ -1,0 +1,239 @@
+/* Menu rendering */
+
+#collage ul.megamenu {
+    /* To prevent margin-left in collage compose view */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#portal-megamenu {
+    /* From Sunburst public.css: #portal-globalnav */
+	margin: 0 0 1em 0; 
+	padding: 0;
+	float:left;
+	width: 100%;
+	list-style: none;
+}
+#portal-megamenu li.top-level {
+	float: left;
+	margin: 0; 
+	position: relative;
+}
+
+#portal-megamenu li a.menu-item {
+	float: left; 
+}
+ 
+#portal-megamenu li.top-level .sub {
+	position: absolute;	
+	left: 0;
+	float: left;
+	display: none;
+        z-index: 4;
+}
+
+#portal-megamenu li.top-level .subShadow {
+	position: absolute;
+        z-index: 3;
+}
+
+#portal-megamenu li .menu-row {
+    clear: both; 
+    float: left; 
+    width: 100%; 
+}
+
+/* Reset width to auto for nested rows */
+#portal-megamenu li .menu_view_nested-menu .menu-row {
+    width: auto; 
+}
+
+#portal-megamenu .sub ul {
+	list-style: none;
+	float: left;
+    width: 100%;
+}
+
+
+#portal-megamenu .sub ul li {
+	width: 100%;
+}
+
+#portal-megamenu .sub ul li span {
+	display: block;
+    white-space: nowrap;
+}
+
+#portal-megamenu .sub ul li a {
+	float: none; 
+	height: auto;
+	display: block;
+    white-space: nowrap;
+}
+
+/* End Menu rendering */
+
+/* Content layout */
+#portal-megamenu ul li .megamenu-content a {
+    display: inline;
+    white-space: normal;
+}
+
+/* End Content layout */
+
+/* Display well menu options while composing */
+#collage.edit .menu-item {
+	margin-bottom: 1em;
+}
+/* End Display well menu options while composing */
+
+/* Menu styling for Sunburst theme */
+
+//.actionicon-object_buttons-megamenu-enable, 
+//.actionicon-object_buttons-megamenu-disable {
+//    border-top: 2px solid white;
+//}
+//
+//#portal-megamenu {
+//	font-size: 80%;
+//	background: #ddd;
+//}
+//
+//#portal-megamenu li a.menu-item {
+//	height: 41px;
+//	padding: 0.5em 1em 0em;
+//	background: #ddd;
+//	border-right: 0.1em solid white;
+//	min-width: 6em;
+//}
+//
+//#portal-megamenu li a.menu-item:hover {
+//    background: #ccc;
+//}
+//
+//#portal-megamenu li.active a.menu-item {
+//    background: #205c90;
+//    color: white;
+//}
+//
+//#portal-megamenu li.top-level .sub {
+//	top: 47px; 
+//	background: white;
+//	padding: 15px;
+//	border: #205c90 4px solid;
+//	/*--Bottom right rounded corner--*/
+//	-moz-border-radius-bottomright: 5px;
+//	-khtml-border-radius-bottomright: 5px;
+//	-webkit-border-bottom-right-radius: 5px;
+//	/*--Bottom left rounded corner--*/
+//	-moz-border-radius-bottomleft: 5px;
+//	-khtml-border-radius-bottomleft: 5px;
+//	-webkit-border-bottom-left-radius: 5px;
+//}
+//
+//#portal-megamenu li.top-level .subShadow {
+//	top: 47px;
+//	background: black; /* subShadow has 0.6 opacity when displayed */
+//	border-bottom-left-radius: 5px;
+//	border-bottom-right-radius: 5px;
+//	/* Add or change padding/margin move padding to re-place shadow box:
+//	 * - for right-bottom shadow add bottom padding and left margin
+//	 * - for left-bottom shadow add bottom padding and left negative margin
+//	 * - for left-right-bottom shadow, add bottom padding, left negative margin and double right padding
+//	 */
+//	padding: 0 0 2px 0; 
+//	margin: 0 0 0 2px;
+//	
+//}
+//
+//#portal-megamenu li .menu-row {
+//    margin: 0 auto 10px;
+//}
+
+//#portal-megamenu li .collage-megamenu-hlines,
+//#portal-megamenu li .collage-megamenu-hvlines {
+//    border-bottom: 1px solid #ddd;
+//}
+//
+//#portal-megamenu .sub ul {
+//	margin: 0 10px 10px 0; 
+//    padding: 0;
+//}
+//
+//#portal-megamenu .sub .collage-megamenu-vlines>ul, 
+//#portal-megamenu .sub .collage-megamenu-hvlines>ul {
+//    border-left: 1px solid #ddd;
+//    margin-left: -10px;
+//    padding-left: 10px;
+//}
+//
+//#portal-megamenu .sub .collage-megamenu-vlines>ul.collage-first-object, 
+//#portal-megamenu .sub .collage-megamenu-hvlines>ul.collage-first-object {
+//    border-left: 0;
+//    margin-left: 0;
+//    padding-left: 0;
+//}
+//
+//#portal-megamenu .sub ul li {
+//	color: #76797c;
+//}
+//
+//#portal-megamenu .sub ul li span {
+//	padding: 0;  
+//	margin: 0;
+//	font-size: 1.3em;
+//	font-weight: bold;
+//	width: 100%;
+//}
+//
+//#portal-megamenu .sub ul li a {
+//	padding: 5px 0 5px 10px;
+//	text-decoration: none;
+//	color: #205c90;
+//	width: 85%;
+//}
+//
+//#portal-megamenu .sub ul li a.collage-megamenu-highlight {
+//    font-weight: bold;
+//}
+//
+//#portal-megamenu .sub ul li a:hover {
+//	color: #ddd; 
+//	background: #205c90;
+//}
+//
+//#portal-megamenu .sub li.selected a {
+//    background: #ddd;
+//}
+//
+//#portal-megamenu ul li .megamenu-content a {
+//    font-weight: bold;
+//    padding: 0;
+//}
+//#portal-megamenu ul li .megamenu-content a:hover {
+//    background: transparent;
+//    color: #205c90;
+//    text-decoration: underline;
+//}
+//#portal-megamenu ul li .megamenu-content p {
+//    color: black;
+//}
+//
+//#portal-megamenu ul li .megamenu-title {
+//    margin-bottom: 1em;
+//}
+//
+//#portal-megamenu ul li .megamenu-image {
+//	margin-bottom: 1em;
+//}
+//
+//#portal-megamenu ul li .megamenu-content img {
+//	border: 1px solid transparent;
+//}
+//
+//#portal-megamenu ul li .megamenu-content a:hover img {
+//	border-color: #205C90;
+//}
+
+
+/* End Menu styling for Sunburst theme */

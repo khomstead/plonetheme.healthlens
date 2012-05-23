@@ -5812,6 +5812,82 @@ a.thumbnail:hover {
   background-repeat: no-repeat;
   background-position: left center;
 }
+/* Menu rendering */
+#collage ul.megamenu {
+  /* To prevent margin-left in collage compose view */
+
+  margin-left: 0;
+  padding-left: 0;
+}
+#portal-megamenu {
+  /* From Sunburst public.css: #portal-globalnav */
+
+  margin: 0 0 1em 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  list-style: none;
+}
+#portal-megamenu li.top-level {
+  float: left;
+  margin: 0;
+  position: relative;
+}
+#portal-megamenu li a.menu-item {
+  float: left;
+}
+#portal-megamenu li.top-level .sub {
+  position: absolute;
+  left: 0;
+  float: left;
+  display: none;
+  z-index: 4;
+}
+#portal-megamenu li.top-level .subShadow {
+  position: absolute;
+  z-index: 3;
+}
+#portal-megamenu li .menu-row {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+/* Reset width to auto for nested rows */
+#portal-megamenu li .menu_view_nested-menu .menu-row {
+  width: auto;
+}
+#portal-megamenu .sub ul {
+  list-style: none;
+  float: left;
+  width: 100%;
+}
+#portal-megamenu .sub ul li {
+  width: 100%;
+}
+#portal-megamenu .sub ul li span {
+  display: block;
+  white-space: nowrap;
+}
+#portal-megamenu .sub ul li a {
+  float: none;
+  height: auto;
+  display: block;
+  white-space: nowrap;
+}
+/* End Menu rendering */
+/* Content layout */
+#portal-megamenu ul li .megamenu-content a {
+  display: inline;
+  white-space: normal;
+}
+/* End Content layout */
+/* Display well menu options while composing */
+#collage.edit .menu-item {
+  margin-bottom: 1em;
+}
+/* End Display well menu options while composing */
+/* Menu styling for Sunburst theme */
+/* End Menu styling for Sunburst theme */
 /* @end */
 /* @group Layout Styles */
 body {
