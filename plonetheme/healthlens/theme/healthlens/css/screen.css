@@ -6118,9 +6118,8 @@ ul#portal-megamenu .sub ul li a:hover {
     margin: 0 10px 0 0;
   }
   #portal-megamenu .sub ul li {
-    display: inline-block !important;
+    display: inline !important;
     background-color: transparent;
-    white-space: nowrap;
   }
   #portal-megamenu .sub ul li span {
     display: block;
