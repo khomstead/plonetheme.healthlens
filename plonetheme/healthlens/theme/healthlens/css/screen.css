@@ -6478,32 +6478,15 @@ body.section-home-page #title-ribbon {
   font-family: 'Handlee', cursive;
   color: #fa8729;
 }
-.standard-document {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-}
-.standard-document h2 {
-  font-family: 'Handlee', cursive;
-  color: #666;
-  text-align: center;
-}
-.standard-document p {
-  font-size: 95%;
+.text-document p {
   color: #333;
   text-align: justify;
 }
-.standard-document img {
-  border: solid 3px #eaeaea;
+.text-document img {
+  border: solid 4px #eaeaea;
+  -webkit-box-shadow: 0 2px 3px #000001;
+  -moz-box-shadow: 0 2px 3px #000001;
+  box-shadow: 0 2px 3px #000001;
 }
 /*!
  * Bootstrap Responsive v2.0.1

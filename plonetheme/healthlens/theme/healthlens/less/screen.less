@@ -441,11 +441,9 @@ body.section-home-page #title-ribbon {display: none;}
 	& h2 {font-family: @blockqute-font-family; color: @global-nav-font-color;}
 }
 
-.standard-document {
-	.border-radius(8px);
-	& h2 {font-family: @blockqute-font-family; color: #666; text-align: center;}
-	& p {font-size: 95%; color: #333; text-align: justify;}
-	& img {border: solid 3px #eaeaea;}
+.text-document {
+	& p {color: #333; text-align: justify;}
+	& img {border: solid 4px #eaeaea; .box-shadow-custom(0, 2px, 3px, rgb(0, 0, 0.5));}
 
 }
 @import "responsive";
