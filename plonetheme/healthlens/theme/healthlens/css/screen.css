@@ -6459,8 +6459,8 @@ body.section-home-page #title-ribbon {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 .three-columns-equal .column-block {
-  width: 29%;
-  padding: 0 25px;
+  width: 30%;
+  padding: 0 20px;
 }
 .featured-document {
   padding: 2em;
