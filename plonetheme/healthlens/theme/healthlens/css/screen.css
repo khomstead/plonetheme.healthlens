@@ -6459,6 +6459,7 @@ body.section-home-page #title-ribbon {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 .featured-document {
+  padding: 2em;
   background-color: #fff6d3;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -6472,6 +6473,10 @@ body.section-home-page #title-ribbon {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
+}
+.featured-document h2 {
+  font-family: 'Handlee', cursive;
+  color: #fa8729;
 }
 /*!
  * Bootstrap Responsive v2.0.1
