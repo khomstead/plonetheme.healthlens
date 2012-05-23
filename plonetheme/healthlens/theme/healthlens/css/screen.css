@@ -6458,6 +6458,10 @@ body.section-home-page #title-ribbon {
   box-shadow: 0px 2px 6px 0px #999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
+.three-columns-equal {
+  width: 32.5%;
+  padding: 0 25px;
+}
 .featured-document {
   padding: 2em;
   background-color: #fff6d3;
@@ -6479,8 +6483,9 @@ body.section-home-page #title-ribbon {
   color: #fa8729;
 }
 .text-document p {
-  color: #333;
+  color: #666;
   text-align: justify;
+  line-height: normal;
 }
 .text-document img {
   border: solid 4px #eaeaea;
