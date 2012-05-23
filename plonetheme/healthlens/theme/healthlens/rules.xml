@@ -34,7 +34,7 @@
     <copy attributes="id dir" css:content="body" css:theme="body" />
     <append css:theme=".nav-collapse" css:content="ul#portal-megamenu"/>
     <append css:theme="#page" css:content="#portal-columns"/>  
-    <drop css:content=".breadcrumb"/> 
+    <drop css:content="portal-breadcrumb"/> 
     <drop css:content="#portal-header form"/> 
     <!--Content-->
     <replace css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
