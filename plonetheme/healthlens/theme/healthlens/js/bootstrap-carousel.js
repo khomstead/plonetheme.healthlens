@@ -154,4 +154,4 @@
     })
   })
 
-}( window.jQuery );
+}( window.jQuery_1_7_1 );
