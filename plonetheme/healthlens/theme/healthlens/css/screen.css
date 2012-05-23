@@ -6459,7 +6459,7 @@ body.section-home-page #title-ribbon {
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
 .three-columns-equal .column-block {
-  width: 30%;
+  width: 29% !important;
   padding: 0 20px;
 }
 .featured-document {
