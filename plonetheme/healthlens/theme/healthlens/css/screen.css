@@ -5638,7 +5638,12 @@ a.thumbnail:hover {
 /* @end */
 /* @group Theme */
 .background {
-  background: #f1e9b6 url('../images/treehouse/three-tree-background.jpg') repeat left center;
+  background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
+}
+.light {
+  background: transparent url('../images/vert-gradient300.png') repeat-x left top;
+  position: relative;
+  min-height: 600px;
 }
 /* @end */
 /* @group Gradients */
@@ -5815,7 +5820,7 @@ a.thumbnail:hover {
 /* @end */
 /* @group Layout Styles */
 body {
-  background: #f1e9b6 url('../images/treehouse/three-tree-background.jpg') repeat left center;
+  background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
   padding-top: 80px;
 }
 div.navbar.navbar-fixed-top {
@@ -5847,12 +5852,12 @@ div.navbar.navbar-fixed-top .navbar-inner {
   padding: 0;
 }
 .logo {
-  background: transparent url(../images/treehouse/logo2.png) no-repeat bottom left;
+  background: transparent url(../images/logo-med.png) no-repeat bottom left;
   height: 60px;
   margin: 0;
   float: left;
-  width: 35%;
-  min-width: 280px;
+  width: 30%;
+  min-width: 260px;
 }
 #personal-bar {
   width: 100%;
@@ -5976,7 +5981,7 @@ ul#portal-megamenu .sub ul li a:hover {
 }
 @media (min-width: 980px) {
   ul#portal-megamenu {
-    width: 65%;
+    width: 70%;
     margin: 0 !important;
     padding: 0;
     float: right;
@@ -6005,10 +6010,10 @@ ul#portal-megamenu .sub ul li a:hover {
     height: 60px;
     line-height: 80px;
     padding: 0 10px 0 10px;
-    color: #fa8729;
-    font-size: 1.2em;
+    color: #e5000f;
+    font-size: 1.4em;
     font-weight: 300;
-    font-family: 'Handlee', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
   ul#portal-megamenu > li > a span {
     display: none;
@@ -6157,9 +6162,9 @@ ul#portal-megamenu .sub ul li a:hover {
     float: none;
     font-size: 2em;
     font-weight: 300;
-    font-family: 'Handlee', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     padding: 10px !important;
-    color: #fa8729;
+    color: #e5000f;
   }
   ul#portal-megamenu li.top-level.active {
     -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9) inset;
@@ -6211,6 +6216,13 @@ ul#portal-megamenu .sub ul li a:hover {
   visibility: hidden;
 }
 /* @end */
+/* @group Images */
+img.image-left,
+img.image-right,
+.captioned img {
+  border: none;
+}
+/* @end */
 /* @group page title */
 #title-ribbon {
   -webkit-border-bottom-right-radius: 8px;
@@ -6245,7 +6257,8 @@ ul#portal-megamenu .sub ul li a:hover {
   /* IE6-9 */
 
 }
-body.section-home-page #title-ribbon {
+body.section-home-page #title-ribbon,
+body.section-landing-page #title-ribbon {
   display: none;
 }
 #page-title {
@@ -6255,7 +6268,7 @@ body.section-home-page #title-ribbon {
   font-size: 3em;
   line-height: 1em;
   letter-spacing: normal;
-  font-family: 'Lustria', serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #fff;
   font-weight: 500;
   padding: 0 0 5px 0;
@@ -6304,13 +6317,13 @@ body.section-home-page #title-ribbon {
   padding: 1em;
 }
 .carousel-title {
-  font: normal 4.5em/1em 'Lustria', serif;
+  font: normal 4.5em/1em 'Ubuntu', sans-serif;
   color: #fff;
   text-shadow: 0px 1px 4px #000;
 }
 .carousel-body p {
   font: normal 2em/1em 'Handlee', cursive;
-  color: #fa8729;
+  color: #e5000f;
   text-shadow: 0px 1px 2px #000;
   margin: 0;
 }
@@ -6366,6 +6379,92 @@ body.section-home-page #title-ribbon {
   .carousel-banners {
     height: 500px !important;
   }
+}
+/* @end */
+/* @group Typography */
+h1,
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+}
+/* @end */
+/* @group jQuery Thumbnails */
+.thumbs {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #eaeaea;
+  margin: 5px 1.8%;
+  display: inline-block;
+  /* required to hide the image after resized */
+
+  overflow: hidden;
+  /* for child absolute position */
+
+  position: relative;
+  /* display div in line */
+
+}
+.item:hover {
+  border-color: #0c7fd3;
+}
+.item .caption {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  /* fix it at the bottom */
+
+  position: absolute;
+  left: 0;
+  /* hide it by default */
+
+  display: none;
+  /* opacity setting */
+
+  filter: alpha(opacity=80);
+  /* ie  */
+
+  -moz-opacity: 0.8;
+  /* old mozilla browser like netscape  */
+
+  -khtml-opacity: 0.8;
+  /* for really really old safari */
+  opacity: 0.8;
+  /* css standard, currently it works in most modern browsers like firefox,  */
+
+}
+.item .caption a {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  color: #e5000f;
+  font-size: 16px;
+  /* add spacing and make the whole row clickable*/
+
+  padding: 5px;
+  display: block;
+}
+.item .caption p {
+  padding: 0 5px;
+  margin: 0;
+  font-size: 10px;
+  line-height: normal;
+}
+.item img {
+  border: 0;
+  /* allow javascript moves the img position*/
+
+  position: absolute;
+  max-width: 200%;
+}
+.clear {
+  clear: both;
 }
 /* @end */
 .alert-message {
@@ -6458,10 +6557,18 @@ body.section-home-page #title-ribbon {
   box-shadow: 0px 2px 6px 0px #999;
   behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc);
 }
-.three-columns-equal .column-block {
-  width: 29% !important;
-  padding: 0 20px;
+/*
+#collage .three-columns-equal .block_1, #collage .three-columns-equal .block_2, #collage .three-columns-equal .block_3 {
+	width: 29.5% !important;
+	min-width: 100px;
 }
+*/
+/*
+.three-columns-equal .column-block {
+	width: 29% !important;
+	padding: 0 20px;
+}
+*/
 .featured-document {
   padding: 2em;
   background-color: #fff6d3;
@@ -6480,18 +6587,7 @@ body.section-home-page #title-ribbon {
 }
 .featured-document h2 {
   font-family: 'Handlee', cursive;
-  color: #fa8729;
-}
-.text-document p {
-  color: #666;
-  text-align: justify;
-  line-height: normal;
-}
-.text-document img {
-  border: solid 4px #eaeaea;
-  -webkit-box-shadow: 0 2px 3px #000001;
-  -moz-box-shadow: 0 2px 3px #000001;
-  box-shadow: 0 2px 3px #000001;
+  color: #e5000f;
 }
 /*!
  * Bootstrap Responsive v2.0.1
