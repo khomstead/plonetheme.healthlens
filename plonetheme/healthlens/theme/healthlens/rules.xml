@@ -32,9 +32,13 @@
     <before content='/html/head' theme='/html/head' />
     <copy attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
-    <append css:theme=".nav-collapse" css:content="ul#portal-megamenu"/>
-    <append css:theme="#page" css:content="#portal-columns"/>  
+    <append css:theme=".nav-collapse" css:content="ul#portal-megamenu"/>    
+    <append css:theme="#page" css:content="#portal-columns"/>
+    <append css:theme="#page" css:content="#portlets-below"/>
+      
     <drop css:content="portal-breadcrumb"/> 
+        <drop css:content="#viewlet-below-content"/> 
+    
     <drop css:content="#portal-header form"/> 
     <!--Content-->
     <replace css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
