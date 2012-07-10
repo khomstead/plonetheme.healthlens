@@ -101,6 +101,28 @@ div.navbar.navbar-fixed-top {
 /* @end */   
 
 
+/* @group Collage*/
+.collage_type_topic {
+	padding: 8px;
+	right: -10px;
+	top: -60px;	
+	.minor-curl-effect(#eaeaea);
+background: rgb(226,226,226); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(226,226,226,1) 0%, rgba(254,254,254,1) 51%, rgba(209,209,209,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(226,226,226,1)), color-stop(51%,rgba(254,254,254,1)), color-stop(100%,rgba(209,209,209,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(226,226,226,1) 0%,rgba(254,254,254,1) 51%,rgba(209,209,209,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(226,226,226,1) 0%,rgba(254,254,254,1) 51%,rgba(209,209,209,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(226,226,226,1) 0%,rgba(254,254,254,1) 51%,rgba(209,209,209,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(226,226,226,1) 0%,rgba(254,254,254,1) 51%,rgba(209,209,209,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#d1d1d1',GradientType=1 ); /* IE6-9 */
+}
+
+.column-block {
+	position: relative !important;
+	min-width: 300px !important;
+}
+/* @end */
+
 /* @group MegaMenu Global Navigation*/
 ul#portal-megamenu > li, ul, a, ol {
 	margin: 0;
@@ -370,11 +392,8 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 .carousel-text {
 	width:  96%;
 	background: none;
-	text-align: right;
+	text-align: left;
 	padding: 1em;
-}
-
-.carousel-pager {
 }
 
 
@@ -392,9 +411,9 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 }
 
 .carousel-pager {
-	float: right;
+	float: left;
 	padding: 0 0 0 0;
-	margin: .5em 1em 0 0;
+	margin: .5em 0 0 2em;
 }
 .carousel-pager-item {
 	white-space: nowrap;
@@ -536,7 +555,7 @@ h1, h2 {
 	padding: 10px 10px 10px 30px;
 	margin: 5px 5px 10px 5px !important;
 	border-left: 4px solid @blockquote-border-color;
-	.minor-curl-effect; 
+	.minor-curl-effect(#fff); 
 	.no-csstransforms & {
 		box-shadow: 0px 2px 6px 0px #999;		
 		behavior: url(++theme++plonetheme.healthlens/pie/PIE.htc); 	
