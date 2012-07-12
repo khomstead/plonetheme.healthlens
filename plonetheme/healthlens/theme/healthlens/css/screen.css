@@ -7126,7 +7126,7 @@ body.section-landing-page #title-ribbon {
 .carousel-banner .carousel-image img {
   width: 100% !important;
   max-width: 100% !important;
-  max-height: 100%;
+  height: auto;
 }
 .carousel-text {
   width: 96%;
