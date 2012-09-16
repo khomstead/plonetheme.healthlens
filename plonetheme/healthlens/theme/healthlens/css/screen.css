@@ -135,7 +135,7 @@ textarea {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.85em;
+  font-size: 0.9em;
   line-height: 1.25em;
   color: #333333;
   background-color: #ffffff;
@@ -577,7 +577,7 @@ p {
   margin: 0 0 0.625em;
 }
 p small {
-  font-size: -1.15em;
+  font-size: -1.1em;
   color: #999999;
 }
 .lead {
@@ -781,7 +781,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: -0.15000000000000002em;
+  font-size: -0.09999999999999998em;
   color: #333333;
   -o-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -800,7 +800,7 @@ pre {
   display: block;
   padding: 0.125em;
   margin: 0 0 0.625em;
-  font-size: 0.78625em;
+  font-size: 0.8325em;
   line-height: 1.25em;
   word-break: break-all;
   word-wrap: break-word;
@@ -842,7 +842,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 1.875em;
-  font-size: 1.275em;
+  font-size: 1.35em;
   line-height: 2.5em;
   color: #333333;
   border: 0;
@@ -857,7 +857,7 @@ input,
 button,
 select,
 textarea {
-  font-size: 0.85em;
+  font-size: 0.9em;
   font-weight: normal;
   line-height: 1.25em;
 }
@@ -892,7 +892,7 @@ input[type="color"],
   height: 1.25em;
   padding: 4px;
   margin-bottom: 9px;
-  font-size: 0.85em;
+  font-size: 0.9em;
   line-height: 1.25em;
   color: #555555;
 }
@@ -2561,7 +2561,7 @@ button.close {
   *zoom: 1;
   padding: 4px 10px 4px;
   margin-bottom: 0;
-  font-size: 0.85em;
+  font-size: 0.9em;
   line-height: 1.25em;
   *line-height: 20px;
   color: #333333;
@@ -2670,7 +2670,7 @@ button.close {
 }
 .btn-large {
   padding: 9px 14px;
-  font-size: 2.85em;
+  font-size: 2.9em;
   line-height: normal;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -2684,7 +2684,7 @@ button.close {
 }
 .btn-small {
   padding: 5px 9px;
-  font-size: -1.15em;
+  font-size: -1.1em;
   line-height: -0.75em;
 }
 .btn-small [class^="icon-"] {
@@ -2692,7 +2692,7 @@ button.close {
 }
 .btn-mini {
   padding: 2px 6px;
-  font-size: -1.15em;
+  font-size: -1.1em;
   line-height: -2.75em;
 }
 .btn-primary,
@@ -4488,7 +4488,7 @@ a.thumbnail:hover {
 }
 .label,
 .badge {
-  font-size: 0.7191em;
+  font-size: 0.7614em;
   font-weight: bold;
   line-height: 14px;
   color: #ffffff;
@@ -5093,9 +5093,6 @@ a.badge:hover {
 body {
   background: #f1e9b6 url('../images/treehouse/background-pattern.jpg') repeat left center;
 }
-#content {
-  font-size: 1em;
-}
 div.navbar.navbar-fixed-top {
   top: 0;
   z-index: 100;
@@ -5608,7 +5605,7 @@ div.overlay-iframe,
 div.overlay-ajax {
   max-width: 420px;
   min-width: 200px;
-  font-size: 0.85em;
+  font-size: 100%;
   line-height: 1.25em;
 }
 .pb-ajax {
@@ -5618,6 +5615,9 @@ div.overlay-ajax {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+}
+#content a.link-overlay {
+  border-bottom: none !important;
 }
 /* @end */
 /* @group page title */
@@ -5780,6 +5780,9 @@ body.section-landing-page #title-ribbon {
 }
 /* @end */
 /* @group Typography */
+#content {
+  font-size: 100%;
+}
 h1,
 h2 {
   font-family: 'Lustria', serif;

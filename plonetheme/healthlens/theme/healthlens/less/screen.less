@@ -22,9 +22,6 @@ body {
 	// padding-top: @navbar-height + @personal-bar-height;
 }
 
-#content {
-  font-size: 1em;
-}
 
 div.navbar.navbar-fixed-top {
 	top: 0;
@@ -340,12 +337,17 @@ img.image-left, img.image-right, .captioned img, img.image-inline {
 div.overlay-iframe, div.overlay-ajax {
 	max-width: 420px;
 	min-width: 200px;
-	font-size: @baseFontSize;
+	font-size: 100%;
 	line-height: @baseLineHeight;
 }
 .pb-ajax {
 	.border-radius(6px);
 }
+
+#content a.link-overlay {
+    border-bottom: none !important;
+}
+
 /* @end */
 
 /* @group page title */
@@ -489,6 +491,11 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 /* @end */
 
 /* @group Typography */
+
+#content {
+	font-size: 100%;
+}
+
 h1, h2 {
 	font-family: @title-font-family;
 	font-weight: normal;
