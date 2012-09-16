@@ -70,6 +70,24 @@
     display: none;
 }
 
+// Center photos in the gallery portlet
+.portletGallery .portletItem {
+  text-align: center;
+}
+
+#content .contenttype-blog-entry {
+  .tileHeadline {
+    line-height: 1.2em;
+  }
+  p.tileBody {
+    margin-bottom: 0;
+  }
+}
+
+#content #parent-fieldname-title {
+  display: none;
+}
+
 /* @end */
 
 /* @group Megamenu */
@@ -77,13 +95,30 @@
     .sub ul li span.documentByLine, .summary img {
         display: none;
     }
-    .menu_view_standard h2 {
+    .menu_view_standard {
+      h2 {
         line-height: 1em;
         color: #fff;
+      }
+        
+      a h2 {
+        &:hover { 
+          color: @rollover;
+        }
+      }
     }
     .state-published {
-      color: red !important;
+      color: red;
     }
+    p {
+      color: @global-nav-font-color;
+      margin-left: 20px;
+    }
+    dt {
+      line-height: 1em;
+    }
+
+
 }
 /* @end */
 
