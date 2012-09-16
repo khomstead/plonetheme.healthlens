@@ -36,8 +36,8 @@
     <append css:theme="#page" css:content="#portal-columns"/>
     <append css:theme="#page" css:content="#portlets-below"/>
       
-    <drop css:content="portal-breadcrumb"/> 
-        <drop css:content="#viewlet-below-content"/> 
+    <drop css:content="#portal-breadcrumbs"/> 
+    <drop css:content="#viewlet-below-content"/> 
     
     <drop css:content="#portal-header form"/> 
     <!--Content-->
