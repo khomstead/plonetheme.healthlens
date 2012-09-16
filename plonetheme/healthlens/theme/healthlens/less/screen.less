@@ -335,6 +335,18 @@ img.image-left, img.image-right, .captioned img, img.image-inline {
 }
 /* @end */
 
+/* @group Overlay */
+
+div.overlay-iframe, div.overlay-ajax {
+	max-width: 420px;
+	min-width: 200px;
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
+}
+.pb-ajax {
+	.border-radius(6px);
+}
+/* @end */
 
 /* @group page title */
 #title-ribbon {
@@ -622,6 +634,8 @@ h1, h2 {
 //	& p {color: #666; text-align: justify; line-height: normal; }
 //	& img {border: solid 4px #eaeaea; .box-shadow-custom(0, 2px, 3px, rgb(0, 0, 0.5));}
 //}
+
+
 
 @import "responsive";
 //Some of the original CSS from MegaMenu Product
