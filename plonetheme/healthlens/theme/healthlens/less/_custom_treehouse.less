@@ -42,6 +42,10 @@
 @description-font-family: 'Handlee', cursive;
 @blockqute-font-family:  'Handlee', cursive;
 
+#content .pullquote {
+  font-size: 1.2em;
+}
+
 /* @end */
 
 /* @group Theme */
@@ -52,10 +56,47 @@
 .light { 
 //	background: transparent @body-overlay-image repeat-x left top;
 }
+
+#content .callout {
+    background: #F1E9B6;
+    border-left: 0;
+    border-radius: 4px;
+}
+.image-inline {
+    margin-right: 15px;
+}
+
+#collage .documentFirstHeading {
+    display: none;
+}
+
+/* @end */
+
+/* @group Megamenu */
+#portal-megamenu {
+    .sub ul li span.documentByLine, .summary img {
+        display: none;
+    }
+    .menu_view_standard h2 {
+        line-height: 1em;
+        color: #fff;
+    }
+    .state-published {
+      color: red !important;
+    }
+}
 /* @end */
 
 
 /* @group Gradients */
+.doormat-gradient {
+	background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #000000), color-stop(100%, #555555));
+	background-image: -webkit-radial-gradient(center 60px, #000000 400px, #555555 650px);
+	background-image: -moz-radial-gradient(center 60px, #000000 400px, #555555 650px);
+	background-image: -o-radial-gradient(center 60px, #000000 400px, #555555 650px);
+	background-image: -ms-radial-gradient(center 60px, #000000 400px, #555555 650px);
+	background-image: radial-gradient(center 60px, #000000 400px, #555555 650px);
+}
 .topbar-gradient {
 	background: black;
 	/* Old browsers */
@@ -102,3 +143,5 @@
           box-shadow: @shadow;
 }
 /* @end */
+
+
