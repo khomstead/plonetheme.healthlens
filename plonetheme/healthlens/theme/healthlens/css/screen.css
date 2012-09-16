@@ -135,8 +135,8 @@ textarea {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 0.8em;
+  line-height: 1em;
   color: #333333;
   background-color: #ffffff;
 }
@@ -574,17 +574,17 @@ a:hover {
   clear: both;
 }
 p {
-  margin: 0 0 0.75em;
+  margin: 0 0 0.5em;
 }
 p small {
-  font-size: -1em;
+  font-size: -1.2em;
   color: #999999;
 }
 .lead {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   font-size: 20px;
   font-weight: 200;
-  line-height: 2.25em;
+  line-height: 1.5em;
 }
 h1,
 h2,
@@ -609,21 +609,21 @@ h6 small {
 }
 h1 {
   font-size: 30px;
-  line-height: 3em;
+  line-height: 2em;
 }
 h1 small {
   font-size: 18px;
 }
 h2 {
   font-size: 24px;
-  line-height: 3em;
+  line-height: 2em;
 }
 h2 small {
   font-size: 18px;
 }
 h3 {
   font-size: 18px;
-  line-height: 2.25em;
+  line-height: 1.5em;
 }
 h3 small {
   font-size: 14px;
@@ -631,7 +631,7 @@ h3 small {
 h4,
 h5,
 h6 {
-  line-height: 1.5em;
+  line-height: 1em;
 }
 h4 {
   font-size: 14px;
@@ -648,8 +648,8 @@ h6 {
   text-transform: uppercase;
 }
 .page-header {
-  padding-bottom: 0.5em;
-  margin: 1.5em 0;
+  padding-bottom: 0em;
+  margin: 1em 0;
   border-bottom: 1px solid #eeeeee;
 }
 .page-header h1 {
@@ -658,7 +658,7 @@ h6 {
 ul,
 ol {
   padding: 0;
-  margin: 0 0 0.75em 25px;
+  margin: 0 0 0.5em 25px;
 }
 ul ul,
 ul ol,
@@ -673,7 +673,7 @@ ol {
   list-style: decimal;
 }
 li {
-  line-height: 1.5em;
+  line-height: 1em;
 }
 ul.unstyled,
 ol.unstyled {
@@ -681,18 +681,18 @@ ol.unstyled {
   list-style: none;
 }
 dl {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 dt,
 dd {
-  line-height: 1.5em;
+  line-height: 1em;
 }
 dt {
   font-weight: bold;
-  line-height: 0.5em;
+  line-height: 0em;
 }
 dd {
-  margin-left: 0.75em;
+  margin-left: 0.5em;
 }
 .dl-horizontal dt {
   float: left;
@@ -707,7 +707,7 @@ dd {
   margin-left: 130px;
 }
 hr {
-  margin: 1.5em 0;
+  margin: 1em 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
@@ -731,18 +731,18 @@ abbr.initialism {
 }
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 1.5em;
+  margin: 0 0 1em;
   border-left: 5px solid #eeeeee;
 }
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.875em;
+  line-height: 1.25em;
 }
 blockquote small {
   display: block;
-  line-height: 1.5em;
+  line-height: 1em;
   color: #999999;
 }
 blockquote small:before {
@@ -767,9 +767,9 @@ blockquote:after {
 }
 address {
   display: block;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   font-style: normal;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 small {
   font-size: 100%;
@@ -781,7 +781,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 0em;
+  font-size: -0.19999999999999996em;
   color: #333333;
   -o-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -798,10 +798,10 @@ code {
 }
 pre {
   display: block;
-  padding: 0.25em;
-  margin: 0 0 0.75em;
-  font-size: 0.925em;
-  line-height: 1.5em;
+  padding: 0em;
+  margin: 0 0 0.5em;
+  font-size: 0.7400000000000001em;
+  line-height: 1em;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -817,7 +817,7 @@ pre {
   border-radius: 4px;
 }
 pre.prettyprint {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 pre code {
   padding: 0;
@@ -830,7 +830,7 @@ pre code {
   overflow-y: scroll;
 }
 form {
-  margin: 0 0 1.5em;
+  margin: 0 0 1em;
 }
 fieldset {
   padding: 0;
@@ -841,15 +841,15 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 2.25em;
-  font-size: 1.5em;
-  line-height: 3em;
+  margin-bottom: 1.5em;
+  font-size: 1.2000000000000002em;
+  line-height: 2em;
   color: #333333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 legend small {
-  font-size: 1.125em;
+  font-size: 0.75em;
   color: #999999;
 }
 label,
@@ -857,9 +857,9 @@ input,
 button,
 select,
 textarea {
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 input,
 button,
@@ -889,11 +889,11 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 1.5em;
+  height: 1em;
   padding: 4px;
   margin-bottom: 9px;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 0.8em;
+  line-height: 1em;
   color: #555555;
 }
 input,
@@ -1356,9 +1356,9 @@ select:focus:required:invalid:focus {
   box-shadow: 0 0 6px #f8b9b7;
 }
 .form-actions {
-  padding: 0.5em 20px 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  padding: 0em 20px 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
   *zoom: 1;
@@ -1413,7 +1413,7 @@ select:focus:required:invalid:focus {
 }
 .help-block {
   display: block;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
 }
 .help-inline {
   display: inline-block;
@@ -1461,11 +1461,11 @@ select:focus:required:invalid:focus {
 .input-append .add-on {
   display: inline-block;
   width: auto;
-  height: 1.5em;
+  height: 1em;
   min-width: 16px;
   padding: 4px 5px;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 1em;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
   vertical-align: middle;
@@ -1630,14 +1630,14 @@ select:focus:required:invalid:focus {
   margin-left: 0;
 }
 .control-group {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
 }
 legend + .control-group {
-  margin-top: 1.5em;
+  margin-top: 1em;
   -webkit-margin-top-collapse: separate;
 }
 .form-horizontal .control-group {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   *zoom: 1;
 }
 .form-horizontal .control-group:before,
@@ -1672,7 +1672,7 @@ legend + .control-group {
   *padding-left: 160px;
 }
 .form-horizontal .help-block {
-  margin-top: 0.75em;
+  margin-top: 0.5em;
   margin-bottom: 0;
 }
 .form-horizontal .form-actions {
@@ -1686,12 +1686,12 @@ table {
 }
 .table {
   width: 100%;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 .table th,
 .table td {
   padding: 8px;
-  line-height: 1.5em;
+  line-height: 1em;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
@@ -2413,7 +2413,7 @@ table .span24 {
 .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
-  margin: -0.25em 1px;
+  margin: -0.5em 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -2424,7 +2424,7 @@ table .span24 {
   padding: 3px 15px;
   clear: both;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 1em;
   color: #333333;
   white-space: nowrap;
 }
@@ -2533,7 +2533,7 @@ table .span24 {
   float: right;
   font-size: 20px;
   font-weight: bold;
-  line-height: 1.5em;
+  line-height: 1em;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
@@ -2561,8 +2561,8 @@ button.close {
   *zoom: 1;
   padding: 4px 10px 4px;
   margin-bottom: 0;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 0.8em;
+  line-height: 1em;
   *line-height: 20px;
   color: #333333;
   text-align: center;
@@ -2670,7 +2670,7 @@ button.close {
 }
 .btn-large {
   padding: 9px 14px;
-  font-size: 3em;
+  font-size: 2.8em;
   line-height: normal;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -2684,16 +2684,16 @@ button.close {
 }
 .btn-small {
   padding: 5px 9px;
-  font-size: -1em;
-  line-height: -0.5em;
+  font-size: -1.2em;
+  line-height: -1em;
 }
 .btn-small [class^="icon-"] {
   margin-top: -1px;
 }
 .btn-mini {
   padding: 2px 6px;
-  font-size: -1em;
-  line-height: -2.5em;
+  font-size: -1.2em;
+  line-height: -3em;
 }
 .btn-primary,
 .btn-primary:hover,
@@ -3024,8 +3024,8 @@ input[type="submit"].btn.btn-mini {
   margin-left: 5px;
 }
 .btn-toolbar {
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 .btn-toolbar .btn-group {
   display: inline-block;
@@ -3177,7 +3177,7 @@ input[type="submit"].btn.btn-mini {
 }
 .alert {
   padding: 8px 35px 8px 14px;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
@@ -3227,7 +3227,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav {
   margin-left: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   list-style: none;
 }
 .nav > li > a {
@@ -3245,7 +3245,7 @@ input[type="submit"].btn.btn-mini {
   padding: 3px 15px;
   font-size: 11px;
   font-weight: bold;
-  line-height: 1.5em;
+  line-height: 1em;
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
@@ -3279,7 +3279,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list .divider {
   *width: 100%;
   height: 1px;
-  margin: -0.25em 1px;
+  margin: -0.5em 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -3331,7 +3331,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
-  line-height: 1.5em;
+  line-height: 1em;
   border: 1px solid transparent;
   -o-border-radius: 4px 4px 0 0;
   -ms-border-radius: 4px 4px 0 0;
@@ -3582,7 +3582,7 @@ input[type="submit"].btn.btn-mini {
   *position: relative;
   *z-index: 2;
   overflow: visible;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 .navbar-inner {
   min-height: 40px;
@@ -3799,7 +3799,7 @@ input[type="submit"].btn.btn-mini {
   display: inline-block;
   padding: 4px 10px 4px;
   margin: 5px 5px 6px;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 .navbar .btn-group {
   margin: 0;
@@ -3963,7 +3963,7 @@ input[type="submit"].btn.btn-mini {
 }
 .breadcrumb {
   padding: 7px 14px;
-  margin: 0 0 1.5em;
+  margin: 0 0 1em;
   list-style: none;
   background-color: #fbfbfb;
   background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
@@ -4001,8 +4001,8 @@ input[type="submit"].btn.btn-mini {
   color: #333333;
 }
 .pagination {
-  height: 3em;
-  margin: 1.5em 0;
+  height: 2em;
+  margin: 1em 0;
 }
 .pagination ul {
   display: inline-block;
@@ -4028,7 +4028,7 @@ input[type="submit"].btn.btn-mini {
 .pagination a {
   float: left;
   padding: 0 14px;
-  line-height: 1em;
+  line-height: 0em;
   text-decoration: none;
   border: 1px solid #ddd;
   border-left-width: 0;
@@ -4073,7 +4073,7 @@ input[type="submit"].btn.btn-mini {
 }
 .pager {
   margin-left: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   list-style: none;
   text-align: center;
   *zoom: 1;
@@ -4453,7 +4453,7 @@ input[type="submit"].btn.btn-mini {
 }
 .thumbnails > li {
   float: left;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   margin-left: 20px;
 }
 .thumbnail {
@@ -4488,7 +4488,7 @@ a.thumbnail:hover {
 }
 .label,
 .badge {
-  font-size: 0.846em;
+  font-size: 0.6768000000000001em;
   font-weight: bold;
   line-height: 14px;
   color: #ffffff;
@@ -4754,7 +4754,7 @@ a.badge:hover {
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .accordion {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 .accordion-group {
   margin-bottom: 2px;
@@ -4782,7 +4782,7 @@ a.badge:hover {
 }
 .carousel {
   position: relative;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   line-height: 1;
 }
 .carousel-inner {
@@ -4900,7 +4900,7 @@ a.badge:hover {
 .hero-unit p {
   font-size: 18px;
   font-weight: 200;
-  line-height: 2.25em;
+  line-height: 1.5em;
   color: inherit;
 }
 .pull-right {
@@ -5333,7 +5333,22 @@ div.navbar.navbar-fixed-top .navbar-inner {
 }
 .column-block {
   position: relative !important;
-  min-width: 300px !important;
+}
+div.standard-document {
+  padding: .5em;
+}
+div.standard-document h2 {
+  line-height: 1.5em;
+  text-align: center;
+}
+.featured-document {
+  background-color: #fff6d3;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 /* @end */
 /* @group MegaMenu Global Navigation*/
@@ -5582,8 +5597,10 @@ ul#portal-megamenu .sub ul li a:hover {
 /* @group Images */
 img.image-left,
 img.image-right,
-.captioned img {
-  border: none;
+.captioned img,
+img.image-inline {
+  border: 4px solid #eaeaea;
+  margin-left: -4px;
 }
 /* @end */
 /* @group page title */
@@ -5756,8 +5773,16 @@ h2 {
 .thumbs {
   margin-left: auto;
   margin-right: auto;
+  padding: 1em 0 1em 0;
   position: relative;
   text-align: center;
+  background-color: #B3C0AE;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 .item {
   width: 125px;
@@ -5835,7 +5860,7 @@ h2 {
 /* @end */
 .alert-message {
   padding: 8px 35px 8px 14px;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
@@ -5935,20 +5960,6 @@ h2 {
 	padding: 0 20px;
 }
 */
-.featured-document {
-  padding: 2em;
-  background-color: #fff6d3;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-}
-.featured-document h2 {
-  font-family: 'Handlee', cursive;
-  color: #fa8729;
-}
 /*!
  * Bootstrap Responsive v2.0.4
  *
@@ -6041,7 +6052,7 @@ h2 {
   }
   .page-header h1 small {
     display: block;
-    line-height: 1.5em;
+    line-height: 1em;
   }
   input[type="checkbox"],
   input[type="radio"] {
@@ -7066,10 +7077,10 @@ h2 {
     position: static;
   }
   .navbar-fixed-top {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
   }
   .navbar-fixed-bottom {
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
@@ -7089,7 +7100,7 @@ h2 {
   }
   .nav-collapse .nav {
     float: none;
-    margin: 0 0 0.75em;
+    margin: 0 0 0.5em;
   }
   .nav-collapse .nav > li {
     float: none;
@@ -7168,8 +7179,8 @@ h2 {
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
-    padding: 0.75em 15px;
-    margin: 0.75em 0;
+    padding: 0.5em 15px;
+    margin: 0.5em 0;
     border-top: 1px solid #222222;
     border-bottom: 1px solid #222222;
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
