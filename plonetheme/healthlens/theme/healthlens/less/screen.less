@@ -123,8 +123,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 
 .column-block {
 	position: relative !important;
-	min-width: 300px !important;
+//	min-width: 300px !important;
 }
+
+div.standard-document {
+	padding: .5em;
+}
+
+
+div.standard-document h2 {
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.featured-document {
+	background-color: @collage-featured-backgroud-color;
+	.border-radius(4px);
+}
+
+
 /* @end */
 
 /* @group MegaMenu Global Navigation*/
@@ -311,8 +328,10 @@ ul#portal-megamenu .sub ul li a:hover {
 /* @end */
 
 /* @group Images */
-img.image-left, img.image-right, .captioned img {
-	border: none;
+img.image-left, img.image-right, .captioned img, img.image-inline {
+    border:4px solid #eaeaea;  
+    margin-left:  -4px;
+    
 }
 /* @end */
 
@@ -469,8 +488,11 @@ h1, h2 {
 .thumbs {
 	margin-left: auto;
 	margin-right: auto;
+	padding: 1em 0 1em 0;
 	position: relative;
 	text-align: center;
+	background-color: #B3C0AE;
+	.border-radius(4px);
 }
 
 .item {
@@ -595,12 +617,6 @@ h1, h2 {
 }
 */
 
-.featured-document {
-	padding: 2em;
-	background-color: @collage-featured-backgroud-color;
-	.border-radius(8px);
-	& h2 {font-family: @blockqute-font-family; color: @global-nav-font-color;}
-}
 
 //.text-document {
 //	& p {color: #666; text-align: justify; line-height: normal; }
