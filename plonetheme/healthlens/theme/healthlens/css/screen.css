@@ -5786,9 +5786,11 @@ body.section-landing-page #title-ribbon {
   margin: 0;
 }
 .carousel-pager {
-  float: left;
+  float: right;
   padding: 0 0 0 0;
-  margin: .5em 0 0 2em;
+  margin: 0 1em 0 0;
+  position: relative;
+  bottom: 40px;
 }
 .carousel-pager-item {
   white-space: nowrap;
@@ -5843,6 +5845,7 @@ body.section-landing-page #title-ribbon {
 #content {
   font-size: 100%;
   line-height: 1.25em !important;
+  margin: 0;
 }
 h1,
 h2 {
