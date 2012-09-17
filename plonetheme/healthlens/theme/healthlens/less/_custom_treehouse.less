@@ -88,6 +88,13 @@
   display: none;
 }
 
+.close {
+  opacity: 1;
+}
+
+.pb-ajax {
+  box-shadow: 0px 0px 3em 0.5em rgb(0,0,0);
+}
 /* @end */
 
 /* @group Megamenu */
@@ -99,6 +106,7 @@
       h2 {
         line-height: 1em;
         color: #fff;
+        text-align: left;
       }
         
       a h2 {
@@ -110,7 +118,7 @@
     .state-published {
       color: red;
     }
-    p {
+    p, span.description {
       color: @global-nav-font-color;
       margin-left: 20px;
     }
