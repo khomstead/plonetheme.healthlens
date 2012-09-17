@@ -4944,6 +4944,18 @@ a.badge:hover {
 #collage .documentFirstHeading {
   display: none;
 }
+.portletGallery .portletItem {
+  text-align: center;
+}
+#content .contenttype-blog-entry .tileHeadline {
+  line-height: 1.2em;
+}
+#content .contenttype-blog-entry p.tileBody {
+  margin-bottom: 0;
+}
+#content #parent-fieldname-title {
+  display: none;
+}
 /* @end */
 /* @group Megamenu */
 #portal-megamenu .sub ul li span.documentByLine,
@@ -4954,18 +4966,49 @@ a.badge:hover {
   line-height: 1em;
   color: #fff;
 }
+#portal-megamenu .menu_view_standard a h2:hover {
+  color: #8fcb43;
+}
 #portal-megamenu .state-published {
-  color: red !important;
+  color: red;
+}
+#portal-megamenu p {
+  color: #fa8729;
+  margin-left: 20px;
+}
+#portal-megamenu dt {
+  line-height: 1em;
 }
 /* @end */
 /* @group Gradients */
 .doormat-gradient {
-  background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #000000), color-stop(100%, #555555));
-  background-image: -webkit-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -moz-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -o-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -ms-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: radial-gradient(center 60px, #000000 400px, #555555 650px);
+  background: #1a75ba;
+  /* Old browsers */
+
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhNzViYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODM4NWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a75ba), color-stop(100%, #08385c));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #1a75ba 0%, #08385c 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#1a75ba', endColorstr='#08385c', GradientType=0);
+  /* IE6-8 */
+
 }
 .topbar-gradient {
   background: black;
@@ -5236,20 +5279,37 @@ div.navbar.navbar-fixed-top .navbar-inner {
   display: block;
 }
 #portlets-below {
-  padding: 0 0 0 0;
+  padding: 1em 0 0 0;
   margin: 0 0 10px 0;
-  background-image: -webkit-gradient(radial, center 60px, 0, center 60px, 650, color-stop(61.538%, #000000), color-stop(100%, #555555));
-  background-image: -webkit-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -moz-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -o-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: -ms-radial-gradient(center 60px, #000000 400px, #555555 650px);
-  background-image: radial-gradient(center 60px, #000000 400px, #555555 650px);
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  background: #1a75ba;
+  /* Old browsers */
+
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhNzViYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODM4NWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a75ba), color-stop(100%, #08385c));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #1a75ba 0%, #08385c 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#1a75ba', endColorstr='#08385c', GradientType=0);
+  /* IE6-8 */
+
+  min-height: 140px;
+  color: #fff;
 }
 /* @end *//* @group Collage*/
 .collage_type_topic {
@@ -5726,9 +5786,11 @@ body.section-landing-page #title-ribbon {
   margin: 0;
 }
 .carousel-pager {
-  float: left;
+  float: right;
   padding: 0 0 0 0;
-  margin: .5em 0 0 2em;
+  margin: 0 1em 0 0;
+  position: relative;
+  bottom: 40px;
 }
 .carousel-pager-item {
   white-space: nowrap;
@@ -5782,6 +5844,8 @@ body.section-landing-page #title-ribbon {
 /* @group Typography */
 #content {
   font-size: 100%;
+  line-height: 1.25em !important;
+  margin: 0;
 }
 h1,
 h2 {
@@ -5793,10 +5857,10 @@ h2 {
 .thumbs {
   margin-left: auto;
   margin-right: auto;
-  padding: 1em 0 1em 0;
+  padding: 1em 0 .3em 0;
   position: relative;
   text-align: center;
-  background-color: #B3C0AE;
+  background-color: #a9be9f;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -khtml-border-radius: 4px;
@@ -6058,6 +6122,16 @@ h2 {
   }
 }
 @media (max-width: 480px) {
+  div.cell {
+    float: none;
+  }
+  div.width-1\:4,
+  div.width-3\:4 {
+    width: 100%;
+  }
+  div.position-3\:4 {
+    margin-left: -100%;
+  }
   #collage .column-block.block_1,
   #collage .column-block.block_2,
   #collage .column-block.block_3,

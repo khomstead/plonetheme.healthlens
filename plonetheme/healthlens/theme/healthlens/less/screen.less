@@ -91,10 +91,12 @@ div.navbar.navbar-fixed-top {
 }
 
 #portlets-below {
-	padding: 0 0 0 0;
+	padding: 1em 0 0 0;
 	margin:  0 0 10px 0;
 	.doormat-gradient;
-	.top-border-radius(4px);
+	min-height: 140px;
+	color: #fff;
+//	.border-radius(4px);
 }
 
 .no-cssgradients #portlets-below {
@@ -449,10 +451,13 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 }
 
 .carousel-pager {
-	float: left;
+	float: right;
 	padding: 0 0 0 0;
-	margin: .5em 0 0 2em;
+	margin: 0 1em 0 0;
+	position: relative;
+	bottom: 40px;
 }
+
 .carousel-pager-item {
 	white-space: nowrap;
 	text-indent: -9999px;
@@ -494,6 +499,8 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 
 #content {
 	font-size: 100%;
+	line-height: @baseLineHeight !important;
+	margin: 0;
 }
 
 h1, h2 {
@@ -507,10 +514,10 @@ h1, h2 {
 .thumbs {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 1em 0 1em 0;
+	padding: 1em 0 .3em 0;
 	position: relative;
 	text-align: center;
-	background-color: #B3C0AE;
+	background-color: @thumbs-color;
 	.border-radius(4px);
 }
 
