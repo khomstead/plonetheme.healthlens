@@ -251,7 +251,8 @@ ul#portal-megamenu .sub ul li a:hover {
 	
 	
 	#portal-megamenu .sub ul li {
-		display: inline !important;
+		//display: inline !important;
+        float: left;
 		background-color: transparent;   
 //		white-space:nowrap;
 	}
@@ -276,12 +277,12 @@ ul#portal-megamenu .sub ul li a:hover {
 				.border-radius(5px);
 				border: thin solid #333;
 				& a {
-					width: 100%;
-					float: none;
+					width: auto;
+					float: left;
 					font-size: 2em;
 					font-weight: @global-nav-font-weight;
 					font-family: @global-nav-font-family;
-					padding: 10px !important;  
+					padding: 10px;  
 					color: @global-nav-font-color;
 					 
 					}
@@ -295,15 +296,15 @@ ul#portal-megamenu .sub ul li a:hover {
 					position: relative;
 					padding: 10px 20px;
 					border: none;
-					width: 100%;
+					width: auto;
 					& a {
 						.border-radius(10px);
-						display: inline;
+						display: block;
 						background: #555;
 						color: #999;
 						font-family: @baseFontFamily;
 						font-size: 2em; 
-						line-height: 2.5em;
+						line-height: 1.2em;
 						white-space: nowrap;
 						padding: 8px;
 						margin: 4px;
