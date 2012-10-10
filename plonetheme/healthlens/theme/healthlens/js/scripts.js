@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    
+    $('.overlay-profile').prepOverlay({
+        subtype: 'ajax',
+        filter: '#content > *',
+        config: { 
+            mask: {
+                color: '#000',
+                opacity: 0.7
+            },
+        }
+    });
  
     //move the image in pixel
     var move = -15;
