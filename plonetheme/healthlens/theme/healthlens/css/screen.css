@@ -3788,7 +3788,6 @@ input[type="submit"].btn.btn-mini {
   float: left;
 }
 .navbar .nav > li > a {
-  float: none;
   padding: 9px 10px 11px;
   line-height: 19px;
   color: #999999;
@@ -4925,91 +4924,18 @@ a.badge:hover {
 /* @group Images */
 /* @end */
 /* @group Typography */
-#content .pullquote {
-  font-size: 1.2em;
-}
 /* @end */
 /* @group Theme */
 .background {
-  background: #f1e9b6 url('../images/treehouse/background-pattern.jpg') repeat left center;
+  background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
 }
-#content .callout {
-  background: #F1E9B6;
-  border-left: 0;
-  border-radius: 4px;
-}
-.image-inline {
-  margin-right: 15px;
-}
-#collage .documentFirstHeading {
-  display: none;
-}
-.portletGallery .portletItem {
-  text-align: center;
-}
-#content .contenttype-blog-entry .tileHeadline {
-  line-height: 1.2em;
-}
-#content .contenttype-blog-entry p.tileBody {
-  margin-bottom: 0;
-}
-#content #parent-fieldname-title {
-  display: none;
-}
-/* @end */
-/* @group Megamenu */
-#portal-megamenu .sub ul li span.documentByLine,
-#portal-megamenu .summary img {
-  display: none;
-}
-#portal-megamenu .menu_view_standard h2 {
-  line-height: 1em;
-  color: #fff;
-}
-#portal-megamenu .menu_view_standard a h2:hover {
-  color: #8fcb43;
-}
-#portal-megamenu .state-published {
-  color: red;
-}
-#portal-megamenu p {
-  color: #fa8729;
-  margin-left: 20px;
-}
-#portal-megamenu dt {
-  line-height: 1em;
+.light {
+  background: transparent url('../images/vert-gradient300.png') repeat-x left top;
+  position: relative;
+  min-height: 600px;
 }
 /* @end */
 /* @group Gradients */
-.doormat-gradient {
-  background: #1a75ba;
-  /* Old browsers */
-
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhNzViYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODM4NWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #1a75ba 0%, #08385c 100%);
-  /* FF3.6+ */
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a75ba), color-stop(100%, #08385c));
-  /* Chrome,Safari4+ */
-
-  background: -webkit-linear-gradient(top, #1a75ba 0%, #08385c 100%);
-  /* Chrome10+,Safari5.1+ */
-
-  background: -o-linear-gradient(top, #1a75ba 0%, #08385c 100%);
-  /* Opera 11.10+ */
-
-  background: -ms-linear-gradient(top, #1a75ba 0%, #08385c 100%);
-  /* IE10+ */
-
-  background: linear-gradient(to bottom, #1a75ba 0%, #08385c 100%);
-  /* W3C */
-
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#1a75ba', endColorstr='#08385c', GradientType=0);
-  /* IE6-8 */
-
-}
 .topbar-gradient {
   background: black;
   /* Old browsers */
@@ -5082,6 +5008,35 @@ a.badge:hover {
   background: linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
   /* W3C */
 }
+.doormat-gradient {
+  background: #1a75ba;
+  /* Old browsers */
+
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhNzViYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODM4NWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a75ba), color-stop(100%, #08385c));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #1a75ba 0%, #08385c 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #1a75ba 0%, #08385c 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#1a75ba', endColorstr='#08385c', GradientType=0);
+  /* IE6-8 */
+
+}
 /* @end */
 /* @group Shadows*/
 /* @end */
@@ -5134,7 +5089,7 @@ a.badge:hover {
 /* @end */
 /* @group Layout Styles */
 body {
-  background: #f1e9b6 url('../images/treehouse/background-pattern.jpg') repeat left center;
+  background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
 }
 div.navbar.navbar-fixed-top {
   top: 0;
@@ -5164,12 +5119,12 @@ div.navbar.navbar-fixed-top .navbar-inner {
   padding: 0;
 }
 .logo {
-  background: transparent url(../images/treehouse/logo2.png) no-repeat bottom left;
+  background: transparent url(../images/logo-med.png) no-repeat bottom left;
   height: 60px;
   margin: 0;
   float: left;
-  width: 35%;
-  min-width: 280px;
+  width: 30%;
+  min-width: 260px;
 }
 #personal-bar {
   width: 100%;
@@ -5424,7 +5379,7 @@ ul#portal-megamenu .sub ul li a:visited {
   color: red;
   padding: 5px;
   font-size: 1.2em;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 ul#portal-megamenu .sub ul li a.collage-megamenu-highlight {
   font-size: 1.5em;
@@ -5437,7 +5392,7 @@ ul#portal-megamenu .sub ul li a:hover {
 }
 @media (min-width: 980px) {
   ul#portal-megamenu {
-    width: 65%;
+    width: 70%;
     margin: 0 !important;
     padding: 0;
     float: right;
@@ -5466,10 +5421,10 @@ ul#portal-megamenu .sub ul li a:hover {
     height: 60px;
     line-height: 80px;
     padding: 0 10px 0 10px;
-    color: #fa8729;
-    font-size: 1.2em;
+    color: #008000;
+    font-size: 1.4em;
     font-weight: 300;
-    font-family: 'Handlee', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
   ul#portal-megamenu > li > a span {
     display: none;
@@ -5570,7 +5525,7 @@ ul#portal-megamenu .sub ul li a:hover {
     margin: 0 10px 0 0;
   }
   #portal-megamenu .sub ul li {
-    display: inline !important;
+    float: left;
     background-color: transparent;
   }
   #portal-megamenu .sub ul li span {
@@ -5599,13 +5554,13 @@ ul#portal-megamenu .sub ul li a:hover {
     border: thin solid #333;
   }
   ul#portal-megamenu li.top-level a {
-    width: 100%;
-    float: none;
+    width: auto;
+    float: left;
     font-size: 2em;
     font-weight: 300;
-    font-family: 'Handlee', sans-serif;
-    padding: 10px !important;
-    color: #fa8729;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    color: #008000;
   }
   ul#portal-megamenu li.top-level.active {
     -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9) inset;
@@ -5621,7 +5576,7 @@ ul#portal-megamenu .sub ul li a:hover {
     position: relative;
     padding: 10px 20px;
     border: none;
-    width: 100%;
+    width: auto;
   }
   ul#portal-megamenu li.top-level .sub a {
     -o-border-radius: 10px;
@@ -5630,12 +5585,12 @@ ul#portal-megamenu .sub ul li a:hover {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    display: inline;
+    display: block;
     background: #555;
     color: #999;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2em;
-    line-height: 2.5em;
+    line-height: 1.2em;
     white-space: nowrap;
     padding: 8px;
     margin: 4px;
@@ -5725,7 +5680,7 @@ body.section-landing-page #title-ribbon {
   font-size: 3em;
   line-height: 1em;
   letter-spacing: normal;
-  font-family: 'Lustria', serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #fff;
   font-weight: 500;
   padding: 0 0 5px 0;
@@ -5775,13 +5730,13 @@ body.section-landing-page #title-ribbon {
   padding: 1em;
 }
 .carousel-title {
-  font: normal 4.5em/1em 'Lustria', serif;
+  font: normal 4.5em/1em 'Ubuntu', sans-serif;
   color: #fff;
   text-shadow: 0px 1px 4px #000;
 }
 .carousel-body p {
   font: normal 2em/1em 'Handlee', cursive;
-  color: #fa8729;
+  color: #008000;
   text-shadow: 0px 1px 2px #000;
   margin: 0;
 }
@@ -5849,7 +5804,7 @@ body.section-landing-page #title-ribbon {
 }
 h1,
 h2 {
-  font-family: 'Lustria', serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: normal;
 }
 /* @end */
@@ -5860,7 +5815,7 @@ h2 {
   padding: 1em 0 .3em 0;
   position: relative;
   text-align: center;
-  background-color: #a9be9f;
+  background-color: transparent;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -khtml-border-radius: 4px;
@@ -5914,9 +5869,9 @@ h2 {
 
 }
 .item .caption a {
-  font-family: 'Lustria', serif;
+  font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
-  color: #fa8729;
+  color: #008000;
   font-size: 16px;
   /* add spacing and make the whole row clickable*/
 
@@ -6122,6 +6077,10 @@ h2 {
   }
 }
 @media (max-width: 480px) {
+  #portal-megamenu p,
+  #portal-megamenu .sub ul li span.description {
+    display: none;
+  }
   div.cell {
     float: none;
   }
@@ -7163,6 +7122,13 @@ h2 {
   }
 }
 @media (max-width: 979px) {
+  #portal-megamenu p,
+  #portal-megamenu .sub ul li span.description {
+    display: none;
+  }
+  #portal-megamenu a h2 {
+    display: inline;
+  }
   body {
     padding-top: 0;
   }
@@ -7361,7 +7327,7 @@ h2 {
   white-space: nowrap;
 }
 #portal-megamenu .sub ul li a {
-  float: none;
+  float: left;
   height: auto;
   display: block;
   white-space: nowrap;
