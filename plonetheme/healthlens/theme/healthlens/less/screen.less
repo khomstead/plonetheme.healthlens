@@ -29,6 +29,7 @@ body {
 div.navbar.navbar-fixed-top {
 	top: 0;
 	//width: 100%;
+	position: fixed;
 	z-index: 100;
 	margin-bottom: 0; 
 	& .navbar-inner {
@@ -53,20 +54,18 @@ div.navbar.navbar-fixed-top {
 	/* position: fixed; */
 	z-index: 99;
 	top: @navbar-height;
-	.box-shadow-custom(0, 2px, 5px, rgb(0, 0, 0.5));
+	position: fixed;
 }
 
 .cssgradients #personal-bar {
-	height: @personal-bar-height;
-	.box-shadow-custom(0, 0, 10px, black);
 	border-bottom: 2px solid @muted-accent-shadow;
 	border-top: 2px solid @muted-accent-highlight; 
-	.linear-gradient(@muted-accent-shadow, @muted-accent-highlight);
+	.linear-gradient(@muted-accent-shadow, @muted-accent-highlight);	
+	.box-shadow-custom(0, 4px, 10px, rgb(0, 0, 0.5));
 } 
 
 .no-cssgradients #personal-bar {
 	background: transparent url('../images/personal-bar-background.png') repeat-x top;
-	height: @personal-bar-height;
 }
 
 // transparent gradient overlay on body wallpaper
@@ -75,7 +74,7 @@ div.navbar.navbar-fixed-top {
 #page-wrapper {
 	z-index:1;
 	.curl-effect(100px);
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 }
 
 #page {
@@ -84,7 +83,7 @@ div.navbar.navbar-fixed-top {
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);  
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);   
 	padding: 0px 10px 0 10px;
-	position: relative;
+	position: absolute;
 	z-index: 1;		
 }
 
@@ -487,8 +486,8 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 	
 }
 @media (min-width: 980px) {
-	.carousel {margin: 0 -21px;}
-	.carousel-banners {height: 400px !important; font-size: 100%;}
+	.carousel {margin: 0 -24px;}
+	.carousel-banners {height: 450px !important; font-size: 100%;}
 	
 }
 @media (min-width: 1600px) {

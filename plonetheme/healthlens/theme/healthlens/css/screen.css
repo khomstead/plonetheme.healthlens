@@ -5098,6 +5098,7 @@ body {
 }
 div.navbar.navbar-fixed-top {
   top: 0;
+  position: fixed;
   z-index: 100;
   margin-bottom: 0;
 }
@@ -5139,15 +5140,9 @@ div.navbar.navbar-fixed-top .navbar-inner {
 
   z-index: 99;
   top: 60px;
-  -webkit-box-shadow: 0 2px 5px #000001;
-  -moz-box-shadow: 0 2px 5px #000001;
-  box-shadow: 0 2px 5px #000001;
+  position: fixed;
 }
 .cssgradients #personal-bar {
-  height: 20px;
-  -webkit-box-shadow: 0 0 10px #000000;
-  -moz-box-shadow: 0 0 10px #000000;
-  box-shadow: 0 0 10px #000000;
   border-bottom: 2px solid #0b4774;
   border-top: 2px solid #1a75ba;
   background: #0b4774;
@@ -5174,16 +5169,18 @@ div.navbar.navbar-fixed-top .navbar-inner {
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
   /* IE6-9 */
 
+  -webkit-box-shadow: 0 4px 10px #000001;
+  -moz-box-shadow: 0 4px 10px #000001;
+  box-shadow: 0 4px 10px #000001;
 }
 .no-cssgradients #personal-bar {
   background: transparent url('../images/personal-bar-background.png') repeat-x top;
-  height: 20px;
 }
 #page-wrapper {
   z-index: 1;
   position: relative;
   bottom: 0;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 #page-wrapper:before {
   content: '';
@@ -5231,7 +5228,7 @@ div.navbar.navbar-fixed-top .navbar-inner {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);
   padding: 0px 10px 0 10px;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 #doormat {
@@ -5785,10 +5782,10 @@ body.section-landing-page #title-ribbon {
 }
 @media (min-width: 980px) {
   .carousel {
-    margin: 0 -21px;
+    margin: 0 -24px;
   }
   .carousel-banners {
-    height: 400px !important;
+    height: 450px !important;
     font-size: 100%;
   }
 }
