@@ -5087,6 +5087,11 @@ a.badge:hover {
   background-position: left center;
 }
 /* @end */
+/* @Overrides */
+a {
+  text-decoration: none !important;
+}
+/* @end */
 /* @group Layout Styles */
 body {
   background: #f5f5f5 url('../images/matt-pattern.jpg') repeat left top;
@@ -5421,7 +5426,7 @@ ul#portal-megamenu .sub ul li a:hover {
     height: 60px;
     line-height: 80px;
     padding: 0 10px 0 10px;
-    color: #008000;
+    color: #999999;
     font-size: 1.4em;
     font-weight: 300;
     font-family: 'Ubuntu', sans-serif;
@@ -5560,7 +5565,7 @@ ul#portal-megamenu .sub ul li a:hover {
     font-weight: 300;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px;
-    color: #008000;
+    color: #999999;
   }
   ul#portal-megamenu li.top-level.active {
     -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9) inset;
@@ -5699,7 +5704,7 @@ body.section-landing-page #title-ribbon {
   padding-left: 10px;
   padding-bottom: 5px;
   padding-top: 5px;
-  color: #fa8729;
+  color: #999999;
   font: normal 1.4em/1em 'Handlee', cursive;
 }
 /* @end */
@@ -5736,7 +5741,7 @@ body.section-landing-page #title-ribbon {
 }
 .carousel-body p {
   font: normal 2em/1em 'Handlee', cursive;
-  color: #008000;
+  color: #999999;
   text-shadow: 0px 1px 2px #000;
   margin: 0;
 }
@@ -5871,7 +5876,7 @@ h2 {
 .item .caption a {
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
-  color: #008000;
+  color: #999999;
   font-size: 16px;
   /* add spacing and make the whole row clickable*/
 
