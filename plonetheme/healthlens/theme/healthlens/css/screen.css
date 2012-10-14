@@ -5839,12 +5839,12 @@ h3.image-title {
   position: absolute;
   text-align: center;
   width: 90%;
-  top: 20px;
+  top: 0;
   padding: 17% 5% 0 5% ;
   color: #333;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 2em;
+  font-weight: bold;
   margin: 0;
 }
 p.image-desc {
