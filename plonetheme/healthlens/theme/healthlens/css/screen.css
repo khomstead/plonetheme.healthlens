@@ -5734,9 +5734,51 @@ h2 {
   font-weight: normal;
 }
 /* @end */
-/* @Group PloneTrueGallery */
+/* @group PTG ContactSheet */
+.contactsheet {
+  position: relative;
+  text-align: center;
+}
+.contactsheet a {
+  display: inline-block;
+  position: relative;
+  border: 4px solid #eaeaea;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  vertical-align: top;
+}
+.contactsheet a img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
 .contactsheet a div {
-  font-size: 2em !important;
+  display: none;
+  height: 100%;
+  padding-top: 30%;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  z-index: 100;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #eeeeee;
+  text-shadow: #000 0px 0px 20px;
+}
+.image-desc {
+  clear: both;
+  font-size: 40%;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 16px;
+}
+a.row_0 {
+  clear: left;
+  margin-left: 0;
 }
 /* @end */
 /* @group jQuery Thumbnails */
