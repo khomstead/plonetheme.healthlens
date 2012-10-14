@@ -5540,6 +5540,9 @@ img.image-inline {
   border: 4px solid #eaeaea;
   margin-left: -4px;
 }
+a img:hover {
+  border: 4px solid #1a75ba;
+}
 /* @end */
 /* @group Overlay */
 div.overlay-iframe,
@@ -5739,7 +5742,7 @@ h2 {
   position: relative;
   text-align: center;
 }
-.contactsheet a {
+#content .contactsheet a {
   display: inline-block;
   position: relative;
   border: 4px solid #eaeaea;
@@ -5748,6 +5751,9 @@ h2 {
   margin-bottom: 10px;
   text-decoration: none;
   vertical-align: top;
+}
+#content .contactsheet a:hover {
+  border: 4px solid #1a75ba;
 }
 .contactsheet a img {
   position: relative;
