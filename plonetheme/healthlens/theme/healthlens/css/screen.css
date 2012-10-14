@@ -5736,8 +5736,7 @@ h2 {
 /* @end */
 /* @Group PloneTrueGallery */
 .contactsheet a div {
-  font-size: 2em;
-  line-height: .75em;
+  font-size: 2em !important;
 }
 /* @end */
 /* @group jQuery Thumbnails */
