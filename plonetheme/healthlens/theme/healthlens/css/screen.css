@@ -5706,7 +5706,7 @@ body.section-landing-page #title-ribbon {
 }
 @media (min-width: 980px) {
   .carousel {
-    margin: 0 -24px;
+    margin: 0 -23px;
   }
   .carousel-banners {
     height: 450px !important;
@@ -5715,7 +5715,7 @@ body.section-landing-page #title-ribbon {
 }
 @media (min-width: 1600px) {
   .carousel {
-    margin: 0 -24px;
+    margin: 0 -23px;
   }
   .carousel-banners {
     height: 500px !important;
