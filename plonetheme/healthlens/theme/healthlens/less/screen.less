@@ -72,9 +72,10 @@ div.navbar.navbar-fixed-top {
 
 
 #page-wrapper {
+	top:  80px;
 	z-index:1;
+	margin-bottom: 100%;
 	.curl-effect(100px);
-	margin-bottom: 80px;
 }
 
 #page {
@@ -83,8 +84,8 @@ div.navbar.navbar-fixed-top {
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);  
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);   
 	padding: 0px 10px 0 10px;
-	position: absolute;
-	z-index: 1;		
+	position: relative;
+	z-index: 1;			
 }
 
 #doormat {
@@ -110,18 +111,25 @@ div.navbar.navbar-fixed-top {
 @media (min-width: 481px) {
 	#portal-column-two {
 		margin-top: -60px;
+		min-width: 200px;
 	}
 }
 // Base Portlet Style
+
+
+
 #portal-columns div.portletWrapper {
 	border: 2px solid #fff;
 	padding: 10px;
 	.border-radius(6px);
 	margin-top:  10px;
 	box-shadow:  0px 2px 10px rgba(0, 0, 0, 0.5), inset 0 0 8px rgba(0, 0, 0, 0.7);   
-	background: #ffffff; /* Old browsers */
+	background-color: #ffffff; /* Old browsers */
 }
 
+#portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a63616c656e646172 {
+	.portletGradientBlue;
+}
 
 
 
