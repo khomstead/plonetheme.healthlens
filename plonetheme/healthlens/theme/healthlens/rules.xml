@@ -41,14 +41,26 @@
     
     <drop css:content="#portal-header form"/> 
     <!--Content-->
-    <replace css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
-    
+        
     <drop css:theme=".post"/>
+ 
+        
     <rules css:if-content="#collage">
         <replace css:theme-children="#page-title h1" css:content-children="#collage h1.documentFirstHeading span" />
+         <replace css:theme-children="#page-description" css:content-children=".documentDescription span" />
+          <drop css:content-children="#collage h1.documentFirstHeading"/>
+          <drop css:content-children=".documentDescription"/>
     </rules>  
-    <replace css:theme="#page-title h1" css:content="h1#parent-fieldname-title" />
-    <drop css:content="#parent-fieldname-description" />
+    
+    <rules css:if-not-content="#collage">
+    	 <append css:theme="#page-title h1" css:content-children="h1#parent-fieldname-title"/>
+	     <replace css:theme-children="#page-description" css:content-children="#parent-fieldname-description" />
+	     <drop css:content="#content h1#parent-fieldname-title"/>
+	     <drop css:content=".documentDescription"/>
+	</rules>
+   
+    <drop css:content="#parent-fieldname-description" /> 
+    <drop css:content-children="#collage h1.documentFirstHeading"/>
 
 	</rules>
 
