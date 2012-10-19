@@ -37,7 +37,7 @@
     <append css:theme="#page" css:content="#portlets-below"/>
       
     <drop css:content="#portal-breadcrumbs"/> 
-    <drop css:content="#viewlet-below-content"/> 
+    <!--<drop css:content="#viewlet-below-content"/> -->
     
     <drop css:content="#portal-header form"/> 
     <!--Content-->
@@ -50,9 +50,5 @@
     <replace css:theme="#page-title h1" css:content="h1#parent-fieldname-title" />
     <drop css:content="#parent-fieldname-description" />
 
-    <replace css:theme="#page" css:content="#Pagearea"
-             if-path="/support/tickets" 
-             href="http://beta.helpdesk.healthlens.org/support/tickets"/>
-    
 	</rules>
 
