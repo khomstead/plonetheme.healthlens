@@ -4929,7 +4929,7 @@ a.badge:hover {
 .background {
   background-image: url('../images/matt-pattern.jpg');
   background-repeat: repeat;
-  background-color: #333;
+  background-color: #333 !important;
 }
 .light {
   background: transparent url('../images/vert-gradient300.png') repeat-x left top;
@@ -5127,7 +5127,7 @@ a {
 body {
   background-image: url('../images/matt-pattern.jpg');
   background-repeat: repeat;
-  background-color: #333;
+  background-color: #333 !important;
 }
 div.navbar.navbar-fixed-top {
   top: 0;
