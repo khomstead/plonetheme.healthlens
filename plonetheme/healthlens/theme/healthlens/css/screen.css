@@ -5369,6 +5369,9 @@ div.standard-document h2 {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+#portal-columns #parent-fieldname-title {
+  display: none;
+}
 /* @end */
 /* @group MegaMenu Global Navigation*/
 ul#portal-megamenu > li,
@@ -5868,7 +5871,7 @@ a.row_0 {
   margin-left: 0;
 }
 /* @end */
-/* @group Sheetgallery */
+/* @group PTG Sheetgallery */
 .sheetgallery {
   margin: 0 0  9px 0;
   position: relative;
@@ -5939,6 +5942,11 @@ p.image-desc {
   font-style: normal ;
   font-size: 12px;
   margin: 0;
+}
+/* @end */
+/* @group PTG Presentation */
+div.presentationWrapper ul {
+  margin-left: 0;
 }
 /* @end */
 /* @group jQuery Thumbnails */
@@ -6120,18 +6128,6 @@ p.image-desc {
 #collage .two-columns-largeleft .block_2 {
   padding-left: 4%;
 }
-/*
-#collage .three-columns-equal .block_1, #collage .three-columns-equal .block_2, #collage .three-columns-equal .block_3 {
-	width: 29.5% !important;
-	min-width: 100px;
-}
-*/
-/*
-.three-columns-equal .column-block {
-	width: 29% !important;
-	padding: 0 20px;
-}
-*/
 /*!
  * Bootstrap Responsive v2.0.4
  *
