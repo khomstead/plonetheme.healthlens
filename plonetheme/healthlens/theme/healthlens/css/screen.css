@@ -5945,7 +5945,7 @@ p.image-desc {
 }
 /* @end */
 /* @group PTG Presentation */
-#content .presentationWrapper ul {
+div.presentationWrapper ul {
   margin-left: 0;
 }
 /* @end */
