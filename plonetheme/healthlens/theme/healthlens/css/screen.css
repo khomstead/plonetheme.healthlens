@@ -4927,7 +4927,7 @@ a.badge:hover {
 /* @end */
 /* @group Theme */
 .background {
-  background-image: url('../images/matt-pattern.jpg');
+  background-image: url('../images/matt-pattern.jpg') !important;
   background-repeat: repeat;
   background-color: #333 !important;
 }
@@ -5125,7 +5125,7 @@ a {
 /* @end */
 /* @group Layout Styles */
 body {
-  background-image: url('../images/matt-pattern.jpg');
+  background-image: url('../images/matt-pattern.jpg') !important;
   background-repeat: repeat;
   background-color: #333 !important;
 }
