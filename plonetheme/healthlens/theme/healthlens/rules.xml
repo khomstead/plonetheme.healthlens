@@ -35,7 +35,7 @@
     <append css:theme=".nav-collapse" css:content="ul#portal-megamenu"/>    
     
     <!-- Fullscreen the RDP client -->
-    <replace if-path="remote-spark" css:theme="#page-wrapper" css:content="#content"/>
+    <replace if-path="/connect" css:theme="#page-wrapper" css:content="#content"/>
 
     <append css:theme="#page" css:content="#portal-columns"/>
     <append css:theme="#page" css:content="#portlets-below"/>
