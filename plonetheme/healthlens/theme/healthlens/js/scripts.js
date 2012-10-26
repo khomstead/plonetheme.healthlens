@@ -1,6 +1,7 @@
-$(document).ready(function() {
-    
-    $('.overlay-profile').prepOverlay({
+$ = jQuery_1_7_1;
+$(function() {
+
+    jQuery('.overlay-profile').prepOverlay({
         subtype: 'ajax',
         filter: '#content > *',
         config: { 
