@@ -33,6 +33,10 @@
     <copy attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
     <append css:theme=".nav-collapse" css:content="ul#portal-megamenu"/>    
+    
+    <!-- Fullscreen the RDP client -->
+    <replace if-path="remote-spark" css:theme="#page-wrapper" css:content="#content"/>
+
     <append css:theme="#page" css:content="#portal-columns"/>
     <append css:theme="#page" css:content="#portlets-below"/>
       
