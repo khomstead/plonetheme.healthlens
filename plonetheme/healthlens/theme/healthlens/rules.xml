@@ -15,6 +15,16 @@
      
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
     
+<!--    Append Rules to Specify CSS Master File -->
+	<!--HealthLens-->
+    <append theme="/html/head" if-content="contains(/html/head/title, 'HealthLens')">
+		<link href="/Plone/++theme++plonetheme.healthlens/css/healthlens.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	</append>
+	<!--	Treehouse-->
+	<append theme="/html/head" if-content="contains(/html/head/title, 'Treehouse')">
+		<link href="/Plone/++theme++plonetheme.healthlens/css/treehouse.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	</append>
+		   
     <notheme if-path="presentation_view"/>
     <notheme if-path="source_editor.htm"/>
     <notheme if-path="ploneimage.htm"/>
