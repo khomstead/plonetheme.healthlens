@@ -8,6 +8,32 @@
 #content .pullquote {
   font-size: 1.2em;
 }
+.page-title-font {
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: normal;
+  font-family: "ff-enzo-web", sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+.page-description-font {
+  font-size: 2em;
+  letter-spacing: normal;
+  font-family: "ff-enzo-web", sans-serif;
+  color: #FFBC5F;
+  font-weight: 100;
+}
+.h2-font {
+  font-family: "ff-enzo-web", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #333;
+}
+.paragraph-font {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 1em;
+  color: #555555;
+}
 /* @end */
 /* @group Theme */
 .background {
@@ -5766,7 +5792,7 @@ body.section-landing-page #title-ribbon {
   letter-spacing: normal;
   font-family: "ff-enzo-web", sans-serif;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0 0 5px 0;
   margin: 0px ;
   position: relative;
@@ -5784,7 +5810,11 @@ body.section-landing-page #title-ribbon {
   padding-bottom: 5px;
   padding-top: 5px;
   color: #fa8729;
-  font: normal 1.4em/1em 'Handlee', cursive;
+  font-size: 2em;
+  letter-spacing: normal;
+  font-family: "ff-enzo-web", sans-serif;
+  color: #FFBC5F;
+  font-weight: 100;
 }
 /* @end */
 /* @group carousel */
@@ -5819,7 +5849,7 @@ body.section-landing-page #title-ribbon {
   text-shadow: 0px 1px 4px #000;
 }
 .carousel-body p {
-  font: normal 2em/1em 'Handlee', cursive;
+  font: normal 2em/1em "ff-enzo-web", sans-serif;
   color: #eaeaea;
   text-shadow: 0px 1px 2px #000;
   margin: 0;
@@ -5881,15 +5911,21 @@ body.section-landing-page #title-ribbon {
 }
 /* @end */
 /* @group Typography */
+p {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 1em;
+  color: #555555;
+}
 #content {
   font-size: 100%;
   line-height: 1.25em !important;
   margin: 0;
 }
-h1,
 h2 {
   font-family: "ff-enzo-web", sans-serif;
-  font-weight: normal;
+  font-weight: 300;
+  font-size: 2em;
+  color: #333;
 }
 /* @end */
 /* @group PTG ContactSheet */
