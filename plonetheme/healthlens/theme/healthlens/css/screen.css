@@ -5353,6 +5353,9 @@ div.navbar.navbar-fixed-top .navbar-inner {
   /* IE6-8 */
 
 }
+.removeBookmarkButton {
+  width: auto;
+}
 /* @end *//* @group Collage*/
 .column-block {
   position: relative !important;
