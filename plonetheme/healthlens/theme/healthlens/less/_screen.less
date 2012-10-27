@@ -4,8 +4,6 @@
 
 // Twitter Bootstrap Framework
 @import "bootstrap";
-//Custom attributes that can be changed on a site-to-site basis
-@import "_custom_healthlens";
 //Re-usable effects such as page curls, etc.
 @import "_effects"; 
 
@@ -131,7 +129,10 @@ div.navbar.navbar-fixed-top {
 	.portletGradientBlue;
 }
 
-
+// Bookmark Portlet
+.removeBookmarkButton {
+	width: auto;
+}
 
 /* @end */   
 
@@ -607,7 +608,7 @@ a.row_0 {
 
 
 
-/* @group Sheetgallery */
+/* @group PTG Sheetgallery */
 
 .sheetgallery {
     margin: 0 0  9px 0;
@@ -696,6 +697,19 @@ p.image-desc {
 	margin: 0;
 }
 /* @end */
+
+/* @group PTG Presentation */
+
+#content .presentationWrapper ul {
+	margin-left: 0;
+}
+
+.presentationWrapper {
+	border: 3px solid #eaeaea;
+	margin: 1em 0;
+}
+/* @end */
+
 
 /* @group jQuery Thumbnails */
 .thumbs {
@@ -816,27 +830,6 @@ p.image-desc {
 #collage .two-columns-largeleft .block_2 {
     padding-left: 4%;
 }
-/*
-#collage .three-columns-equal .block_1, #collage .three-columns-equal .block_2, #collage .three-columns-equal .block_3 {
-	width: 29.5% !important;
-	min-width: 100px;
-}
-*/
-
-/*
-.three-columns-equal .column-block {
-	width: 29% !important;
-	padding: 0 20px;
-}
-*/
-
-
-//.text-document {
-//	& p {color: #666; text-align: justify; line-height: normal; }
-//	& img {border: solid 4px #eaeaea; .box-shadow-custom(0, 2px, 3px, rgb(0, 0, 0.5));}
-//}
-
-
 
 @import "responsive";
 //Some of the original CSS from MegaMenu Product
