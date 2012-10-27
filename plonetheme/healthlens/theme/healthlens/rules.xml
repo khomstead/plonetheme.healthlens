@@ -22,6 +22,8 @@
 	</append>
 	<!--	Treehouse-->
 	<append theme="/html/head" if-content="contains(/html/head/title, 'Treehouse')">
+		<script type="text/javascript" src="//use.typekit.net/ezm8uin.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<link href="/Plone/++theme++plonetheme.healthlens/css/treehouse.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	</append>
 		   
