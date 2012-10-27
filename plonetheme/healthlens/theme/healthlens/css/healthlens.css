@@ -5,6 +5,33 @@
 /* @group Images */
 /* @end */
 /* @group Typography */
+.page-title-font {
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: normal;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+.page-description-font {
+  font-size: 2em;
+  letter-spacing: normal;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFBC5F;
+  font-weight: 100;
+}
+.h2-font {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #0b4774;
+}
+.paragraph-font {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #999;
+}
 /* @end */
 /* @group Theme */
 .background {
@@ -5702,7 +5729,7 @@ body.section-landing-page #title-ribbon {
   letter-spacing: normal;
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0 0 5px 0;
   margin: 0px ;
   position: relative;
@@ -5720,7 +5747,11 @@ body.section-landing-page #title-ribbon {
   padding-bottom: 5px;
   padding-top: 5px;
   color: #999999;
-  font: normal 1.4em/1em 'Handlee', cursive;
+  font-size: 2em;
+  letter-spacing: normal;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFBC5F;
+  font-weight: 100;
 }
 /* @end */
 /* @group carousel */
@@ -5755,7 +5786,7 @@ body.section-landing-page #title-ribbon {
   text-shadow: 0px 1px 4px #000;
 }
 .carousel-body p {
-  font: normal 2em/1em 'Handlee', cursive;
+  font: normal 2em/1em 'Ubuntu', sans-serif;
   color: #999999;
   text-shadow: 0px 1px 2px #000;
   margin: 0;
@@ -5817,15 +5848,22 @@ body.section-landing-page #title-ribbon {
 }
 /* @end */
 /* @group Typography */
+p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #999;
+}
 #content {
   font-size: 100%;
   line-height: 1.25em !important;
   margin: 0;
 }
-h1,
 h2 {
   font-family: 'Ubuntu', sans-serif;
-  font-weight: normal;
+  font-weight: 300;
+  font-size: 2em;
+  color: #0b4774;
 }
 /* @end */
 /* @group PTG ContactSheet */
