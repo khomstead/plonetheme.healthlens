@@ -70,7 +70,7 @@
 }
 #portal-megamenu p,
 #portal-megamenu span.description {
-  color: #fa8729;
+  color: #eaeaea;
   margin-left: 20px;
   float: left;
 }
@@ -5460,7 +5460,7 @@ ul#portal-megamenu .sub ul li a:visited {
   color: red;
   padding: 5px;
   font-size: 1.2em;
-  font-family: 'Handlee', sans-serif;
+  font-family: "ff-enzo-web", sans-serif;
 }
 ul#portal-megamenu .sub ul li a.collage-megamenu-highlight {
   font-size: 1.5em;
@@ -5502,10 +5502,10 @@ ul#portal-megamenu .sub ul li a:hover {
     height: 60px;
     line-height: 80px;
     padding: 0 10px 0 10px;
-    color: #fa8729;
-    font-size: 1.2em;
+    color: #eaeaea;
+    font-size: 1.3em;
     font-weight: 300;
-    font-family: 'Handlee', sans-serif;
+    font-family: "ff-enzo-web", sans-serif;
   }
   ul#portal-megamenu > li > a span {
     display: none;
@@ -5639,9 +5639,9 @@ ul#portal-megamenu .sub ul li a:hover {
     float: left;
     font-size: 2em;
     font-weight: 300;
-    font-family: 'Handlee', sans-serif;
+    font-family: "ff-enzo-web", sans-serif;
     padding: 10px;
-    color: #fa8729;
+    color: #eaeaea;
   }
   ul#portal-megamenu li.top-level.active {
     -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9) inset;
@@ -5764,7 +5764,7 @@ body.section-landing-page #title-ribbon {
   font-size: 3em;
   line-height: 1em;
   letter-spacing: normal;
-  font-family: 'Lustria', serif;
+  font-family: "ff-enzo-web", sans-serif;
   color: #fff;
   font-weight: 500;
   padding: 0 0 5px 0;
@@ -5795,7 +5795,7 @@ body.section-landing-page #title-ribbon {
   width: 100% !important;
   max-width: 100% !important;
   background: black;
-  border-bottom: solid 1em #1a75ba;
+  border-bottom: solid 1em #699c1c;
 }
 .carousel-banner {
   width: 100% !important;
@@ -5814,13 +5814,13 @@ body.section-landing-page #title-ribbon {
   padding: 1em;
 }
 .carousel-title {
-  font: normal 4.5em/1em 'Lustria', serif;
+  font: 600 4.5em "ff-enzo-web", sans-serif;
   color: #fff;
   text-shadow: 0px 1px 4px #000;
 }
 .carousel-body p {
   font: normal 2em/1em 'Handlee', cursive;
-  color: #fa8729;
+  color: #eaeaea;
   text-shadow: 0px 1px 2px #000;
   margin: 0;
 }
@@ -5888,7 +5888,7 @@ body.section-landing-page #title-ribbon {
 }
 h1,
 h2 {
-  font-family: 'Lustria', serif;
+  font-family: "ff-enzo-web", sans-serif;
   font-weight: normal;
 }
 /* @end */
@@ -6085,9 +6085,9 @@ p.image-desc {
 
 }
 .item .caption a {
-  font-family: 'Lustria', serif;
+  font-family: "ff-enzo-web", sans-serif;
   text-decoration: none;
-  color: #fa8729;
+  color: #eaeaea;
   font-size: 16px;
   /* add spacing and make the whole row clickable*/
 
