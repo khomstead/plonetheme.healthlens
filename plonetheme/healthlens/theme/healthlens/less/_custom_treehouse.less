@@ -9,23 +9,34 @@
 
 /* @group Colors */
 @page-color: #eaeaea;
-@global-nav-font-color: #FA8729;
+@global-nav-font-color: #eaeaea;
 @border-highlight-color: #0c7fd3;
 @muted-accent: #155D89; 
 @muted-accent-highlight: #1A75BA;
 @muted-accent-shadow: #0B4774;
+
+//@muted-accent: #95AD70; 
+//@muted-accent-highlight: #9ECB5B;
+//@muted-accent-shadow: #577A22;
+
+//@muted-accent: #CF9650; 
+//@muted-accent-highlight: #FFB44C;
+//@muted-accent-shadow: #AE660E;
+
+
 @rollover: #8FCB43;
 @page-description-color: #FA8729;
 @blockquote-color: #FCD9A9;
 @blockquote-border-color: #FBB75D;
 @collage-featured-backgroud-color: #FFF6D3;
 @thumbs-color: #A9BE9F;
+@heavy-border-color: #699C1C;
 @ImageLinkHover: #1A75BA; 
+
 
 /* @end */
 
 /* @group Images */
-@body-background-image: url('../images/treehouse/background-pattern.jpg');
 @logo-image: url(../images/treehouse/logo2.png); 
 @body-overlay-image: url('../images/treehouse/no-tree-background.jpg');
 @home-icon: url('../images/icons/home-green-32.png');
@@ -37,10 +48,13 @@
 
 /* @group Typography */
 // Global Nav
-@global-nav-font-size: 1.2em;
+@global-nav-font-size: 1.3em;
 @global-nav-font-weight: 300;
-@global-nav-font-family: 'Handlee', sans-serif;
-@title-font-family: 'Lustria', serif;
+@global-nav-font-family: "ff-enzo-web",sans-serif;
+
+@carousel-font: 600 4.5em/1em  "ff-enzo-web",sans-serif;
+
+@title-font-family: "ff-enzo-web",sans-serif;
 @description-font-family: 'Handlee', cursive;
 @blockqute-font-family:  'Handlee', cursive;
 
@@ -48,12 +62,41 @@
   font-size: 1.2em;
 }
 
+.page-title-font {
+	font-size: 3em;  
+	line-height: 1em;
+	letter-spacing: normal;
+	font-family: @title-font-family; 
+	color: #fff;
+	font-weight: 600;
+}
+
+.page-description-font {
+	font-size: 2em;  
+	letter-spacing: normal;
+	font-family: @title-font-family; 
+	color: #FFBC5F;
+	font-weight: 100;
+}
+
+.h2-font {
+	font-family: @title-font-family;
+	font-weight: 300;
+	font-size: 2em;
+	color: #333;
+}
+
+.paragraph-font {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1em;
+	color: #555555;
+}
 /* @end */
 
 /* @group Theme */
 
 .background {
-	background-image: url('../images/treehouse/background-pattern.jpg') !important;
+	background-image: url('../images/seamlesstexture27_500.jpg') !important;
 	background-repeat: repeat;
 	background-color: #333 !important;
 }
@@ -203,7 +246,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a75ba', end
 	background: -ms-linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,rgba(0,119,239,1) 35%,rgba(46,147,234,1) 78%,rgba(70,131,221,1) 100%); /* IE10+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ec9ef', endColorstr='#4683dd',GradientType=0 ); /* IE6-9 */
 	background: linear-gradient(top, rgba(158,201,239,1) 0%,rgba(46,147,234,1) 33%,rgba(0,119,239,1) 35%,rgba(46,147,234,1) 78%,rgba(70,131,221,1) 100%); /* W3C */     
-}              
+}         
+
+.portletGradientBlue {
+background: #d4e4ef; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q0ZTRlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4NmFlY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #d4e4ef 0%, #86aecc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4e4ef), color-stop(100%,#86aecc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d4e4ef 0%,#86aecc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=0 ); /* IE6-8 */
+}
+     
 /* @end */
 
 /* @group Shadows*/

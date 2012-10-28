@@ -4,8 +4,6 @@
 
 // Twitter Bootstrap Framework
 @import "bootstrap";
-//Custom attributes that can be changed on a site-to-site basis
-@import "_custom_healthlens";
 //Re-usable effects such as page curls, etc.
 @import "_effects"; 
 
@@ -131,7 +129,10 @@ div.navbar.navbar-fixed-top {
 	.portletGradientBlue;
 }
 
-
+// Bookmark Portlet
+.removeBookmarkButton {
+	width: auto;
+}
 
 /* @end */   
 
@@ -414,12 +415,7 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 }
 
 #page-title h1 {
-	font-size: 3em;  
-	line-height: 1em;
-	letter-spacing: normal;
-  	font-family: @title-font-family; 
-	color: #fff;
-	font-weight: 500;
+	.page-title-font;
 	padding: 0 0 5px 0;
 	margin: 0px ;
 	position: relative;
@@ -435,11 +431,12 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 }
 
 #page-description {
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-top:  5px;
-  color: @page-description-color;
-  font: normal 1.4em/1em @description-font-family; }
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-top:  5px;
+	color: @page-description-color;
+	.page-description-font;
+}
 /* @end */
 
 /* @group carousel */
@@ -453,7 +450,7 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 	width: 100% !important;
 	max-width: 100% !important;
 	background: black;
-	border-bottom: solid 1em @muted-accent-highlight;
+	border-bottom: solid 1em @heavy-border-color;
 }
 
 .carousel-banner {
@@ -478,13 +475,13 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 
 
 .carousel-title {
-	font: normal 4.5em/1em @title-font-family;
+	font:  @carousel-font;
 	color: #fff;
 	text-shadow: 0px 1px 4px #000;
 }
 
 .carousel-body p {
-	font: normal 2em/1em @description-font-family;
+	font: normal 2em/1em @title-font-family;
 	color:  @global-nav-font-color;
 	text-shadow: 0px 1px 2px #000;	
 	margin: 0;
@@ -537,15 +534,18 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 
 /* @group Typography */
 
+p {
+	.paragraph-font;
+}
+
 #content {
 	font-size: 100%;
 	line-height: @baseLineHeight !important;
 	margin: 0;
 }
 
-h1, h2 {
-	font-family: @title-font-family;
-	font-weight: normal;
+h2 {
+	.h2-font;
 }
 
 /* @end */
