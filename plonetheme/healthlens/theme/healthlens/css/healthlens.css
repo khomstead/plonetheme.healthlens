@@ -30,6 +30,7 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 1em;
+  line-height: 1.5em;
   color: #414141;
 }
 .leadquote {
@@ -5406,7 +5407,7 @@ div.navbar.navbar-fixed-top .navbar-inner {
 div.standard-document {
   padding: .5em;
 }
-div.standard-document h2 {
+.three-columns-equal div.standard-document h2 {
   line-height: 1.5em;
   text-align: center;
 }
@@ -5870,6 +5871,7 @@ p {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 1em;
+  line-height: 1.5em;
   color: #414141;
 }
 #content {

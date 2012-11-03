@@ -5456,7 +5456,7 @@ div.navbar.navbar-fixed-top .navbar-inner {
 div.standard-document {
   padding: .5em;
 }
-div.standard-document h2 {
+.three-columns-equal div.standard-document h2 {
   line-height: 1.5em;
   text-align: center;
 }
