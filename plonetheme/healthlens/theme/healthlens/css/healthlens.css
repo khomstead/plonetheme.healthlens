@@ -5861,6 +5861,13 @@ p {
   line-height: 1.25em !important;
   margin: 0;
 }
+#content a:visited,
+#content a:link,
+dl.portlet a:link,
+dl.portlet a:visited {
+  color: #1a75ba;
+  border-bottom: none;
+}
 h2 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
