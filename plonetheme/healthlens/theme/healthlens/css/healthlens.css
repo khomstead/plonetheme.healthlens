@@ -24,13 +24,13 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 2em;
-  color: #0b4774;
+  color: #313131;
 }
 .paragraph-font {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 1em;
-  color: #999;
+  color: #414141;
 }
 /* @end */
 /* @group Theme */
@@ -5854,7 +5854,7 @@ p {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 1em;
-  color: #999;
+  color: #414141;
 }
 #content {
   font-size: 100%;
@@ -5865,7 +5865,7 @@ h2 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 2em;
-  color: #0b4774;
+  color: #313131;
 }
 a span.readMore {
   color: #1a75ba;
