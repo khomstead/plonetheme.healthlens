@@ -5452,6 +5452,8 @@ ul#portal-megamenu .sub ul li a:hover {
   ul#portal-megamenu li.top-level#mm-tl-home a {
     background: url('../images/icons/home-green-32.png') no-repeat center 21px;
     color: transparent;
+    font-size: 0;
+    width: 20px;
     text-shadow: none;
   }
   ul#portal-megamenu li.top-level#mm-tl-home a:hover {
@@ -5781,7 +5783,7 @@ body.section-landing-page #title-ribbon {
   padding: 1em;
 }
 .carousel-title {
-  font: 600 4.5em "ff-enzo-web", sans-serif;
+  font: 600 4.5em "Ubuntu", sans-serif;
   color: #fff;
   text-shadow: 0px 1px 4px #000;
 }

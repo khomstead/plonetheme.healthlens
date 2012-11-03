@@ -5515,6 +5515,8 @@ ul#portal-megamenu .sub ul li a:hover {
   ul#portal-megamenu li.top-level#mm-tl-home a {
     background: url('../images/icons/home-green-32.png') no-repeat center 21px;
     color: transparent;
+    font-size: 0;
+    width: 20px;
     text-shadow: none;
   }
   ul#portal-megamenu li.top-level#mm-tl-home a:hover {
