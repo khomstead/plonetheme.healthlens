@@ -5946,6 +5946,12 @@ h2 {
   font-size: 2em;
   color: #333;
 }
+#content .pullquote {
+  font-family: "ff-enzo-web", sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #1a75ba;
+}
 a span.readMore {
   color: #1a75ba;
   text-transform: uppercase;
