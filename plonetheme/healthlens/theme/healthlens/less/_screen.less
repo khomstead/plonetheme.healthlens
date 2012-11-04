@@ -164,8 +164,24 @@ div.standard-document {
 }
 
 .featured-document {
-	background-color: @collage-featured-backgroud-color;
 	.border-radius(4px);
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #eaeaea;
+	.box-shadow(inset 0px 0px 8px rgba(0,0,0,.75));
+	.featuredGradient;
+	& h2 {
+		font-size: 1.4em;
+		color: #fff;
+		line-height: 1.2em;
+		font-weight: 400;
+		border: 1px solid rgba(158,203,45,1);
+		.border-radius(4px);
+		.box-shadow(0px 2px 6px rgba(0,0,0,.75));
+		padding: 5px;
+		margin-bottom: 10px;
+		.greenButtonGradient;
+	}
 }
 
 #portal-columns #parent-fieldname-title {
