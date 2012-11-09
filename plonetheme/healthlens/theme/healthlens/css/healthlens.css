@@ -5397,7 +5397,7 @@ div.navbar.navbar-fixed-top .navbar-inner {
 /* @end *//* @group Portlets*/
 @media (min-width: 481px) {
   #portal-column-two {
-    margin-top: -100px;
+    margin-top: -20px;
     min-width: 200px;
     padding: 50px 1.2% 15px 1.2%;
   }
