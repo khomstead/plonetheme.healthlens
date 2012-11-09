@@ -108,26 +108,21 @@ div.navbar.navbar-fixed-top {
 
 @media (min-width: 481px) {
 	#portal-column-two {
-		margin-top: -60px;
+		margin-top: -100px;
 		min-width: 200px;
+		padding: 50px 1.2% 15px 1.2%;
 	}
 }
 // Base Portlet Style
 
 
 
-#portal-columns div.portletWrapper {
-	border: 2px solid #fff;
-	padding: 10px;
-	.border-radius(6px);
-	margin-top:  10px;
-	box-shadow:  0px 2px 10px rgba(0, 0, 0, 0.5), inset 0 0 8px rgba(0, 0, 0, 0.7);   
-	background-color: #ffffff; /* Old browsers */
+#portal-column-two  {
+	box-shadow:  0px -25px 15px rgba(0, 0, 0, 0.5);   
+
+.minor-curl-effect(#FFE7BD);
 }
 
-#portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a63616c656e646172 {
-	.portletGradientBlue;
-}
 
 // Bookmark Portlet
 .removeBookmarkButton {
@@ -163,14 +158,30 @@ div.standard-document {
 }
 
 
-div.standard-document h2 {
+.three-columns-equal div.standard-document h2 {
 	line-height: 1.5em;
 	text-align: center;
 }
 
 .featured-document {
-	background-color: @collage-featured-backgroud-color;
 	.border-radius(4px);
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #eaeaea;
+	.box-shadow(inset 0px 0px 8px rgba(0,0,0,.75));
+	.featuredGradient;
+	& h2 {
+		font-size: 1.4em;
+		color: #fff;
+		line-height: 1.2em;
+		font-weight: 400;
+		border: 1px solid rgba(158,203,45,1);
+		.border-radius(4px);
+		.box-shadow(0px 2px 6px rgba(0,0,0,.75));
+		padding: 5px;
+		margin-bottom: 10px;
+		.greenButtonGradient;
+	}
 }
 
 #portal-columns #parent-fieldname-title {
@@ -222,6 +233,8 @@ ul#portal-megamenu .sub ul li a:hover {
 		&#mm-tl-home a {  
 			background: @home-icon no-repeat center 21px;
 			color: transparent; 
+            font-size: 0;
+            width: 20px;
 			text-shadow:none;  
 			&:hover {background: @home-icon-rollover no-repeat center 20px;}
 		}
@@ -421,7 +434,7 @@ body.section-home-page #title-ribbon, body.section-landing-page #title-ribbon {d
 	position: relative;
 }
 
-#page-title span {
+.cssgradients #page-title span {
 	background: url('../images/temp/gradient-dark.png') repeat-x top;
 	position: absolute;
 		top: 25px;
@@ -544,9 +557,35 @@ p {
 	margin: 0;
 }
 
+#content a:visited, #content a:link, dl.portlet a:link, dl.portlet a:visited {
+	color: @link-color;
+	border-bottom: none;
+}
+
 h2 {
 	.h2-font;
 }
+
+#content .pullquote {
+	font-family: @title-font-family;
+	font-weight: 300;
+	font-size: 1.3em;
+	color: @muted-accent-highlight;
+}
+
+a span.readMore {
+	color: @readMore-color;
+	text-transform: uppercase;
+	padding-left: 20px;
+	background: transparent url('../images/icons/readMore-blue.png') no-repeat left center;
+	float: right;
+	font-size: 80%;
+	&:hover {
+		color: #8FCB43;
+		background: transparent url('../images/icons/readMore-green.png') no-repeat left center;
+	}
+}
+
 
 /* @end */
 
