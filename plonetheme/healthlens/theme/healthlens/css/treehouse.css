@@ -5458,6 +5458,7 @@ div.navbar.navbar-fixed-top .navbar-inner {
 }
 /* @end *//* @group Portlets*/
 #portal-column-two {
+  margin-top: -30px;
   min-width: 200px;
 }
 #portal-column-two div.portletWrapper {
@@ -5483,9 +5484,9 @@ div.navbar.navbar-fixed-top .navbar-inner {
   -o-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
-  -webkit-box-shadow: 0 0 10px #000;
-  -moz-box-shadow: 0 0 10px #000;
-  box-shadow: 0 0px 10px #000;
+  -webkit-box-shadow: 0 0 15px #000;
+  -moz-box-shadow: 0 0 15px #000;
+  box-shadow: 0 0px 15px #000;
   opacity: 1;
   z-index: -1;
 }
@@ -5501,9 +5502,9 @@ div.navbar.navbar-fixed-top .navbar-inner {
   -o-transform: rotate(3deg);
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
-  box-shadow: 0 0 10px #000;
-  -webkit-box-shadow: 0 0 10px #000;
-  -moz-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 15px #000;
+  -webkit-box-shadow: 0 0 15px #000;
+  -moz-box-shadow: 0 0 15px #000;
   opacity: 1;
   z-index: -1;
 }
@@ -5860,7 +5861,7 @@ img.image-right,
 .captioned img,
 img.image-inline {
   border: 4px solid #eaeaea;
-  margin-left: -4px;
+  margin: .5em;
 }
 a img:hover {
   border: 4px solid #1a75ba;
@@ -6322,7 +6323,7 @@ p.image-desc {
   margin: 20px 0;
 }
 #content div.contenttype-blog-entry h2 {
-  padding: 4px 0 0 75px;
+  padding: 6px 0 0 75px;
   font-weight: 600;
   line-height: 1.1em !important;
 }
