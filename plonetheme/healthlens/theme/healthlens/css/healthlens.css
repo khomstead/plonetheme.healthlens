@@ -5799,7 +5799,15 @@ img.image-right,
 .captioned img,
 img.image-inline {
   border: 4px solid #eaeaea;
-  margin: .5em;
+}
+img.image-inline {
+  margin: 0em;
+}
+img.image-right {
+  margin: .5em 0 .5em 1em;
+}
+img.image-left {
+  margin: .5em 1em .5em 0em;
 }
 a img:hover {
   border: 4px solid #1a75ba;
