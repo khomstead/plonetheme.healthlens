@@ -6262,6 +6262,7 @@ p.image-desc {
 #content div.contenttype-blog-entry {
   background: transparent url('../images/blogTab-pencil.jpg') no-repeat left top;
   padding-left: 30px;
+  margin: 20px 0;
 }
 #content div.contenttype-blog-entry h2 {
   padding: 4px 0 0 75px;
