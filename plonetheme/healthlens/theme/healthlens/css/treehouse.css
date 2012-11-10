@@ -6318,6 +6318,23 @@ p.image-desc {
   clear: both;
 }
 /* @end */
+/* @group Blog View */
+#content div.contenttype-blog-entry {
+  background: transparent url('../images/blogTab-pencil.jpg') no-repeat left top;
+  padding-left: 30px;
+}
+#content div.contenttype-blog-entry h2 {
+  padding: 10px 0 0 75px;
+  font-weight: 600;
+}
+#content div.contenttype-blog-entry div.documentByLine {
+  padding-left: 75px;
+  color: #b1b1b1;
+}
+#content div.contenttype-blog-entry div.blog-entry {
+  padding: 10px 0 0 0;
+}
+/* @end */
 .alert-message {
   padding: 8px 35px 8px 14px;
   margin-bottom: 1.25em;
