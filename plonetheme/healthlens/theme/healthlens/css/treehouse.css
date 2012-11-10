@@ -6338,6 +6338,7 @@ p.image-desc {
 }
 #content div.contenttype-blog-entry div.blog-entry {
   padding: 10px 0 0 0;
+  border-bottom: 1px dashed #eaeaea;
 }
 #content div.contenttype-blog-entry p.tileBody {
   display: none;
