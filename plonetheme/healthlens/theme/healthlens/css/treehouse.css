@@ -6340,7 +6340,7 @@ p.image-desc {
   padding: 10px 0 0 0;
 }
 #content div.contenttype-blog-entry p.tileBody {
-  display: hidden;
+  display: none;
 }
 /* @end */
 .alert-message {
