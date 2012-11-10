@@ -102,7 +102,7 @@
   background: linear-gradient(top, #45484d 0%, #000000 50%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
 
 }
@@ -125,7 +125,7 @@
   background: -ms-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
   /* IE10+ */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9ec9ef', endColorstr='#4683dd', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ec9ef', endColorstr='#4683dd', GradientType=0);
   /* IE6-9 */
 
   background: linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
@@ -156,7 +156,7 @@
   background: linear-gradient(to bottom, #1a75ba 0%, #08385c 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#1a75ba', endColorstr='#08385c', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a75ba', endColorstr='#08385c', GradientType=0);
   /* IE6-8 */
 
 }
@@ -185,7 +185,7 @@
   background: linear-gradient(to bottom, #d4e4ef 0%, #86aecc 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0);
   /* IE6-8 */
 
 }
@@ -211,7 +211,7 @@
   background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#bfd255', endColorstr='#9ecb2d', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfd255', endColorstr='#9ecb2d', GradientType=0);
   /* IE6-9 */
 
 }
@@ -237,7 +237,7 @@
   background: linear-gradient(to bottom, #ffffff 0%, #deefff 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#deefff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#deefff', GradientType=0);
   /* IE6-9 */
 
 }
@@ -363,7 +363,7 @@ textarea {
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -5291,7 +5291,7 @@ div.navbar.navbar-fixed-top .navbar-inner {
   background: linear-gradient(top, #0b4774 0%, #1a75ba 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
   /* IE6-9 */
 
   -webkit-box-shadow: 0 4px 10px #000001;
@@ -5388,7 +5388,7 @@ div.navbar.navbar-fixed-top .navbar-inner {
   background: linear-gradient(to bottom, #1a75ba 0%, #08385c 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#1a75ba', endColorstr='#08385c', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a75ba', endColorstr='#08385c', GradientType=0);
   /* IE6-8 */
 
   min-height: 140px;
@@ -5500,7 +5500,7 @@ div.standard-document {
   background: linear-gradient(to bottom, #ffffff 0%, #deefff 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#deefff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#deefff', GradientType=0);
   /* IE6-9 */
 
 }
@@ -5542,7 +5542,7 @@ div.standard-document {
   background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#bfd255', endColorstr='#9ecb2d', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfd255', endColorstr='#9ecb2d', GradientType=0);
   /* IE6-9 */
 
 }
@@ -5638,7 +5638,7 @@ ul#portal-megamenu .sub ul li a:hover {
     background: -ms-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
     /* IE10+ */
   
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9ec9ef', endColorstr='#4683dd', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ec9ef', endColorstr='#4683dd', GradientType=0);
     /* IE6-9 */
   
     background: linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
@@ -5669,7 +5669,7 @@ ul#portal-megamenu .sub ul li a:hover {
     background: -ms-linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
     /* IE10+ */
   
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9ec9ef', endColorstr='#4683dd', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ec9ef', endColorstr='#4683dd', GradientType=0);
     /* IE6-9 */
   
     background: linear-gradient(top, #9ec9ef 0%, #2e93ea 33%, #0077ef 35%, #2e93ea 78%, #4683dd 100%);
@@ -5857,7 +5857,7 @@ div.overlay-ajax {
   background: linear-gradient(top, #45484d 0%, #000000 50%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
 
 }
@@ -6258,6 +6258,23 @@ p.image-desc {
   clear: both;
 }
 /* @end */
+/* @group Blog View */
+#content div.contenttype-blog-entry {
+  background: transparent url('../images/blogTab-pencil.jpg') no-repeat left top;
+  padding-left: 30px;
+}
+#content div.contenttype-blog-entry h2 {
+  padding: 10px 0 0 75px;
+  font-weight: 600;
+}
+#content div.contenttype-blog-entry div.documentByLine {
+  padding-left: 75px;
+  color: #b1b1b1;
+}
+#content div.contenttype-blog-entry div.blog-entry {
+  padding: 10px 0 0 0;
+}
+/* @end */
 .alert-message {
   padding: 8px 35px 8px 14px;
   margin-bottom: 1.25em;
@@ -6369,7 +6386,7 @@ p.image-desc {
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
