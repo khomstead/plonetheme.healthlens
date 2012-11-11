@@ -6042,6 +6042,22 @@ a span.readMore:hover {
   color: #8FCB43;
   background: transparent url('../images/icons/readMore-green.png') no-repeat left center;
 }
+#content .byline {
+  background: #eaeaea url('../images/icons/readMore-blue.png') no-repeat 8px center;
+  padding: .4em 0 .4em 30px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 80%;
+  color: #999;
+  margin: 1em 0em;
+}
+#content .byline a:link {
+  color: #999;
+}
 /* @end */
 /* @group PTG ContactSheet */
 .contactsheet {
