@@ -5797,7 +5797,8 @@ ul#portal-megamenu .sub ul li a:hover {
 img.image-left,
 img.image-right,
 .captioned img,
-img.image-inline {
+img.image-inline,
+img.newsImage {
   border: 4px solid #eaeaea;
 }
 img.image-inline {
@@ -6054,9 +6055,6 @@ a span.readMore:hover {
   font-size: 80%;
   color: #999;
   margin: 1em 0em;
-}
-#content .byline a:link {
-  color: #999;
 }
 /* @end */
 /* @group PTG ContactSheet */
