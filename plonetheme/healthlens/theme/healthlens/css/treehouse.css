@@ -6103,10 +6103,21 @@ a span.readMore {
   text-transform: uppercase;
   padding-left: 20px;
   background: transparent url('../images/icons/readMore-blue.png') no-repeat left center;
-  float: right;
   font-size: 80%;
 }
 a span.readMore:hover {
+  color: #8FCB43;
+  background: transparent url('../images/icons/readMore-green.png') no-repeat left center;
+}
+a span.readMoreFloat {
+  color: #1a75ba;
+  text-transform: uppercase;
+  padding-left: 20px;
+  background: transparent url('../images/icons/readMore-blue.png') no-repeat left center;
+  float: right;
+  font-size: 80%;
+}
+a span.readMoreFloat:hover {
   color: #8FCB43;
   background: transparent url('../images/icons/readMore-green.png') no-repeat left center;
 }
