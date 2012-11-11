@@ -46,17 +46,24 @@
   border-left: none;
   background: #f5f9ff url('../images/openquote-gray.png') 5px 5px no-repeat;
 }
+#content .callout {
+  font-family: "ff-enzo-web", sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-top: solid 1px #eaeaea;
+  border-bottom: solid 1px #eaeaea;
+  border-left: none;
+  background: #F5F9FF;
+}
 /* @end */
 /* @group Theme */
 .background {
   background-image: url('../images/seamlesstexture27_500.jpg') !important;
   background-repeat: repeat;
   background-color: #333 !important;
-}
-#content .callout {
-  background: #F1E9B6;
-  border-left: 0;
-  border-radius: 4px;
 }
 .image-inline {
   margin-right: 15px;
@@ -6070,7 +6077,7 @@ p {
 #content {
   font-size: 100%;
   line-height: 1.25em !important;
-  margin: 0;
+  margin: 10px 0;
 }
 #content a:visited,
 #content a:link,
