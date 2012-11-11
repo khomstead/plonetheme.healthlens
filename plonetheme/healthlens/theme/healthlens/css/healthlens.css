@@ -6010,7 +6010,7 @@ p {
 #content {
   font-size: 100%;
   line-height: 1.25em !important;
-  margin: 0;
+  margin: 10px 0;
 }
 #content a:visited,
 #content a:link,
