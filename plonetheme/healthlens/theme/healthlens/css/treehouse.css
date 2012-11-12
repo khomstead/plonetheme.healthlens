@@ -5517,7 +5517,17 @@ div.navbar.navbar-fixed-top .navbar-inner {
 }
 #portal-column-two div.portletWrapper dt.portletHeader {
   background: transparent;
-  padding-top: 10px;
+  padding: 0 0 2px 0;
+  font-family: "ff-enzo-web", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #AE443A;
+  text-align: center;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+#portal-column-two div.portletWrapper dt.portletHeader a {
+  color: #AE443A;
 }
 .removeBookmarkButton {
   width: auto;
