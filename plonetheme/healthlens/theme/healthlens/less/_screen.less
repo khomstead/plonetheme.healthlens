@@ -200,17 +200,28 @@ div.navbar.navbar-fixed-top {
 /* @group Collections*/
 
 .template-folder_summary_view div.tileItem, .template-summary_view div.tileItem {
-	border-bottom: 1px #eaeaea solid;
+	border-bottom: 1px #B1B1B1 dashed;
 	background: transparent url('../images/news-tab.jpg') no-repeat left top;
 	padding-left: 30px;
 	margin: 20px 0;
-	& h2 {	padding: 6px 0 0 75px;
-			font-weight: 600;
+	& h2 {	padding: 15px 0 0 75px;
+			font-weight: 300;
 			line-height: 1.1em !important;
 			}
-	& div.documentByLine {padding-left: 75px; color: #b1b1b1; font-size: 75%; line-height: 1.2em; min-height: 2em;}
-	& div.blog-entry {padding: 10px 0 0 0; border-bottom: 1px dashed #eaeaea}
-	& p.tileBody {display: none;}
+	& div.documentByLine {padding-left: 75px; color: #b1b1b1 !important; font-size: 75% !important; line-height: 1.2em; min-height: 2em;}
+	& p.tileBody {}
+	& p.tileFooter a {
+			color: @readMore-color;
+			text-transform: uppercase;
+			padding-left: 20px;
+			background: transparent url('../images/icons/readMore-blue.png') no-repeat left center;
+			font-size: 80%;
+			&:hover {
+				color: #8FCB43;
+				background: transparent url('../images/icons/readMore-green.png') no-repeat left center;
+				}
+	}
+	
 }
 /* @end */   
 
