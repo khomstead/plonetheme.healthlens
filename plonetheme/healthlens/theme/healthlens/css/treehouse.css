@@ -5532,6 +5532,37 @@ div.navbar.navbar-fixed-top .navbar-inner {
 .removeBookmarkButton {
   width: auto;
 }
+/* @end *//* @group Collections*/
+.template-folder_summary_view div.tileItem,
+.template-summary_view div.tileItem {
+  border-bottom: 1px #eaeaea solid;
+  background: transparent url('../images/news-tab.jpg') no-repeat left top;
+  padding-left: 30px;
+  margin: 20px 0;
+}
+.template-folder_summary_view div.tileItem h2,
+.template-summary_view div.tileItem h2 {
+  padding: 6px 0 0 75px;
+  font-weight: 600;
+  line-height: 1.1em !important;
+}
+.template-folder_summary_view div.tileItem div.documentByLine,
+.template-summary_view div.tileItem div.documentByLine {
+  padding-left: 75px;
+  color: #b1b1b1;
+  font-size: 75%;
+  line-height: 1.2em;
+  min-height: 2em;
+}
+.template-folder_summary_view div.tileItem div.blog-entry,
+.template-summary_view div.tileItem div.blog-entry {
+  padding: 10px 0 0 0;
+  border-bottom: 1px dashed #eaeaea;
+}
+.template-folder_summary_view div.tileItem p.tileBody,
+.template-summary_view div.tileItem p.tileBody {
+  display: none;
+}
 /* @end *//* @group Collage*/
 .column-block {
   position: relative !important;
