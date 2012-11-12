@@ -5542,17 +5542,15 @@ div.navbar.navbar-fixed-top .navbar-inner {
 }
 .template-folder_summary_view div.tileItem h2,
 .template-summary_view div.tileItem h2 {
-  padding: 15px 0 0 75px;
+  padding: 25px 0 0 75px;
   font-weight: 300;
-  line-height: 1.1em !important;
+  line-height: 1.5em !important;
 }
 .template-folder_summary_view div.tileItem .documentByLine,
 .template-summary_view div.tileItem .documentByLine {
-  padding-left: 75px;
   color: #b1b1b1 !important;
   font-size: 75% !important;
   line-height: 1.2em;
-  min-height: 2em;
 }
 .template-folder_summary_view div.tileItem p.tileFooter,
 .template-summary_view div.tileItem p.tileFooter {
