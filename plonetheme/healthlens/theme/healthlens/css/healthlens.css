@@ -5466,33 +5466,37 @@ div.navbar.navbar-fixed-top .navbar-inner {
 /* @end *//* @group Collections*/
 .template-folder_summary_view div.tileItem,
 .template-summary_view div.tileItem {
-  border-bottom: 1px #eaeaea solid;
+  border-bottom: 1px #B1B1B1 dashed;
   background: transparent url('../images/news-tab.jpg') no-repeat left top;
   padding-left: 30px;
   margin: 20px 0;
 }
 .template-folder_summary_view div.tileItem h2,
 .template-summary_view div.tileItem h2 {
-  padding: 6px 0 0 75px;
-  font-weight: 600;
+  padding: 15px 0 0 75px;
+  font-weight: 300;
   line-height: 1.1em !important;
 }
 .template-folder_summary_view div.tileItem div.documentByLine,
 .template-summary_view div.tileItem div.documentByLine {
   padding-left: 75px;
-  color: #b1b1b1;
-  font-size: 75%;
+  color: #b1b1b1 !important;
+  font-size: 75% !important;
   line-height: 1.2em;
   min-height: 2em;
 }
-.template-folder_summary_view div.tileItem div.blog-entry,
-.template-summary_view div.tileItem div.blog-entry {
-  padding: 10px 0 0 0;
-  border-bottom: 1px dashed #eaeaea;
+.template-folder_summary_view div.tileItem p.tileFooter a,
+.template-summary_view div.tileItem p.tileFooter a {
+  color: #1a75ba;
+  text-transform: uppercase;
+  padding-left: 20px;
+  background: transparent url('../images/icons/readMore-blue.png') no-repeat left center;
+  font-size: 80%;
 }
-.template-folder_summary_view div.tileItem p.tileBody,
-.template-summary_view div.tileItem p.tileBody {
-  display: none;
+.template-folder_summary_view div.tileItem p.tileFooter a:hover,
+.template-summary_view div.tileItem p.tileFooter a:hover {
+  color: #8FCB43;
+  background: transparent url('../images/icons/readMore-green.png') no-repeat left center;
 }
 /* @end *//* @group Collage*/
 .column-block {
