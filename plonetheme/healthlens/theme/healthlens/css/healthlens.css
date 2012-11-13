@@ -5845,6 +5845,14 @@ img.newsImage,
 img.tileImage {
   border: 4px solid #eaeaea;
 }
+img.image-left:hover,
+img.image-right:hover,
+.captioned img:hover,
+img.image-inline:hover,
+img.newsImage:hover,
+img.tileImage:hover {
+  border: 4px solid #1a75ba;
+}
 img.image-inline {
   margin: 0em;
 }
@@ -5853,9 +5861,6 @@ img.image-right {
 }
 img.image-left {
   margin: .5em 1em .5em 0em;
-}
-a img:hover {
-  border: 4px solid #1a75ba;
 }
 /* @end */
 /* @group Overlay */
