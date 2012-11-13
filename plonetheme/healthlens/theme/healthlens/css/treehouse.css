@@ -6374,10 +6374,10 @@ p.image-desc {
 
 }
 .item .caption a {
-  font-family: "ff-enzo-web", sans-serif;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   text-decoration: none;
-  color: #fff;
-  font-size: 2em;
+  color: #fff !important;
+  font-size: 1.5em;
   line-height: 1em;
   font-weight: 600;
   text-shadow: 0 1px 2px black;
