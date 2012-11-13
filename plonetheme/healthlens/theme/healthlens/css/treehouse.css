@@ -93,6 +93,9 @@
 #content .btn-primary a:visited {
   color: white;
 }
+.collage_view_standard .standard-document h2 {
+  text-align: left;
+}
 /* @end */
 /* @group Megamenu */
 #portal-megamenu .sub ul li span.documentByLine,
