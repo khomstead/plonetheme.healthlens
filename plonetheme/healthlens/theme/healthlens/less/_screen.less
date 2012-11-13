@@ -472,6 +472,7 @@ ul#portal-megamenu .sub ul li a:hover {
 /* @group Images */
 img.image-left, img.image-right, .captioned img, img.image-inline, img.newsImage, img.tileImage {
     border: 4px solid #eaeaea;  
+    &:hover {border:4px solid @ImageLinkHover;}
 }
 
 img.image-inline {
@@ -484,10 +485,6 @@ img.image-right {
 
 img.image-left {
     margin:  .5em 1em .5em 0em;   
-}
-
-a img:hover {
-    border:4px solid @ImageLinkHover; 
 }
 
 /* @end */
