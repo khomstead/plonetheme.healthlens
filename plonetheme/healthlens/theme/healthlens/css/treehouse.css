@@ -5914,12 +5914,12 @@ img.newsImage,
 img.tileImage {
   border: 4px solid #eaeaea;
 }
-img.image-left:hover,
-img.image-right:hover,
-.captioned img:hover,
-img.image-inline:hover,
-img.newsImage:hover,
-img.tileImage:hover {
+a img.image-left:hover,
+a img.image-right:hover,
+a .captioned img:hover,
+a img.image-inline:hover,
+a img.newsImage:hover,
+a img.tileImage:hover {
   border: 4px solid #1a75ba;
 }
 img.image-inline {
@@ -6324,13 +6324,6 @@ p.image-desc {
   padding: 1em 0 .3em 0;
   position: relative;
   text-align: center;
-  background-color: #a9be9f;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
 }
 .item {
   width: 125px;
