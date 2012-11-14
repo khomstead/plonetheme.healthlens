@@ -3,10 +3,16 @@ $(function() {
 
 	jq('.newsImageContainer a')
 	    .prepOverlay({
-	         subtype:'image',
-	         urlmatch:'/image_view_fullscreen$',
-	         urlreplace:'_preview'
-	        });
+	        subtype:'image',
+	        urlmatch:'/image_view_fullscreen$',
+	        urlreplace:'_preview',
+            config: {
+                mask: {
+                    color: '#000',
+                    opacity: 0.7,
+                },
+            }
+	    });
 
     jQuery('.overlay-profile').prepOverlay({
         subtype: 'ajax',
@@ -14,7 +20,7 @@ $(function() {
         config: { 
             mask: {
                 color: '#000',
-                opacity: 0.7
+                opacity: 0.7,
             },
         }
     });
