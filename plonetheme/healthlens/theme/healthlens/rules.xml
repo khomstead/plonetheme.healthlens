@@ -78,6 +78,8 @@
     <drop css:content="#content h1.documentFirstHeading" />
 
     <drop css:content="#parent-fieldname-description" /> 
+    
+    <after css:theme="#colophon" css:content="#plone-analytics"/>
 
 </rules>
 
