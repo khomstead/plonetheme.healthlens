@@ -1,7 +1,6 @@
-$ = jQuery_1_7_1;
-$(function() {
+$(document).ready( function() {
 
-	jq('.newsImageContainer a')
+	$('.newsImageContainer a')
 	    .prepOverlay({
 	        subtype:'image',
 	        urlmatch:'/image_view_fullscreen$',
@@ -14,7 +13,7 @@ $(function() {
             }
 	    });
 
-    jQuery('.overlay-profile').prepOverlay({
+    $('.overlay-profile').prepOverlay({
         subtype: 'ajax',
         filter: '#content > *',
         config: { 
