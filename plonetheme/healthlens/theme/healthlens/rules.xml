@@ -79,7 +79,7 @@
 
     <drop css:content="#parent-fieldname-description" /> 
     
-    <after css:theme="#colophon" css:content="#plone-analytics"/>
+    <after css:theme="#analytics" css:content="#plone-analytics"/>
 
 </rules>
 
