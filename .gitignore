@@ -27,3 +27,4 @@ dist
 *.pyo
 *.tmp*
 *.un~
+*.swp
