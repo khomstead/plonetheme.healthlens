@@ -83,13 +83,10 @@
 #content #parent-fieldname-title {
   display: none;
 }
-.close {
-  opacity: 1;
-}
 .pb-ajax {
   box-shadow: 0px 0px 3em 0.5em #000000;
 }
-#content .btn-primary a,
+#content .btn-primary a:link,
 #content .btn-primary a:visited {
   color: white;
 }
@@ -5429,9 +5426,12 @@ div.navbar.navbar-fixed-top .navbar-inner {
   position: relative;
   z-index: 1;
 }
-#doormat {
+#colophon {
   position: relative;
   display: block;
+  text-align: center;
+  font: 70% "ff-enzo-web", sans-serif;
+  color: #999;
 }
 #portlets-below {
   padding: 1em 0 0 0;
@@ -5534,6 +5534,19 @@ div.navbar.navbar-fixed-top .navbar-inner {
 }
 .removeBookmarkButton {
   width: auto;
+}
+/* @end *//* @group Portlets Below*/
+#portlets-below dt.portletHeader {
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+#portlets-below dd.portletItem p {
+  color: #70AFD8;
+}
+#portlets-below dd.portletItem p a {
+  color: #70AFD8;
 }
 /* @end *//* @group Collections*/
 .template-folder_summary_view div.tileItem,
@@ -5938,7 +5951,8 @@ img.image-left {
 /* @group Overlay */
 div.overlay-iframe,
 div.overlay-ajax {
-  max-width: 420px;
+  width: auto;
+  max-width: 620px;
   min-width: 200px;
   font-size: 100%;
   line-height: 1.25em;
@@ -5953,6 +5967,9 @@ div.overlay-ajax {
 }
 #content a.link-overlay {
   border-bottom: none !important;
+}
+div.overlay div.close {
+  opacity: 0.6;
 }
 /* @end */
 /* @group page title */

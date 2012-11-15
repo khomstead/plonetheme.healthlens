@@ -86,9 +86,12 @@ div.navbar.navbar-fixed-top {
 	z-index: 1;			
 }
 
-#doormat {
+#colophon {
 	position: relative;
 	display: block;
+	text-align: center;
+	font: 70% @title-font-family;
+	color: #999;
 }
 
 #portlets-below {
@@ -196,6 +199,24 @@ div.navbar.navbar-fixed-top {
 }
 
 /* @end */   
+
+/* @group Portlets Below*/
+
+#portlets-below {
+	
+	& dt.portletHeader {
+		background: transparent;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 300;
+		}
+	& dd.portletItem p {
+		color: #70AFD8;
+		& a {color: #70AFD8;}
+		}
+}
+
+/* @end */ 
 
 /* @group Collections*/
 
