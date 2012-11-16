@@ -74,7 +74,7 @@ div.navbar.navbar-fixed-top {
 #page-wrapper {
 	top:  80px;
 	z-index:1;
-	margin-bottom: 100%;
+	margin-bottom: 200px;
 	.curl-effect(100px);
 }
 
@@ -88,9 +88,12 @@ div.navbar.navbar-fixed-top {
 	z-index: 1;			
 }
 
-#doormat {
+#colophon {
 	position: relative;
 	display: block;
+	text-align: center;
+	font: 70% @title-font-family;
+	color: #999;
 }
 
 #portlets-below {
@@ -198,6 +201,24 @@ div.navbar.navbar-fixed-top {
 }
 
 /* @end */   
+
+/* @group Portlets Below*/
+
+#portlets-below {
+	
+	& dt.portletHeader {
+		background: transparent;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 300;
+		}
+	& dd.portletItem p {
+		color: #70AFD8;
+		& a {color: #70AFD8;}
+		}
+}
+
+/* @end */ 
 
 /* @group Collections*/
 

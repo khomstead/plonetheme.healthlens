@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 	<head> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HealthLens</title>
@@ -50,7 +50,6 @@
 		</div>  
       </div> <!-- end header -->
 		<!-- Content Area --> 
-<!--		<div class="light"/>-->
 			<div id="page-wrapper" class="container">
 				<div id="curl-wrapper">
 					<div id="page" class="container">
@@ -60,20 +59,23 @@
 						</div>
 					</div>
 				</div>
-				<div id="doormat"></div>
 			</div>			
 		</div>
+		<div id="colophon">
+            <p>Copyright &#169; 2010-<span id="copyright">2012</span>, The Treehouse Foundation. Site powered by <a href="http://www.plone.org">Plone</a> and designed by CloudSpring.</p>
+		</div>
+		
 		<div id="ddm" class="dropdown-menu"></div> 
-<!--		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <!--[if lt IE 9]>
-		<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-		<script src="js/respond.min.js"></script>
+            <script src="js/respond.min.js"></script>
         <![endif]-->
-
+		<script id="analytics"></script>
 		<script type="text/javascript">
             $(document).ready(function(){
-            //prepend span tag to H1
-            $("#page-title h1").prepend("<span></span>");
+                //prepend span tag to H1
+                $("#page-title h1").prepend("<span></span>");
+                var theYear = new Date().getFullYear();
+                $("#copyright").html(theYear);
             });
 		</script>
 		

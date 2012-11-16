@@ -9,10 +9,11 @@
     />
 </object>
 <!--	XHTML Strict-->
+<!--
 <xsl:output
     doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
     doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
-     
+    --> 
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
     
 <!--    Append Rules to Specify CSS Master File -->
@@ -41,7 +42,7 @@
     
     <replace theme="/html/head/title" content="/html/head/title"/>
     <drop css:theme="meta"/>
-    <before content='/html/head' theme='/html/head' />
+    <before content-children='/html/head' theme-children='/html/head' />
     <copy attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
     <append css:theme=".nav-collapse" css:content="ul#portal-megamenu"/>    
@@ -78,6 +79,8 @@
     <drop css:content="#content h1.documentFirstHeading" />
 
     <drop css:content="#parent-fieldname-description" /> 
+    
+    <replace css:theme="#analytics" css:content="#plone-analytics"/>
 
 </rules>
 
