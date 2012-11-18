@@ -51,6 +51,7 @@
     <replace if-path="/connect" css:theme="#page-wrapper" css:content="#content"/>
 
     <append css:theme="#page" css:content="#portal-columns"/>
+    <append css:theme="#page" css:content="#commenting"/>
     <append css:theme="#page" css:content="#portlets-below"/>
       
     <drop css:content="#portal-breadcrumbs"/> 
