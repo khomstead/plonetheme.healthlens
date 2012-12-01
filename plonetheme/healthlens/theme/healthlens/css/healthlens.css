@@ -6278,6 +6278,15 @@ a.row_0 {
   margin-left: 0;
 }
 /* @end */
+/* @group PTG s3 Image Gallery */
+.s3sliderImage div.image-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+}
+.s3sliderImage div.image-desc {
+  font-size: 1em;
+}
+/* @end */
 /* @group PTG Sheetgallery */
 .sheetgallery {
   margin: 0 0  9px 0;
