@@ -946,7 +946,7 @@ a span.readMoreFloat{color:#1a75ba;text-transform:uppercase;padding-left:20px;ba
 .contactsheet a div{display:none;height:100%;padding-top:30%;position:absolute;text-align:center;text-decoration:none;width:100%;z-index:100;font-family:'Helvetica Neue',Helvetica,Arial,serif;font-size:2em;font-weight:bold;color:#eeeeee;text-shadow:#000 0px 0px 20px;}
 .image-desc{clear:both;font-size:40%;font-style:italic;font-weight:normal;margin-top:16px;}
 a.row_0{clear:left;margin-left:0;}
-#s3slider span div.image-title{font-family:"ff-enzo-web",sans-serif;font-size:20px;}
+div.image-title{font-family:"ff-enzo-web",sans-serif;font-size:20px;}
 #s3slider span div.image-desc{font-size:12px;}
 .sheetgallery{margin:0 0 9px 0;position:relative;text-align:center;}
 .sheetgallery div{display:inline-block;position:relative;border:1px solid #eee;overflow:hidden;background-repeat:no-repeat;background-position:center center;color:#eee !important;text-align:center;}
