@@ -24,6 +24,7 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 2em;
+  line-height: 2em;
   color: #313131;
 }
 .paragraph-font {
@@ -6181,6 +6182,7 @@ h2 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 2em;
+  line-height: 2em;
   color: #313131;
 }
 #content .pullquote {
