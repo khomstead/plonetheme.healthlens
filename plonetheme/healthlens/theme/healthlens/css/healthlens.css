@@ -6281,10 +6281,13 @@ a.row_0 {
 /* @group PTG s3 Image Gallery */
 #s3slider span div.image-title {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 24px;
 }
 #s3slider span div.image-desc {
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
 }
 /* @end */
 /* @group PTG Sheetgallery */
