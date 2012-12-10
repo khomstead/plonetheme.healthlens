@@ -6140,7 +6140,7 @@ a.carousel-title {
     font-size: 75%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .carousel {
     margin: 0 -21px;
   }
@@ -6149,7 +6149,7 @@ a.carousel-title {
     font-size: 100%;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 1080px) {
   .carousel {
     margin: 0 -24px;
   }
