@@ -6140,9 +6140,18 @@ a.carousel-title {
     font-size: 75%;
   }
 }
+@media (min-width: 768px) {
+  .carousel {
+    margin: 0 -21px;
+  }
+  .carousel-banners {
+    height: 400px !important;
+    font-size: 100%;
+  }
+}
 @media (min-width: 980px) {
   .carousel {
-    margin: 0 -23px;
+    margin: 0 -24px;
   }
   .carousel-banners {
     height: 450px !important;
