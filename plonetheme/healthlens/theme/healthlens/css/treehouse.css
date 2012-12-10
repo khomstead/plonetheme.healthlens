@@ -958,8 +958,8 @@ a.row_0{clear:left;margin-left:0;}
 .sheetgallery a{height:100%;}
 .column_0{border-top:1px solid #eee ;}
 .row_0{clear:left;margin-left:0;border-left:1px solid #eee;}
-h3.image-title{display:none;position:absolute;text-align:center;width:90%;top:0;padding:17% 5% 0 5% ;color:#333;font-family:'Helvetica Neue',Helvetica,Arial,serif;font-size:2em;font-weight:bold;margin:0;}
-p.image-desc{display:none;position:absolute;text-align:center;width:90%;bottom:0;padding:0px 5% 25% 5% ;color:#333;font-style:normal ;font-size:12px;margin:0;}
+h3.image-title{display:none;position:absolute;text-align:center;width:90%;top:0;padding:17% 5% 0 5% ;color:#333;font-family:'Helvetica Neue',Helvetica,Arial,serif;font-size:2em;line-height:2.25em;font-weight:bold;margin:0;}
+p.image-desc{display:none;position:absolute;text-align:center;width:90%;bottom:0;padding:0px 5% 25% 5% ;color:#333;font-style:normal ;font-size:1em;line-height:1.25em;margin:0;}
 #content .presentationWrapper ul{margin-left:0;}
 .presentationWrapper{border:3px solid #eaeaea;margin:1em 0;}
 .thumbs{margin-left:auto;margin-right:auto;padding:1em 0 .3em 0;position:relative;text-align:center;}
