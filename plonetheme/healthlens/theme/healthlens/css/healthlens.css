@@ -6140,12 +6140,12 @@ a.carousel-title {
     font-size: 75%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .carousel {
     margin: 0 -19px;
   }
   .carousel-banners {
-    height: 400px !important;
+    height: 350px !important;
     font-size: 100%;
   }
 }
@@ -6160,7 +6160,7 @@ a.carousel-title {
 }
 @media (min-width: 1200px) {
   .carousel {
-    margin: 0 -22px;
+    margin: 0 -24px;
   }
   .carousel-banners {
     height: 450px !important;
