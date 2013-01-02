@@ -3,7 +3,8 @@
 /* @group Imports */
 
 // Twitter Bootstrap Framework
-@import "bootstrap";
+@import "../components/bootstrap/less/bootstrap";
+@import "../components/bootstrap/less/responsive";
 //Re-usable effects such as page curls, etc.
 @import "_effects"; 
 
@@ -230,19 +231,23 @@ div.navbar.navbar-fixed-top {
 	& h2 {	padding: 25px 0 0 75px;
 			font-weight: 300;
 			line-height: 1.5em !important;
-			}
-	& .documentByLine { color: #b1b1b1 !important; font-size: 75% !important; line-height: 1.2em;}
+	}
+	& .documentByLine { 
+        color: #b1b1b1 !important; 
+        font-size: 75% !important; 
+        line-height: 1.2em;
+    }
 	& p.tileBody {}
-	& p.tileFooter {
-			color: @readMore-color;
-			text-transform: uppercase;
-			padding-left: 20px;
-			background: transparent url('../images/icons/readMore-blue.png') no-repeat left center;
-			font-size: 80%;
-			&:hover {
-				color: #8FCB43;
-				background: transparent url('../images/icons/readMore-green.png') no-repeat left center;
-				}
+    & p.tileFooter {
+	    color: @readMore-color;
+		text-transform: uppercase;
+		padding-left: 20px;
+		background: transparent url('../images/icons/readMore-blue.png') no-repeat left center;
+		font-size: 80%;
+		&:hover {
+            color: #8FCB43;
+			background: transparent url('../images/icons/readMore-green.png') no-repeat left center;
+		}
 	}
 	
 }
@@ -1073,6 +1078,5 @@ p.image-desc {
     padding-left: 4%;
 }
 
-@import "responsive";
 //Some of the original CSS from MegaMenu Product
 @import "_megamenu_layout";

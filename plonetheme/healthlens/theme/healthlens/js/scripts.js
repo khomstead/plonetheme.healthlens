@@ -1,5 +1,48 @@
 $(document).ready( function() {
 
+    //prepend span tag to H1
+    $("#page-title h1").prepend("<span></span>");
+
+    //Set copyright date to current year
+    var theYear = new Date().getFullYear();
+    $("#copyright").html(theYear);
+
+    //Products.Collage initialization
+    setupContentMenu();
+    setupHandlers();                                                                 
+    setupNavigation(); 
+
+    //Bootstrap modal wants to be moved here:
+    $('.modal').appendTo($("body"));
+
+    //Get clarify-it documents
+    var doc_id = $('#clarify_it_id').html();
+    $('#clarify-it').load('/clarify/'+doc_id+' #content', function(){
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+
+    $('#new_helpdesk_note').on('submit',function(e){
+        e.preventDefault();
+        var action = '' + jquery(this).attr('action'); 
+        var fd = new FormData(document.getElementById('new_helpdesk_note'));
+
+        var note = $('textarea#portal_ticket_note').val();
+
+        $.ajax({
+            type     : "POST",
+            url      : action,
+            data     : fd,
+            contentType : false,
+            processData : false,
+        })
+        .done( function (data) {
+            location.reload();
+        })
+        .fail( function (data) {
+            alert('error');
+        });
+    });
+
 	$('.newsImageContainer a')
 	    .prepOverlay({
 	        subtype:'image',
