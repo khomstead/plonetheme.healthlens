@@ -3,7 +3,8 @@
 /* @group Imports */
 
 // Twitter Bootstrap Framework
-@import "bootstrap";
+@import "../components/bootstrap/less/bootstrap";
+@import "../components/bootstrap/less/responsive";
 //Re-usable effects such as page curls, etc.
 @import "_effects"; 
 
@@ -31,30 +32,37 @@ div.navbar.navbar-fixed-top {
 	//width: 100%;
 	position: fixed;
 	z-index: 100;
-	margin-bottom: 0; 
+    margin: 0;
 	& .navbar-inner {
 		.topbar-gradient;
 		padding: 0;
+        border: 0;
 	}
+}
+.btn-navbar {
+    position: fixed;
+    right: 0;
 }
 
 .logo {
 	background: transparent @logo-image no-repeat bottom left;
 	height: @navbar-height;
 	margin: 0;
-	float: left; 
 	width: @logo-width;
 	min-width: @logo-minWidth;
+    float: left;
 }
 
 #personal-bar {
-	width: 100%;
+	width: 140%;
 	height: @personal-bar-height;
 	background-color: blue;
 	/* position: fixed; */
 	z-index: 99;
 	top: @navbar-height;
 	position: fixed;
+    margin-left: -20%;
+    margin-right: -20%;
 }
 
 .cssgradients #personal-bar {
@@ -86,6 +94,18 @@ div.navbar.navbar-fixed-top {
 	padding: 0px 10px 0 10px;
 	position: relative;
 	z-index: 1;			
+}
+
+#portal-columns.row {
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 #colophon {
@@ -430,6 +450,13 @@ ul#portal-megamenu .sub ul li a:hover {
 
 @media (max-width: 979px) {
 	ul#portal-megamenu {
+        // Don't display descriptions in responsive mode
+        p, .sub ul li span.description {
+             display: none;
+        }
+        a h2 {
+            display: inline;
+        }
 		width: 100%;
 			& li.top-level {
 				display: block;
@@ -1073,6 +1100,5 @@ p.image-desc {
     padding-left: 4%;
 }
 
-@import "responsive";
 //Some of the original CSS from MegaMenu Product
 @import "_megamenu_layout";
