@@ -52,6 +52,13 @@
 
     <append css:theme="#page" css:content="#portal-columns"/>
     <append css:theme="#page" css:content="#commenting"/>
+
+    <!-- Hide the portlets below the content on phones -->
+    <replace content="div[@id='portlets-below']/@class">
+        <xsl:attribute name="class">
+            <xsl:value-of select="."/> hidden-phone
+        </xsl:attribute>
+    </replace>
     <append css:theme="#page" css:content="#portlets-below"/>
       
     <drop css:content="#portal-breadcrumbs"/> 
