@@ -101,6 +101,10 @@ div.navbar.navbar-fixed-top {
   margin-left: -20px;
 }
 
+#portal-column-content[class*="span"] {
+  margin-left:0;
+}
+
 @media (max-width: 767px) {
     body {
         padding-left: 0;
@@ -130,11 +134,15 @@ div.navbar.navbar-fixed-top {
 /* @end */   
 
 /* @group Portlets*/
+@media (min-width: 767px) {
+    #portal-column-two {
+        margin-top: -30px;
+    }
+}
+
 
 //@media (min-width: 481px) {
 	#portal-column-two {
-		margin-top: -30px;
-		min-width: 200px;
 //		padding: 5px;
 //		margin-top: 20px;
 //		border: 1px solid #eee; 
@@ -269,6 +277,13 @@ div.navbar.navbar-fixed-top {
 /* @end */   
 
 /* @group Collage*/
+@media (max-width: 480px) {
+    #collage .column-block.block_1, #collage .column-block.block_2, #collage .column-block.block_3, #collage .column-block.block_4, #collage .column-block.block_5, #collage .column-block.block_6 {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
 //.collage_type_topic {
 //	padding: 8px;
 //	right: -10px;

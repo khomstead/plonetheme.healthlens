@@ -24,6 +24,7 @@ setup(
     install_requires=[
         'setuptools',
         'plone.app.theming',
+        'z3c.jbot',
     ],
     entry_points={
         'z3c.autoinclude.plugin': 'target = plone',
