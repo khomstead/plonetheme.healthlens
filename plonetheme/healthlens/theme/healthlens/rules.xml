@@ -51,7 +51,6 @@
     <replace if-path="/connect" css:theme="#page-wrapper" css:content="#content"/>
 
     <append css:theme="#page" css:content="#portal-columns"/>
-    <append css:theme="#page" css:content="#commenting"/>
 
     <!-- Hide the portlets below the content on phones -->
     <replace content="div[@id='portlets-below']/@class">
@@ -62,7 +61,6 @@
     <append css:theme="#page" css:content="#portlets-below"/>
       
     <drop css:content="#portal-breadcrumbs"/> 
-    <drop css:content="#viewlet-below-content"/>
     
     <drop css:content="#portal-header form"/> 
     <!--Content-->
