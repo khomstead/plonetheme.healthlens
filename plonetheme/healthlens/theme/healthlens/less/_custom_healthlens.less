@@ -51,8 +51,12 @@
 @description-font-family: 'Ubuntu', sans-serif;
 @blockqute-font-family:  'Ubuntu', sans-serif;
 
+body {
+    font-size: 1em;
+}
+
 .page-title-font {
-	font-size: 3em;  
+	font-size: 200%;  
 	line-height: 1em;
 	letter-spacing: normal;
 	font-family: @title-font-family; 
@@ -61,11 +65,12 @@
 }
 
 .page-description-font {
-	font-size: 2em;  
-	letter-spacing: normal;
 	font-family: @title-font-family; 
-	color: #FFBC5F;
+	font-size: 125%;  
 	font-weight: 100;
+    line-height: 100%;
+	letter-spacing: normal;
+	color: #FFBC5F;
 }
 
 .h2-font {
@@ -79,8 +84,6 @@
 .paragraph-font {
 	font-family: @title-font-family;
 	font-weight: 300;
-	font-size: 1em;
-	line-height: 1.5em;
 	color: #414141;
 }
 
