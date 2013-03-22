@@ -87,6 +87,9 @@
     <drop css:content="#parent-fieldname-description" /> 
     
     <replace css:theme="#analytics" css:content="#plone-analytics"/>
+    <append css:theme="#personal-bar-wrapper" css:content="#portal-personaltools-wrapper" />
+    <after css:theme-children="#personal-bar-wrapper" css:content="#toggle-controlbox" />
+    <append css:theme="body" css:content="#chatpanel" />
 
 </rules>
 
