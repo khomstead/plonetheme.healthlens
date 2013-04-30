@@ -1,4 +1,8 @@
-$(document).ready( function() {
+jQuery(document).ready( function($) {
+    //prepend span tag to H1
+    $("#page-title h1").prepend("<span></span>");
+    var theYear = new Date().getFullYear();
+    $("#copyright").html(theYear);
 
     var element = document.querySelector('#portal-megamenu');
     if (element.offsetHeight < element.scrollHeight) {
