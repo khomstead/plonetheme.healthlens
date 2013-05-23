@@ -1,4 +1,9 @@
 jQuery(document).ready( function($) {
+
+    $("#personaltools-live_support a").on("click", function(e) {
+        e.preventDefault();
+        olark('api.box.expand');
+    });
     //prepend span tag to H1
     $("#page-title h1").prepend("<span></span>");
     var theYear = new Date().getFullYear();
