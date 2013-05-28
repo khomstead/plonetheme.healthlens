@@ -30,6 +30,11 @@ jQuery(document).ready( function($) {
         $(this).fadeOut("slow");
     });
 
+    $('#category a').prepOverlay({
+        subtype: 'ajax',
+        filter: '#content > *'
+    });
+
 	$('.newsImageContainer a')
 	    .prepOverlay({
 	        subtype:'image',
