@@ -50,15 +50,9 @@
     <!-- Fullscreen the RDP client -->
     <replace if-path="/connect" css:theme="#page-wrapper" css:content="#content"/>
 
-    <append css:theme="#page" css:content="#portal-columns"/>
+    <replace css:theme="#portal_columns" css:content="#portal-columns"/>
 
-    <!-- Hide the portlets below the content on phones -->
-    <replace content="div[@id='portlets-below']/@class">
-        <xsl:attribute name="class">
-            <xsl:value-of select="."/> hidden-phone
-        </xsl:attribute>
-    </replace>
-    <append css:theme="#page" css:content="#portlets-below"/>
+    <replace css:theme="#footer" css:content="#viewlet-below-content #portlets-below"/>
       
     <drop css:content="#portal-breadcrumbs"/> 
     
