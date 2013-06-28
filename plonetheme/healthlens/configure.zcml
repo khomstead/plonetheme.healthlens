@@ -17,4 +17,8 @@
     <browser:jbot
         directory="templates" />
 
+  <utility
+    component=".vocabularies.KnowledgeBaseVocabularyFactory"
+    name="plonetheme.healthlens.KnowledgeBaseVocabulary"
+    />
 </configure>
