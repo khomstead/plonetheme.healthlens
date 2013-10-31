@@ -14,5 +14,17 @@
             </property>
             <property name="visible">True</property>
        </object>
+        <object name="submit_ticket" meta_type="CMF Action" 
+                i18n:domain="plone" insert-before="*">
+            <property name="title" i18n:translate="">Submit a Ticket</property>
+            <property name="description" i18n:translate="">Submit a Ticket</property>
+            <property name="url_expr">string:<a href="javascript:void(0);" onclick="FreshWidget.show()">Submit a ticket</a></property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:member is not None</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+       </object>
    </object>
 </object>
