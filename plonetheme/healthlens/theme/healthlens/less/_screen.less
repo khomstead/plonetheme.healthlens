@@ -8,18 +8,75 @@
 //Re-usable effects such as page curls, etc.
 @import "_effects"; 
 @import "_xmpp";
-
+@import "_tiles";
 
 
 /* @end */
 
 /* @Overrides */
+.my-tour-overlay {
+  display: none;
+    background: #666;
+      opacity: 0.5;
+        z-index: 9997;
+          min-height: 100%;
+            height: 100%;
+              position: fixed;
+                top: 0; right: 0; bottom: 0; left: 0;
+                }
+                .my-tour-highlight {
+                  background: white;
+                    position: relative;
+                      border-radius: 4px;
+                        box-shadow: inset 0 0 2px rgba( 0, 0, 0, 0.2 );
+                          z-index: 9998;
+                          }
 a { text-decoration:none !important;}
+#content .field textarea[name$=".description"] {
+    font-size: 100%;
+    font-weight: normal;
+}
+.field label {
+    display: inline-block;
+    margin-left: 10px;
+}
 // Apply bootstrap button styling to all submit buttons.
 input[type="submit"] { .btn; }
 #content .field input[type="text"][name$=".title"], #content .field input[type="text"][name$=".title"], #archetypes-fieldname-title input {
     font-size: 100%;
 }
+#login-form {
+    input {
+        width: 95%;
+        font-size: 100%;
+        height: 100%;
+    }
+    .field, label {
+        text-align: left;
+        font-size: 100%;
+    }
+    .discreet {
+        font-size: 100%;
+    }
+    button {
+        font-size: 125%;
+        line-height: 150%;
+    }
+}
+.portalMessage.error {
+    .alert;
+    .alert-error;
+}
+.portalMessage.info {
+    .alert;
+    .alert-info;
+}
+.alert li {
+    display: list-item;
+    margin-left: 20px;
+    list-style: disc;
+}
+    
 /* @end */
 
 /* @group Layout Styles */
@@ -165,9 +222,8 @@ border-bottom: 2px solid @muted-accent-shadow;
 	z-index: 1;			
 }
 
-#portal-columns.row {
-  padding-left: 20px;
-  margin-left: -20px;
+.row {
+    margin:0;
 }
 
 #portal-column-content[class*="span"] {
@@ -275,6 +331,11 @@ border-bottom: 2px solid @muted-accent-shadow;
         width: 744px;
     }
 }
+@media (max-width: 767px) {
+    #viewlet-below-content-title #portlets-below {
+        width:100%;
+    }
+}
 
 #portlets-below div.cell {
     margin-top: 10px;
@@ -378,6 +439,18 @@ border-bottom: 2px solid @muted-accent-shadow;
 		color: #70AFD8;
 		& a {color: #70AFD8;}
 		}
+}
+
+#content #portlets-below {
+    & dt.portletHeader {
+        color: #000;
+        font-size: 200%;
+        text-transform: none;
+        font-weight: 500;
+    }
+    & .portlet a {
+        font-size: 150%;
+    }
 }
 
 /* @end */ 
@@ -687,7 +760,7 @@ ul#portal-megamenu .sub ul li a:hover {
 
 /* @group Images */
 img.image-left, img.image-right, .captioned img, img.image-inline, img.newsImage, img.tileImage {
-    border: 4px solid #eaeaea;  
+//    border: 4px solid #eaeaea;  
 }
 
 a img.image-left, a img.image-right, a .captioned img, a img.image-inline, a img.newsImage, a img.tileImage {
@@ -715,10 +788,18 @@ img.image-left {
 div.overlay-iframe, div.overlay-ajax {
     width: auto;
 	max-width: 620px;
-	min-width: 200px;
+	min-width: 320px;
 	font-size: 100%;
 	line-height: @baseLineHeight;
 }
+
+@media (max-width: 480px) {
+    div.overlay-iframe, div.overlay-ajax {
+        left: 0;
+    }
+}
+
+
 .pb-ajax {
 	.border-radius(6px);
 }
@@ -1225,7 +1306,7 @@ p.image-desc {
     max-width: 200%;
 }
  
-.clear {
+.clear, .visualClear {
     clear:both; 
 }
 
@@ -1313,6 +1394,9 @@ p.image-desc {
 	-webkit-border-radius: 0px 5px 5px 0px;
 } 
 
+ul.configlets li label {
+    display: inline-block;
+}
 
 //Some of the original CSS from MegaMenu Product
 @import "_megamenu_layout";
