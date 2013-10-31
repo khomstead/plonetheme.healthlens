@@ -15,8 +15,10 @@ class KnowledgeBaseVocabulary(object):
         items = [ 
             "Billing",
             "Clinical", 
+            "Compliance",
             "Practice Management",
             "Reception",
+            "Technology",
             "Quality",
             "Workflow",
             ]
