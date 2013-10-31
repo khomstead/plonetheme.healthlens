@@ -54,6 +54,30 @@ jQuery(document).ready( function($) {
             }
 	    });
 
+   $('.cover-collection-tile a').prepOverlay({
+       subtype: 'ajax',
+       filter: '#portal-column-content > *',
+       config: {
+           mask: '#000',
+           onLoad : function (e) {
+               $('#document-action-print a').on('click', function (e) {
+                   e.preventDefault();
+                   $('.pb-ajax').print({ 
+                       mediaPrint: true, 
+                       globalStyles: false, 
+                       stylesheet: 'https://portal.healthlens.org/print.css'
+                   });
+               });
+               $('a.link-category').on('click', function (e) {
+                   e.preventDefault();
+                   var tag = $(this).html();
+                   $('.overlay').overlay().close();
+                   window.location.href = '/knowledge-base#c6=' + tag;
+               });
+               return true;
+           }
+       }
+    });
     $('.overlay-profile').prepOverlay({
         subtype: 'ajax',
         filter: '#content > *',
