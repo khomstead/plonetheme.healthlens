@@ -1,6 +1,11 @@
 jQuery(document).ready( function($) {
 
     $('textarea[name="form.widgets.IDublinCore.description"], textarea[name="form.widgets.IDublinCore.subjects"]').autoResize();
+    $("#personaltools-submit_ticket a").on("click", function(e) {
+        e.preventDefault();
+        FreshWidget.show();
+    });
+
     $("#personaltools-live_support a").on("click", function(e) {
         e.preventDefault();
         olark('api.box.expand');
