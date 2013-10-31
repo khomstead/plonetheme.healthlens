@@ -1,0 +1,8 @@
+<registry>
+    <record name="plonetheme.healthlens.lms_secret">
+        <field type="plone.registry.field.TextLine">
+            <title>LMS Secret</title> 
+        </field>
+        <value></value>
+    </record>
+</registry>
