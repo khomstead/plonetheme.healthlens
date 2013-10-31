@@ -1,0 +1,23 @@
+<configure 
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonetheme.healthlens">
+
+  <browser:page
+      for="*"
+      name="tickets_view"
+      class=".tickets.ticketsView"
+      template="tickets.pt"
+      allowed_interface=".tickets.ITicketsView"
+      permission="zope2.View"
+      />
+  <browser:page
+      for="*"
+      name="lms_view"
+      class=".lms.LMSView"
+      template="lms.pt"
+      allowed_interface=".lms.ILMSView"
+      permission="zope2.View"
+      />
+
+</configure>

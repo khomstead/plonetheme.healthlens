@@ -1,0 +1,10 @@
+<ul tal:repeat="ticket view/open_tickets">
+    <li tal:define="ticket_id python:ticket['helpdesk_ticket']['display_id']">
+        <a tal:attributes="href string:/helpdesk/tickets?ticket=${ticket_id}">
+            <span class="ticket_subject"
+                  tal:content="python: ticket['helpdesk_ticket']['subject']"></span>
+            #<span class="ticket_id"
+                  tal:content="python: ticket['helpdesk_ticket']['display_id']"></span>
+        </a>
+    </li>
+</ul>
