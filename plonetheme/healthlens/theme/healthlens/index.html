@@ -76,10 +76,12 @@
             b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
             loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
             /* custom configuration goes here (www.olark.com/documentation) */
-            olark('api.chat.updateVisitorNickname', {
-                snippet: $("#user-name").text()
-            }); 
-            olark.identify('4171-320-10-8206');/*]]>*/</script><noscript><a href="https://www.olark.com/site/4171-320-10-8206/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+           olark('api.chat.updateVisitorNickname', {
+               snippet: $("#user-name").text()
+           }); 
+           olark('api.box.hide');
+           olark('api.box.onShrink', function() { olark('api.box.hide') } );
+           olark.identify('4171-320-10-8206');/*]]>*/</script><noscript><a href="https://www.olark.com/site/4171-320-10-8206/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
         <!-- end olark code -->
 
 	</body>   
