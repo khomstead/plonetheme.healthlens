@@ -54,8 +54,8 @@
                         target request/target|nothing;
                         target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
                         ztu modules/ZTUtils;">
-            <h1 class="documentFirstHeading">Login</h1> 
-            <dl class="portalMessage error"
+            <h1 class="documentFirstHeading"> ~ Welcome to Healthlens ~</h1> 
+            <dl class="portalMessage error alert"
                 id="enable_cookies_message"
                 style="display:none">
                 <dt i18n:translate="">
@@ -70,54 +70,57 @@
                 Since cookie authentication is disabled, cookie-based login is not available.
             </div>
 
-            <form tal:attributes="action python:context.absolute_url()+'/'+template.id"
-                  class="enableAutoFocus"
-                  method="post"
-                  id="login_form"
-                  tal:condition="use_normal">
+            <div class="row">
+                <div class="span3 well" style="float: right">
+                    <h2>Portal Login</h2>
+                    <form tal:attributes="action python:context.absolute_url()+'/'+template.id"
+                          class="enableAutoFocus"
+                          method="post"
+                          id="login_form"
+                          tal:condition="use_normal">
 
-                <div id="login-form">
+                        <div id="login-form">
 
-                    <input type="hidden"
-                        name="came_from"
-                        value=""
-                    tal:attributes="value came_from|nothing" />
+                            <input type="hidden"
+                                   name="came_from"
+                                   value=""
+                                   tal:attributes="value came_from|nothing" />
 
-                    <input type="hidden"
-                        name="next"
-                        value=""
-                    tal:attributes="value next|nothing" />
+                            <input type="hidden"
+                                   name="next"
+                                   value=""
+                                   tal:attributes="value next|nothing" />
 
-                    <input type="hidden"
-                        name="ajax_load"
-                        value=""
-                    tal:attributes="value request/ajax_load|nothing" />
+                            <input type="hidden"
+                                   name="ajax_load"
+                                   value=""
+                                   tal:attributes="value request/ajax_load|nothing" />
 
-                    <input type="hidden"
-                        name="ajax_include_head"
-                        value=""
-                    tal:attributes="value request/ajax_include_head|nothing" />
+                            <input type="hidden"
+                                   name="ajax_include_head"
+                                   value=""
+                                   tal:attributes="value request/ajax_include_head|nothing" />
 
-                    <input type="hidden"
-                        name="target"
-                        value=""
-                    tal:attributes="value request/target|nothing" />
+                            <input type="hidden"
+                                   name="target"
+                                   value=""
+                                   tal:attributes="value request/target|nothing" />
 
-                    <input type="hidden"
-                        name="mail_password_url"
-                        value=""
-                    tal:attributes="value request/mail_password_url|nothing" />
+                            <input type="hidden"
+                                   name="mail_password_url"
+                                   value=""
+                                   tal:attributes="value request/mail_password_url|nothing" />
 
-                    <input type="hidden"
-                        name="join_url"
-                        value=""
-                    tal:attributes="value request/join_url|nothing" />
+                            <input type="hidden"
+                                   name="join_url"
+                                   value=""
+                                   tal:attributes="value request/join_url|nothing" />
 
-                    <input type="hidden" name="form.submitted" value="1" />
-                    <input type="hidden" name="js_enabled" id="js_enabled" value="0" />
-                    <input type="hidden" name="cookies_enabled" id="cookies_enabled" value="" />
-                    <input type="hidden" name="login_name" id="login_name" value="" />
-                    <input type="hidden" name="pwd_empty" id="pwd_empty" value="0" />
+                            <input type="hidden" name="form.submitted" value="1" />
+                            <input type="hidden" name="js_enabled" id="js_enabled" value="0" />
+                            <input type="hidden" name="cookies_enabled" id="cookies_enabled" value="" />
+                            <input type="hidden" name="login_name" id="login_name" value="" />
+                            <input type="hidden" name="pwd_empty" id="pwd_empty" value="0" />
 
                     <div class="field"
                          tal:define="error python:errors.get(ac_name, None);"
@@ -125,7 +128,7 @@
 
                         <label i18n:translate="label_login_name"
                                tal:condition="not:use_email_as_login"
-                               tal:attributes="for ac_name">Login Name</label>
+                               tal:attributes="for ac_name">Username</label>
 
                         <label i18n:translate="label_email"
                                tal:condition="use_email_as_login"
@@ -141,9 +144,9 @@
                                                value login_name;"
                                />
 
-                </div>
+                    </div>
 
-                <div class="field"
+                    <div class="field"
                          tal:define="error python:errors.get(ac_password, None);"
                          tal:attributes="class python:test(error, 'field error', 'field')">
 
@@ -158,7 +161,7 @@
                                tal:attributes="name ac_password;
                                                id ac_password;"
                                />
-                </div>
+                    </div>
 
                     <div class="field" tal:condition="ac_persist">
 
@@ -193,18 +196,17 @@
 
                     <div class="formControls">
 
-                        <input class="context"
+                        <button class="context btn btn-primary"
                                type="submit"
                                name="submit"
-                               value="Log in"
                                i18n:attributes="value label_log_in;"
-                               />
+                               >Log in</button>
 
                     </div>
 
                 </div>
 
-            </form>
+                </form>
 
             <form tal:attributes="action external_login_url"
                   class="enableAutoFocus"
@@ -277,15 +279,11 @@
             <div id="login-forgotten-password"
                  tal:condition="python:mail_password_url and use_normal">
                 <strong i18n:translate="box_forgot_password_option">
-                    Forgot your password?
+                    Use your Healthlens logon<br/> to access the portal.
                 </strong>
-                <p class="discreet"
-                   i18n:translate="help_password_retrieval">
-                    If you have forgotten your password,
-                    <span i18n:name="click_here">
-                        <a tal:define="mail_password_url python:mail_password_url+test(mail_password_url.find('?')==-1, '?', '&amp;')+ztu.make_query(userid=login_name)"
-                            tal:attributes="href mail_password_url; target target;"
-                           i18n:translate="label_click_here_to_retrieve">we can send you a new one</a></span>.
+                <p class="discreet"> 
+                It is not necessary to use the CLOUD prefix with your username.<br/>
+                Need assistance? <br/>Please contact the helpdesk.
                 </p>
             </div>
 
@@ -306,6 +304,14 @@
                 </p>
 
             </div>
+                </div> <!-- span2 -->
+                <div class="span8" style="float:left;"
+                     tal:condition="not: request/ajax_load|nothing">
+                    <div class="beta_testing">
+                        &nbsp;
+                    </div>
+                </div>
+                </div> <!-- row --->
 
         </metal:login>
     </div>
