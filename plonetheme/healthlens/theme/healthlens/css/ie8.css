@@ -1,0 +1,13 @@
+.navbar-fixed-top .navbar-inner, #viewlet-below-content-title #portlets-below {
+    -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(enabled=false)';
+    filter: 'progid:DXImageTransform.Microsoft.gradient(enabled=false)';
+    background: none;
+}
+
+#portal-columns {
+    margin-left: 0;
+}
+
+#portal-personaltools-wrapper #portal-personaltools, #portal-personaltools-wrapper #portal-personaltools dd {
+    background: none;
+}
