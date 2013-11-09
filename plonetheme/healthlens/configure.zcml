@@ -13,7 +13,6 @@
         directory="theme/healthlens" type="theme" />
 
     <include package="z3c.jbot" file="meta.zcml" />
-    <include package=".browser" />
     <browser:jbot
         directory="templates" />
 
