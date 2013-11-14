@@ -10,6 +10,12 @@
         <script type="text/javascript" src=""
                 tal:attributes="src string:${context/portal_url}/login.js">
         </script>
+        <style>
+            #page {
+                background-image: url('/++theme++plonetheme.healthlens/images/ehr.jpg'); 
+                background-size: cover;
+            }
+        </style>
     </metal:js>
     <metal:block fill-slot="top_slot"
                  tal:define="dummy python:request.set('disable_border',1);
@@ -71,7 +77,7 @@
             </div>
 
             <div class="row">
-                <div class="span3 well" style="float: right">
+                <div class="col-xs-10 col-sm-6 col-md-3 col-lg-4 well" style="float: none; margin: 10px auto 20px auto">
                     <h2>Portal Login</h2>
                     <form tal:attributes="action python:context.absolute_url()+'/'+template.id"
                           class="enableAutoFocus"
@@ -304,13 +310,7 @@
                 </p>
 
             </div>
-                </div> <!-- span2 -->
-                <div class="span8" style="float:left;"
-                     tal:condition="not: request/ajax_load|nothing">
-                    <div class="beta_testing">
-                        &nbsp;
-                    </div>
-                </div>
+                </div> <!-- end login -->
                 </div> <!-- row --->
 
         </metal:login>

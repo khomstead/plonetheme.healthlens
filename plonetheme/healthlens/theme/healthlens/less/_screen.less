@@ -3,8 +3,8 @@
 /* @group Imports */
 
 // Twitter Bootstrap Framework
-@import "../components/bootstrap/less/bootstrap";
-@import "../components/bootstrap/less/responsive";
+@import "../bower_components/bootstrap/less/bootstrap";
+//@import "../components/bootstrap/less/responsive";
 //Re-usable effects such as page curls, etc.
 @import "_effects"; 
 @import "_xmpp";
@@ -46,13 +46,18 @@ input[type="submit"] { .btn; }
         line-height: 150%;
     }
 }
-.portalMessage.error {
+.portalMessage {
+    margin: 20px 10px;
     .alert;
-    .alert-error;
+    }
+
+.portalMessage.error {
+    .alert-danger;
+    & dt { display: none; }
 }
 .portalMessage.info {
-    .alert;
     .alert-info;
+    & dt { display: none; }
 }
 .alert li {
     display: list-item;
@@ -71,24 +76,21 @@ body {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .topbar-gradient;
     z-index: 90;
 }
 
-div.navbar.navbar-fixed-top {
-	top: 0;
-	//width: 100%;
-	position: fixed;
+nav.navbar {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
 	z-index: 100;
-    margin: 0;
-	& .navbar-inner {
-		.topbar-gradient;
-		padding: 0;
-        border: 0;
-	}
 }
-.btn-navbar {
-    position: fixed;
-    right: 0;
+.navbar-toggle .icon-bar {
+    background-color: #ccc;
 }
 
 .logo {
@@ -101,10 +103,10 @@ div.navbar.navbar-fixed-top {
 }
 
 #personal-bar {
+    position: relative;
 	height: @personal-bar-height;
 	background-color: blue;
 	z-index: 99;
-	top: @navbar-height;
 }
 
 #edit-bar {
@@ -147,13 +149,6 @@ dl.actionMenu {
     display: none;
 }
 
-@media (max-width: 979px) {
-    #personal-bar { 
-        position: relative;
-        top: 0;
-    }
-}
-
 .cssgradients #personal-bar {
 border-bottom: 2px solid @muted-accent-shadow;
 	border-top: 2px solid @muted-accent-highlight; 
@@ -189,10 +184,20 @@ border-bottom: 2px solid @muted-accent-shadow;
 
 
 #page-wrapper {
-	top:  80px;
+    position: relative;
+	top:  70px;
 	z-index:1;
-	margin-bottom: 200px;
+}
+
+#curl-wrapper {
 	.curl-effect(100px);
+    overflow: hidden;
+}
+
+@media (max-width: @screen-sm-min) {
+    .container {
+        padding: 0;
+    }
 }
 
 #page {
@@ -203,6 +208,11 @@ border-bottom: 2px solid @muted-accent-shadow;
 	padding: 0px 10px 0 10px;
 	position: relative;
 	z-index: 1;			
+}
+.footer > #portlets-below {
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);  
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(0, 0, 0, 0.3);   
 }
 
 .row {
@@ -281,6 +291,9 @@ border-bottom: 2px solid @muted-accent-shadow;
 #colophon {
 	position: relative;
 	display: block;
+    top: 70px;
+    height: 100px;
+    clear: both;
 	text-align: center;
 	font: 70% @title-font-family;
 	color: #999;
@@ -294,18 +307,16 @@ border-bottom: 2px solid @muted-accent-shadow;
 }
 
 #portlets-below {
-	margin:  0 0 0 -10px;
-    width: 960px;
 	.doormat-gradient;
 	color: #fff;
 }
 #viewlet-below-content-title #portlets-below {
     background: transparent;
 }
-
+/*
 @media (min-width: 1200px) {
     #portlets-below {
-        width: 1190px;
+        width: 1132px;
     }
 }
 
@@ -319,6 +330,7 @@ border-bottom: 2px solid @muted-accent-shadow;
         width:100%;
     }
 }
+*/
 
 #portlets-below div.cell {
     margin-top: 10px;
@@ -539,15 +551,6 @@ div.standard-document {
 /* @end */
 
 /* @group MegaMenu Global Navigation*/
-@media (max-width: 979px) {
-    /* Scrollable menu */
-    ul#portal-megamenu {
-        max-height: 500px;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-}
-
 ul#portal-megamenu > li, ul, a, ol {
 	margin: 0;
 	padding: 0;
@@ -568,13 +571,15 @@ ul#portal-megamenu .sub ul li a.collage-megamenu-highlight {
 /*	&:hover {border-bottom: 1px solid @rollover;}*/
 }
 
-ul#portal-megamenu .sub ul li a:hover {
+ul#portal-megamenu li a:hover {
 	color: @rollover;
+    .nav-rollover-gradient;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 768px) {
+
 	ul#portal-megamenu {  
-		width: 100% - @logo-width;
+		width: auto;
 		margin: 0 !important;
 		padding: 0;
 		float: right;
@@ -583,25 +588,25 @@ ul#portal-megamenu .sub ul li a:hover {
 	ul#portal-megamenu li.top-level {
 		float: left;
 		position: relative;
-		border-left: thin solid #1C1D1F;
+		//border-left: thin solid #1C1D1F;
 		display: block;
 		padding: 0;
 		margin: 0;
 		&#mm-tl-home a {  
-			background: @home-icon no-repeat center 21px;
+			background: @home-icon no-repeat center 10px;
 			color: transparent; 
             font-size: 0;
             width: 20px;
 			text-shadow:none;  
-			&:hover {background: @home-icon-rollover no-repeat center 20px;}
+			&:hover {background: @home-icon-rollover no-repeat center 10px;}
 		}
-		&:last-child {border-right: thin solid #1C1D1F;}
+		//&:last-child {border-right: thin solid #1C1D1F;}
 	}
 	
 	ul#portal-megamenu > li > a { 	 
 		float: left;
 		height: @navbar-height;
-		line-height: @navbar-height + 20;
+		line-height: @navbar-height;
 		padding: 0 10px 0 10px;
 		color: @global-nav-font-color;
 		font-size: @global-nav-font-size;
@@ -668,8 +673,7 @@ ul#portal-megamenu .sub ul li a:hover {
 		white-space: nowrap;
 	}
 }
-
-@media (max-width: 979px) {
+@media (max-width: 767px) {
 
 	ul#portal-megamenu {
         // Don't display descriptions in responsive mode
@@ -689,7 +693,7 @@ ul#portal-megamenu .sub ul li a:hover {
 				margin-left: auto;
 				margin-right: auto;
 				.border-radius(5px);
-				border: thin solid #333;
+				//border: thin solid #333;
 				& a {
 					width: auto;
 					float: left;
@@ -703,7 +707,7 @@ ul#portal-megamenu .sub ul li a:hover {
 				&.active {
 					.inner-shadow;
 					background: #333;
-					border: thin solid #666;
+					//border: thin solid #666;
 					& a {color: black;}
 				} 
 				& .sub {
@@ -716,7 +720,7 @@ ul#portal-megamenu .sub ul li a:hover {
 						display: block;
 						background: #555;
 						color: #999;
-						font-family: @baseFontFamily;
+						font-family: @global-nav-font-family;
 						font-size: 2em; 
 						line-height: 1.2em;
 						white-space: nowrap;
@@ -732,7 +736,6 @@ ul#portal-megamenu .sub ul li a:hover {
 			}
 	} 
 } 
-
 .subShadow {
 	position: absolute;
 	display: none; 
@@ -742,6 +745,8 @@ ul#portal-megamenu .sub ul li a:hover {
 /* @end */
 
 /* @group Images */
+#content img { max-width: 100%; }
+
 img.image-left, img.image-right, .captioned img, img.image-inline, img.newsImage, img.tileImage {
 //    border: 4px solid #eaeaea;  
 }

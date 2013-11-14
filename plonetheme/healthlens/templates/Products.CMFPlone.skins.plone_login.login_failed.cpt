@@ -11,6 +11,12 @@
         <script type="text/javascript" src=""
                 tal:attributes="src string:${context/portal_url}/login.js">
         </script>
+        <style>
+            #page {
+                background-image: url('/++theme++plonetheme.healthlens/images/ehr.jpg'); 
+                background-size: cover;
+            }
+        </style>
     </metal:js>
     <metal:block fill-slot="top_slot"
                  tal:define="dummy python:request.set('disable_border',1);
@@ -25,7 +31,7 @@
 
     <div id="content-core">
 
-        <div class="alert" style="float:left">
+        <div class="alert alert-info">
         <p i18n:translate="description_not_accept_cookies">
           If your user name and password are correct, the problem may be that
           your browser is not configured to accept cookies.

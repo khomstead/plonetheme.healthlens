@@ -15,27 +15,6 @@ jQuery(document).ready( function($) {
     var theYear = new Date().getFullYear();
     $("#copyright").html(theYear);
 
-    var element = document.querySelector('#portal-megamenu');
-    if (element.offsetHeight < element.scrollHeight) {
-        $(element).prepend("<img src='/++theme++plonetheme.healthlens/images/down-arrow.gif' style='position:absolute;right:1em;bottom:0;z-index:1;width:50px' id='downarrow'/><img src='/++theme++plonetheme.healthlens/images/down-arrow.gif' style='position:absolute;right:1em;top:0;z-index:1;width:50px;display:none' id='uparrow'/>"
-            );
-    }
-
-    $("#downarrow").on("click", function() {
-        $("#portal-megamenu").animate({
-            scrollTop: "400px"
-        }, 2000);
-        $("#uparrow").fadeIn("2000");
-        $(this).fadeOut("slow");
-    });
-    $("#uparrow").on("click", function() {
-        $("#portal-megamenu").animate({
-            scrollTop: "0px"
-        }, 2000);
-        $("#downarrow").fadeIn("2000");
-        $(this).fadeOut("slow");
-    });
-
     $('#category a').prepOverlay({
         subtype: 'ajax',
         filter: '#content > *'

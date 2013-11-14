@@ -65,7 +65,7 @@
     <div id="portal-columns" class="row">
 
         <div id="portal-column-content" 
-             tal:attributes="class python:'span9' if sr else 'span12'">
+             tal:attributes="class python:'col-md-9' if sr else 'col-md-12'">
 
             <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" tal:condition="not:ajax_load" />
 
@@ -137,7 +137,7 @@
 
         <tal:notajax tal:condition="not:ajax_load">
         <div id="portal-column-one"
-            class="span9"
+            class="col-md-9"
             metal:define-slot="column_one_slot"
             tal:condition="sl">
             <metal:portlets define-slot="portlets_one_slot">
@@ -146,7 +146,7 @@
         </div>
 
         <div id="portal-column-two"
-            class="span3"
+            class="col-md-3"
             metal:define-slot="column_two_slot"
             tal:condition="sr">
             <metal:portlets define-slot="portlets_two_slot">
