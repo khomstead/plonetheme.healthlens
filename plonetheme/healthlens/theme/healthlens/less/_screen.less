@@ -21,10 +21,9 @@ a { text-decoration:none !important;}
 }
 .field label {
     display: inline-block;
-    margin-left: 10px;
 }
 // Apply bootstrap button styling to all submit buttons.
-input[type="submit"] { .btn; }
+input[type="submit"] { .btn; .btn-primary;}
 #content .field input[type="text"][name$=".title"], #content .field input[type="text"][name$=".title"], #archetypes-fieldname-title input {
     font-size: 100%;
 }
@@ -232,13 +231,16 @@ border-bottom: 2px solid @muted-accent-shadow;
 
 /* Commenting styles */
 
-.row #commenting {
+#commenting {
    font-size: 100%;
 }
 
-.row #commenting label {
+#commenting .label {
     font-size: 100%;
     line-height: 100%;
+    color: rgb(65,65,65);
+    font-weight: normal;
+
 }
 
 .commentImage img {
@@ -255,11 +257,11 @@ border-bottom: 2px solid @muted-accent-shadow;
     padding-bottom: 10px;
 }
 
-.row #commenting textarea, .row .discussion textarea {
+#commenting textarea, .row .discussion textarea {
     width: 90%;
 }
 
-.row #commenting legend, .row .discussion legend {
+#commenting legend, .row .discussion legend {
     font-size: 125%;
     font-weight: 500;
 }
@@ -342,7 +344,6 @@ border-bottom: 2px solid @muted-accent-shadow;
 
 /* @group Portlets*/
 #portal-column-two {
-    margin: 5px;
     & div.portletWrapper {
 			margin-top: 10px;
 			padding: 10px;
@@ -406,7 +407,7 @@ border-bottom: 2px solid @muted-accent-shadow;
     }	
 		
 }
-@media (min-width: 767px) {
+@media (min-width: @screen-sm-min) {
     #portal-column-two {
         margin-top: -30px;
     }
